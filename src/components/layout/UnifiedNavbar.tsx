@@ -4,38 +4,47 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'motion/react';
-
-const navItems = [
-  {
-    name: "首页",
-    link: "/",
-  },
-  {
-    name: "外汇培训",
-    link: "/splan/join-us",
-  },
-  {
-    name: "心理测评",
-    link: "/splan/psychology-test",
-  },
-  {
-    name: "交易系统",
-    link: "/dashboard",
-  },
-  {
-    name: "常见问题",
-    link: "/splan/faq",
-  },
-  {
-    name: "会员",
-    link: "/splan/donate",
-  },
-];
+import { useTheme } from '@/contexts/ThemeContext';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 export default function UnifiedNavbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [mounted, setMounted] = useState(false);
   const pathname = usePathname();
+  const { theme, toggleTheme } = useTheme();
+  const { language, toggleLanguage, t } = useLanguage();
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  const navItems = [
+    {
+      name: t('nav.home'),
+      link: "/",
+    },
+    {
+      name: t('nav.training'),
+      link: "/splan/join-us",
+    },
+    {
+      name: t('nav.psychology'),
+      link: "/splan/psychology-test",
+    },
+    {
+      name: t('nav.dashboard'),
+      link: "/dashboard",
+    },
+    {
+      name: t('nav.faq'),
+      link: "/splan/faq",
+    },
+    {
+      name: t('nav.membership'),
+      link: "/splan/donate",
+    },
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -104,13 +113,42 @@ export default function UnifiedNavbar() {
             ))}
           </div>
 
-          {/* Join Us Button (Desktop) */}
-          <div className="hidden md:block">
+          {/* Right Side Actions (Desktop) */}
+          <div className="hidden md:flex items-center gap-3">
+            {/* Theme Toggle - Hidden temporarily */}
+            {/* <button
+              onClick={toggleTheme}
+              className="p-2 border border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+              title={theme === 'light' ? t('theme.dark') : t('theme.light')}
+            >
+              {theme === 'light' ? (
+                // Moon icon
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                </svg>
+              ) : (
+                // Sun icon
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                </svg>
+              )}
+            </button> */}
+
+            {/* Language Toggle - Hidden temporarily */}
+            {/* <button
+              onClick={toggleLanguage}
+              className="px-3 py-2 border border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors text-sm font-medium"
+              title={language === 'zh' ? 'Switch to English' : '切换到中文'}
+            >
+              {language === 'zh' ? 'EN' : '中文'}
+            </button> */}
+
+            {/* Join Us Button */}
             <Link
               href="/splan/join-us"
               className="px-4 py-2 bg-black dark:bg-white text-white dark:text-black text-sm font-semibold border border-black dark:border-white hover:bg-white hover:text-black dark:hover:bg-black dark:hover:text-white transition-colors"
             >
-              立即报名
+              {t('nav.join')}
             </Link>
           </div>
 
@@ -170,11 +208,42 @@ export default function UnifiedNavbar() {
                   {item.name}
                 </Link>
               ))}
+
+              {/* Mobile Theme and Language Toggle - Hidden temporarily */}
+              {/* <div className="flex gap-2 px-4 pt-2">
+                <button
+                  onClick={toggleTheme}
+                  className="flex-1 px-4 py-3 border border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors text-sm font-medium flex items-center justify-center gap-2"
+                >
+                  {theme === 'light' ? (
+                    <>
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                      </svg>
+                      夜间
+                    </>
+                  ) : (
+                    <>
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                      </svg>
+                      日间
+                    </>
+                  )}
+                </button>
+                <button
+                  onClick={toggleLanguage}
+                  className="flex-1 px-4 py-3 border border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors text-sm font-medium"
+                >
+                  {language === 'zh' ? 'EN' : '中文'}
+                </button>
+              </div> */}
+
               <Link
                 href="/splan/join-us"
                 className="block px-4 py-3 bg-black dark:bg-white text-white dark:text-black text-sm font-semibold text-center mt-4 border border-black dark:border-white"
               >
-                立即报名
+                {t('nav.join')}
               </Link>
             </div>
           </motion.div>

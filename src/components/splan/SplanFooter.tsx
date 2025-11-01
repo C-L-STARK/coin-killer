@@ -29,11 +29,6 @@ export default function SplanFooter() {
                 </Link>
               </li>
               <li>
-                <Link href="/splan/courses" className="text-gray-400 hover:text-white transition-colors">
-                  成长计划
-                </Link>
-              </li>
-              <li>
                 <Link href="/splan/faq" className="text-gray-400 hover:text-white transition-colors">
                   常见问题
                 </Link>

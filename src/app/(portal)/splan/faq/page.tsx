@@ -123,43 +123,49 @@ const faqData: FAQData = {
 // FAQ Item component
 const FAQItem = ({ faq, isOpen, onClick }: { faq: FAQ; isOpen: boolean; onClick: () => void }) => {
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0, y: 10 }}
+      animate={{ opacity: 1, y: 0 }}
       className={`bg-white dark:bg-gray-800 border-2 overflow-hidden transition-all ${
-        isOpen ? 'border-black dark:border-white' : 'border-gray-200 dark:border-gray-700 hover:border-gray-600 dark:hover:border-gray-500'
+        isOpen ? 'border-black dark:border-white shadow-lg' : 'border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500'
       }`}
     >
       <button
         onClick={onClick}
-        className={`w-full flex items-center justify-between p-6 text-left transition-colors ${
+        className={`w-full flex items-center justify-between p-6 text-left transition-all ${
           isOpen ? 'bg-gray-50 dark:bg-gray-900' : 'hover:bg-gray-50 dark:hover:bg-gray-900'
         }`}
       >
-        <span className="flex-1 pr-4 font-semibold text-base text-gray-900 dark:text-white">{faq.question}</span>
-        <motion.span
+        <span className="flex-1 pr-4 font-bold text-lg text-gray-900 dark:text-white">{faq.question}</span>
+        <motion.div
           animate={{ rotate: isOpen ? 180 : 0 }}
           transition={{ duration: 0.3 }}
-          className={`text-xl flex-shrink-0 ${isOpen ? 'text-black dark:text-white' : 'text-gray-500 dark:text-gray-400'}`}
+          className={`flex-shrink-0 w-8 h-8 flex items-center justify-center ${
+            isOpen ? 'bg-black dark:bg-white' : 'bg-gray-200 dark:bg-gray-700'
+          }`}
         >
-          ▼
-        </motion.span>
+          <span className={`text-lg font-bold ${isOpen ? 'text-white dark:text-black' : 'text-gray-600 dark:text-gray-400'}`}>
+            ▼
+          </span>
+        </motion.div>
       </button>
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            initial={{ height: 0 }}
-            animate={{ height: 'auto' }}
-            exit={{ height: 0 }}
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: 'auto', opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.3 }}
             className="overflow-hidden"
           >
             <div
-              className="px-6 pb-6 text-gray-600 dark:text-gray-400 text-sm leading-relaxed"
+              className="px-6 pb-6 pt-2 text-gray-700 dark:text-gray-300 text-base leading-relaxed border-t-2 border-gray-100 dark:border-gray-700"
               dangerouslySetInnerHTML={{ __html: faq.answer }}
             />
           </motion.div>
         )}
       </AnimatePresence>
-    </div>
+    </motion.div>
   );
 };
 
@@ -189,39 +195,63 @@ export default function FAQPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-950 py-12">
-      <div className="max-w-4xl mx-auto px-6">
-        {/* Header */}
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">常见问题解答</h1>
-          <p className="text-lg text-gray-600 dark:text-gray-400">开启职业交易之路前，先读懂这些问题</p>
+    <div className="min-h-screen bg-white dark:bg-gray-900">
+      {/* Hero Section - 参考 join-us */}
+      <div className="relative overflow-hidden bg-gradient-to-br from-black via-gray-900 to-black border-b-2 border-gray-800">
+        {/* 装饰性背景 */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-10 right-10 w-96 h-96 bg-white rounded-full blur-3xl"></div>
+          <div className="absolute bottom-10 left-10 w-96 h-96 bg-white rounded-full blur-3xl"></div>
         </div>
 
+        <div className="relative max-w-6xl mx-auto px-6 py-24 text-center">
+          <div className="inline-block px-6 py-2 bg-white/10 border border-white/20 backdrop-blur-sm mb-6">
+            <span className="text-sm font-semibold tracking-wider text-white">FREQUENTLY ASKED QUESTIONS</span>
+          </div>
+          <h1 className="text-5xl md:text-7xl font-black mb-6 text-white">
+            常见问题解答
+            <br />
+            <span className="text-3xl md:text-4xl font-normal text-gray-300">FAQ</span>
+          </h1>
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+            开启职业交易之路前，先读懂这些问题
+          </p>
+        </div>
+      </div>
+
+      <div className="max-w-5xl mx-auto px-6 py-20">
         {/* Search */}
-        <div className="mb-12">
-          <div className="relative max-w-xl mx-auto">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="mb-16"
+        >
+          <div className="relative max-w-2xl mx-auto">
             <input
               type="text"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder="搜索问题..."
-              className="w-full px-5 py-4 pr-12 text-base border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-none focus:border-black dark:focus:border-white transition-all"
+              className="w-full px-6 py-5 pr-32 text-lg border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-none focus:border-black dark:focus:border-white transition-all"
             />
-            <span className="absolute right-5 top-1/2 -translate-y-1/2 text-gray-500 dark:text-gray-400 font-bold">
-              搜索
-            </span>
+            <div className="absolute right-2 top-1/2 -translate-y-1/2">
+              <span className="px-6 py-3 bg-black dark:bg-white text-white dark:text-black font-bold text-sm">
+                搜索
+              </span>
+            </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* Course FAQs */}
-        <section className="mb-12">
-          <div className="flex items-center gap-4 mb-6">
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-white">关于 FX Killer</h2>
-            <span className="px-3 py-1 bg-black dark:bg-white text-white dark:text-black text-sm font-semibold">
-              {filterFAQs(faqData.course).length}个问题
+        <section className="mb-16">
+          <div className="flex items-center gap-4 mb-8">
+            <div className="w-1 h-12 bg-black dark:bg-white"></div>
+            <h2 className="text-3xl font-black text-gray-900 dark:text-white">关于 FX Killer</h2>
+            <span className="px-4 py-2 bg-black dark:bg-white text-white dark:text-black text-sm font-bold">
+              {filterFAQs(faqData.course).length}
             </span>
           </div>
-          <div className="flex flex-col gap-4">
+          <div className="space-y-4">
             {filterFAQs(faqData.course).map((faq, index) => (
               <FAQItem
                 key={index}
@@ -234,14 +264,15 @@ export default function FAQPage() {
         </section>
 
         {/* Learning FAQs */}
-        <section className="mb-12">
-          <div className="flex items-center gap-4 mb-6">
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-white">关于培训</h2>
-            <span className="px-3 py-1 bg-black dark:bg-white text-white dark:text-black text-sm font-semibold">
-              {filterFAQs(faqData.learning).length}个问题
+        <section className="mb-16">
+          <div className="flex items-center gap-4 mb-8">
+            <div className="w-1 h-12 bg-black dark:bg-white"></div>
+            <h2 className="text-3xl font-black text-gray-900 dark:text-white">关于培训</h2>
+            <span className="px-4 py-2 bg-black dark:bg-white text-white dark:text-black text-sm font-bold">
+              {filterFAQs(faqData.learning).length}
             </span>
           </div>
-          <div className="flex flex-col gap-4">
+          <div className="space-y-4">
             {filterFAQs(faqData.learning).map((faq, index) => (
               <FAQItem
                 key={index}
@@ -254,14 +285,15 @@ export default function FAQPage() {
         </section>
 
         {/* Pricing FAQs */}
-        <section className="mb-12">
-          <div className="flex items-center gap-4 mb-6">
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-white">关于收入与分润</h2>
-            <span className="px-3 py-1 bg-black dark:bg-white text-white dark:text-black text-sm font-semibold">
-              {filterFAQs(faqData.pricing).length}个问题
+        <section className="mb-16">
+          <div className="flex items-center gap-4 mb-8">
+            <div className="w-1 h-12 bg-black dark:bg-white"></div>
+            <h2 className="text-3xl font-black text-gray-900 dark:text-white">关于收入与分润</h2>
+            <span className="px-4 py-2 bg-black dark:bg-white text-white dark:text-black text-sm font-bold">
+              {filterFAQs(faqData.pricing).length}
             </span>
           </div>
-          <div className="flex flex-col gap-4">
+          <div className="space-y-4">
             {filterFAQs(faqData.pricing).map((faq, index) => (
               <FAQItem
                 key={index}
@@ -274,14 +306,15 @@ export default function FAQPage() {
         </section>
 
         {/* Support FAQs */}
-        <section className="mb-12">
-          <div className="flex items-center gap-4 mb-6">
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-white">交易铁律</h2>
-            <span className="px-3 py-1 bg-black dark:bg-white text-white dark:text-black text-sm font-semibold">
-              {filterFAQs(faqData.support).length}个问题
+        <section className="mb-16">
+          <div className="flex items-center gap-4 mb-8">
+            <div className="w-1 h-12 bg-black dark:bg-white"></div>
+            <h2 className="text-3xl font-black text-gray-900 dark:text-white">交易铁律</h2>
+            <span className="px-4 py-2 bg-black dark:bg-white text-white dark:text-black text-sm font-bold">
+              {filterFAQs(faqData.support).length}
             </span>
           </div>
-          <div className="flex flex-col gap-4">
+          <div className="space-y-4">
             {filterFAQs(faqData.support).map((faq, index) => (
               <FAQItem
                 key={index}
@@ -294,14 +327,15 @@ export default function FAQPage() {
         </section>
 
         {/* Other FAQs */}
-        <section className="mb-12">
-          <div className="flex items-center gap-4 mb-6">
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-white">其他问题</h2>
-            <span className="px-3 py-1 bg-black dark:bg-white text-white dark:text-black text-sm font-semibold">
-              {filterFAQs(faqData.other).length}个问题
+        <section className="mb-16">
+          <div className="flex items-center gap-4 mb-8">
+            <div className="w-1 h-12 bg-black dark:bg-white"></div>
+            <h2 className="text-3xl font-black text-gray-900 dark:text-white">其他问题</h2>
+            <span className="px-4 py-2 bg-black dark:bg-white text-white dark:text-black text-sm font-bold">
+              {filterFAQs(faqData.other).length}
             </span>
           </div>
-          <div className="flex flex-col gap-4">
+          <div className="space-y-4">
             {filterFAQs(faqData.other).map((faq, index) => (
               <FAQItem
                 key={index}
@@ -313,25 +347,41 @@ export default function FAQPage() {
           </div>
         </section>
 
-        {/* Contact Support */}
-        <div className="bg-black dark:bg-white p-10 text-center border-2 border-black dark:border-white">
-          <h3 className="text-2xl font-bold mb-3 text-white dark:text-black">没有找到答案？</h3>
-          <p className="text-base mb-6 text-gray-200 dark:text-gray-800">联系我们的团队长，我们将尽快为您解答</p>
-          <button
-            onClick={() => setIsEmailModalOpen(true)}
-            className="px-8 py-3 bg-white dark:bg-black text-black dark:text-white font-semibold border-2 border-white dark:border-black hover:bg-gray-100 dark:hover:bg-gray-900 transition-colors"
-          >
-            联系团队长
-          </button>
-        </div>
-
-        {/* Email Contact Modal */}
-        <EmailContactModal
-          isOpen={isEmailModalOpen}
-          onClose={() => setIsEmailModalOpen(false)}
-          title="咨询团队长"
-        />
+        {/* Contact Support - 参考 join-us */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="relative"
+        >
+          <div className="absolute inset-0 bg-gradient-to-r from-black/5 to-gray-900/5 dark:from-white/5 dark:to-gray-100/5 blur-xl"></div>
+          <div className="relative bg-gradient-to-br from-black via-gray-900 to-black dark:from-white dark:via-gray-100 dark:to-white p-12 border-2 border-black dark:border-white text-center">
+            <div className="mb-6">
+              <div className="inline-block w-16 h-16 bg-white dark:bg-black flex items-center justify-center mb-4">
+                <svg className="w-10 h-10 text-black dark:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+            </div>
+            <h3 className="text-3xl font-bold mb-4 text-white dark:text-black">没有找到答案？</h3>
+            <p className="text-lg mb-8 text-gray-300 dark:text-gray-700 max-w-2xl mx-auto">
+              联系我们的团队长，我们将尽快为您解答疑问
+            </p>
+            <button
+              onClick={() => setIsEmailModalOpen(true)}
+              className="px-10 py-4 bg-white dark:bg-black text-black dark:text-white font-bold text-lg border-2 border-white dark:border-black hover:bg-gray-100 dark:hover:bg-gray-900 transition-all hover:shadow-lg"
+            >
+              联系团队长
+            </button>
+          </div>
+        </motion.div>
       </div>
+
+      {/* Email Contact Modal */}
+      <EmailContactModal
+        isOpen={isEmailModalOpen}
+        onClose={() => setIsEmailModalOpen(false)}
+        title="咨询团队长"
+      />
     </div>
   );
 }

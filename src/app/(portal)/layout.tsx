@@ -5,6 +5,7 @@ import "@/app/globals.css";
 import UnifiedNavbar from "@/components/layout/UnifiedNavbar";
 import SplanFooter from "@/components/splan/SplanFooter";
 import SubscriptionNotification from "@/components/custom/SubscriptionNotification";
+import Providers from "@/components/providers/Providers";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -68,16 +69,32 @@ export default function PortalLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="zh-CN" className={inter.variable}>
-      <body>
-        <UnifiedNavbar />
-        <main className="pt-16">
-          <Theme accentColor="gray" scaling="90%" grayColor="slate" appearance="inherit" radius="none">
-            {children}
-          </Theme>
-        </main>
-        <SplanFooter />
-        <SubscriptionNotification />
+    <html lang="zh-CN" className={inter.variable} suppressHydrationWarning>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              try {
+                const theme = localStorage.getItem('theme');
+                if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                  document.documentElement.classList.add('dark');
+                }
+              } catch (e) {}
+            `,
+          }}
+        />
+      </head>
+      <body suppressHydrationWarning>
+        <Providers>
+          <UnifiedNavbar />
+          <main className="pt-16">
+            <Theme accentColor="gray" scaling="90%" grayColor="slate" appearance="inherit" radius="none">
+              {children}
+            </Theme>
+          </main>
+          <SplanFooter />
+          <SubscriptionNotification />
+        </Providers>
       </body>
     </html>
   );
