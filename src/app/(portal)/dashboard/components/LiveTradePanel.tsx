@@ -331,7 +331,14 @@ export default function LiveTradePanel({ tradingConfig: initialConfig, onConfigC
         <h2 className="text-2xl font-bold text-black dark:text-white mb-6 pb-3 border-b-2 border-black dark:border-white">
           实时行情图表
         </h2>
-        <LiveTradingChart symbol={tradingConfig.symbol} interval={tradingConfig.interval} />
+        <p className="text-xs text-gray-600 dark:text-gray-400 mb-4">
+          图表已加载以下策略指标：布林带(BB)、MACD、CCI、SuperTrend、ATR
+        </p>
+        <LiveTradingChart
+          symbol={tradingConfig.symbol}
+          interval={tradingConfig.interval}
+          config={tradingConfig}
+        />
       </div>
 
       {/* Warning Banner */}

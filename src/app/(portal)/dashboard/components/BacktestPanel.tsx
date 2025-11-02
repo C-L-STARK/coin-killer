@@ -16,6 +16,10 @@ const BacktestChart = dynamic(() => import('./BacktestChart'), {
   loading: () => <div className="w-full h-[500px] flex items-center justify-center bg-white dark:bg-gray-900 border-2 border-gray-300 dark:border-gray-700">加载K线图中...</div>
 });
 
+const BacktestProgress = dynamic(() => import('./BacktestProgress'), {
+  ssr: false,
+});
+
 interface BacktestPanelProps {
   tradingConfig: TradingConfig;
   onConfigChange?: (config: TradingConfig) => void;
@@ -26,6 +30,12 @@ export default function BacktestPanel({ tradingConfig: initialConfig, onConfigCh
   const [loading, setLoading] = useState(false);
   const [results, setResults] = useState<BacktestResult | null>(null);
   const [error, setError] = useState<string | null>(null);
+
+  // Progress state
+  const [showProgress, setShowProgress] = useState(false);
+  const [progressStage, setProgressStage] = useState<'fetching' | 'running' | 'complete'>('fetching');
+  const [progressPercent, setProgressPercent] = useState(0);
+  const [progressMessage, setProgressMessage] = useState('');
 
   // Date range state
   const [startDate, setStartDate] = useState(
@@ -48,7 +58,19 @@ export default function BacktestPanel({ tradingConfig: initialConfig, onConfigCh
     setError(null);
     setResults(null);
 
+    // Show progress modal
+    setShowProgress(true);
+    setProgressStage('fetching');
+    setProgressPercent(0);
+    setProgressMessage('正在从Binance获取历史K线数据...');
+
     try {
+      // Simulate fetching progress
+      setProgressPercent(10);
+      await new Promise(resolve => setTimeout(resolve, 300));
+      setProgressPercent(30);
+      setProgressMessage('连接到Binance API...');
+
       const response = await fetch('/api/trading/backtest', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -62,12 +84,23 @@ export default function BacktestPanel({ tradingConfig: initialConfig, onConfigCh
         }),
       });
 
+      setProgressPercent(50);
+      setProgressMessage('数据下载完成，开始运行回测策略...');
+      setProgressStage('running');
+
       if (!response.ok) {
         const errorData = await response.json();
         throw new Error(errorData.error || 'Backtest failed');
       }
 
+      setProgressPercent(75);
+      setProgressMessage('正在计算交易信号...');
+
       const data: BacktestResult = await response.json();
+
+      setProgressPercent(90);
+      setProgressMessage('正在生成统计报告...');
+
       setResults(data);
 
       // Save results to localStorage for history page
@@ -78,8 +111,18 @@ export default function BacktestPanel({ tradingConfig: initialConfig, onConfigCh
       if ((data as any).candles) {
         localStorage.setItem('latest_backtest_candles', JSON.stringify((data as any).candles));
       }
+
+      // Complete
+      setProgressPercent(100);
+      setProgressStage('complete');
+      setProgressMessage('回测完成！');
+
+      // Auto close after 1 second
+      await new Promise(resolve => setTimeout(resolve, 1000));
+      setShowProgress(false);
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Unknown error');
+      setShowProgress(false);
     } finally {
       setLoading(false);
     }
@@ -359,6 +402,14 @@ export default function BacktestPanel({ tradingConfig: initialConfig, onConfigCh
           </div>
         </motion.div>
       )}
+
+      {/* Progress Modal */}
+      <BacktestProgress
+        isOpen={showProgress}
+        stage={progressStage}
+        progress={progressPercent}
+        message={progressMessage}
+      />
     </div>
   );
 }

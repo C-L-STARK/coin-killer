@@ -1,14 +1,17 @@
 "use client";
 
 import React, { useEffect, useRef } from 'react';
+import type { TradingConfig } from '@/lib/trading/types';
 
 interface LiveTradingChartProps {
   symbol: string;
   interval: string;
+  config: TradingConfig;
 }
 
-export default function LiveTradingChart({ symbol, interval }: LiveTradingChartProps) {
+export default function LiveTradingChart({ symbol, interval, config }: LiveTradingChartProps) {
   const containerRef = useRef<HTMLDivElement>(null);
+  const widgetRef = useRef<any>(null);
 
   useEffect(() => {
     if (!containerRef.current) return;
@@ -16,13 +19,65 @@ export default function LiveTradingChart({ symbol, interval }: LiveTradingChartP
     // Clear existing content
     containerRef.current.innerHTML = '';
 
+    // Generate unique ID
+    const widgetId = `tradingview_${Math.random().toString(36).substring(7)}`;
+    containerRef.current.id = widgetId;
+
     // Create TradingView widget script
     const script = document.createElement('script');
     script.src = 'https://s3.tradingview.com/tv.js';
     script.async = true;
     script.onload = () => {
       if (containerRef.current && (window as any).TradingView) {
-        new (window as any).TradingView.widget({
+        // Build studies array based on strategy config
+        const studies = [];
+
+        // Bollinger Bands - 布林带
+        studies.push({
+          id: 'BB@tv-basicstudies',
+          inputs: {
+            length: config.strategy.indicators.bollinger.period,
+            stdDev: config.strategy.indicators.bollinger.deviation,
+          },
+        });
+
+        // MACD
+        studies.push({
+          id: 'MACD@tv-basicstudies',
+          inputs: {
+            fastLength: config.strategy.indicators.macd.fastPeriod,
+            slowLength: config.strategy.indicators.macd.slowPeriod,
+            signalLength: config.strategy.indicators.macd.signalPeriod,
+          },
+        });
+
+        // CCI - Commodity Channel Index
+        studies.push({
+          id: 'CCI@tv-basicstudies',
+          inputs: {
+            length: config.strategy.indicators.cci.period,
+          },
+        });
+
+        // SuperTrend
+        studies.push({
+          id: 'SuperTrend@tv-basicstudies',
+          inputs: {
+            Factor: config.strategy.indicators.supertrend.multiplier,
+            'ATR Period': config.strategy.indicators.supertrend.period,
+          },
+        });
+
+        // Note: Keltner Channel might not be available by default in TradingView free version
+        // Add ATR as a workaround since Keltner uses ATR
+        studies.push({
+          id: 'ATR@tv-basicstudies',
+          inputs: {
+            length: config.strategy.indicators.keltner.atrPeriod,
+          },
+        });
+
+        widgetRef.current = new (window as any).TradingView.widget({
           autosize: true,
           symbol: `BINANCE:${symbol}`,
           interval: mapInterval(interval),
@@ -34,20 +89,13 @@ export default function LiveTradingChart({ symbol, interval }: LiveTradingChartP
           enable_publishing: false,
           hide_side_toolbar: false,
           allow_symbol_change: true,
-          container_id: containerRef.current.id,
-          studies: [
-            'BB@tv-basicstudies', // Bollinger Bands
-            'MASimple@tv-basicstudies', // Moving Average
-          ],
+          container_id: widgetId,
+          studies,
           disabled_features: ['use_localstorage_for_settings'],
           enabled_features: ['study_templates'],
         });
       }
     };
-
-    // Generate unique ID
-    const widgetId = `tradingview_${Math.random().toString(36).substring(7)}`;
-    containerRef.current.id = widgetId;
 
     document.body.appendChild(script);
 
@@ -55,8 +103,9 @@ export default function LiveTradingChart({ symbol, interval }: LiveTradingChartP
       if (script.parentNode) {
         script.parentNode.removeChild(script);
       }
+      widgetRef.current = null;
     };
-  }, [symbol, interval]);
+  }, [symbol, interval, config]);
 
   return (
     <div className="w-full bg-white dark:bg-gray-900 border-2 border-black dark:border-white">

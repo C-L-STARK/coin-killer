@@ -66,37 +66,37 @@ export default function CompactStrategyConfig({
   };
 
   // 预设配置
-  const applyPreset = (preset: 'conservative' | 'moderate' | 'aggressive') => {
-    const presets = {
-      conservative: {
-        aggressiveness: 1 as 1 | 2 | 3,
-        trailingActivation: 1.0,
-        trailingDistance: 1.2,
-        maxDailyLoss: 300,
-        maxDrawdown: 0.08,
-        positionSize: 10, // USDT
-        leverage: 5,
-      },
-      moderate: {
-        aggressiveness: 2 as 1 | 2 | 3,
-        trailingActivation: 0.8,
-        trailingDistance: 1.0,
-        maxDailyLoss: 500,
-        maxDrawdown: 0.10,
-        positionSize: 10, // USDT
-        leverage: 10,
-      },
-      aggressive: {
-        aggressiveness: 3 as 1 | 2 | 3,
-        trailingActivation: 0.6,
-        trailingDistance: 0.8,
-        maxDailyLoss: 800,
-        maxDrawdown: 0.15,
-        positionSize: 10, // USDT
-        leverage: 20,
-      },
-    };
+  const presets = {
+    conservative: {
+      aggressiveness: 1 as 1 | 2 | 3,
+      trailingActivation: 1.0,
+      trailingDistance: 1.2,
+      maxDailyLoss: 300,
+      maxDrawdown: 0.08,
+      positionSize: 10, // USDT
+      leverage: 5,
+    },
+    moderate: {
+      aggressiveness: 2 as 1 | 2 | 3,
+      trailingActivation: 0.8,
+      trailingDistance: 1.0,
+      maxDailyLoss: 500,
+      maxDrawdown: 0.10,
+      positionSize: 10, // USDT
+      leverage: 10,
+    },
+    aggressive: {
+      aggressiveness: 3 as 1 | 2 | 3,
+      trailingActivation: 0.6,
+      trailingDistance: 0.8,
+      maxDailyLoss: 800,
+      maxDrawdown: 0.15,
+      positionSize: 10, // USDT
+      leverage: 20,
+    },
+  };
 
+  const applyPreset = (preset: 'conservative' | 'moderate' | 'aggressive') => {
     const p = presets[preset];
     onConfigChange({
       ...config,
@@ -115,6 +115,19 @@ export default function CompactStrategyConfig({
       },
     });
   };
+
+  // 检测当前配置匹配哪个预设
+  const getCurrentPreset = (): 'conservative' | 'moderate' | 'aggressive' | null => {
+    const { aggressiveness } = config.strategy;
+    const { leverage } = config.risk;
+
+    if (aggressiveness === 1 && leverage === 5) return 'conservative';
+    if (aggressiveness === 2 && leverage === 10) return 'moderate';
+    if (aggressiveness === 3 && leverage === 20) return 'aggressive';
+    return null;
+  };
+
+  const currentPreset = getCurrentPreset();
 
   return (
     <div className="bg-white dark:bg-gray-800 border-2 border-black dark:border-white">
@@ -144,19 +157,31 @@ export default function CompactStrategyConfig({
               <div className="grid grid-cols-3 gap-2">
                 <button
                   onClick={() => applyPreset('conservative')}
-                  className="px-3 py-2 text-sm font-bold bg-white dark:bg-gray-900 border-2 border-gray-300 dark:border-gray-700 hover:border-black dark:hover:border-white text-black dark:text-white transition-colors"
+                  className={`px-3 py-2 text-sm font-bold border-2 transition-colors ${
+                    currentPreset === 'conservative'
+                      ? 'bg-black dark:bg-white text-white dark:text-black border-black dark:border-white'
+                      : 'bg-white dark:bg-gray-900 border-gray-300 dark:border-gray-700 hover:border-black dark:hover:border-white text-black dark:text-white'
+                  }`}
                 >
                   保守 (5x)
                 </button>
                 <button
                   onClick={() => applyPreset('moderate')}
-                  className="px-3 py-2 text-sm font-bold bg-white dark:bg-gray-900 border-2 border-gray-300 dark:border-gray-700 hover:border-black dark:hover:border-white text-black dark:text-white transition-colors"
+                  className={`px-3 py-2 text-sm font-bold border-2 transition-colors ${
+                    currentPreset === 'moderate'
+                      ? 'bg-black dark:bg-white text-white dark:text-black border-black dark:border-white'
+                      : 'bg-white dark:bg-gray-900 border-gray-300 dark:border-gray-700 hover:border-black dark:hover:border-white text-black dark:text-white'
+                  }`}
                 >
                   适中 (10x)
                 </button>
                 <button
                   onClick={() => applyPreset('aggressive')}
-                  className="px-3 py-2 text-sm font-bold bg-white dark:bg-gray-900 border-2 border-gray-300 dark:border-gray-700 hover:border-black dark:hover:border-white text-black dark:text-white transition-colors"
+                  className={`px-3 py-2 text-sm font-bold border-2 transition-colors ${
+                    currentPreset === 'aggressive'
+                      ? 'bg-black dark:bg-white text-white dark:text-black border-black dark:border-white'
+                      : 'bg-white dark:bg-gray-900 border-gray-300 dark:border-gray-700 hover:border-black dark:hover:border-white text-black dark:text-white'
+                  }`}
                 >
                   激进 (20x)
                 </button>
@@ -231,7 +256,7 @@ export default function CompactStrategyConfig({
                   type="number"
                   step="1"
                   min="1"
-                  value={config.risk.positionSize}
+                  value={config.risk.positionSize || 10}
                   onChange={(e) => updateConfig(['risk', 'positionSize'], Number(e.target.value))}
                   className="w-full px-3 py-2 text-sm border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 text-black dark:text-white focus:border-black dark:focus:border-white outline-none"
                 />
@@ -243,7 +268,7 @@ export default function CompactStrategyConfig({
                   step="1"
                   min="1"
                   max="125"
-                  value={config.risk.leverage}
+                  value={config.risk.leverage || 10}
                   onChange={(e) => updateConfig(['risk', 'leverage'], Number(e.target.value))}
                   className="w-full px-3 py-2 text-sm border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 text-black dark:text-white focus:border-black dark:focus:border-white outline-none"
                 />
