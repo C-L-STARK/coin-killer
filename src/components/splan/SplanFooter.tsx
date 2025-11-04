@@ -88,6 +88,116 @@ export default function SplanFooter() {
           </div>
         </div>
 
+        {/* Partners Section */}
+        <div className="border-t border-gray-800 pt-8 pb-8">
+          <h4 className="font-bold mb-6 text-center">{t('footer.partners.title')}</h4>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
+            {/* Brokers */}
+            <div>
+              <h5 className="font-semibold text-gray-300 mb-3">{t('footer.partners.brokers')}</h5>
+              <ul className="space-y-2">
+                <li>
+                  <a
+                    href="https://i.ecmarkets.com/api/client/pm/2/99R9C"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-400 hover:text-white transition-colors flex items-center gap-2"
+                  >
+                    <span>EC Markets</span>
+                    <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://my.tickmill.com?utm_campaign=ib_link&utm_content=IB47958600&utm_medium=Open+Account&utm_source=link&lp=https%3A%2F%2Fmy.tickmill.com%2Fzh%2Fsign-up%2F"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-400 hover:text-white transition-colors flex items-center gap-2"
+                  >
+                    <span>TickMill</span>
+                    <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            {/* Platforms & Tools */}
+            <div>
+              <h5 className="font-semibold text-gray-300 mb-3">{t('footer.partners.platforms')}</h5>
+              <ul className="space-y-2">
+                <li>
+                  <a
+                    href="https://metaapi.cloud/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-400 hover:text-white transition-colors flex items-center gap-2"
+                  >
+                    <span>MetaAPI ({t('footer.partners.copytrading')})</span>
+                    <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.metatrader4.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-400 hover:text-white transition-colors flex items-center gap-2"
+                  >
+                    <span>MetaTrader 4/5 ({t('footer.partners.tools')})</span>
+                    <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            {/* Prop Firms */}
+            <div>
+              <h5 className="font-semibold text-gray-300 mb-3">{t('footer.partners.propfirms')}</h5>
+              <ul className="space-y-2">
+                <li>
+                  <a
+                    href="https://ftmo.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-400 hover:text-white transition-colors flex items-center gap-2"
+                  >
+                    <span>FTMO</span>
+                    <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <div className="text-gray-400">
+                    <a
+                      href="https://fundednext.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-white transition-colors inline-flex items-center gap-2"
+                    >
+                      <span>FundedNext</span>
+                      <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                      </svg>
+                    </a>
+                    <div className="text-xs mt-1 text-gray-500">
+                      {t('footer.partners.referral')}: <span className="font-mono text-gray-400">REFQKEAYK</span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
         {/* Bottom */}
         <div className="border-t border-gray-800 pt-8 text-center text-sm text-gray-400">
           <p>2024-2025 {t('footer.copyright')}</p>

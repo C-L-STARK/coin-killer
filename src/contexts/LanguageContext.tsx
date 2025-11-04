@@ -164,6 +164,13 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.contact.apply': '立即申请',
     'footer.copyright': '© 汇刃 · 专业外汇交易员培训平台 · fxkiller.com',
     'footer.disclaimer': ' 外汇交易有风险，投资需谨慎 · 本站内容仅供学习参考，不构成投资建议',
+    'footer.partners.title': '合作伙伴',
+    'footer.partners.brokers': '合作经纪商',
+    'footer.partners.platforms': '合作平台',
+    'footer.partners.propfirms': '自营交易公司',
+    'footer.partners.tools': '交易工具',
+    'footer.partners.copytrading': '跟单平台',
+    'footer.partners.referral': '推荐码',
 
     // Join Us Page
     'joinus.hero.badge': 'PROFESSIONAL TRADER TRAINING',
@@ -604,6 +611,13 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.contact.apply': 'Apply Now',
     'footer.copyright': '© FX Killer · Professional Forex Trader Training Platform · fxkiller.com',
     'footer.disclaimer': ' Forex trading carries risk, investment requires caution · Site content for learning reference only, not investment advice',
+    'footer.partners.title': 'Partners',
+    'footer.partners.brokers': 'Partner Brokers',
+    'footer.partners.platforms': 'Platforms',
+    'footer.partners.propfirms': 'Prop Firms',
+    'footer.partners.tools': 'Trading Tools',
+    'footer.partners.copytrading': 'Copy Trading',
+    'footer.partners.referral': 'Referral Code',
 
     // Join Us Page
     'joinus.hero.badge': 'PROFESSIONAL TRADER TRAINING',
