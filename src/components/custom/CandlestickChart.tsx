@@ -574,9 +574,9 @@ export default function CandlestickChart() {
 
       // ===== SUB CHART (1/3 bottom) - Golden/Death Cross =====
 
-      // Draw separator line
-      ctx.strokeStyle = 'rgba(100, 100, 100, 0.8)';
-      ctx.lineWidth = 2;
+      // Draw separator line (lighter and thinner)
+      ctx.strokeStyle = 'rgba(200, 200, 200, 0.6)';
+      ctx.lineWidth = 1;
       ctx.beginPath();
       ctx.moveTo(0, subChartTop);
       ctx.lineTo(rect.width, subChartTop);
@@ -607,6 +607,17 @@ export default function CandlestickChart() {
         minEma -= emaPadding;
         maxEma += emaPadding;
         const emaValueRange = maxEma - minEma;
+
+        // Draw zero axis line (horizontal dashed line)
+        const zeroLineY = subChartTop + subChartHeight / 2; // Middle of sub chart
+        ctx.strokeStyle = 'rgba(180, 180, 180, 0.6)'; // Light gray
+        ctx.lineWidth = 1;
+        ctx.setLineDash([5, 5]); // Dashed line
+        ctx.beginPath();
+        ctx.moveTo(0, zeroLineY);
+        ctx.lineTo(rect.width, zeroLineY);
+        ctx.stroke();
+        ctx.setLineDash([]); // Reset dash
 
         // Draw EMA12 line (fast line - black 1px)
         ctx.strokeStyle = 'rgba(0, 0, 0, 1)'; // Black
