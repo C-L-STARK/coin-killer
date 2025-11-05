@@ -183,7 +183,7 @@ export default async function EducationPage({ params }: { params: Promise<{ loca
                       }`}
                     >
                       <div className="flex items-center justify-between">
-                        <span className="font-bold">{courseTitle}</span>
+                        <span className="font-bold text-black dark:text-white group-hover:text-white dark:group-hover:text-black">{courseTitle}</span>
                         {statusText && (
                           <span className={`text-xs px-3 py-1 border-2 ${
                             isPopular
