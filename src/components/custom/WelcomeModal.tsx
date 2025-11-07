@@ -95,6 +95,41 @@ const WelcomeModal = forwardRef<WelcomeModalHandle>((props, ref) => {
   const isMinimized = modalState === 'minimized';
   const isExpanded = modalState === 'expanded';
 
+  const containerVariants = {
+    expanded: {
+      top: '50%',
+      left: '50%',
+      right: 'auto',
+      bottom: 'auto',
+      x: '-50%',
+      y: '-50%',
+      width: 'calc(100% - 2rem)',
+      maxWidth: '56rem',
+      maxHeight: '90vh',
+      transition: {
+        type: 'spring',
+        damping: 25,
+        stiffness: 300,
+      },
+    },
+    minimized: {
+      top: 'auto',
+      left: 'auto',
+      right: '2rem',
+      bottom: '10rem',
+      x: 0,
+      y: 0,
+      width: '20rem',
+      maxWidth: '20rem',
+      maxHeight: 'auto',
+      transition: {
+        type: 'spring',
+        damping: 25,
+        stiffness: 300,
+      },
+    },
+  };
+
   return (
     <>
       {/* 大弹窗背景遮罩 - 只在展开时显示 */}
@@ -115,35 +150,12 @@ const WelcomeModal = forwardRef<WelcomeModalHandle>((props, ref) => {
         )}
       </AnimatePresence>
 
-      {/* 统一的视频容器 - 通过 CSS 控制位置和大小 */}
+      {/* 统一的视频容器 - 通过 variants 控制位置和大小 */}
       <motion.div
         initial={false}
-        animate={{
-          scale: 1,
-          opacity: 1,
-        }}
+        animate={isExpanded ? 'expanded' : 'minimized'}
+        variants={containerVariants}
         className="fixed z-50 bg-white dark:bg-gray-900 border-2 border-black dark:border-white shadow-2xl overflow-hidden flex flex-col"
-        style={
-          isExpanded
-            ? {
-                top: '50%',
-                left: '50%',
-                right: 'auto',
-                bottom: 'auto',
-                transform: 'translate(-50%, -50%)',
-                width: 'calc(100% - 2rem)',
-                maxWidth: '56rem',
-                maxHeight: '90vh',
-              }
-            : {
-                top: 'auto',
-                left: 'auto',
-                right: '2rem',
-                bottom: '10rem',
-                width: '20rem',
-                transform: 'none',
-              }
-        }
       >
         {/* 标题栏 - 根据状态显示不同内容 */}
         <div
