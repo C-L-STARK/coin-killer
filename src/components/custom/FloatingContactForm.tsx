@@ -16,7 +16,7 @@ export default function FloatingContactForm() {
   const { language } = useLanguage();
   const isZh = language === 'zh';
 
-  const emailAddress = "x.stark.dylan@gmail.com";
+  const emailAddress = "bikiller.com@gmail.com";
   const siteUrl = "https://bikiller.com";
 
   const handleSubmit = async (e: React.FormEvent) => {
