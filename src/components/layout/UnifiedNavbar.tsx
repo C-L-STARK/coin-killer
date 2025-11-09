@@ -117,16 +117,16 @@ export default function UnifiedNavbar() {
           : 'bg-white dark:bg-gray-900'
       } border-b border-gray-200 dark:border-gray-800`}
     >
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo - 靠左 */}
-          <div className="flex items-center space-x-8">
+          <div className="flex items-center space-x-6">
             <LocaleLink href="/" className="flex items-center group">
               <span className="text-2xl"><BrandName /></span>
             </LocaleLink>
 
             {/* Desktop Navigation - 紧跟 Logo */}
-            <div className="hidden md:flex items-center space-x-1">
+            <div className="hidden md:flex items-center">
               {navItems.map((item, index) => (
               <div
                 key={index}
@@ -136,7 +136,7 @@ export default function UnifiedNavbar() {
               >
                 <LocaleLink
                   href={item.link}
-                  className="relative px-4 py-2 text-sm font-medium transition-colors group flex items-center gap-1"
+                  className="relative px-3 py-2 text-sm font-medium transition-colors group flex items-center gap-1"
                 >
                   <span
                     className={`relative z-10 ${
