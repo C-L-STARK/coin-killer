@@ -1,7 +1,6 @@
 "use client";
 
 import React from 'react';
-import Image from 'next/image';
 import { motion } from 'motion/react';
 import { useLanguage } from '@/contexts/LanguageContext';
 
@@ -21,8 +20,11 @@ export default function PartnersLogos() {
   const { language } = useLanguage();
   const isZh = language === 'zh';
 
+  // 双倍数组用于无缝循环
+  const doubledLogos = [...logos, ...logos];
+
   return (
-    <section className="py-16 bg-white dark:bg-white">
+    <section className="py-16 bg-white dark:bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
         {/* Title */}
         <motion.div
@@ -42,30 +44,35 @@ export default function PartnersLogos() {
           </p>
         </motion.div>
 
-        {/* Logos Horizontal Scroll */}
-        <div className="overflow-x-auto pb-4">
-          <div className="flex items-center gap-12 min-w-max px-4">
-            {logos.map((logo, index) => (
-              <motion.div
-                key={logo.id}
-                initial={{ opacity: 0, scale: 0.8 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="flex-shrink-0 w-40 h-20 flex items-center justify-center hover:scale-110 transition-transform duration-300"
+        {/* Logos Auto Scroll */}
+        <div className="relative">
+          <motion.div
+            className="flex gap-12"
+            animate={{
+              x: [0, -100 * logos.length],
+            }}
+            transition={{
+              x: {
+                repeat: Infinity,
+                repeatType: "loop",
+                duration: 20,
+                ease: "linear",
+              },
+            }}
+          >
+            {doubledLogos.map((logo, index) => (
+              <div
+                key={`${logo.id}-${index}`}
+                className="flex-shrink-0 w-40 h-20"
               >
-                <div className="relative w-full h-full">
-                  <Image
-                    src={logo.src}
-                    alt={logo.alt}
-                    fill
-                    className="object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
-                    sizes="160px"
-                  />
-                </div>
-              </motion.div>
+                <img
+                  src={logo.src}
+                  alt={logo.alt}
+                  className="w-full h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300 hover:scale-110"
+                />
+              </div>
             ))}
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
