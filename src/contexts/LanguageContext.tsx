@@ -34,7 +34,7 @@ const translations: Record<Language, Record<string, string>> = {
 
     // Hero Section
     'hero.title': 'Professional FX Trader Training Platform',
-    'hero.subtitle': '精准、专业、高效 - 培养真正的外汇交易专家',
+    'hero.subtitle': '精准、专业、高效 - 免费培养真正的外汇交易专家',
     'hero.cta.learn': '了解外汇培训',
     'hero.cta.dashboard': '进入交易系统',
 
@@ -513,7 +513,7 @@ const translations: Record<Language, Record<string, string>> = {
 
     // Hero Section
     'hero.title': 'Professional FX Trader Training Platform',
-    'hero.subtitle': 'Precise, Professional, Efficient - Cultivating True Forex Trading Experts',
+    'hero.subtitle': 'Precise, Professional, Efficient - Free Training for True Forex Trading Experts',
     'hero.cta.learn': 'Learn About Forex Training',
     'hero.cta.dashboard': 'Enter Trading System',
 

@@ -90,9 +90,23 @@ const DummyContent = () => {
 
             {/* Subtitle */}
             <FadeInSlide direction="right" delay={0.4}>
-              <p className="text-2xl md:text-3xl lg:text-4xl text-black dark:text-white font-bold leading-tight">
-                {t('hero.subtitle')}
-              </p>
+              <div className="text-2xl md:text-3xl lg:text-4xl text-black dark:text-white font-bold leading-tight space-y-2">
+                {language === 'zh' ? (
+                  <>
+                    <p>精准、专业、高效</p>
+                    <p>
+                      <span className="inline-block bg-black dark:bg-white text-white dark:text-black px-3 py-1 animate-pulse">免费培养</span>真正的外汇交易专家
+                    </p>
+                  </>
+                ) : (
+                  <>
+                    <p>Precise, Professional, Efficient</p>
+                    <p>
+                      <span className="inline-block bg-black dark:bg-white text-white dark:text-black px-3 py-1 animate-pulse">Free Training</span> for True Forex Trading Experts
+                    </p>
+                  </>
+                )}
+              </div>
             </FadeInSlide>
 
             {/* CTAs */}
