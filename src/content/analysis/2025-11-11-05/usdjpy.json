@@ -1,0 +1,30 @@
+{
+  "symbol": "USD/JPY",
+  "name": "US Dollar vs Japanese Yen",
+  "nameCn": "美元/日元",
+  "timestamp": "2025-11-11T05:41:22.160Z",
+  "price": {
+    "close": "154.17599",
+    "high": "154.31000",
+    "low": "154.16200",
+    "open": "154.29900",
+    "change": "-0.08",
+    "datetime": "2025-11-11 16:00:00"
+  },
+  "indicators": {
+    "rsi": 56.47158,
+    "macd": 0.13084944,
+    "macd_signal": 0.13816741,
+    "sma20": 154.13035
+  },
+  "analysis": {
+    "zh": {
+      "title": "美元/日元技术分析：[震荡整理]",
+      "content": "当前美元/日元汇率在154.17599附近波动，近期走势表现出一定的震荡整理特征。虽然价格在高点154.31000和低点154.16200之间反复测试，但整体趋势未明显改变，显示出市场参与者的谨慎情绪。短期内，若未能突破154.31000的阻力位，可能会继续在此区间内整理。\n\n从技术指标来看，MACD目前显示出微弱的买入信号，但由于缺乏RSI数据，无法全面评估相对强弱情况。20日简单移动平均线(SMA)在154.13035附近为近期支撑位，若价格跌破该水平，可能会引发进一步的下行压力，需密切关注市场动态。\n\n支撑位方面，154.13035是关键支撑，若此处失守，可能将引发空头趋势。而在阻力位方面，154.31000则是短期内的强阻力，若价格突破该水平，可能会引发更大幅度的上涨。投资者需关注这两个关键水平的突破情况，以做出相应的交易决策。\n\n基于当前市场情况，建议投资者采取观望态度，等待价格明确突破支撑或阻力后再作进一步操作。若价格突破154.31000，可考虑适度买入，而若跌破154.13035，则建议及时止损，避免更大损失。保持灵活应对的策略，将有助于在波动市场中把握交易机会。"
+    },
+    "en": {
+      "title": "US Dollar vs Japanese Yen Technical Analysis",
+      "content": "The USD/JPY pair is currently trading at 154.17599, showing a slight decline of 0.08% in the past 24 hours. This minor pullback appears to be occurring within a broader uptrend, as indicated by the recent high of 154.31000. The price is hovering near the 20-day Simple Moving Average (SMA) of 154.13035, which acts as a dynamic support level. A sustained move above this SMA could reinforce bullish sentiment, while a breach below may signal a potential shift in market dynamics.\n\nIn terms of momentum indicators, the MACD value of 0.13084944 suggests that the upward momentum is still intact, although the lack of a signal line makes it difficult to ascertain the strength of this trend. Traders should monitor for potential divergence or convergence patterns that could indicate a reversal or continuation of the current trend. Without an RSI value available, assessing overbought or oversold conditions remains limited, underscoring the importance of price action in current analysis.\n\nKey support levels to watch include the recent low of 154.16200, which could act as a critical pivot point. If the price were to dip below this level, it may trigger further selling pressure, leading to a test of lower support levels. Conversely, resistance is identified at 154.31000, where sellers may emerge. A decisive break above this level could open the door for further gains, possibly targeting psychological levels around 155.00.\n\nFor traders, the current price action presents an opportunity to consider long positions if the price holds above the SMA and shows signs of strength. Conversely, those with short positions should remain cautious, especially if the market approaches the 154.16200 support level. Utilizing a combination of price action analysis and risk management strategies will be crucial in navigating this dynamic currency pair."
+    }
+  }
+}

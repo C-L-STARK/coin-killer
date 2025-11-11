@@ -1,0 +1,30 @@
+{
+  "symbol": "USD/CAD",
+  "name": "US Dollar vs Canadian Dollar",
+  "nameCn": "美元/加元",
+  "timestamp": "2025-11-11T05:42:44.987Z",
+  "price": {
+    "close": "1.40333",
+    "high": "1.40375",
+    "low": "1.40280",
+    "open": "1.40364",
+    "change": "-0.02",
+    "datetime": "2025-11-11 16:00:00"
+  },
+  "indicators": {
+    "rsi": 52.10851,
+    "macd": -0.00025663779,
+    "macd_signal": -0.00067280452,
+    "sma20": 1.40221
+  },
+  "analysis": {
+    "zh": {
+      "title": "美元/加元技术分析：[震荡整理，短期关注支撑位]",
+      "content": "当前美元/加元的价格为1.40333，整体表现出震荡整理的趋势。在过去24小时内，价格变化幅度较小，仅下跌0.02%。高点1.40375与低点1.40280的区间表明市场仍在寻找方向，短期内可能继续在这个区间内波动。\n\n从技术指标来看，虽然RSI暂时缺失，但我们可以参考20日简单移动平均线(SMA)的表现。当前SMA为1.40221，价格位于其上方，显示出一定的上行动能。然而，MACD指标呈现轻微负值，暗示短期内买方力量可能不足，需谨慎观察。\n\n在支撑与阻力方面，重要支撑位在1.40280附近，若价格跌破该水平，可能引发进一步回调。阻力位则在1.40375，若价格突破该点，可能重新测试更高水平。交易者应密切关注这些关键水平，以便制定相应的交易策略。\n\n综上所述，短期内建议采取观望态度，关注支撑位和阻力位的突破情况。如果价格稳定在支撑位之上，可考虑适度进场做多，反之则需防范下行风险。"
+    },
+    "en": {
+      "title": "US Dollar vs Canadian Dollar Technical Analysis",
+      "content": "The USD/CAD pair is currently trading at 1.40333, showing a slight 24-hour change of -0.02%. This minor decline suggests a consolidation phase following a period of relative stability. The price remains within a defined range, oscillating between a high of 1.40375 and a low of 1.40280. This tight trading range indicates indecision in the market, and traders should closely monitor for potential breakout scenarios in either direction.\n\nFrom a trend analysis perspective, the pair is exhibiting a mild bullish bias due to its position above the 20-period Simple Moving Average (SMA) at 1.40221. This SMA often acts as dynamic support, providing a level where buyers may step in to maintain upward momentum. However, with the recent price action showing limited upward movement, a sustained breach below the SMA could signal a reversal in trend, prompting caution among bullish traders.\n\nIn terms of support and resistance, the immediate support level can be identified at 1.40280, while resistance is seen at 1.40375. A breakout above this resistance could lead to a test of higher levels, potentially targeting 1.40500. Conversely, should the price penetrate the support level, it may open the door for declines towards the next support zone around 1.40000. Traders should remain vigilant for these levels, as they will be critical in determining the next directional move.\n\nGiven the current technical setup, a cautious approach is recommended. Traders might consider waiting for confirmation of a breakout either above resistance or below support before entering positions. A move above 1.40375 could present a buying opportunity, while a drop below 1.40280 could trigger selling interest. Employing appropriate risk management and monitoring macroeconomic factors influencing both currencies will be essential for successful trading in this pair."
+    }
+  }
+}
