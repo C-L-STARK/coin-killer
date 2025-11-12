@@ -12,10 +12,10 @@ import Testimonials from '@/components/custom/Testimonials';
 import StatsSection from '@/components/custom/StatsSection';
 import InterviewCTA from '@/components/custom/InterviewCTA';
 import PartnersLogos from '@/components/custom/PartnersLogos';
-import CandlestickChart from '@/components/custom/CandlestickChart';
 import Image from 'next/image';
 import { useLanguage } from '@/contexts/LanguageContext';
 import ShineButton from '@/components/custom/ShineButton';
+import { CosmicPortal } from '@/components/ui/cosmic-portal';
 import { NeuralBackground } from '@/components/ui/neural-background';
 
 const DummyContent = () => {
@@ -56,42 +56,33 @@ const DummyContent = () => {
   }, [profitImages.length]);
 
   return (
-    <div className="w-full -mt-20">
-      {/* K-line Chart Background - Full Page */}
-      <div className="fixed inset-0 w-full h-full -z-10">
-        <CandlestickChart />
+    <div className="w-full">
+      {/* Neural Background - Full Page - Always Dark */}
+      <div className="fixed inset-0 w-full h-full -z-10 bg-black">
+        <NeuralBackground
+          hue={200}
+          saturation={0.5}
+          chroma={0.4}
+          isDark={true}
+        />
       </div>
 
       {/* Hero Section */}
       <div className="relative overflow-hidden h-screen">
-        {/* Gradient Overlay - from left (opaque) to right (transparent) */}
-        <div
-          className="absolute inset-0 w-full h-full pointer-events-none"
-          style={{
-            background: 'linear-gradient(to right, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.85) 30%, rgba(255, 255, 255, 0.3) 60%, rgba(255, 255, 255, 0) 100%)'
-          }}
-        />
-        <div
-          className="absolute inset-0 w-full h-full pointer-events-none dark:block hidden"
-          style={{
-            background: 'linear-gradient(to right, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.85) 30%, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0) 100%)'
-          }}
-        />
-
         {/* Content Overlay - Centered in viewport */}
         <div className="relative z-10 flex items-center h-full">
           <div className="max-w-7xl mx-auto px-6 w-full">
             <div className="max-w-3xl flex flex-col space-y-10">
             {/* Main Title */}
             <ScaleFadeIn delay={0.2}>
-              <h1 className="text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-black text-black dark:text-white tracking-tight leading-none">
+              <h1 className="text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-black text-white tracking-tight leading-none">
                 <BrandName />
               </h1>
             </ScaleFadeIn>
 
             {/* Subtitle */}
             <FadeInSlide direction="right" delay={0.4}>
-              <div className="text-2xl md:text-3xl lg:text-4xl text-black dark:text-white font-bold leading-tight space-y-2">
+              <div className="text-2xl md:text-3xl lg:text-4xl text-white font-bold leading-tight space-y-2">
                 {language === 'zh' ? (
                   <>
                     <p>精准、专业、高效</p>
