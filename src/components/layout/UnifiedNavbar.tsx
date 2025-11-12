@@ -87,7 +87,8 @@ export default function UnifiedNavbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 10);
+      const scrollPosition = window.scrollY;
+      setScrolled(scrollPosition > 50); // 滚动超过50px时显示导航栏
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -114,7 +115,8 @@ export default function UnifiedNavbar() {
   return (
     <motion.nav
       initial={{ y: -100 }}
-      animate={{ y: 0 }}
+      animate={{ y: scrolled ? 0 : -100 }}
+      transition={{ duration: 0.3, ease: 'easeInOut' }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
           ? 'bg-white/95 dark:bg-gray-900/95 backdrop-blur-md shadow-lg'
