@@ -95,6 +95,13 @@ export default function UnifiedNavbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // 判断是否在首页
+  const isHomePage = () => {
+    const pathSegments = pathname.split('/').filter(Boolean);
+    // 如果只有语言代码或者没有路径，说明是首页
+    return pathSegments.length === 0 || (pathSegments.length === 1 && (pathSegments[0] === 'zh' || pathSegments[0] === 'en'));
+  };
+
   // Close mobile menu when route changes
   useEffect(() => {
     setIsMobileMenuOpen(false);
@@ -115,7 +122,7 @@ export default function UnifiedNavbar() {
   return (
     <motion.nav
       initial={{ y: -100 }}
-      animate={{ y: scrolled ? 0 : -100 }}
+      animate={{ y: isHomePage() ? (scrolled ? 0 : -100) : 0 }}
       transition={{ duration: 0.3, ease: 'easeInOut' }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
