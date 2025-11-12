@@ -1,0 +1,30 @@
+{
+  "symbol": "AUD/USD",
+  "name": "Australian Dollar vs US Dollar",
+  "nameCn": "澳元/美元",
+  "timestamp": "2025-11-12T13:50:14.106Z",
+  "price": {
+    "close": "0.65366",
+    "high": "0.65438",
+    "low": "0.65349",
+    "open": "0.65419",
+    "change": "-0.08",
+    "datetime": "2025-11-13 00:00:00"
+  },
+  "indicators": {
+    "rsi": 54.77969,
+    "macd": 0.00028348794,
+    "macd_signal": 0.00018463363,
+    "sma20": 0.6530655
+  },
+  "analysis": {
+    "zh": {
+      "title": "澳元/美元技术分析：[震荡整理中]",
+      "content": "当前澳元/美元(AUD/USD)在0.65366附近震荡整理，短期内缺乏明显方向。考虑到24小时变化为-0.08%，市场情绪相对谨慎。高点0.65438和低点0.65349的区间波动表明，当前价格水平可能会在该区间内继续震荡，等待进一步的市场指引。\n\n从技术指标来看，虽然当前RSI(14)数据缺失，但观察到MACD值为0.00028348794，显示出多头力量的微弱增强。SMA(20)为0.65306550，价格在其上方运行，意味着短期内仍有一定的支撑力度。若价格突破0.65438，则可能引发进一步的上涨。\n\n支撑位方面，0.65349为关键支撑区域，若跌破该水平，可能会加速下行，目标指向0.65200。相反，0.65438则是重要阻力位，突破后将有助于进一步确认上涨趋势。交易者应密切关注这些关键价位，以便及时调整策略。\n\n建议短线交易者在当前区间内寻找机会，若价格接近支撑位可考虑轻仓买入，而在接近阻力位时则可考虑卖出以规避风险。务必设置止损，以应对突发行情带来的风险。"
+    },
+    "en": {
+      "title": "Australian Dollar vs US Dollar Technical Analysis",
+      "content": "The AUD/USD pair currently trades at 0.65366, reflecting a slight decline of 0.08% over the past 24 hours. The price action has oscillated between a high of 0.65438 and a low of 0.65349, indicating a narrow trading range. This behavior suggests a consolidation phase, with the market seeking direction. Given the proximity to the recent high, a break above this level could signal bullish momentum, while a failure to hold above the recent lows may lead to increased selling pressure.\n\nTechnical indicators provide additional context for traders. The absence of available RSI data limits our ability to gauge overbought or oversold conditions, but the MACD is slightly positive at 0.00028348794, suggesting a potential for upward momentum. The SMA(20) at 0.65306550 is currently acting as a dynamic support level, and prices trading above this moving average may indicate a bullish trend. Traders should closely monitor any price action around these key levels for potential breakout opportunities.\n\nIn terms of support and resistance, immediate support is identified around the 0.65349 level, which corresponds to the recent low. A break below this could expose the pair to further downside, with the next significant support seen at 0.6500. Conversely, resistance is established at the 0.65438 high; a breakthrough here could lead to a retest of higher levels, potentially reaching the 0.6560 area. These levels will be crucial for traders seeking entry or exit points.\n\nFor trading strategies, those looking to capitalize on potential movements may consider a buy order above the 0.65438 resistance, with a stop-loss set just below the 0.65349 support. Alternatively, a sell position could be warranted if the price breaks below the 0.65349 level, targeting the next support at 0.6500. As always, risk management should be a priority, and traders should remain vigilant for economic data releases that could influence market sentiment."
+    }
+  }
+}
