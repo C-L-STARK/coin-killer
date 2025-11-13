@@ -1,0 +1,30 @@
+{
+  "symbol": "XAU/USD",
+  "name": "Gold vs US Dollar",
+  "nameCn": "黄金/美元",
+  "timestamp": "2025-11-13T02:59:16.841Z",
+  "price": {
+    "close": "4190.99417",
+    "high": "4195.41844",
+    "low": "4183.86118",
+    "open": "4192.76017",
+    "change": "-0.05",
+    "datetime": "2025-11-13 13:00:00"
+  },
+  "indicators": {
+    "rsi": 62.10603,
+    "macd": 19.53453,
+    "macd_signal": 18.91676,
+    "sma20": 4168.44494
+  },
+  "analysis": {
+    "zh": {
+      "title": "黄金/美元技术分析：[震荡整理中]",
+      "content": "当前黄金/美元的价格在4190.99附近运行，呈现出震荡整理的趋势。在过去24小时内，价格小幅下跌0.05%，显示出市场缺乏明确方向。短期内，投资者应关注价格在4183.86至4195.42区间内的波动，这一范围将为后续走势提供重要参考。\n\n从技术指标来看，虽然RSI未提供，但MACD指标显示出19.53的正值，暗示短期内仍有上涨动能。20日简单移动平均线(SMA)位于4168.44，进一步表明市场在此水平形成了支撑。若价格回调至此，可能吸引短期买盘。\n\n结合支撑与阻力位分析，4183.86被视作关键支撑位，而4195.42则为短期阻力位。若价格突破4195.42，可能引发进一步的上涨趋势。反之，跌破4183.86则可能导致更深幅度的调整。\n\n建议交易者在当前区间内寻找短线交易机会。若价格接近支撑位时，可以考虑逢低买入，风险控制在4180附近。若价格突破阻力位，则可寻找跟进买入机会，目标看向4200及其上方。"
+    },
+    "en": {
+      "title": "Gold vs US Dollar Technical Analysis",
+      "content": "The XAU/USD pair is currently trading at 4190.99, reflecting a slight decline of 0.05% over the last 24 hours. This minor retracement suggests a consolidation phase after recent fluctuations. The price has established a range between a high of 4195.42 and a low of 4183.86, indicating that market participants are weighing their positions carefully. The overall trend appears neutral, but potential bullish momentum could emerge if the price breaks above the recent high, signaling renewed buying interest.\n\nIn terms of technical indicators, the MACD reading of 19.53 suggests a bullish sentiment in the market, as it remains above zero. However, the absence of a signal line complicates the interpretation. The 20-period Simple Moving Average (SMA) at 4168.44 serves as a critical support level, which could provide a foundation for potential upward moves. If the price were to dip below this level, it may trigger further selling pressure, leading traders to reassess their positions.\n\nSupport levels are currently seen at 4183.86 and the SMA, while resistance is found around 4195.42. A decisive breakout above the resistance level could attract more buyers, potentially driving the price higher toward the next psychological level of 4200. Conversely, a failure to hold above the support may lead to a test of lower levels, with 4160 acting as a key area to monitor for potential reversal patterns.\n\nTraders should consider a waiting approach to assess how the market reacts around these critical levels. A break above 4195.42 could provide a buying opportunity, while a drop below 4183.86 may present a short-selling scenario. Keeping an eye on broader market sentiment and macroeconomic factors influencing gold prices will also be essential for making informed trading decisions in the current environment."
+    }
+  }
+}

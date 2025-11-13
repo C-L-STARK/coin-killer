@@ -1,0 +1,30 @@
+{
+  "symbol": "USD/JPY",
+  "name": "US Dollar vs Japanese Yen",
+  "nameCn": "美元/日元",
+  "timestamp": "2025-11-13T02:55:46.342Z",
+  "price": {
+    "close": "154.69701",
+    "high": "154.78999",
+    "low": "154.61600",
+    "open": "154.73199",
+    "change": "-0.02",
+    "datetime": "2025-11-13 13:00:00"
+  },
+  "indicators": {
+    "rsi": 52.6674,
+    "macd": 0.09027893,
+    "macd_signal": 0.1134291,
+    "sma20": 154.7574
+  },
+  "analysis": {
+    "zh": {
+      "title": "美元/日元技术分析：[震荡整理中]",
+      "content": "目前美元/日元的价格为154.69701，整体趋势呈现震荡整理的态势。虽然价格略微下跌0.02%，但仍处于154.6至154.8的区间内。价格未能突破154.8的高点，显示出市场的买卖力量相对平衡，短期内可能继续维持在此区间内波动。\n\n从技术指标来看，当前RSI数据缺失，但MACD显示出0.090的正值，表明短期内仍有买入动能。20日简单移动平均线(SMA)位于154.75740，价格在此附近运行，显示出这一水平的支撑作用。因此，若价格向下回调触及154.6，可能会吸引买盘介入。\n\n在支撑和阻力方面，154.6是关键支撑位，而154.8则是阻力位。如果价格突破154.8，可能会开启进一步上涨的空间，反之突破154.6则可能引发一波下跌。投资者应关注这些关键水平，以决定合适的进出场时机。\n\n综合来看，建议投资者保持观望，等待价格突破关键支撑或阻力位后再进行操作。若价格维持在此区间，短线交易者可以考虑在154.6附近寻找买入机会，而在接近154.8时则可考虑卖出。"
+    },
+    "en": {
+      "title": "US Dollar vs Japanese Yen Technical Analysis",
+      "content": "The USD/JPY pair is currently trading at 154.69701, showing a slight decline of 0.02% over the last 24 hours. The recent price action indicates a consolidation phase after reaching a high of 154.78999. This price behavior suggests that the pair is facing some resistance around the 154.80 level, while the recent low of 154.61600 serves as a potential support zone. Traders should closely monitor these levels for potential breakout or reversal opportunities.\n\nThe technical indicators provide mixed signals. The MACD is currently at 0.090278930, indicating bullish momentum, yet the absence of a signal line makes it difficult to derive a clear directional bias. Additionally, the 20-period Simple Moving Average (SMA) at 154.75740 reflects a slightly bearish sentiment, as the current price is below this moving average. This scenario could signal a pullback towards the support level, making it essential for traders to remain cautious.\n\nIn terms of support and resistance, the immediate resistance is identified at 154.80, while support can be observed around 154.62. A decisive break above the resistance could open the door for a bullish rally towards the next resistance level at 155.00. Conversely, if the support level is breached, it may suggest a continuation of the downtrend, potentially targeting a lower support at 154.50.\n\nTraders are advised to adopt a wait-and-see approach, as the current market conditions imply uncertainty. A breakout above 154.80 could provide a buying opportunity, while a drop below 154.62 may warrant short positions. Utilizing tight stop-loss orders will be prudent to manage risk effectively in this volatile environment."
+    }
+  }
+}
