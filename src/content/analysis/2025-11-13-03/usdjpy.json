@@ -1,0 +1,30 @@
+{
+  "symbol": "USD/JPY",
+  "name": "US Dollar vs Japanese Yen",
+  "nameCn": "美元/日元",
+  "timestamp": "2025-11-13T03:40:37.083Z",
+  "price": {
+    "close": "154.71600",
+    "high": "154.74600",
+    "low": "154.61800",
+    "open": "154.65401",
+    "change": "0.04",
+    "datetime": "2025-11-13 14:00:00"
+  },
+  "indicators": {
+    "rsi": 53.35587,
+    "macd": 0.079356796,
+    "macd_signal": 0.10606582,
+    "sma20": 154.7606
+  },
+  "analysis": {
+    "zh": {
+      "title": "美元/日元技术分析：[震荡整理，关注关键支撑与阻力]",
+      "content": "当前美元/日元（USD/JPY）价格为154.716，近期走势显示出震荡整理的特征。价格在高点154.746和低点154.618之间波动，表明市场在这个区间内尚未形成明确的方向。尽管出现小幅波动，但整体趋势依然偏向于强势，值得关注的是是否会突破当前的整理区间。\n\n技术指标方面，MACD显示出微弱的上涨动能，当前值为0.0793，虽然信号线尚未提供更多的确认，但这表明短期内可能存在进一步上行的空间。SMA(20)位于154.7606，作为短期趋势的参考，若价格突破此水平，可能会引发更大的买盘兴趣。\n\n在支撑和阻力方面，154.618是近期的重要支撑位，若价格跌破此水平，可能会导致更多的抛售压力。相对的，154.7606则是关键阻力位，突破该点位将可能引发多头进一步进场。投资者应密切关注这两个关键价位，以决定相应的交易策略。\n\n综合来看，建议投资者在154.618附近寻找买入机会，若价格突破154.7606则可考虑加仓。同时，设置合理的止损位以应对可能的市场波动。在当前震荡环境中，保持灵活的交易策略显得尤为重要。"
+    },
+    "en": {
+      "title": "US Dollar vs Japanese Yen Technical Analysis",
+      "content": "The USD/JPY pair is currently trading at 154.71600, showing a slight upward movement of 0.04% over the past 24 hours. The price is situated just below the recent high of 154.74600, suggesting a consolidation phase. The overall trend appears to be bullish, with the market testing resistance levels around 154.75. If the pair breaks above this resistance, it could signify a continuation of the upward trend, potentially targeting the next psychological level at 155.00.\n\nIn terms of technical indicators, the MACD value of 0.079356796 suggests a bullish momentum, although the absence of a signal line prevents a clearer interpretation of potential reversals or confirmations. The SMA(20) at 154.76060 indicates a short-term bullish sentiment, but traders should remain cautious given the proximity to resistance. The lack of an RSI value limits our understanding of the overbought or oversold conditions, which would typically provide additional context for potential price movements.\n\nSupport levels are currently positioned around 154.62, which is the lower boundary of the recent trading range. A sustained move below this level may indicate a shift in momentum, opening the door for further declines. Conversely, if the price holds above this support, traders may see it as an opportunity to enter long positions, especially if accompanied by bullish confirmation from other indicators.\n\nFor trading strategies, a break above the 154.74600 level could serve as a signal to enter long positions, targeting gains toward 155.00. Conversely, traders may consider setting stop-loss orders just below the 154.62 support level to manage risk effectively. Keeping an eye on broader market conditions, including economic releases and geopolitical factors, will also be crucial in navigating this currency pair."
+    }
+  }
+}
