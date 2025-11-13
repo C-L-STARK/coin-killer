@@ -18,11 +18,11 @@ const BacktestProgress = dynamic(() => import('./BacktestProgress'), {
 });
 
 interface BacktestPanelProps {
-  tradingConfig: TradingConfig;
+  config: TradingConfig;
   onConfigChange?: (config: TradingConfig) => void;
 }
 
-export default function BacktestPanel({ tradingConfig: initialConfig, onConfigChange }: BacktestPanelProps) {
+export default function BacktestPanel({ config: initialConfig, onConfigChange }: BacktestPanelProps) {
   const [tradingConfig, setTradingConfig] = useState<TradingConfig>(initialConfig);
   const [loading, setLoading] = useState(false);
   const [results, setResults] = useState<BacktestResult | null>(null);

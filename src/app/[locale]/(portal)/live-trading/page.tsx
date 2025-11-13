@@ -1,4 +1,5 @@
 import { getLanguageFromLocale, generateBilingualMetadata } from '@/lib/getServerLanguage';
+import { parseVideoUrl } from '@/lib/videoEmbedParser';
 import LiveTradingClient from './LiveTradingClient';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
@@ -22,20 +23,33 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   );
 }
 
-export default function LiveTradingPage() {
-  // Get matrix members from environment variable
-  // Format: 姓名|交易类型|上次直播时间|youtube直播链接;姓名2|交易类型|上次直播时间|youtube直播链接
-  const matrixMembersEnv = process.env.NEXT_PUBLIC_MATRIX_MEMBERS || '';
+export default async function LiveTradingPage() {
+  // Fetch livestreams from Supabase directly
+  let streams = [];
+  try {
+    const { supabase } = await import('@/lib/supabase');
+    const { data, error } = await supabase
+      .from('LiveStream')
+      .select('*')
+      .order('created_at', { ascending: false });
 
-  // Default 6 placeholders with names
+    if (!error && data) {
+      streams = data;
+    }
+  } catch (error) {
+    console.error('Failed to fetch livestreams:', error);
+  }
+
+  // Default 6 placeholders
   const defaultMembers = [
     {
       id: 1,
       name: 'Alex Chen',
       isLive: true,
-      youtubeId: 'T5x1oKyze7E', // Default live stream URL
+      youtubeId: 'T5x1oKyze7E',
       specialty: '趋势交易 / Trend Trading',
       lastLive: null,
+      liveUrl: 'https://youtube.com/watch?v=T5x1oKyze7E', // Default YouTube URL
     },
     {
       id: 2,
@@ -44,6 +58,7 @@ export default function LiveTradingPage() {
       youtubeId: null,
       specialty: '剥头皮交易 / Scalping',
       lastLive: '2025-11-10 14:30',
+      liveUrl: null,
     },
     {
       id: 3,
@@ -52,6 +67,7 @@ export default function LiveTradingPage() {
       youtubeId: null,
       specialty: '波段交易 / Swing Trading',
       lastLive: '2025-11-09 09:15',
+      liveUrl: null,
     },
     {
       id: 4,
@@ -60,6 +76,7 @@ export default function LiveTradingPage() {
       youtubeId: null,
       specialty: '日内交易 / Day Trading',
       lastLive: '2025-11-08 16:45',
+      liveUrl: null,
     },
     {
       id: 5,
@@ -68,6 +85,7 @@ export default function LiveTradingPage() {
       youtubeId: null,
       specialty: '突破交易 / Breakout Trading',
       lastLive: '2025-11-07 11:20',
+      liveUrl: null,
     },
     {
       id: 6,
@@ -76,49 +94,33 @@ export default function LiveTradingPage() {
       youtubeId: null,
       specialty: '新闻交易 / News Trading',
       lastLive: '2025-11-06 08:00',
+      liveUrl: null,
     },
   ];
 
-  // Parse environment variable and merge with defaults by name
-  const envMembersMap = new Map<string, any>();
+  // Convert streams to member format
+  const matrixMembers = [...defaultMembers];
 
-  if (matrixMembersEnv) {
-    matrixMembersEnv
-      .split(';')
-      .filter(m => m.trim())
-      .forEach((member) => {
-        const [name, specialty, lastLive, youtubeLink] = member.split('|').map(s => s.trim());
+  streams.forEach((stream: any, index: number) => {
+    // Parse video URL using the multi-platform parser
+    const videoEmbed = stream.live_url ? parseVideoUrl(stream.live_url) : null;
 
-        if (name) {
-          // Extract YouTube ID from link
-          let youtubeId = null;
-          if (youtubeLink) {
-            const match = youtubeLink.match(/(?:youtube\.com\/live\/|youtu\.be\/|youtube\.com\/watch\?v=)([a-zA-Z0-9_-]+)/);
-            youtubeId = match ? match[1] : null;
-          }
+    const member = {
+      id: stream.id || (index + 1),
+      name: stream.nickname,
+      isLive: !!videoEmbed,
+      youtubeId: null, // Deprecated, keeping for backwards compatibility
+      specialty: stream.description,
+      lastLive: stream.remark || null, // Always show remark if available
+      liveUrl: stream.live_url, // Full URL for multi-platform support
+    };
 
-          envMembersMap.set(name, {
-            name,
-            isLive: !!youtubeId,
-            youtubeId,
-            specialty: specialty || 'Trading',
-            lastLive: youtubeId ? null : (lastLive || null),
-          });
-        }
-      });
-  }
-
-  // Merge: if config has same name, use config value to replace placeholder
-  const matrixMembers = defaultMembers.map((defaultMember) => {
-    const envMember = envMembersMap.get(defaultMember.name);
-    if (envMember) {
-      // Replace placeholder with config
-      return {
-        id: defaultMember.id,
-        ...envMember,
-      };
+    // Replace or add members
+    if (index < 6) {
+      matrixMembers[index] = member;
+    } else {
+      matrixMembers.push(member);
     }
-    return defaultMember;
   });
 
   return <LiveTradingClient members={matrixMembers} />;

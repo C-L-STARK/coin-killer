@@ -46,7 +46,7 @@ export default function InterviewCTA() {
 
   return (
     <>
-      <section className="relative py-24 overflow-hidden bg-gradient-to-br from-black via-gray-900 to-black dark:from-gray-950 dark:via-gray-900 dark:to-black">
+      <section className="relative py-12 overflow-hidden bg-gradient-to-br from-black via-gray-900 to-black dark:from-gray-950 dark:via-gray-900 dark:to-black">
         {/* Neural Background - Light mode (白色神经网络) */}
         <div className="dark:hidden">
           <NeuralBackground

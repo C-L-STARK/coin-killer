@@ -7,6 +7,7 @@ import { getServerLanguage, generateBilingualMetadata } from '@/lib/getServerLan
 import LocaleLink from '@/components/navigation/LocaleLink';
 import ReactMarkdown from 'react-markdown';
 import InterviewCTA from '@/components/custom/InterviewCTA';
+import { supabase } from '@/lib/supabase';
 
 interface NewsPageProps {
   params: Promise<{
@@ -79,6 +80,28 @@ async function getHistoryNews(language: 'zh' | 'en', currentSlug: string, limit 
   return news;
 }
 
+// Get random 3 blog posts from Supabase
+async function getRandomBlogs(limit = 3) {
+  try {
+    const { data: blogs, error } = await supabase
+      .from('Blog')
+      .select('id, title, title_en, content, content_en, tags, tags_en, remark, remark_en, author, created_at')
+      .order('created_at', { ascending: false })
+      .limit(50); // Get recent 50, then randomize
+
+    if (error || !blogs) {
+      return [];
+    }
+
+    // Shuffle and take first 'limit' items
+    const shuffled = blogs.sort(() => 0.5 - Math.random());
+    return shuffled.slice(0, limit);
+  } catch (error) {
+    console.error('Error fetching random blogs:', error);
+    return [];
+  }
+}
+
 export async function generateMetadata({ params }: NewsPageProps) {
   const { slug, locale } = await params;
   const language = locale === 'en' ? 'en' : 'zh';
@@ -117,6 +140,7 @@ export default async function NewsDetailPage({ params }: NewsPageProps) {
 
   const news = await getNewsContent(slug, language);
   const historyNews = await getHistoryNews(language, slug);
+  const randomBlogs = await getRandomBlogs(3);
 
   if (!news) {
     notFound();
@@ -372,6 +396,72 @@ export default async function NewsDetailPage({ params }: NewsPageProps) {
           </article>
         </div>
       </div>
+
+      {/* Related Blog Posts Section */}
+      {randomBlogs.length > 0 && (
+        <div className="bg-white dark:bg-gray-900 border-t-2 border-gray-200 dark:border-gray-800 py-16">
+          <div className="max-w-7xl mx-auto px-6">
+            <h2 className="text-3xl font-black text-gray-900 dark:text-white mb-8 text-center">
+              {isZh ? '推荐阅读' : 'Recommended Reading'}
+            </h2>
+            <div className="grid md:grid-cols-3 gap-6">
+              {randomBlogs.map((blog: any) => {
+                const currentTags = isZh ? blog.tags : (blog.tags_en || blog.tags);
+                const tagList = currentTags ? currentTags.split(/[,，]/).map((tag: string) => tag.trim()).filter((tag: string) => tag) : [];
+
+                return (
+                  <LocaleLink
+                    key={blog.id}
+                    href={`/splan/blog/${blog.id}`}
+                    className="block group"
+                  >
+                    <div className="bg-gray-50 dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700 hover:border-black dark:hover:border-white transition-all p-6 h-full">
+                      {/* Tags */}
+                      {tagList.length > 0 && (
+                        <div className="mb-3">
+                          <span className="text-xs font-semibold text-gray-600 dark:text-gray-400 uppercase">
+                            {tagList[0]}
+                          </span>
+                        </div>
+                      )}
+
+                      {/* Title */}
+                      <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 group-hover:underline line-clamp-2">
+                        {isZh ? blog.title : blog.title_en}
+                      </h3>
+
+                      {/* Excerpt */}
+                      <p className="text-gray-600 dark:text-gray-400 text-sm mb-4 line-clamp-3">
+                        {isZh
+                          ? blog.content.replace(/<[^>]*>/g, '').substring(0, 120)
+                          : blog.content_en.replace(/<[^>]*>/g, '').substring(0, 120)}...
+                      </p>
+
+                      {/* Meta */}
+                      <div className="flex items-center justify-between text-xs text-gray-500 dark:text-gray-500">
+                        <span>{blog.author}</span>
+                        {(blog.remark || blog.remark_en) && (
+                          <span>{isZh ? blog.remark : (blog.remark_en || blog.remark)}</span>
+                        )}
+                      </div>
+                    </div>
+                  </LocaleLink>
+                );
+              })}
+            </div>
+
+            {/* View All Blogs Link */}
+            <div className="text-center mt-8">
+              <LocaleLink
+                href="/splan/blog"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-black dark:bg-white text-white dark:text-black font-bold hover:opacity-80 transition-opacity"
+              >
+                {isZh ? '查看所有博客文章 →' : 'View All Blog Posts →'}
+              </LocaleLink>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Training CTA Section */}
       <InterviewCTA />

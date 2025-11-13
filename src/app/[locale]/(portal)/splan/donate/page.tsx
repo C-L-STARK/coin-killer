@@ -9,7 +9,10 @@ import LocaleLink from '@/components/navigation/LocaleLink';
 export default function DonatePage() {
   const [donationAmount, setDonationAmount] = useState(0);
   const [isEmailModalOpen, setIsEmailModalOpen] = useState(false);
-  const { t } = useLanguage();
+  const [walletAddress, setWalletAddress] = useState<string>('');
+  const [loadingAddress, setLoadingAddress] = useState(true);
+  const [copied, setCopied] = useState(false);
+  const { t, language } = useLanguage();
 
   // 计算捐赠金额：从2025年10月1日开始，每天增加$5
   useEffect(() => {
@@ -19,6 +22,40 @@ export default function DonatePage() {
     const currentAmount = 999 + (daysPassed * 5);
     setDonationAmount(Math.max(999, currentAmount)); // 最低999
   }, []);
+
+  // Fetch wallet address from Config table
+  useEffect(() => {
+    const fetchWalletAddress = async () => {
+      try {
+        const response = await fetch('/api/config/COFFEE');
+        if (response.ok) {
+          const data = await response.json();
+          setWalletAddress(data.key_content || '');
+        } else {
+          console.error('Failed to fetch wallet address');
+        }
+      } catch (error) {
+        console.error('Error fetching wallet address:', error);
+      } finally {
+        setLoadingAddress(false);
+      }
+    };
+
+    fetchWalletAddress();
+  }, []);
+
+  // Copy wallet address to clipboard
+  const copyToClipboard = async () => {
+    if (walletAddress) {
+      try {
+        await navigator.clipboard.writeText(walletAddress);
+        setCopied(true);
+        setTimeout(() => setCopied(false), 2000);
+      } catch (error) {
+        console.error('Failed to copy:', error);
+      }
+    }
+  };
 
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900">
@@ -115,6 +152,44 @@ export default function DonatePage() {
                 </div>
               </div>
             </div>
+          </div>
+        </motion.div>
+
+        {/* Wallet Address Section - 新增 */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 0.25 }}
+          className="relative"
+        >
+          <div className="relative bg-white dark:bg-gray-800 p-8 border-2 border-gray-200 dark:border-gray-700 hover:border-black dark:hover:border-white transition-all">
+            <div className="text-center mb-6">
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
+                {language === 'zh' ? '捐赠地址' : 'Donation Address'}
+              </h3>
+              <p className="text-sm text-gray-600 dark:text-gray-400">
+                {language === 'zh' ? 'USDT / USDC 钱包地址' : 'USDT / USDC Wallet Address'}
+              </p>
+            </div>
+
+            {loadingAddress ? (
+              <div className="flex items-center justify-center py-6">
+                <svg className="animate-spin w-8 h-8 text-gray-400" fill="none" viewBox="0 0 24 24">
+                  <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                  <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
+              </div>
+            ) : walletAddress ? (
+              <div className="bg-gray-50 dark:bg-gray-900 p-6 border-2 border-gray-200 dark:border-gray-700">
+                <p className="font-mono text-sm md:text-base text-gray-900 dark:text-white break-all text-center">
+                  {walletAddress}
+                </p>
+              </div>
+            ) : (
+              <div className="text-center py-6 text-gray-500 dark:text-gray-400">
+                {language === 'zh' ? '暂无捐赠地址' : 'No donation address available'}
+              </div>
+            )}
           </div>
         </motion.div>
 

@@ -1,32 +1,33 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
-import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs';
-import BacktestPanel from './components/BacktestPanel';
-import LiveTradePanel from './components/LiveTradePanel';
-import TiantiPanel from './components/TiantiPanel';
 import AdminLogin from './components/AdminLogin';
+import SidebarMenu from './components/SidebarMenu';
+import TiantiPanel from './components/TiantiPanel';
+import LivestreamManager from './components/LivestreamManager';
+import BlogManager from './components/BlogManager';
+import ConfigManager from './components/ConfigManager';
+import TopTradersManager from './components/TopTradersManager';
 import { useLanguage } from '@/contexts/LanguageContext';
-import BrandName from '@/components/custom/BrandName';
 import type { TradingConfig } from '@/lib/trading/types';
 
-// 默认配置 - 回调策略（验证通过：1.75盈亏比，57.58%胜率）
+// 默认配置 - 回调策略
 const defaultConfig: TradingConfig = {
-  symbol: 'XAUUSDT', // 默认XAUUSDT黄金
-  interval: '1m', // 1分钟K线
+  symbol: 'XAUUSDT',
+  interval: '1m',
   strategy: {
-    aggressiveness: 3, // 激进模式（回调策略推荐）
-    trailingActivation: 1.5, // 1.5R激活跟踪止盈（验证通过）
-    trailingDistance: 1.0, // 1 ATR跟踪距离（验证通过）
+    aggressiveness: 3,
+    trailingActivation: 1.5,
+    trailingDistance: 1.0,
     indicators: {
       keltner: {
-        maPeriod: 20, // 肯特那通道MA周期
-        atrPeriod: 14, // ATR周期14（更稳定）
-        atrMultiple: 1.5, // 1.5倍ATR（更宽的通道）
+        maPeriod: 20,
+        atrPeriod: 14,
+        atrMultiple: 1.5,
       },
       bollinger: {
-        period: 20, // BB周期20（回调策略核心）
-        deviation: 2.0, // 2倍标准差
+        period: 20,
+        deviation: 2.0,
       },
       macd: {
         fastPeriod: 12,
@@ -34,7 +35,7 @@ const defaultConfig: TradingConfig = {
         signalPeriod: 9,
       },
       cci: {
-        period: 14, // CCI周期14（超买超卖判断）
+        period: 14,
       },
       supertrend: {
         period: 10,
@@ -43,29 +44,48 @@ const defaultConfig: TradingConfig = {
     },
   },
   risk: {
-    maxDailyLoss: 90000, // 90%资金（回测用）
-    maxDrawdown: 0.50, // 50%最大回撤（回测用）
+    maxDailyLoss: 90000,
+    maxDrawdown: 0.50,
     maxPositions: 1,
-    positionSize: 0.01, // 0.01 USDT仓位
-    leverage: 20, // 20倍杠杆
-    stopLossMultiple: 2.0, // 2 ATR止损（验证通过）
-    takeProfitLevels: [3.0, 6.0, 9.0], // 3R/6R/9R（验证通过，1.75盈亏比）
+    positionSize: 0.01,
+    leverage: 20,
+    stopLossMultiple: 2.0,
+    takeProfitLevels: [3.0, 6.0, 9.0],
   },
 };
 
 export default function TradingDashboard() {
   const [tradingConfig, setTradingConfig] = useState<TradingConfig>(defaultConfig);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const { t } = useLanguage();
+  const [activeTab, setActiveTab] = useState('strategy');
+  const { language, t } = useLanguage();
+
+  // Hide navbar when authenticated, show when logged out
+  useEffect(() => {
+    const navbar = document.querySelector('nav');
+    if (navbar) {
+      if (isAuthenticated) {
+        navbar.style.display = 'none';
+      } else {
+        navbar.style.display = 'block';
+      }
+    }
+
+    // Cleanup: show navbar when component unmounts
+    return () => {
+      const navbar = document.querySelector('nav');
+      if (navbar) {
+        navbar.style.display = 'block';
+      }
+    };
+  }, [isAuthenticated]);
 
   useEffect(() => {
-    // Check if user is already authenticated (use localStorage for persistent login)
     const authenticated = localStorage.getItem('dashboard_authenticated');
     if (authenticated === 'true') {
       setIsAuthenticated(true);
     }
 
-    // Load saved trading config from localStorage
     const savedConfig = localStorage.getItem('trading_config');
     if (savedConfig) {
       try {
@@ -77,7 +97,6 @@ export default function TradingDashboard() {
     }
   }, []);
 
-  // Save config to localStorage whenever it changes
   useEffect(() => {
     localStorage.setItem('trading_config', JSON.stringify(tradingConfig));
   }, [tradingConfig]);
@@ -91,68 +110,57 @@ export default function TradingDashboard() {
     return <AdminLogin onAuthenticate={() => setIsAuthenticated(true)} />;
   }
 
-  return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
-      {/* Header */}
-      <div className="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 px-6 py-4">
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <div>
-            <h1 className="text-3xl font-bold text-gray-900 dark:text-white">
-              <BrandName /> {t('dashboard.title')}
+  const renderContent = () => {
+    switch (activeTab) {
+      case 'strategy':
+        return (
+          <div className="p-8">
+            <h1 className="text-3xl font-black text-black dark:text-white mb-6">
+              {language === 'zh' ? '天梯趋势' : 'Tianti Trend'}
             </h1>
-            <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
-              {t('dashboard.subtitle')}
-            </p>
+            <TiantiPanel config={tradingConfig} onConfigChange={setTradingConfig} />
           </div>
-          <button
-            onClick={handleLogout}
-            className="px-4 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-red-600 dark:hover:text-red-400 transition-colors"
-          >
-            {t('dashboard.logout')}
-          </button>
-        </div>
-      </div>
+        );
+      case 'livestream':
+        return <LivestreamManager />;
+      case 'blog':
+        return <BlogManager />;
+      case 'top-traders':
+        return <TopTradersManager />;
+      case 'config':
+        return <ConfigManager />;
+      default:
+        return null;
+    }
+  };
+
+  return (
+    <div className="flex h-screen bg-gray-50 dark:bg-gray-900 fixed inset-0 z-50">
+      {/* Sidebar */}
+      <SidebarMenu activeTab={activeTab} onTabChange={setActiveTab} />
 
       {/* Main Content */}
-      <div className="max-w-7xl mx-auto px-6 py-8">
-        <Tabs defaultValue="backtest" className="w-full">
-          <TabsList className="grid w-full grid-cols-3 mb-8">
-            <TabsTrigger value="backtest">
-              {t('dashboard.tab.backtest')}
-            </TabsTrigger>
-            <TabsTrigger value="live">
-              {t('dashboard.tab.live')}
-            </TabsTrigger>
-            <TabsTrigger value="tianti">
-              {t('dashboard.tab.tianti')}
-            </TabsTrigger>
-          </TabsList>
+      <div className="flex-1 flex flex-col overflow-hidden">
+        {/* Top Bar */}
+        <div className="bg-white dark:bg-gray-800 border-b-2 border-gray-200 dark:border-gray-700 px-8 py-4">
+          <div className="flex items-center justify-between">
+            <div>
+              <h2 className="text-lg font-bold text-black dark:text-white">
+                {language === 'zh' ? '汇刃控制台' : 'FX Killer Dashboard'}
+              </h2>
+            </div>
+            <button
+              onClick={handleLogout}
+              className="px-4 py-2 border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+            >
+              {language === 'zh' ? '退出登录' : 'Logout'}
+            </button>
+          </div>
+        </div>
 
-          <TabsContent value="backtest" className="space-y-6">
-            <BacktestPanel
-              tradingConfig={tradingConfig}
-              onConfigChange={setTradingConfig}
-            />
-          </TabsContent>
-
-          <TabsContent value="live" className="space-y-6">
-            <LiveTradePanel
-              tradingConfig={tradingConfig}
-              onConfigChange={setTradingConfig}
-            />
-          </TabsContent>
-
-          <TabsContent value="tianti" className="space-y-6">
-            <TiantiPanel />
-          </TabsContent>
-        </Tabs>
-      </div>
-
-      {/* Footer */}
-      <div className="bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700 px-6 py-4 mt-12">
-        <div className="max-w-7xl mx-auto text-center text-sm text-gray-600 dark:text-gray-400">
-          <p className="font-semibold text-gray-900 dark:text-white">{t('dashboard.footer.warning')}</p>
-          <p className="mt-1">{t('dashboard.footer.copyright')}</p>
+        {/* Content Area */}
+        <div className="flex-1 overflow-y-auto">
+          {renderContent()}
         </div>
       </div>
     </div>

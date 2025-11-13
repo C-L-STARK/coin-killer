@@ -1,14 +1,44 @@
 "use client";
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
-import { mockTopTraders } from '@/data/mockTopTraders';
+import type { TopTrader } from '@/types/top-traders';
+import { convertDbTraderToDisplay } from '@/lib/topTradersMigration';
+import type { TopTrader as DbTrader } from '@/lib/supabase';
 import { LeaderboardPeriod } from '@/types/top-traders';
 import { motion } from 'motion/react';
 
 export default function TopTradersPage() {
   const { language } = useLanguage();
   const isZh = language === 'zh';
+  const [traders, setTraders] = useState<TopTrader[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  // Fetch traders from API
+  useEffect(() => {
+    const fetchTraders = async () => {
+      try {
+        setLoading(true);
+        const response = await fetch('/api/top-traders');
+
+        if (!response.ok) {
+          throw new Error('Failed to fetch traders');
+        }
+
+        const dbTraders: DbTrader[] = await response.json();
+        const displayTraders = dbTraders.map(convertDbTraderToDisplay);
+        setTraders(displayTraders);
+      } catch (err) {
+        console.error('Error fetching traders:', err);
+        setError(err instanceof Error ? err.message : 'Unknown error');
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchTraders();
+  }, []);
 
   const getRankBadge = (rank: number) => {
     if (rank === 1) return '🥇';
@@ -35,6 +65,42 @@ export default function TopTradersPage() {
     if (value >= 20) return 'text-blue-600 dark:text-blue-400';
     return 'text-gray-900 dark:text-white';
   };
+
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-gray-50 dark:bg-gray-950 flex items-center justify-center">
+        <div className="text-center">
+          <div className="inline-block animate-spin w-12 h-12 border-4 border-black dark:border-white border-t-transparent dark:border-t-transparent rounded-full mb-4"></div>
+          <p className="text-lg font-bold text-black dark:text-white">
+            {isZh ? '加载中...' : 'Loading...'}
+          </p>
+        </div>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="min-h-screen bg-gray-50 dark:bg-gray-950 flex items-center justify-center">
+        <div className="text-center">
+          <p className="text-lg font-bold text-red-600 dark:text-red-400 mb-4">
+            {isZh ? '加载失败' : 'Failed to load'}
+          </p>
+          <p className="text-sm text-gray-600 dark:text-gray-400">{error}</p>
+        </div>
+      </div>
+    );
+  }
+
+  if (traders.length === 0) {
+    return (
+      <div className="min-h-screen bg-gray-50 dark:bg-gray-950 flex items-center justify-center">
+        <p className="text-lg font-bold text-gray-500 dark:text-gray-400">
+          {isZh ? '暂无数据' : 'No data available'}
+        </p>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-950">
@@ -68,16 +134,16 @@ export default function TopTradersPage() {
           {/* Stats */}
           <div className="mt-8 flex flex-wrap justify-center gap-4 text-sm">
             <div className="px-4 py-2 bg-white/5 border border-white/20 backdrop-blur-sm">
-              <span className="text-white font-bold">{mockTopTraders.length}</span> {isZh ? '位交易员' : 'Traders'}
+              <span className="text-white font-bold">{traders.length}</span> {isZh ? '位交易员' : 'Traders'}
             </div>
             <div className="px-4 py-2 bg-white/5 border border-white/20 backdrop-blur-sm">
               <span className="text-white font-bold">
-                {formatNumber(mockTopTraders.reduce((sum, t) => sum + t.monthlyReturn, 0) / mockTopTraders.length)}%
+                {formatNumber(traders.reduce((sum, t) => sum + t.monthlyReturn, 0) / traders.length)}%
               </span> {isZh ? '平均月收益' : 'Avg Monthly Return'}
             </div>
             <div className="px-4 py-2 bg-white/5 border border-white/20 backdrop-blur-sm">
               <span className="text-white font-bold">
-                {formatNumber(mockTopTraders.reduce((sum, t) => sum + t.winRate, 0) / mockTopTraders.length)}%
+                {formatNumber(traders.reduce((sum, t) => sum + t.winRate, 0) / traders.length)}%
               </span> {isZh ? '平均胜率' : 'Avg Win Rate'}
             </div>
           </div>
@@ -88,7 +154,7 @@ export default function TopTradersPage() {
       <div className="max-w-7xl mx-auto px-6 py-8">
         {/* Top 3 Podium */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-          {mockTopTraders.slice(0, 3).map((trader, index) => (
+          {traders.slice(0, 3).map((trader, index) => (
             <motion.div
               key={trader.traderId}
               initial={{ opacity: 0, y: 20 }}
@@ -173,7 +239,7 @@ export default function TopTradersPage() {
                 </tr>
               </thead>
               <tbody>
-                {mockTopTraders.map((trader, index) => (
+                {traders.map((trader, index) => (
                   <motion.tr
                     key={trader.traderId}
                     initial={{ opacity: 0, y: 10 }}
