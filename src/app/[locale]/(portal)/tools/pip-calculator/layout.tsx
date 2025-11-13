@@ -11,13 +11,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     'Free online forex pip value calculator for all major currency pairs. Accurately calculate pip value to help professional traders and day traders manage risk scientifically. Essential tool for forex trader training and professional trader training.',
     '点值计算器, pip计算器, 外汇点值, 外汇交易员培训, 职业交易员培训, 外汇交易员, 职业交易员, 交易工具',
     'pip calculator, pip value, forex trader training, professional trader training, forex trader, professional trader, trading tool',
-    lang,
-    {
-      url: '/tools/pip-calculator',
-      type: 'website',
-      section: 'Tools',
-      author: 'FX Killer Team',
-    }
+    lang
   );
 }
 

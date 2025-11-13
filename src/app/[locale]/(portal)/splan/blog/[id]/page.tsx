@@ -65,15 +65,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     enDescription,
     zhKeywords,
     enKeywords,
-    lang,
-    {
-      url: `/splan/blog/${id}`,
-      type: 'article',
-      publishedTime: post.created_at,
-      modifiedTime: post.updated_at,
-      author: post.author,
-      section: 'Blog',
-    }
+    lang
   );
 }
 

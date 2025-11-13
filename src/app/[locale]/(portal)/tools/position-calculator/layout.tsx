@@ -11,13 +11,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     'Professional position calculator. Auto-calculates optimal lot size based on account balance, risk percentage and stop loss. Essential tool for day trader training and full-time trader training to manage funds scientifically.',
     '仓位计算器, 头寸计算器, 日内交易员培训, 全职交易员培训, 日内交易员, 全职交易, 风险管理工具',
     'position calculator, lot size calculator, day trader training, full-time trader training, day trader, full-time trading, risk management tool',
-    lang,
-    {
-      url: '/tools/position-calculator',
-      type: 'website',
-      section: 'Tools',
-      author: 'FX Killer Team',
-    }
+    lang
   );
 }
 

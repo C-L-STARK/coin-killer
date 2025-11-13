@@ -11,13 +11,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     'Explore professional forex trading knowledge, market analysis, trading psychology, and professional trader insights. In-depth articles covering forex, gold, crypto, and more. Resource hub for forex trader training and full-time trader training.',
     '外汇博客, 交易知识, 外汇交易员培训, 全职交易员培训, 市场分析, 交易心理, 职业交易员, 外汇交易技巧, 黄金交易, 数字货币交易, 交易策略分享, 市场洞察',
     'forex blog, trading knowledge, forex trader training, full-time trader training, market analysis, trading psychology, professional trader, forex trading tips, gold trading, crypto trading, trading strategy, market insights',
-    lang,
-    {
-      url: '/splan/blog',
-      type: 'website',
-      section: 'Blog',
-      author: 'FX Killer Team',
-    }
+    lang
   );
 }
 

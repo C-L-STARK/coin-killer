@@ -11,13 +11,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     'Forex risk-reward calculator for quick trade quality evaluation. Enter entry, stop loss and take profit to auto-calculate ratio. Essential tool for professional trader training and forex trader training to improve trading decisions.',
     '盈亏比计算器, 风险回报比, 职业交易员培训, 外汇交易员培训, 职业交易员, 交易工具',
     'risk reward calculator, risk reward ratio, professional trader training, forex trader training, professional trader, trading tool',
-    lang,
-    {
-      url: '/tools/risk-reward-calculator',
-      type: 'website',
-      section: 'Tools',
-      author: 'FX Killer Team',
-    }
+    lang
   );
 }
 
