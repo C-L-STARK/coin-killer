@@ -1,6 +1,6 @@
 import { EducationPageContent } from './forex-basics.content';
 
-export const feesCommissionsContent = {
+export const spreadsCommissionsContent = {
   zh: {
     title: '数字货币手续费与佣金完整指南 - 交易成本详解与优化策略 | BiKiller',
     description: '全面解析数字货币交易成本：手续费类型（固定vs浮动）、佣金模式、隐藏费用、以及如何选择低成本交易所。掌握降低交易成本的实用技巧，提升长期盈利能力。',
