@@ -116,20 +116,13 @@ export async function generateMetadata({ params }: NewsPageProps) {
   }
 
   return generateBilingualMetadata(
-    newsZh.title + '丨汇刃丨职业交易员培训、日内交易员培训',
-    newsEn.title + '丨FX Killer丨Professional Trader Training, Day Trader Training',
+    newsZh.title + '丨币刃丨职业交易员培训、日内交易员培训',
+    newsEn.title + '丨BiKiller丨Professional Trader Training, Day Trader Training',
     newsZh.description,
     newsEn.description,
     newsZh.keywords.join(', ') + ', 职业交易员培训, 日内交易员培训',
     newsEn.keywords.join(', ') + ', professional trader training, day trader training',
-    language,
-    {
-      url: `/news/${slug}`,
-      type: 'article',
-      publishedTime: newsZh.date,
-      modifiedTime: newsZh.date,
-      section: newsZh.category
-    }
+    language
   );
 }
 
