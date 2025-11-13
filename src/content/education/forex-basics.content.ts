@@ -50,40 +50,23 @@ export interface EducationPageContent {
 
 export const forexBasicsContent = {
   zh: {
-<<<<<<< HEAD
     title: '数字货币交易基础知识完整指南 - 从零开始学习数字货币交易 | BiKiller',
     description: '完整的数字货币交易入门教程，涵盖数字货币市场基础、交易术语、技术分析、风险管理等核心知识。适合零基础新手，由职业交易员编写，助你快速掌握数字货币交易essentials。',
     keywords: '数字货币交易基础, 数字货币入门, 数字货币教程, 数字货币市场, 数字货币交易知识, 新手学数字货币, 数字货币交易教程',
 
     heroTitle: '数字货币交易基础知识',
     heroDescription: '完整的数字货币交易入门指南，从零开始掌握数字货币市场核心概念',
-=======
-    title: '外汇交易基础知识完整指南丨汇刃丨职业交易员培训、外汇交易员培训',
-    description: '完整的外汇交易入门教程，由职业交易员编写。涵盖外汇市场基础、交易术语、技术分析、风险管理等核心知识，助你快速掌握外汇交易要领。职业交易员培训和外汇交易员培训必备基础课程。',
-    keywords: '职业交易员培训, 外汇交易员培训, 职业交易员, 外汇交易员, 外汇基础, 外汇入门, 外汇教程, 外汇市场, 交易知识',
-
-    heroTitle: '外汇交易基础知识',
-    heroDescription: '完整的外汇交易入门指南，从零开始掌握外汇市场核心概念',
->>>>>>> fx-killer/main
     readingTime: '15分钟',
     difficulty: '初级',
     lastUpdated: '2024-01-15',
 
     tocTitle: '本文目录',
     tableOfContents: [
-<<<<<<< HEAD
       { id: 'what-is-cryptocurrency', title: '什么是数字货币交易？' },
       { id: 'how-it-works', title: '数字货币市场的运作机制' },
       { id: 'currency-pairs', title: '交易对：交易的基础单位' },
       { id: 'terminology', title: '核心交易术语解析' },
       { id: 'how-to-trade', title: '数字货币交易如何进行？' },
-=======
-      { id: 'what-is-forex', title: '什么是外汇交易？' },
-      { id: 'how-it-works', title: '外汇市场的运作机制' },
-      { id: 'currency-pairs', title: '货币对：交易的基础单位' },
-      { id: 'terminology', title: '核心交易术语解析' },
-      { id: 'how-to-trade', title: '外汇交易如何进行？' },
->>>>>>> fx-killer/main
       { id: 'practical-tips', title: '新手实战技巧' },
       { id: 'faq', title: '常见问题解答' },
     ],
@@ -91,7 +74,6 @@ export const forexBasicsContent = {
     faqTitle: '常见问题解答',
     faqs: [
       {
-<<<<<<< HEAD
         question: 'Q1: 数字货币交易需要多少资金才能开始？',
         answer: '理论上，100USDT即可开始交易小额交易。但从风险管理角度，我们建议至少准备1000-2000USDT，这样可以更好地承受市场波动，设置合理的止损，并有足够的资金进行多次交易学习。'
       },
@@ -102,18 +84,6 @@ export const forexBasicsContent = {
       {
         question: 'Q3: 什么时间交易数字货币最好？',
         answer: '最佳交易时段是全球交易高峰时段（数字货币市场24小时运行），市场全天候运行，流动性持续活跃。但不同交易对有不同的活跃时间，需要根据交易品种选择。'
-=======
-        question: 'Q1: 外汇交易需要多少资金才能开始？',
-        answer: '理论上，100美元即可开始交易微型手。但从风险管理角度，我们建议至少准备1000-2000美元，这样可以更好地承受市场波动，设置合理的止损，并有足够的资金进行多次交易学习。'
-      },
-      {
-        question: 'Q2: 外汇交易合法吗？风险大吗？',
-        answer: '外汇交易在中国是合法的，但需要选择受监管的国际经纪商。风险确实存在，因为使用了杠杆。但通过严格的风险管理（设置止损、控制仓位、使用合理杠杆），风险是可控的。'
-      },
-      {
-        question: 'Q3: 什么时间交易外汇最好？',
-        answer: '最佳交易时段是伦敦-纽约重叠时段（北京时间20:00-24:00），此时市场流动性最强，点差最小。但不同货币对有不同的活跃时间，需要根据交易品种选择。'
->>>>>>> fx-killer/main
       },
       {
         question: 'Q4: 技术分析和基本面分析哪个更重要？',
@@ -147,13 +117,8 @@ export const forexBasicsContent = {
       }
     ],
 
-<<<<<<< HEAD
     ctaTitle: '准备开始你的数字货币交易之旅？',
     ctaDescription: '加入 BiKiller 30天系统化培训，从零基础到职业交易员',
-=======
-    ctaTitle: '准备开始你的外汇交易之旅？',
-    ctaDescription: '加入 FX Killer 30天系统化培训，从零基础到职业交易员',
->>>>>>> fx-killer/main
     ctaPrimaryButton: '了解培训计划',
     ctaSecondaryButton: '免费心理测评',
 
@@ -164,40 +129,23 @@ export const forexBasicsContent = {
   } as EducationPageContent,
 
   en: {
-<<<<<<< HEAD
     title: 'Complete Guide to Cryptocurrency Trading Basics - Learn Cryptocurrency from Scratch | BiKiller',
     description: 'Comprehensive cryptocurrency trading tutorial covering market basics, trading terminology, technical analysis, and risk management. Perfect for beginners, written by professional traders.',
     keywords: 'cryptocurrency trading basics, cryptocurrency tutorial, cryptocurrency for beginners, currency trading, Crypto trading guide, learn cryptocurrency',
 
     heroTitle: 'Cryptocurrency Trading Basics',
     heroDescription: 'Complete beginner\'s guide to cryptocurrency trading, master core concepts from scratch',
-=======
-    title: 'Complete Forex Basics Guide丨FX Killer丨Professional Trader Training, Forex Trader Training',
-    description: 'Comprehensive forex trading tutorial written by professional traders. Covering market basics, trading terminology, technical analysis, and risk management for beginners. Essential foundation course for professional trader training and forex trader training.',
-    keywords: 'professional trader training, forex trader training, professional trader, forex trader, forex basics, forex tutorial, forex market',
-
-    heroTitle: 'Forex Trading Basics',
-    heroDescription: 'Complete beginner\'s guide to forex trading, master core concepts from scratch',
->>>>>>> fx-killer/main
     readingTime: '15 min',
     difficulty: 'Beginner',
     lastUpdated: 'Jan 15, 2024',
 
     tocTitle: 'Table of Contents',
     tableOfContents: [
-<<<<<<< HEAD
       { id: 'what-is-cryptocurrency', title: 'What is Cryptocurrency Trading?' },
       { id: 'how-it-works', title: 'How the Cryptocurrency Market Works' },
       { id: 'currency-pairs', title: 'Trading Pairs: Trading Units' },
       { id: 'terminology', title: 'Core Trading Terms' },
       { id: 'how-to-trade', title: 'How to Trade Cryptocurrency?' },
-=======
-      { id: 'what-is-forex', title: 'What is Forex Trading?' },
-      { id: 'how-it-works', title: 'How the Forex Market Works' },
-      { id: 'currency-pairs', title: 'Currency Pairs: Trading Units' },
-      { id: 'terminology', title: 'Core Trading Terms' },
-      { id: 'how-to-trade', title: 'How to Trade Forex?' },
->>>>>>> fx-killer/main
       { id: 'practical-tips', title: 'Practical Tips for Beginners' },
       { id: 'faq', title: 'Frequently Asked Questions' },
     ],
@@ -205,7 +153,6 @@ export const forexBasicsContent = {
     faqTitle: 'Frequently Asked Questions',
     faqs: [
       {
-<<<<<<< HEAD
         question: 'Q1: How much capital do I need to start cryptocurrency trading?',
         answer: 'Technically, you can start with $100 for micro lots. However, from a risk management perspective, we recommend at least $1000-2000 to better handle market volatility, set reasonable stop losses, and have enough capital for multiple learning trades.'
       },
@@ -216,18 +163,6 @@ export const forexBasicsContent = {
       {
         question: 'Q3: When is the best time to trade cryptocurrency?',
         answer: 'The best trading session is the London-New York overlap (20:00-24:00 Beijing time), when market liquidity is strongest and fees are tightest. However, different trading pairs have different active times.'
-=======
-        question: 'Q1: How much capital do I need to start forex trading?',
-        answer: 'Technically, you can start with $100 for micro lots. However, from a risk management perspective, we recommend at least $1000-2000 to better handle market volatility, set reasonable stop losses, and have enough capital for multiple learning trades.'
-      },
-      {
-        question: 'Q2: Is forex trading legal? Is it risky?',
-        answer: 'Forex trading is legal and requires choosing regulated international brokers. Risk exists due to leverage, but through strict risk management (stop losses, position control, reasonable leverage), risk is manageable.'
-      },
-      {
-        question: 'Q3: When is the best time to trade forex?',
-        answer: 'The best trading session is the London-New York overlap (20:00-24:00 Beijing time), when market liquidity is strongest and spreads are tightest. However, different currency pairs have different active times.'
->>>>>>> fx-killer/main
       },
       {
         question: 'Q4: Which is more important: technical or fundamental analysis?',
@@ -261,13 +196,8 @@ export const forexBasicsContent = {
       }
     ],
 
-<<<<<<< HEAD
     ctaTitle: 'Ready to Start Your Cryptocurrency Trading Journey?',
     ctaDescription: 'Join BiKiller 30-day systematic training, from beginner to professional trader',
-=======
-    ctaTitle: 'Ready to Start Your Forex Trading Journey?',
-    ctaDescription: 'Join FX Killer 30-day systematic training, from beginner to professional trader',
->>>>>>> fx-killer/main
     ctaPrimaryButton: 'Learn About Training',
     ctaSecondaryButton: 'Free Psychology Test',
 
