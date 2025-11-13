@@ -38,16 +38,24 @@ export default function UnifiedNavbar() {
       ]
     },
     {
-      name: t('nav.blog'),
-      link: "/splan/blog",
+      name: language === 'zh' ? '市场资讯' : 'Market',
+      link: "/news",
+      hasDropdown: true,
+      dropdownItems: [
+        { name: language === 'zh' ? '实时新闻' : 'News', link: '/news' },
+        { name: language === 'zh' ? '市场分析' : 'Market Analysis', link: '/market-analysis' },
+        { name: language === 'zh' ? '经济日历' : 'Economic Calendar', link: '/economic-calendar' },
+      ]
     },
     {
-      name: t('nav.psychology'),
-      link: "/splan/psychology-test",
-    },
-    {
-      name: t('nav.dashboard'),
+      name: language === 'zh' ? '交易大厅' : 'Trading',
       link: "/dashboard",
+      hasDropdown: true,
+      dropdownItems: [
+        { name: language === 'zh' ? '交易系统' : 'Dashboard', link: '/dashboard' },
+        { name: language === 'zh' ? '实盘直播' : 'Live Trading', link: '/live-trading' },
+        { name: language === 'zh' ? '顶级交易员' : 'Top Traders', link: '/top-traders' },
+      ]
     },
     {
       name: t('nav.tradingTools'),
@@ -57,6 +65,14 @@ export default function UnifiedNavbar() {
         { name: language === 'zh' ? '仓位计算器' : 'Position Calculator', link: '/tools/position-calculator' },
         { name: language === 'zh' ? '风险回报计算器' : 'Risk/Reward Calculator', link: '/tools/risk-reward-calculator' },
       ]
+    },
+    {
+      name: t('nav.blog'),
+      link: "/splan/blog",
+    },
+    {
+      name: t('nav.psychology'),
+      link: "/splan/psychology-test",
     },
     {
       name: t('nav.faq'),
