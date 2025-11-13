@@ -1,0 +1,30 @@
+{
+  "symbol": "NZD/USD",
+  "name": "New Zealand Dollar vs US Dollar",
+  "nameCn": "纽元/美元",
+  "timestamp": "2025-11-13T03:43:22.512Z",
+  "price": {
+    "close": "0.56596303",
+    "high": "0.56618732",
+    "low": "0.56586689",
+    "open": "0.56618732",
+    "change": "-0.03",
+    "datetime": "2025-11-13 14:00:00"
+  },
+  "indicators": {
+    "rsi": 49.78634,
+    "macd": 0.0001085997,
+    "macd_signal": 0.00021467432,
+    "sma20": 0.56618129
+  },
+  "analysis": {
+    "zh": {
+      "title": "纽元/美元技术分析：[震荡整理趋势]",
+      "content": "当前纽元/美元（NZD/USD）汇率位于0.5659附近，表现出震荡整理的趋势。近期的波动幅度较小，24小时变化仅为-0.03%。在高点和低点之间的微幅波动显示出市场参与者的谨慎态度，可能等待更明确的方向信号。\n\n从技术指标来看，当前的相对强弱指数（RSI）尚未提供足够的信息，但MACD指标显示出微弱的上涨动能。20日简单移动平均线（SMA）位于0.5662，表明短期内存在一定的阻力。若价格能够突破该水平，可能会激发更多买入兴趣。\n\n在支撑和阻力位方面，当前支撑位可参考0.5659附近，而上方阻力位则在0.5662处。若价格下行跌破0.5658，可能会进一步测试0.5655的支撑。而若突破0.5662，可能会引发价格向上运行，测试更高水平。\n\n交易建议方面，投资者可考虑在0.5658附近寻找买入机会，目标位设在0.5665附近。同时，谨慎设置止损以控制风险，若价格突破0.5662，则可考虑增加仓位，继续追踪上涨动能。"
+    },
+    "en": {
+      "title": "New Zealand Dollar vs US Dollar Technical Analysis",
+      "content": "The NZD/USD pair is currently positioned within a narrow trading range, with the latest price hovering around 0.56596. The slight 24-hour decline of 0.03% indicates a lack of strong momentum in either direction. The high and low of the day suggest that the market is consolidating, potentially preparing for a breakout. A careful observation of price action around these levels will be crucial for determining the next significant move.\n\nFrom a trend perspective, the price is currently situated just below the 20-period simple moving average (SMA) at 0.56618, which acts as a dynamic resistance level. If the price manages to break above this SMA, it may signal a potential bullish reversal. Conversely, failure to breach this level could reinforce a bearish outlook, especially if the price heads back toward the recent low of 0.56587. Traders should monitor these levels closely for signs of trend continuation or reversal.\n\nIn terms of indicators, the MACD reading of 0.00010859970 suggests a potential bullish divergence, although the absence of a signal line complicates the interpretation. The RSI(14) data is currently not available, but it is essential to watch for oversold or overbought conditions in future readings. These indicators will provide further insights into market sentiment and potential entry or exit points.\n\nSupport is identified around the 0.56587 level, while resistance is evident at the SMA of 0.56618. Traders could consider a buy position if the price closes above the SMA, targeting levels around 0.56750. On the other hand, a break below 0.56587 could warrant a short position, aiming for a retest of lower support levels. Maintaining a disciplined approach with stop-loss orders will be critical in this uncertain market environment."
+    }
+  }
+}

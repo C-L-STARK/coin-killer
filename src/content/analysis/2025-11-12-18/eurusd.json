@@ -1,0 +1,30 @@
+{
+  "symbol": "EUR/USD",
+  "name": "Euro vs US Dollar",
+  "nameCn": "欧元/美元",
+  "timestamp": "2025-11-12T18:53:06.306Z",
+  "price": {
+    "close": "1.15934",
+    "high": "1.15945",
+    "low": "1.15911",
+    "open": "1.15928",
+    "change": "0.01",
+    "datetime": "2025-11-13 05:00:00"
+  },
+  "indicators": {
+    "rsi": 60.76239,
+    "macd": 0.00035072834,
+    "macd_signal": 0.00020054385,
+    "sma20": 1.15803
+  },
+  "analysis": {
+    "zh": {
+      "title": "欧元/美元技术分析：[震荡整理，短期谨慎]",
+      "content": "当前欧元/美元（EUR/USD）在1.15934附近震荡整理，价格波动较小，24小时变化仅为0.01%。在这一区间内，市场情绪显得相对谨慎。短期内，若价格突破1.15945的高点，可能会吸引更多买盘，从而推动汇价进一步上行。\n\n技术指标方面，虽然RSI（相对强弱指数）数据缺失，但从现有的MACD来看，0.00035072834的值显示出市场动能微弱，未形成明显的买入或卖出信号。SMA（简单移动平均线）20日线处于1.15803，表明短期市场仍有支撑，但需关注价格是否能有效守住该水平。\n\n支撑位方面，1.15911是近期的低点，若跌破该位置，可能会引发更多卖压，挑战更低的支撑位。而在阻力位方面，1.15945作为短期顶部，突破后可能迎来更强的上涨动能。整体来看，投资者应密切关注价格走势，适时调整持仓策略。\n\n交易建议方面，建议在接近支撑位时寻找进场机会，同时在接近阻力位时考虑获利了结。保持灵活应对市场变化，避免在价格震荡区间内进行过度交易，以降低风险。"
+    },
+    "en": {
+      "title": "Euro vs US Dollar Technical Analysis",
+      "content": "The Euro vs. US Dollar (EUR/USD) is currently trading at 1.15934, showing a slight uptick of 0.01% over the past 24 hours. This price action indicates a relatively stable market environment, with the pair oscillating between a high of 1.15945 and a low of 1.15911. The current trend appears neutral, suggesting that buyers and sellers are in a temporary equilibrium. However, the proximity to key support and resistance levels could signal potential breakout opportunities in the near term.\n\nTechnical indicators provide a mixed perspective on the prevailing market conditions. The absence of an RSI value limits the ability to assess overbought or oversold conditions, while the MACD reading of 0.00035 implies a weak bullish momentum, indicating that upward movement may lack conviction. The 20-period Simple Moving Average (SMA) at 1.15803 serves as a crucial support level, reflecting a potential buying opportunity if the price approaches this level. Traders should watch for price action around this SMA for confirmation of either support or resistance.\n\nIn terms of support and resistance levels, immediate support is established at the SMA of 1.15803, while resistance can be observed near the recent high of 1.15945. A break below the support level could prompt a test of further downside levels, while a decisive close above resistance might lead to an upward trend, potentially targeting the next psychological level around 1.1600. Traders should consider setting alerts at these levels to capture potential breakout trades.\n\nGiven the current market dynamics, a cautious approach is advisable. For short-term traders, monitoring price behavior around the SMA and resistance levels will be critical. Long positions could be considered on a confirmed breakout above 1.15945, while short positions may be warranted if the price falls below the SMA. Always ensure that proper risk management practices are in place, considering the overall volatility and economic factors influencing both the Euro and the US Dollar."
+    }
+  }
+}

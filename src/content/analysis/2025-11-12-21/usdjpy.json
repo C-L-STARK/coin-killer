@@ -1,0 +1,30 @@
+{
+  "symbol": "USD/JPY",
+  "name": "US Dollar vs Japanese Yen",
+  "nameCn": "美元/日元",
+  "timestamp": "2025-11-12T21:36:10.750Z",
+  "price": {
+    "close": "154.81700",
+    "high": "154.86900",
+    "low": "154.74800",
+    "open": "154.75800",
+    "change": "0.04",
+    "datetime": "2025-11-13 08:00:00"
+  },
+  "indicators": {
+    "rsi": 61.73308,
+    "macd": 0.12129862,
+    "macd_signal": 0.14120467,
+    "sma20": 154.70435
+  },
+  "analysis": {
+    "zh": {
+      "title": "美元/日元技术分析：[当前维持强势上行趋势]",
+      "content": "当前美元/日元的价格为154.817，整体趋势呈现出强势上行的态势。近期高点154.869显示出买方的力量，而低点154.748则为潜在的支撑位。随着市场情绪的持续乐观，价格可能会进一步向上挑战更高的阻力位。\n\n从技术指标来看，虽然RSI数据缺失，但MACD指标显示出0.121的正值，表明短期内上涨动能依然存在。SMA(20)的水平在154.704，作为短期移动平均线，进一步确认了短期内的上行趋势。投资者应密切关注这些指标，以便及时捕捉市场变化。\n\n支撑位方面，154.748是一个关键的支撑区域，一旦价格跌破，可能会引发更多的抛售压力。相对的，154.869则是重要的阻力位，若突破此水平，可能会刺激更多的买盘涌入，推动价格进一步上行。\n\n综合考虑，建议投资者在当前价位附近寻找进场机会，尤其是在接近支撑位时可以适量加仓。同时，设定合理的止损位，以防市场出现意外波动。在市场情绪良好的情况下，美元/日元有望继续上行。"
+    },
+    "en": {
+      "title": "US Dollar vs Japanese Yen Technical Analysis",
+      "content": "The USD/JPY pair is currently trading at 154.817, exhibiting a slight upward movement of 0.04% over the past 24 hours. The price has recently oscillated between a high of 154.869 and a low of 154.748, suggesting a consolidation phase within this range. This behavior indicates a potential accumulation of buying pressure, especially if price action begins to break out above the recent high, which could signal a continuation of the bullish trend that has been prevalent in recent weeks.\n\nIn terms of technical indicators, the SMA(20) at 154.70435 provides a crucial reference point for understanding short-term price dynamics. Currently, the market is trading above this moving average, reinforcing the bullish sentiment. However, the absence of RSI(14) and a signal line for the MACD limits the depth of our analysis regarding overbought or oversold conditions. Traders should monitor for any divergence in momentum indicators, as this could indicate potential reversals or shifts in market sentiment.\n\nKey support and resistance levels are critical in guiding trading decisions. The immediate support level can be identified around the SMA(20) at 154.704, which aligns closely with the recent low of 154.748. A break below this level could suggest a bearish reversal and invite further selling pressure. Conversely, a decisive breakout above the resistance at 154.869 could open the door for higher targets, possibly testing the psychological level of 155.00.\n\nGiven the current market conditions, traders might consider a range-bound strategy, focusing on buying near the support level and selling near resistance. A confirmed break above resistance would warrant a more aggressive long position, while a failure to hold above key support could prompt short positions. Overall, maintaining a cautious approach is advisable, given the potential for volatility in the forex market."
+    }
+  }
+}

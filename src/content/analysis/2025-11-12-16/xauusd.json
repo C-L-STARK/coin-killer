@@ -1,0 +1,30 @@
+{
+  "symbol": "XAU/USD",
+  "name": "Gold vs US Dollar",
+  "nameCn": "黄金/美元",
+  "timestamp": "2025-11-12T16:20:09.557Z",
+  "price": {
+    "close": "4185.50683",
+    "high": "4188.55862",
+    "low": "4180.33473",
+    "open": "4180.89564",
+    "change": "0.11",
+    "datetime": "2025-11-13 03:00:00"
+  },
+  "indicators": {
+    "rsi": 73.23775,
+    "macd": 11.19909,
+    "macd_signal": 5.53942,
+    "sma20": 4130.8287
+  },
+  "analysis": {
+    "zh": {
+      "title": "黄金/美元技术分析：[震荡整理，谨慎观望]",
+      "content": "当前黄金/美元(XAU/USD)价格在4185.50附近震荡整理，整体趋势显得相对平稳。尽管24小时变化仅为0.11%，但市场在4180.33至4188.56区间内运行，显示出短期内缺乏明确的方向。投资者需关注接下来的价格波动，以判断未来的走势。\n\n技术指标方面，虽然RSI(14)数据缺失，但MACD显示出11.19909的正值，表明市场存在一定的买入动能。结合20日简单移动平均线(SMA)在4130.83的位置，可以看出当前价格已高于该均线，显示出上行趋势的潜力。不过，若未能突破近日高点，可能会出现回调。\n\n支撑位方面，4180.33是关键支撑，若跌破该水平，将可能引发更深的调整。而在阻力位方面，4188.56则为短期的压力位，一旦突破，可能会进一步推动价格上涨。投资者应密切关注这些关键价位，以规避风险。\n\n建议方面，当前可考虑在支撑位附近寻找买入机会，而在接近阻力位时则应保持警惕，考虑获利了结或设置止损。保持灵活的交易策略，适时调整仓位，以应对市场的不确定性。"
+    },
+    "en": {
+      "title": "Gold vs US Dollar Technical Analysis",
+      "content": "The current market price for Gold against the US Dollar (XAU/USD) stands at 4185.51, reflecting a slight increase of 0.11% over the last 24 hours. The recent high of 4188.56 indicates a potential resistance level that traders should keep an eye on, while the low of 4180.33 suggests a support level. This range indicates a consolidation phase as the price oscillates between these levels, presenting opportunities for short-term traders to capitalize on price fluctuations.\n\nThe absence of the RSI(14) makes it challenging to assess the momentum of this asset accurately. However, the MACD value of 11.19909 suggests bullish momentum, although a lack of a signal line complicates interpretation. Traders might consider waiting for additional confirmation from these indicators before making significant trading decisions. The SMA(20) at 4130.83 indicates a positive trend as the current price is well above this moving average, reinforcing the bullish sentiment in the market.\n\nSupport is currently identified at 4180.33, while resistance can be observed around 4188.56. A breakout above the resistance level could signal a continuation of the uptrend, potentially targeting higher levels. Conversely, a decline below the support could initiate a bearish trend, prompting traders to reassess their positions. It is crucial to monitor price action closely around these levels for potential trading signals.\n\nIn terms of trading strategies, traders might consider entering long positions upon a confirmed breakout above 4188.56, targeting the next resistance levels while placing stop-loss orders just below 4180.33 to manage risk. On the flip side, if the price breaks below the support level, short positions could be viable, especially if confirmed by additional bearish indicators. Maintaining a disciplined approach with proper risk management is essential in navigating the current market conditions."
+    }
+  }
+}

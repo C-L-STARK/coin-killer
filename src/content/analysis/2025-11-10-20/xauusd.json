@@ -1,0 +1,30 @@
+{
+  "symbol": "XAU/USD",
+  "name": "Gold vs US Dollar",
+  "nameCn": "黄金/美元",
+  "timestamp": "2025-11-10T20:37:12.019Z",
+  "price": {
+    "close": "4101.32",
+    "high": "4106.65",
+    "low": "4097.93",
+    "open": "4105.78",
+    "change": "-0.11",
+    "datetime": "2025-11-11 07:00:00"
+  },
+  "indicators": {
+    "rsi": 73.18773,
+    "macd": 22.52249,
+    "macd_signal": 21.95358,
+    "sma20": 4076.691
+  },
+  "analysis": {
+    "zh": {
+      "title": "黄金/美元技术分析：[短期震荡，长期看涨]",
+      "content": "当前黄金/美元(XAU/USD)的市场表现显示出短期内震荡整理的迹象。最新价格为4101.32，较24小时前小幅下跌0.11%。在当前的高点4106.65和低点4097.93之间，价格波动并未形成明显的趋势，市场情绪相对谨慎。\n\n从技术指标来看，虽然RSI(14)数据缺失，但MACD指标的值为22.52249，表明市场仍具备一定的上行动能。结合SMA(20)的水平4076.69100，可以看出短期均线已向上倾斜，暗示价格有可能进一步向上测试阻力位。\n\n支撑位方面，4097.93附近可能成为强支撑，若价格跌破该水平，可能会引发更大的回调。而上方阻力位则在4106.65和心理关口4110.00附近，若突破这些阻力位，可能会加速上涨。\n\n在交易策略上，建议投资者关注短期震荡区间的突破情况。若价格持续稳定在4106.65以上，可考虑做多，目标指向4115.00。相反，若价格跌破4097.93，则应谨慎对待，适时减仓以控制风险。"
+    },
+    "en": {
+      "title": "Gold vs US Dollar Technical Analysis",
+      "content": "The current price of Gold against the US Dollar (XAU/USD) stands at 4101.32, reflecting a slight decline of 0.11% over the past 24 hours. This minor pullback suggests a potential consolidation phase after a recent upward movement. Observing the price action, it appears that Gold is attempting to establish a support level around 4097.93, which aligns closely with the recent low. A sustained breach below this level could indicate bearish sentiment, while a rebound could signal a continuation of the bullish trend.\n\nThe 20-period Simple Moving Average (SMA) currently sits at 4076.69, serving as a significant technical level. Should the price remain above this SMA, it could reinforce the bullish outlook and attract more buyers. Conversely, if the price falls below this moving average, it could trigger further selling pressure, highlighting the importance of this indicator. Traders should watch for potential price reactions around this level to gauge market sentiment.\n\nIn terms of momentum indicators, the MACD at 22.52 suggests a positive momentum phase. However, the absence of a defined signal line makes it challenging to derive actionable insights. Traders should remain vigilant for the emergence of a clearer trend, potentially indicated by a crossover in the MACD. Integrating this with price action analysis could provide more reliable trading signals.\n\nSupport levels are evident at 4097.93 and further down at 4076.69, while resistance may be found at 4106.65. A breakout above this resistance could lead to further upside potential, targeting levels beyond 4120. For traders, considering a long position on bullish confirmation near support levels or a short position on a decisive break below 4097.93 could be prudent. Keeping an eye on broader economic indicators and geopolitical developments will also be crucial for informed trading decisions."
+    }
+  }
+}

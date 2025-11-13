@@ -1,0 +1,30 @@
+{
+  "symbol": "USD/JPY",
+  "name": "US Dollar vs Japanese Yen",
+  "nameCn": "美元/日元",
+  "timestamp": "2025-11-10T05:29:56.782Z",
+  "price": {
+    "close": "153.95399",
+    "high": "154.070999",
+    "low": "153.86200",
+    "open": "153.87399",
+    "change": "0.05",
+    "datetime": "2025-11-10 16:00:00"
+  },
+  "indicators": {
+    "rsi": 64.34676,
+    "macd": 0.1551682,
+    "macd_signal": 0.078391136,
+    "sma20": 153.47255
+  },
+  "analysis": {
+    "zh": {
+      "title": "美元/日元技术分析：[当前趋势偏强]",
+      "content": "当前美元/日元（USD/JPY）的市场走势表现出一定的强势，当前价格为153.95，接近日内高点154.07。价格在154.00附近形成了一个心理阻力位，若突破该水平，可能进一步向上挑战更高的价位。由于24小时变化仅为0.05%，市场短期内波动较小，显示出一定的整理状态。\n\n从技术指标来看，MACD值为0.155，表明短期内买盘力量依然存在，尽管RSI尚未提供具体数据，但若继续保持在50以上，则有助于确认当前的上升趋势。SMA(20)为153.47，说明短期均线支持价格上行，进一步维持了看涨的信号。\n\n支撑位方面，153.86为短期内的关键支撑，若价格回落至此水平并未跌破，可能会吸引买盘再次入场。反之，若跌破该支撑位，则需警惕潜在的回调风险。在阻力方面，154.07将是关键的观察点，突破后将打开更大的上行空间。\n\n综合考虑，建议投资者在153.86附近寻找买入机会，设置止损于153.70，以控制风险。若价格突破154.07，则可考虑加仓，目标看向155.00及以上。保持灵活应对市场变化，及时调整策略。"
+    },
+    "en": {
+      "title": "US Dollar vs Japanese Yen Technical Analysis",
+      "content": "The USD/JPY pair is currently trading at 153.95399, showing a slight increase of 0.05% over the past 24 hours. The price action has been relatively stable within a defined range, with a high of 154.070999 and a low of 153.86200. This stability suggests a consolidation phase, indicating that traders are weighing their options before committing to a directional move. Market sentiment may be influenced by broader economic factors, including interest rate differentials and geopolitical events impacting the Japanese yen.\n\nFrom a technical perspective, the 20-period Simple Moving Average (SMA) at 153.47255 acts as a crucial support level. This moving average indicates that the pair has maintained an upward trajectory, though current price action is trading above it. A sustained move below this level could signal a bearish reversal, while a bounce could reinforce the current trend. Traders should keep a close eye on price behavior around this SMA, as it may provide insight into potential future movements.\n\nThe MACD reading of 0.15516820 suggests bullish momentum, although the absence of a signal line complicates the interpretation. Without further confirmation from additional indicators, caution is advised. The Relative Strength Index (RSI) is currently unavailable, but when available, it will be essential to assess whether the pair is approaching overbought or oversold conditions. These momentum indicators can help traders refine their entry and exit strategies as price action evolves.\n\nIn terms of trading suggestions, a breakout above 154.070999 could provide a buying opportunity for traders looking to capitalize on bullish momentum, targeting higher resistance levels. Conversely, a drop below 153.86200 might trigger selling interest, especially if accompanied by increased volume. Establishing stop-loss orders around these key levels could help manage risk effectively, allowing traders to navigate potential volatility in the forex market."
+    }
+  }
+}

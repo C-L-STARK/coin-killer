@@ -1,0 +1,30 @@
+{
+  "symbol": "XAU/USD",
+  "name": "Gold vs US Dollar",
+  "nameCn": "黄金/美元",
+  "timestamp": "2025-11-13T05:45:09.259Z",
+  "price": {
+    "close": "4216.13",
+    "high": "4217.99092",
+    "low": "4207.78074",
+    "open": "4208.38198",
+    "change": "0.19",
+    "datetime": "2025-11-13 16:00:00"
+  },
+  "indicators": {
+    "rsi": 68.43196,
+    "macd": 20.33448,
+    "macd_signal": 19.49715,
+    "sma20": 4181.59881
+  },
+  "analysis": {
+    "zh": {
+      "title": "黄金/美元技术分析：[震荡整理趋势]",
+      "content": "当前黄金/美元(XAU/USD)价格在4216.13附近震荡整理，24小时变化为0.19%。从近期价格走势来看，黄金在高点4217.99和低点4207.78之间波动，显示出市场情绪的谨慎。短期内，价格未能有效突破这一区间，可能意味着投资者对未来走势存在分歧。\n\n技术指标方面，尽管当前RSI尚未提供，但MACD显示出20.33的值，暗示出一定的上涨动能。20日简单移动平均线(SMA)在4181.60处，为短期支撑位提供了参考。若价格回调至此，可能吸引买盘，推动价格再次上行。\n\n支撑位方面，4181.60附近的SMA和4207.78的低点为重要支撑区域，若跌破将可能引发进一步下行。阻力位则在4217.99，突破该位置可能开启新的上涨空间。投资者需密切关注这一区间的突破情况，以制定交易策略。\n\n综上所述，建议投资者在当前震荡区间内进行观望，待价格突破关键支撑或阻力位后再做决策。风险管理十分重要，合理设置止损位以应对潜在波动。"
+    },
+    "en": {
+      "title": "Gold vs US Dollar Technical Analysis",
+      "content": "The current price of Gold against the US Dollar (XAU/USD) is 4216.13, reflecting a slight 0.19% increase over the past 24 hours. This modest upward movement suggests a potential continuation of the bullish sentiment observed in recent sessions. The price has recently tested the high of 4217.99092, which may act as a resistance level. A sustained break above this level could signal further bullish momentum, while a failure to maintain above it may lead to a retracement.\n\nThe recent low of 4207.78074 serves as an important support level. If the price approaches this zone again, it will be crucial to monitor buyer activity, as a bounce from this level could provide a buying opportunity for traders looking to capitalize on potential upward trends. Additionally, the 20-period Simple Moving Average (SMA) at 4181.59881 indicates a bullish trend, reinforcing the importance of the support level. Traders should watch for price action around these key levels to gauge market sentiment.\n\nIn terms of technical indicators, the MACD value of 20.33448 suggests that the bullish momentum is currently strong, although the absence of a signal line makes it essential to be cautious about potential reversals. The RSI (14) is not available, but incorporating this indicator in future analysis could provide insights into overbought or oversold conditions. As such, traders may consider utilizing a combination of these indicators to confirm entry and exit points.\n\nFor trading strategies, a break and close above the resistance level could present a good opportunity to enter long positions, with targets set incrementally higher based on market conditions. Conversely, if the price fails to hold above the support level, traders should be prepared to exit long positions and consider short opportunities, especially if additional bearish signals emerge from the indicators. Adopting a prudent risk management strategy is essential in navigating this market."
+    }
+  }
+}

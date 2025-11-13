@@ -1,0 +1,30 @@
+{
+  "symbol": "NZD/USD",
+  "name": "New Zealand Dollar vs US Dollar",
+  "nameCn": "纽元/美元",
+  "timestamp": "2025-11-09T21:25:29.481Z",
+  "price": {
+    "close": "0.56284124",
+    "high": "0.56344378",
+    "low": "0.56261957",
+    "open": "0.56338030",
+    "change": "-0.09",
+    "datetime": "2025-11-08 08:00:00"
+  },
+  "indicators": {
+    "rsi": 50.17514,
+    "macd": -0.00027626538,
+    "macd_signal": -0.0005235422,
+    "sma20": 0.56215043
+  },
+  "analysis": {
+    "zh": {
+      "title": "纽元/美元技术分析：[短期震荡，缺乏方向]",
+      "content": "当前纽元/美元（NZD/USD）价格为0.5628，近期24小时变化为-0.09%，显示出市场处于震荡状态。价格在0.5634和0.5626之间波动，显示出短期内缺乏明确的方向性。在此背景下，投资者应关注即将到来的经济数据和市场情绪变化，可能会影响汇率走势。\n\n从技术指标来看，虽然RSI未提供，但MACD值为-0.000276，表明当前市场可能处于弱势。20日简单移动平均线（SMA）位于0.5622，价格略高于此水平，可能提供短期支撑。若价格持续在此水平上方运行，可能会吸引买盘，但若跌破则可能引发更大幅度的下跌。\n\n在支撑与阻力方面，当前支撑位在0.5626附近，而阻力位则在0.5634。如果价格突破阻力位，可能会引发更多买盘，推动价格向上发展。相反，若跌破支撑位，可能会引发更多卖盘，导致进一步下探。\n\n综合分析，短期内建议投资者保持观望，关注技术信号的变化。如果价格突破0.5634，可以考虑短期多头头寸；若跌破0.5626，则应考虑空头机会。在操作中，合理设置止损，以应对市场波动风险。"
+    },
+    "en": {
+      "title": "New Zealand Dollar vs US Dollar Technical Analysis",
+      "content": "The NZD/USD pair is currently trading at 0.56284124, reflecting a slight decline of 0.09% over the past 24 hours. This movement suggests a consolidation phase as the price hovers near the recent high of 0.56344378 and the low of 0.56261957. The lack of significant volatility indicates that traders may be waiting for clearer directional signals. A sustained break above the recent high could initiate a bullish trend, while a drop below the low may signal further bearish momentum.\n\nIn terms of technical indicators, the 20-period Simple Moving Average (SMA) at 0.56215043 serves as a crucial support level. The proximity of the current price to this SMA suggests that it could act as a floor for any downward movements. Meanwhile, the MACD is currently negative at -0.00027626538, hinting at weakening momentum. The absence of a clear signal line makes it difficult to gauge future movements, emphasizing the need for cautious trading.\n\nSupport and resistance levels are critical for traders looking to capitalize on potential price swings. The immediate support is found at the SMA level, while resistance may be established around the recent high of 0.56344378. A breakout above this resistance could attract bullish sentiment, whereas a failure to hold above the support level may prompt a retest of lower price levels. Monitoring these key levels will be essential for informed trading decisions.\n\nGiven the current market conditions, traders might consider a wait-and-see approach. If the price breaks above 0.56344378, entering a long position with a stop-loss below the SMA could be prudent. Conversely, if the price falls below 0.56215043, a short position may be warranted, targeting the next support level. Overall, patience and careful observation of price action and market sentiment will be vital in navigating the NZD/USD pair's trading landscape."
+    }
+  }
+}

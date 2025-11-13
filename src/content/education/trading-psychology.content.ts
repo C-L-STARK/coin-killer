@@ -2,9 +2,15 @@ import { EducationPageContent } from './forex-basics.content';
 
 export const tradingPsychologyContent = {
   zh: {
+<<<<<<< HEAD
     title: '交易心理学 - 克服恐惧贪婪FOMO，建立交易纪律与情绪管理体系 | BiKiller',
     description: '深入讲解数字货币交易心理学核心知识：恐惧贪婪心理、FOMO、过度交易、报复性交易、交易纪律、压力管理、交易日志。职业交易员分享实战心理调控技巧，助你克服心理陷阱实现稳定盈利。',
     keywords: '交易心理学, 交易心理, 情绪管理, 交易纪律, FOMO, 贪婪恐惧, 过度交易, 报复性交易, 交易日志',
+=======
+    title: '交易心理学丨汇刃丨职业交易员培训、全职交易员培训',
+    description: '深入讲解外汇交易心理学核心知识：恐惧贪婪心理、FOMO、过度交易、交易纪律、压力管理。职业交易员和全职交易员培训的核心内容，助你克服心理陷阱实现稳定盈利。',
+    keywords: '职业交易员培训, 全职交易员培训, 交易心理学, 交易心理, 情绪管理, 交易纪律, FOMO, 贪婪恐惧',
+>>>>>>> fx-killer/main
 
     heroTitle: '交易心理学',
     heroDescription: '掌握交易心理调控，克服情绪陷阱建立稳定盈利心态',
@@ -46,7 +52,11 @@ export const tradingPsychologyContent = {
       },
       {
         question: 'Q5: 如何使用交易日志进行有效复盘，提升交易水平？',
+<<<<<<< HEAD
         answer: '交易日志是职业交易者的必备工具。有效方法：1) 记录内容：每笔交易记录入场/出场时间、价格、仓位、止损/止盈、结果、截图、入场理由、出场理由、情绪状态（1-10分评分）；2) 每日复盘（5-10分钟）：回顾当天所有交易，哪些符合计划？哪些是冲动交易？情绪如何影响决策？；3) 每周复盘（30-60分钟）：统计胜率、平均盈亏比、最大回撤、最佳/最差交易、常见错误模式；4) 每月复盘（2-3小时）：深度分析：哪类交易盈利最多？哪类亏损最多？哪个时间段/交易对表现最好？是否需要调整策略？；5) 关键问题：每次亏损问自己3个问题：这笔交易是否符合策略？如果重来会怎么做？学到了什么？工具推荐：使用Edgewonk、Tradervue或简单的Excel表格。关键是持续记录（至少6个月），才能发现模式和改进方向。'
+=======
+        answer: '交易日志是职业交易者的必备工具。有效方法：1) 记录内容：每笔交易记录入场/出场时间、价格、仓位、止损/止盈、结果、截图、入场理由、出场理由、情绪状态（1-10分评分）；2) 每日复盘（5-10分钟）：回顾当天所有交易，哪些符合计划？哪些是冲动交易？情绪如何影响决策？；3) 每周复盘（30-60分钟）：统计胜率、平均盈亏比、最大回撤、最佳/最差交易、常见错误模式；4) 每月复盘（2-3小时）：深度分析：哪类交易盈利最多？哪类亏损最多？哪个时间段/货币对表现最好？是否需要调整策略？；5) 关键问题：每次亏损问自己3个问题：这笔交易是否符合策略？如果重来会怎么做？学到了什么？工具推荐：使用Edgewonk、Tradervue或简单的Excel表格。关键是持续记录（至少6个月），才能发现模式和改进方向。'
+>>>>>>> fx-killer/main
       }
     ],
 
@@ -73,7 +83,11 @@ export const tradingPsychologyContent = {
     ],
 
     ctaTitle: '想要系统提升交易心理？',
+<<<<<<< HEAD
     ctaDescription: '加入 BiKiller 交易心理培训，获取专业心理评估和一对一心理辅导',
+=======
+    ctaDescription: '加入 FX Killer 交易心理培训，获取专业心理评估和一对一心理辅导',
+>>>>>>> fx-killer/main
     ctaPrimaryButton: '免费心理测评',
     ctaSecondaryButton: '了解培训计划',
 
@@ -84,9 +98,15 @@ export const tradingPsychologyContent = {
   } as EducationPageContent,
 
   en: {
+<<<<<<< HEAD
     title: 'Trading Psychology - Overcome Fear Greed FOMO, Build Discipline & Emotional Management | BiKiller',
     description: 'Comprehensive guide to cryptocurrency trading psychology: fear and greed psychology, FOMO, overtrading, revenge trading, trading discipline, stress management, trading journal. Professional trader shares practical psychological control techniques to overcome mental traps and achieve stable profitability.',
     keywords: 'trading psychology, trading mindset, emotional management, trading discipline, FOMO, fear greed, overtrading, revenge trading, trading journal',
+=======
+    title: 'Trading Psychology丨FX Killer丨Professional Trader Training, Full-Time Trader Training',
+    description: 'Comprehensive trading psychology guide: fear and greed psychology, FOMO, overtrading, discipline, stress management. Professional trader training and full-time trader training core curriculum to help you overcome mental traps for stable profitability.',
+    keywords: 'Professional Trader Training, Full-Time Trader Training, trading psychology, emotion management, trading discipline, FOMO',
+>>>>>>> fx-killer/main
 
     heroTitle: 'Trading Psychology',
     heroDescription: 'Master trading psychology control, overcome emotional traps and build stable profitable mindset',
@@ -112,7 +132,11 @@ export const tradingPsychologyContent = {
     faqs: [
       {
         question: 'Q1: How to overcome FOMO (Fear of Missing Out) and stop chasing?',
+<<<<<<< HEAD
         answer: 'FOMO is the most prevalent psychological trap for traders. Overcoming methods: 1) Cognitive reframing: market always has opportunities, missing this one there\'s next. Better to miss 100 point profit today than chase and lose 50 points; 2) Establish entry criteria: only enter when meeting your strategy (like breakout + retest confirmation), if not meeting don\'t trade, never lower standards fearing "missing out"; 3) Set trading frequency: maximum 3-5 trades per day, stop when reaching limit, avoid impulsive opening; 4) Review history: track trades made due to FOMO, win rate typically <30%, understand chasing is losing not missing; 5) Redirect attention: after missing opportunity, close chart 5-10 minutes, do other things, avoid impulsive chasing. Remember: professional traders may only make 1-2 high-quality trades per day, rather miss than make mistake.'
+=======
+        answer: 'FOMO is the most prevalent psychological trap for traders. Overcoming methods: 1) Cognitive reframing: market always has opportunities, missing this one there\'s next. Better to miss 100 pip profit today than chase and lose 50 pips; 2) Establish entry criteria: only enter when meeting your strategy (like breakout + retest confirmation), if not meeting don\'t trade, never lower standards fearing "missing out"; 3) Set trading frequency: maximum 3-5 trades per day, stop when reaching limit, avoid impulsive opening; 4) Review history: track trades made due to FOMO, win rate typically <30%, understand chasing is losing not missing; 5) Redirect attention: after missing opportunity, close chart 5-10 minutes, do other things, avoid impulsive chasing. Remember: professional traders may only make 1-2 high-quality trades per day, rather miss than make mistake.'
+>>>>>>> fx-killer/main
       },
       {
         question: 'Q2: How to avoid revenge trading after loss (wanting quick recovery)?',
@@ -128,7 +152,11 @@ export const tradingPsychologyContent = {
       },
       {
         question: 'Q5: How to use trading journal for effective review and improve trading?',
+<<<<<<< HEAD
         answer: 'Trading journal is essential tool for professional traders. Effective methods: 1) Record content: each trade record entry/exit time, price, position, stop/target, result, screenshot, entry reason, exit reason, emotional state (1-10 rating); 2) Daily review (5-10 minutes): review all trades today, which met plan? Which were impulsive? How did emotions affect decisions?; 3) Weekly review (30-60 minutes): calculate win rate, average profit/loss ratio, maximum drawdown, best/worst trades, common error patterns; 4) Monthly review (2-3 hours): deep analysis: which trade types most profitable? Which most losing? Which timeframe/pair performed best? Need strategy adjustment?; 5) Key questions: each loss ask yourself 3 questions: did this trade meet strategy? If doing again what would I do? What did I learn? Tool recommendations: use Edgewonk, Tradervue or simple Excel feesheet. Key is continuous recording (at least 6 months) to discover patterns and improvement directions.'
+=======
+        answer: 'Trading journal is essential tool for professional traders. Effective methods: 1) Record content: each trade record entry/exit time, price, position, stop/target, result, screenshot, entry reason, exit reason, emotional state (1-10 rating); 2) Daily review (5-10 minutes): review all trades today, which met plan? Which were impulsive? How did emotions affect decisions?; 3) Weekly review (30-60 minutes): calculate win rate, average profit/loss ratio, maximum drawdown, best/worst trades, common error patterns; 4) Monthly review (2-3 hours): deep analysis: which trade types most profitable? Which most losing? Which timeframe/pair performed best? Need strategy adjustment?; 5) Key questions: each loss ask yourself 3 questions: did this trade meet strategy? If doing again what would I do? What did I learn? Tool recommendations: use Edgewonk, Tradervue or simple Excel spreadsheet. Key is continuous recording (at least 6 months) to discover patterns and improvement directions.'
+>>>>>>> fx-killer/main
       }
     ],
 
@@ -155,7 +183,11 @@ export const tradingPsychologyContent = {
     ],
 
     ctaTitle: 'Want to Systematically Improve Trading Psychology?',
+<<<<<<< HEAD
     ctaDescription: 'Join BiKiller trading psychology training for professional psychological assessment and one-on-one counseling',
+=======
+    ctaDescription: 'Join FX Killer trading psychology training for professional psychological assessment and one-on-one counseling',
+>>>>>>> fx-killer/main
     ctaPrimaryButton: 'Free Psychology Assessment',
     ctaSecondaryButton: 'Learn About Training',
 

@@ -1,0 +1,30 @@
+{
+  "symbol": "XAU/USD",
+  "name": "Gold vs US Dollar",
+  "nameCn": "黄金/美元",
+  "timestamp": "2025-11-12T14:59:03.610Z",
+  "price": {
+    "close": "4139.06575",
+    "high": "4139.17026",
+    "low": "4125.4128",
+    "open": "4125.4128",
+    "change": "0.32",
+    "datetime": "2025-11-13 01:00:00"
+  },
+  "indicators": {
+    "rsi": 59.27753,
+    "macd": 3.82195,
+    "macd_signal": 3.26269,
+    "sma20": 4125.3158
+  },
+  "analysis": {
+    "zh": {
+      "title": "黄金/美元技术分析：[震荡整理，关注支撑阻力]",
+      "content": "近期黄金/美元（XAU/USD）的价格在4139.06575附近震荡整理，日内波动幅度较小，显示出市场暂时缺乏方向。当前价格接近20日简单移动平均线（SMA 20），表明市场可能在这一价位附近形成短期支撑。\n\n技术指标方面，尽管RSI（14）数据缺失，但从MACD来看，当前值为3.82195，显示出短期内的多头动能仍然存在。这可能预示着价格在短期内会有一定的上行压力，但也需警惕随时可能的回调信号。\n\n在支撑位方面，4125.4128将作为关键支撑，如果价格跌破该水平，可能会进一步下探。而上方阻力位在4139.17026附近，若突破该水平，可能会吸引更多买盘，推动价格上行。\n\n建议交易者在当前市场环境中采取观望策略，等待价格突破关键支撑或阻力位后再做决策。同时，可以考虑适量布局多头，若价格回调至支撑位时，寻找进场机会，以把握潜在的反弹行情。"
+    },
+    "en": {
+      "title": "Gold vs US Dollar Technical Analysis",
+      "content": "Gold has recently shown a modest increase against the US Dollar, currently trading at 4139.06575. The 24-hour change of 0.32% suggests a slight bullish sentiment among traders, although volatility remains limited. The price action has remained within a tight range defined by the recent high of 4139.17026 and a low of 4125.4128. This consolidation phase could indicate a potential build-up for a breakout in either direction, depending on future economic data and market sentiment.\n\nThe 20-period simple moving average (SMA) at 4125.31580 acts as a critical support level. A sustained move above this level could bolster bullish momentum, while a failure to hold could lead to further testing of downside support. In the absence of an RSI reading, the MACD value of 3.82195 suggests that bullish momentum may be gaining strength. However, traders should remain cautious, as the lack of a clear signal line can introduce uncertainty in momentum interpretation.\n\nKey resistance is seen at the recent high of 4139.17026, which could serve as a pivotal point for bullish traders. A breach above this level could open the door to further gains, potentially targeting the psychological level of 4150. Conversely, if the price falls below the 4125 mark, it may trigger a sell-off, with the next support level likely to be around 4115, where buyers could re-enter the market.\n\nFor trading strategies, a conservative approach could involve waiting for confirmation of a breakout above resistance or a bounce off support. Traders might consider placing buy orders just above 4139.17026, with a stop-loss positioned below 4125. Conversely, those looking for a bearish position should consider shorting if the price decisively breaks below 4125, targeting the next support level. Careful risk management is essential given the current market conditions."
+    }
+  }
+}

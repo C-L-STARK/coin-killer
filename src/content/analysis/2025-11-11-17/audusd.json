@@ -1,0 +1,30 @@
+{
+  "symbol": "AUD/USD",
+  "name": "Australian Dollar vs US Dollar",
+  "nameCn": "澳元/美元",
+  "timestamp": "2025-11-11T17:41:05.664Z",
+  "price": {
+    "close": "0.6529",
+    "high": "0.65309",
+    "low": "0.65252",
+    "open": "0.65259",
+    "change": "0.05",
+    "datetime": "2025-11-12 04:00:00"
+  },
+  "indicators": {
+    "rsi": 52.060508,
+    "macd": 0.000086745873,
+    "macd_signal": 0.0001253723,
+    "sma20": 0.65279622
+  },
+  "analysis": {
+    "zh": {
+      "title": "澳元/美元技术分析：[震荡整理中]",
+      "content": "当前AUD/USD在0.6529附近震荡整理，近期价格波动幅度较小，显示出市场的谨慎情绪。尽管价格略微上涨0.05%，但缺乏明确的趋势指引，预计短期内仍将维持在当前区间内，交易者需关注市场的进一步动向。\n\n从技术指标来看，MACD值接近于零，显示出市场动能不足。虽然RSI(14)数据缺失，但结合当前价格行为，可能表明市场处于超买或超卖的边缘。SMA(20)位于0.65279622，提供了一定的支撑，若价格跌破该水平，则可能测试更低的支撑位。\n\n在支撑和阻力方面，当前支撑位在0.6525附近，而上方阻力位则在0.6531一线。若价格突破阻力位，可能会迎来进一步上涨；反之，跌破支撑位则可能引发下行趋势。因此，建议交易者在0.6525至0.6531区间内进行短线交易，保持灵活应对市场波动。"
+    },
+    "en": {
+      "title": "Australian Dollar vs US Dollar Technical Analysis",
+      "content": "The AUD/USD currency pair is currently trading at 0.6529, reflecting a slight increase of 0.05% over the past 24 hours. This modest uptick suggests a consolidation phase as the market seeks direction. The recent high of 0.65309 indicates a potential resistance level, while the low of 0.65252 serves as a support level. Traders should monitor these levels closely, as a breakout above resistance could signal a bullish shift, while a drop below support may indicate further bearish pressure.\n\nThe absence of the RSI and MACD provides a limited view of momentum. However, the MACD value of 0.000086745873 suggests that the momentum is currently neutral. As the price hovers above the 20-period simple moving average (SMA) of 0.65279622, it indicates a slight bullish bias in the short term. Should the price sustain above the SMA, it could attract buyers, potentially pushing the price higher toward the next resistance level.\n\nFor traders looking to enter positions, a breakout above 0.65309 could present a viable buying opportunity, with a target around 0.6550. Conversely, if the price falls below 0.65252, it may be prudent to consider short positions, targeting support at 0.6500. Given the current market dynamics, setting stop-loss orders around these critical levels will help manage risk effectively, enabling traders to capitalize on potential volatility.\n\nIn summary, the AUD/USD pair is navigating a range-bound environment, with key support and resistance levels in play. Traders should remain vigilant, utilizing technical indicators as they become available to gauge momentum more accurately. The current price action suggests that a clear directional bias may emerge soon, making it vital to stay attuned to market developments."
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "symbol": "AUD/USD",
+  "name": "Australian Dollar vs US Dollar",
+  "nameCn": "澳元/美元",
+  "timestamp": "2025-11-13T04:20:12.720Z",
+  "price": {
+    "close": "0.65552",
+    "high": "0.65583",
+    "low": "0.65547",
+    "open": "0.65579",
+    "change": "-0.04",
+    "datetime": "2025-11-13 15:00:00"
+  },
+  "indicators": {
+    "rsi": 60.74911,
+    "macd": 0.00065227823,
+    "macd_signal": 0.00050522143,
+    "sma20": 0.6543635
+  },
+  "analysis": {
+    "zh": {
+      "title": "澳元/美元技术分析：[横盘震荡]",
+      "content": "当前澳元/美元（AUD/USD）在0.6555附近交投，呈现出横盘震荡的趋势。价格高点为0.65583，低点为0.65547，表明市场缺乏明确方向，投资者情绪较为谨慎。短期内，价格维持在这一区间内，可能需要等待更明确的信号以确定后市走势。\n\n技术指标方面，虽然RSI（相对强弱指数）数据缺失，但从SMA（简单移动平均线）来看，当前价格高于20日均线0.65436，暗示短期内依然存在一定的买入动能。MACD虽为正值，显示出潜在的上行动力，但信号线缺失限制了更深入的分析。\n\n支撑位方面，0.65547附近可能成为短期支撑，若跌破该位，则可能加速下行；而0.65583则为阻力位，若突破该位，则可能引发进一步上涨。建议投资者关注此区间的突破情况，若价格有效突破阻力位，可考虑短线多头策略，反之则可寻找适度的短线空头机会。"
+    },
+    "en": {
+      "title": "Australian Dollar vs US Dollar Technical Analysis",
+      "content": "The AUD/USD pair currently trades at 0.65552, exhibiting a slight decline of 0.04% over the last 24 hours. The price action remains confined within a narrow range, with a high of 0.65583 and a low of 0.65547. This limited movement suggests a period of consolidation, where traders are assessing the prevailing market sentiment. The overall trend appears to be bearish, as the price is positioned below the 20-period Simple Moving Average (SMA) of 0.6543635, indicating potential continued downside pressure.\n\nIn terms of technical indicators, the absence of a current RSI value limits our ability to gauge overbought or oversold conditions effectively. However, the MACD shows a positive value of 0.00065227823, hinting at a potential bullish divergence if it crosses above the signal line in the future. This scenario could suggest a reversal in sentiment, but further confirmation is needed from other indicators and price action. Traders should monitor these indicators for shifts that could signal a change in momentum.\n\nSupport levels appear to be established around the recent low of 0.65547, which may serve as a critical point for buyers to step in. If this level holds, it could lead to a potential bounce back towards the SMA. Conversely, a break below this support could pave the way for further declines, potentially testing lower support zones. Resistance is likely at the recent high of 0.65583, where sellers may re-emerge, preventing further upside movement.\n\nFor trading strategies, a cautious approach is advisable given the current market conditions. Traders may consider waiting for a confirmation of a bullish reversal near the support level before entering long positions. Conversely, short positions could be justified if the price decisively breaks below support, with targets set towards lower psychological levels. Maintaining a watchful eye on both the technical indicators and market news will be essential for making informed trading decisions in this fluctuating environment."
+    }
+  }
+}

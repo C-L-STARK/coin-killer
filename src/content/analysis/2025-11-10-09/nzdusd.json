@@ -1,0 +1,30 @@
+{
+  "symbol": "NZD/USD",
+  "name": "New Zealand Dollar vs US Dollar",
+  "nameCn": "纽元/美元",
+  "timestamp": "2025-11-10T09:36:16.322Z",
+  "price": {
+    "close": "0.56458902",
+    "high": "0.56500369",
+    "low": "0.56455714",
+    "open": "0.56474841",
+    "change": "-0.01",
+    "datetime": "2025-11-10 20:00:00"
+  },
+  "indicators": {
+    "rsi": 61.36602,
+    "macd": 0.00031533937,
+    "macd_signal": 0.00005830577,
+    "sma20": 0.56298082
+  },
+  "analysis": {
+    "zh": {
+      "title": "纽元/美元技术分析：[震荡整理中]",
+      "content": "当前纽元/美元(NZD/USD)的走势显示出震荡整理的特征。最新价格为0.56458902，24小时变化不大，表明市场缺乏明显的方向。高点和低点的相对接近也反映出市场参与者的观望情绪，可能在等待更清晰的市场信号。\n\n从技术指标来看，虽然没有RSI和信号线的完整数据，但MACD显示出微弱的正值，暗示短期内可能存在一定的买盘支撑。20日简单移动平均线(SMA)在0.56298082附近，为当前价格提供了支撑。这一水平的稳定性将是判断后续走势的重要依据。\n\n在支撑和阻力位方面，0.5645附近是短期支撑位，而0.5650则是当前的阻力位。如果价格突破0.5650，可能引发进一步上涨的动能，反之若跌破0.5629，则可能会加速调整。投资者需密切关注这些关键水平的变化。\n\n建议交易者在当前区间内采取谨慎策略，考虑在接近支撑位时寻找买入机会，而在接近阻力位时则可适度考虑卖出。保持灵活应对市场波动，以降低风险并把握潜在的盈利机会。"
+    },
+    "en": {
+      "title": "New Zealand Dollar vs US Dollar Technical Analysis",
+      "content": "The NZD/USD currency pair is currently trading at 0.56458902, reflecting a slight decline of 0.01% over the past 24 hours. The price has been oscillating between a high of 0.56500369 and a low of 0.56455714, indicating a narrow trading range. This consolidation suggests a market that is indecisive, with potential for a breakout in either direction. Traders should closely monitor price action for signs of momentum that could lead to a significant move.\n\nTechnical indicators provide mixed signals. The RSI(14) is not available, but the MACD is showing a positive value of 0.00031533937, indicating bullish momentum, albeit weak. The SMA(20) stands at 0.56298082, suggesting that the pair is currently trading above this short-term moving average, which may act as a support level. If price action remains above the SMA, it could reinforce bullish sentiment, while a drop below could indicate a bearish reversal.\n\nKey support levels are identified around the recent low of 0.56455714, with further support at the SMA(20). Resistance is likely to be faced at the recent high of 0.56500369. A breakout above this level could signal a continuation of upward momentum, potentially targeting higher resistance levels. Conversely, a sustained move below the support zone may lead to further declines, urging caution for long positions.\n\nTraders are advised to adopt a wait-and-see approach, looking for clear signals before entering positions. A breakout above resistance could present an opportunity for a long position, while a failure to hold above the SMA might prompt a short entry. Given the current market conditions, risk management will be crucial, as volatility could increase with any decisive moves."
+    }
+  }
+}

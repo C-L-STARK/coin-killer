@@ -1,0 +1,30 @@
+{
+  "symbol": "XAU/USD",
+  "name": "Gold vs US Dollar",
+  "nameCn": "黄金/美元",
+  "timestamp": "2025-11-11T05:44:54.873Z",
+  "price": {
+    "close": "4118.11",
+    "high": "4134.5",
+    "low": "4112.24",
+    "open": "4134.5",
+    "change": "-0.40",
+    "datetime": "2025-11-11 16:00:00"
+  },
+  "indicators": {
+    "rsi": 65.49796,
+    "macd": 21.94646,
+    "macd_signal": 22.61888,
+    "sma20": 4104.566
+  },
+  "analysis": {
+    "zh": {
+      "title": "黄金/美元技术分析：[震荡整理中]",
+      "content": "当前黄金/美元（XAU/USD）价格为4118.11，近期表现出震荡整理的特征。虽然24小时变化为-0.40%，但价格仍在4134.5的高点和4112.24的低点之间波动。市场情绪较为谨慎，投资者在等待更明确的方向指引。\n\n从技术指标来看，MACD显示出21.94646的正值，暗示短期内动能仍然存在。虽然RSI(14)数据缺失，但结合当前价格走势，可能显示出超买或超卖的迹象。简单移动平均线（SMA）20日线为4104.566，提供了一个潜在的支撑位，若价格跌破此位，可能会进一步回落。\n\n在支撑和阻力位方面，4134.5为主要阻力位，突破该水平将可能引发进一步上涨，而4112.24则是关键支撑位，若跌破该位，可能会引发更多的抛售压力。投资者应密切关注这两个点，以判断后市走势。\n\n基于当前市场环境，建议投资者采取观望态度，耐心等待更明确的突破信号。若价格突破4134.5，可考虑适度进场多单；反之，若跌破4112.24，则应考虑减仓或空单策略。保持灵活的交易计划将有助于应对市场的波动性。"
+    },
+    "en": {
+      "title": "Gold vs US Dollar Technical Analysis",
+      "content": "The current price of Gold against the US Dollar (XAU/USD) at 4118.11 indicates a slight bearish sentiment, reflected by the 24-hour change of -0.40%. The recent high of 4134.5 and low of 4112.24 suggest a narrow trading range, with price fluctuations limited in the short term. Analyzing the trend, the market appears to be consolidating, potentially indicating a pause before the next significant move. Traders should monitor for breakout signals either above 4134.5 or below 4112.24 to confirm the next direction.\n\nIn terms of technical indicators, the absence of a current RSI value limits the ability to assess overbought or oversold conditions. However, the MACD reading of 21.94646 suggests upward momentum, albeit without a corresponding signal line for confirmation. The SMA(20) at 4104.56600 serves as a dynamic support level, and a close below this average could trigger further bearish activity. Conversely, maintaining price above this SMA could reinforce bullish sentiment.\n\nSupport levels are identified at 4112.24 and the SMA(20), while resistance is positioned at 4134.5. A break below support could lead to a test of lower levels, potentially drawing in sellers. On the other hand, a successful breach above resistance could attract buyers, pushing the price towards higher targets. \n\nFor traders, a cautious approach is advisable. Watching for price action around the established support and resistance levels will be crucial. A confirmed breakout could present a trading opportunity, either to the upside, targeting 4150, or to the downside, with a potential target near 4100. Implementing stop-loss orders will be essential to manage risk effectively in this volatile market."
+    }
+  }
+}

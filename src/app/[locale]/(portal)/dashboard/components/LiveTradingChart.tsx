@@ -89,9 +89,33 @@ export default function LiveTradingChart({ symbol, interval, config }: LiveTradi
           allow_symbol_change: true,
           container_id: widgetId,
           studies,
-          disabled_features: ['use_localstorage_for_settings'],
+          disabled_features: [
+            'use_localstorage_for_settings',
+            'header_symbol_search',
+            'symbol_search_hot_key',
+          ],
           enabled_features: ['study_templates'],
+          loading_screen: { backgroundColor: "#ffffff" },
+          overrides: {
+            "mainSeriesProperties.showCountdown": false,
+          },
+          // Add error handler to suppress quote snapshot errors
+          debug: false,
         });
+
+        // Suppress specific console errors from TradingView
+        const originalError = console.error;
+        console.error = (...args: any[]) => {
+          if (
+            args[0]?.includes?.('Quote snapshot') ||
+            args[0]?.includes?.('LegendWidget') ||
+            args[0]?.toString?.().includes?.('reading \'list\'')
+          ) {
+            // Suppress TradingView quote snapshot errors
+            return;
+          }
+          originalError.apply(console, args);
+        };
       }
     };
 
@@ -100,6 +124,13 @@ export default function LiveTradingChart({ symbol, interval, config }: LiveTradi
     return () => {
       if (script.parentNode) {
         script.parentNode.removeChild(script);
+      }
+      if (widgetRef.current) {
+        try {
+          widgetRef.current.remove?.();
+        } catch (e) {
+          // Ignore cleanup errors
+        }
       }
       widgetRef.current = null;
     };

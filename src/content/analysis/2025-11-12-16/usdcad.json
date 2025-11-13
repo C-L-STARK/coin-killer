@@ -1,0 +1,30 @@
+{
+  "symbol": "USD/CAD",
+  "name": "US Dollar vs Canadian Dollar",
+  "nameCn": "美元/加元",
+  "timestamp": "2025-11-12T16:17:54.586Z",
+  "price": {
+    "close": "1.40022",
+    "high": "1.40044",
+    "low": "1.39890",
+    "open": "1.39959",
+    "change": "0.04",
+    "datetime": "2025-11-13 03:00:00"
+  },
+  "indicators": {
+    "rsi": 41.45697,
+    "macd": -0.00034583841,
+    "macd_signal": -0.00027034814,
+    "sma20": 1.40128
+  },
+  "analysis": {
+    "zh": {
+      "title": "美元/加元技术分析：[震荡整理中]",
+      "content": "当前美元/加元的最新价格为1.40022，短期内市场表现出震荡整理的特征。价格在1.40044和1.39890之间波动，显示出市场缺乏明确的方向。考虑到24小时变化仅为0.04%，短期内可能会继续维持这种横向走势。\n\n在技术指标方面，MACD目前为负值，表明短期内卖压仍然存在，尽管RSI数据暂缺，但一旦回补，若RSI持续低于50，则可能进一步印证市场的弱势。SMA(20)为1.40128，显示出若价格突破此水平，上行可能性增大。\n\n支撑位方面，1.39890是关键支撑，若价格跌破此位，可能引发更深的调整。而在阻力位方面，1.40128则是近期的主要阻力，突破后有望进一步上涨。交易者应密切关注这些关键水平，以判断后续走势。\n\n建议短线交易者在支撑位附近寻找买入机会，若价格反弹至阻力位则考虑适度获利了结。保持灵活的止损策略，以应对市场的突发变化。"
+    },
+    "en": {
+      "title": "US Dollar vs Canadian Dollar Technical Analysis",
+      "content": "The USD/CAD currency pair is currently trading at 1.40022, showing a modest 24-hour change of 0.04%. The market has demonstrated a tight range, with a high of 1.40044 and a low of 1.39890. This narrow price movement suggests a period of consolidation, reflecting uncertainty among traders. The pair is hovering just below the 20-period Simple Moving Average (SMA) at 1.40128, indicating a potential resistance level. A breach above this level could signal a shift towards a bullish trend.\n\nIn terms of momentum indicators, the MACD is slightly negative at -0.00034583841, suggesting that bearish momentum is present, albeit weak. The absence of RSI data limits the momentum analysis, but a negative MACD typically indicates a potential for further downside if the price fails to hold above current levels. Traders should monitor these indicators closely for signs of a reversal or continuation of the current trend.\n\nSupport levels are identified near the recent low of 1.39890, where buying interest may emerge if prices decline further. Conversely, a break below this support could open the door to more significant selling pressure, potentially targeting the next support level around 1.39500. This level will be crucial for traders looking to identify potential entry points for long positions if the market rebounds.\n\nFor trading strategies, consider placing buy orders above the SMA at 1.40128, with a target aimed at the next resistance level around 1.40300. Conversely, if the price breaks below 1.39890, short positions could be warranted, with targets set towards the identified support level at 1.39500. Risk management through stop-loss orders will be essential to protect against sudden market movements."
+    }
+  }
+}

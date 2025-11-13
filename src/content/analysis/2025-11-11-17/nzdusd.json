@@ -1,0 +1,30 @@
+{
+  "symbol": "NZD/USD",
+  "name": "New Zealand Dollar vs US Dollar",
+  "nameCn": "纽元/美元",
+  "timestamp": "2025-11-11T17:42:30.381Z",
+  "price": {
+    "close": "0.56602705",
+    "high": "0.56609112",
+    "low": "0.56564283",
+    "open": "0.56580287",
+    "change": "0.06",
+    "datetime": "2025-11-12 04:00:00"
+  },
+  "indicators": {
+    "rsi": 60.31531,
+    "macd": 0.000526988,
+    "macd_signal": 0.00038974627,
+    "sma20": 0.56481204
+  },
+  "analysis": {
+    "zh": {
+      "title": "纽元/美元技术分析：[震荡整理中]",
+      "content": "当前纽元/美元(NZD/USD)在0.5660附近震荡整理，短期内缺乏明显的趋势方向。从24小时变化来看，价格波动幅度较小，市场情绪相对平稳。考虑到当前的高点和低点分别为0.56609112和0.56564283，价格在这个区间内反复测试，显示出市场的犹豫。\n\n技术指标方面，虽然RSI和MACD数据尚未提供，但从SMA(20)的值0.56481204来看，价格依然维持在该均线之上，表明短期内可能存在一定的支撑力度。若价格持续保持在SMA之上，可能会吸引更多买盘入场，推动价格向上突破。\n\n在支撑和阻力位方面，0.5656作为短期支撑位，有助于限制下行风险。而0.5661则为阻力位，若价格突破该水平，可能会引发进一步的上涨动能。若价格未能突破阻力位，可能会出现回调，测试支撑位的有效性。\n\n在交易建议上，建议投资者关注价格在支撑位和阻力位的表现。若价格突破0.5661，可考虑建立多头头寸；反之，若价格跌破0.5656，则需谨慎对待，可能需要考虑空头策略，控制风险以应对市场的不确定性。"
+    },
+    "en": {
+      "title": "New Zealand Dollar vs US Dollar Technical Analysis",
+      "content": "The NZD/USD pair is currently trading at 0.5660, showing a slight uptick of 0.06% over the past 24 hours. This modest movement indicates a generally stable market condition. The price has been oscillating within a narrow range, with a high of 0.5661 and a low of 0.5656, suggesting a period of consolidation. Traders should be cautious as the lack of significant momentum could lead to a breakout in either direction, depending on forthcoming economic data or geopolitical developments.\n\nThe absence of the Relative Strength Index (RSI) data limits our ability to gauge the market's overbought or oversold conditions. However, the MACD shows a positive value of 0.0005, indicating a potential bullish momentum. This could suggest that buyers are gradually gaining control, especially if the price maintains above the 20-period Simple Moving Average (SMA) at 0.5648. A sustained move above the SMA could further reinforce bullish sentiment and attract additional buying interest.\n\nKey support and resistance levels are crucial for traders looking to position themselves effectively. The immediate support level appears to be around 0.5656, which aligns with the recent low, while resistance can be identified at the recent high of 0.5661. A break below the support level could trigger further selling pressure, potentially leading to a test of lower levels. Conversely, a breakout above the resistance could open the door for a rally towards 0.5680, making it a significant target for bullish traders.\n\nIn terms of trading strategies, those looking to capitalize on short-term fluctuations might consider a range-bound approach, buying near the support level and selling near resistance. Additionally, waiting for confirmation of a breakout in either direction before committing to a position could minimize risks. Monitoring broader market sentiment and upcoming economic releases will be essential for making informed trading decisions in this relatively stable environment."
+    }
+  }
+}

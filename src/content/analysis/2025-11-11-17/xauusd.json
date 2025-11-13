@@ -1,0 +1,30 @@
+{
+  "symbol": "XAU/USD",
+  "name": "Gold vs US Dollar",
+  "nameCn": "黄金/美元",
+  "timestamp": "2025-11-11T17:43:54.246Z",
+  "price": {
+    "close": "4114.08472",
+    "high": "4117.44094",
+    "low": "4110.28629",
+    "open": "4113.90476",
+    "change": "0.00",
+    "datetime": "2025-11-12 04:00:00"
+  },
+  "indicators": {
+    "rsi": 51.50071,
+    "macd": 9.63801,
+    "macd_signal": 14.73534,
+    "sma20": 4124.36624
+  },
+  "analysis": {
+    "zh": {
+      "title": "黄金/美元技术分析：[震荡整理，谨慎观察]",
+      "content": "当前黄金/美元的价格在4114.08附近震荡整理，未能突破近期高点4117.44，显示出市场的犹豫。由于价格波动较小，短期内可能继续维持在这一区间内。投资者应密切关注后续市场动向，以判断是否会出现更明显的趋势变化。\n\n技术指标方面，目前MACD显示出一定的上行动能，但RSI数据缺失，无法全面评估超买或超卖状况。20日简单移动平均线（SMA）在4124.37，作为潜在的阻力位，若价格突破此线，可能会引发进一步的上涨行情。\n\n支撑位方面，4110.29是近期低点，若价格跌破该水平，可能会引发卖盘压力，导致进一步下探。投资者应关注这一关键支撑位，以判断市场的短期走势。\n\n综合来看，建议短线交易者采取谨慎态度，关注价格在支撑和阻力位附近的表现。若价格突破4124.37，可考虑进场做多；反之，若跌破4110.29，则应考虑做空策略，以应对市场波动。"
+    },
+    "en": {
+      "title": "Gold vs US Dollar Technical Analysis",
+      "content": "The XAU/USD pair is currently trading at 4114.08, showing a stable price movement with a 24-hour change of 0.00%. This stability suggests a period of consolidation following recent fluctuations. The recent high of 4117.44 and a low of 4110.29 indicate a tight trading range, signaling indecision among traders. A breakout above 4124 could suggest a bullish trend, while a move below 4110 could confirm bearish momentum, making these levels critical for future price action.\n\nThe technical indicators present a mixed picture. The MACD reading of 9.63801 indicates a potential bullish crossover; however, the absence of a signal line makes it difficult to draw strong conclusions. The SMA(20) at 4124.37 further reinforces the importance of this level as a potential resistance point. If the price manages to surpass this SMA, it could lead to increased buying interest, pushing prices higher. Conversely, if the price fails to break this level, it may face downward pressure.\n\nKey support is found around the 4110 level, which has held firm during recent trading sessions. A sustained drop below this level may trigger further selling, potentially leading to a test of lower supports. Conversely, the resistance at 4124.37 is crucial, as a break above could open the door to higher targets and renewed bullish sentiment. Traders should closely monitor price action near these levels for potential breakout opportunities.\n\nFor trading strategies, a cautious approach is advisable. A buy position could be initiated if the price breaks above the SMA with confirmation, possibly targeting the next resistance levels. Conversely, a sell position may be warranted if the price breaches the support level at 4110, with targets set lower. Risk management should be a priority, with stop-loss orders placed strategically to safeguard against adverse movements."
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "symbol": "XAU/USD",
+  "name": "Gold vs US Dollar",
+  "nameCn": "黄金/美元",
+  "timestamp": "2025-11-11T16:19:35.531Z",
+  "price": {
+    "close": "4114.58765",
+    "high": "4115.3809",
+    "low": "4105.6365",
+    "open": "4107.51205",
+    "change": "0.17",
+    "datetime": "2025-11-12 03:00:00"
+  },
+  "indicators": {
+    "rsi": 51.73914,
+    "macd": 11.34384,
+    "macd_signal": 16.019606,
+    "sma20": 4124.063288
+  },
+  "analysis": {
+    "zh": {
+      "title": "黄金/美元技术分析：[短期震荡调整中]",
+      "content": "当前黄金/美元(XAU/USD)的价格维持在4114.58附近，显示出短期内的震荡整理趋势。虽然价格略微上涨0.17%，但整体波动幅度有限，表明市场情绪较为谨慎。投资者需关注即将发布的经济数据，以判断后市方向。\n\n技术指标方面，当前缺乏RSI值使得超买或超卖的判断不够精准，但MACD指标显示出11.34的正值，意味着短期内仍有上行动能。20日简单移动平均线(SMA)在4124.06附近，提供了一定的阻力，若价格突破该点位，可能会引发进一步上涨。\n\n从支撑和阻力来看，当前支撑位位于4105.64附近，若价格跌破该位置，可能会导致更大的回调。而上方阻力位则在4124.06，此处若形成反弹，则可能吸引更多买盘进入市场。\n\n综合来看，建议交易者在4105.64至4124.06区间内进行区间交易。若价格成功突破上方阻力，可以考虑跟进多头仓位；反之，若跌破下方支撑，应谨慎应对，考虑短线空头机会。保持灵活，密切关注市场动态。"
+    },
+    "en": {
+      "title": "Gold vs US Dollar Technical Analysis",
+      "content": "The XAU/USD pair is currently trading at 4114.59, showing a modest 24-hour change of 0.17%. The price action has been relatively tight, with a high of 4115.38 and a low of 4105.64, indicating a consolidation phase. This sideways movement suggests that market participants are weighing potential breakout directions. To establish a clearer trend, traders should monitor the price's ability to break above the recent high or fall below the low, as either scenario could indicate a stronger directional move.\n\nIn terms of technical indicators, the MACD shows a value of 11.34, indicating bullish momentum, although the lack of signal data makes it challenging to assess the trend's sustainability. The absence of the RSI complicates the interpretation of overbought or oversold conditions. However, the SMA(20) at 4124.06 serves as a dynamic resistance level. A sustained breakout above this moving average could bolster bullish sentiment, while a failure to breach it may lead to further downward pressure.\n\nSupport levels are visible around the recent low of 4105.63, which could act as a crucial point for buyers to step in. If the price dips below this level, it may trigger additional selling, with the next support likely found around 4090. Conversely, if the market can maintain above 4115, it could pave the way for a challenge of the 4124 resistance level. Traders should remain vigilant for volume spikes, as these may signal the strength of any breakout attempt.\n\nFor trading strategies, a cautious approach is advisable given the current consolidation. Traders might consider long positions above the 4124 resistance, targeting the next psychological level around 4150, while placing stop-loss orders below the 4105 support. Alternatively, short positions could be executed if the price breaks below 4105, with targets set near 4090. Risk management remains essential, as market conditions can shift rapidly in response to economic news or geopolitical developments."
+    }
+  }
+}

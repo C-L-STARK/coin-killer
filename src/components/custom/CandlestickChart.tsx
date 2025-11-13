@@ -1,6 +1,10 @@
 "use client";
 
+<<<<<<< HEAD
 import { useEffect, useRef } from 'react';
+=======
+import { useEffect, useRef, useState } from 'react';
+>>>>>>> fx-killer/main
 
 interface Candle {
   time: number;
@@ -13,6 +17,22 @@ interface Candle {
 
 export default function CandlestickChart() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
+<<<<<<< HEAD
+=======
+  const [isDark, setIsDark] = useState(false);
+
+  // Detect dark mode
+  useEffect(() => {
+    const checkDarkMode = () => {
+      setIsDark(document.documentElement.classList.contains('dark'));
+    };
+
+    checkDarkMode();
+    // Check periodically in case theme changes
+    const interval = setInterval(checkDarkMode, 1000);
+    return () => clearInterval(interval);
+  }, []);
+>>>>>>> fx-killer/main
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -33,6 +53,15 @@ export default function CandlestickChart() {
     updateCanvasSize();
     window.addEventListener('resize', updateCanvasSize);
 
+<<<<<<< HEAD
+=======
+    // Trend state management
+    let currentTrend: 'up' | 'down' | 'sideways' = 'up';
+    let trendDuration = 0;
+    const minTrendDuration = 8; // Minimum candles before trend can change
+    const maxTrendDuration = 25; // Maximum candles before trend must change
+
+>>>>>>> fx-killer/main
     // Update trend state
     const updateTrend = () => {
       trendDuration++;
@@ -68,21 +97,34 @@ export default function CandlestickChart() {
         // Uptrend: 70% bullish, 30% bearish
         const isBullish = Math.random() < 0.7;
         if (isLargeCandle) {
+<<<<<<< HEAD
           changePercent = isBullish ? Math.random() * 0.06 : -Math.random() * 0.03;
         } else {
           changePercent = isBullish ? Math.random() * 0.025 : -Math.random() * 0.015;
+=======
+          changePercent = isBullish ? Math.random() * 0.02 : -Math.random() * 0.01;
+        } else {
+          changePercent = isBullish ? Math.random() * 0.008 : -Math.random() * 0.005;
+>>>>>>> fx-killer/main
         }
       } else if (currentTrend === 'down') {
         // Downtrend: 70% bearish, 30% bullish
         const isBearish = Math.random() < 0.7;
         if (isLargeCandle) {
+<<<<<<< HEAD
           changePercent = isBearish ? -Math.random() * 0.06 : Math.random() * 0.03;
         } else {
           changePercent = isBearish ? -Math.random() * 0.025 : Math.random() * 0.015;
+=======
+          changePercent = isBearish ? -Math.random() * 0.02 : Math.random() * 0.01;
+        } else {
+          changePercent = isBearish ? -Math.random() * 0.008 : Math.random() * 0.005;
+>>>>>>> fx-killer/main
         }
       } else {
         // Sideways: 50/50 with smaller moves
         if (isLargeCandle) {
+<<<<<<< HEAD
           changePercent = (Math.random() - 0.5) * 0.05;
         } else {
           changePercent = (Math.random() - 0.5) * 0.02;
@@ -97,6 +139,29 @@ export default function CandlestickChart() {
 
       const high = Math.max(open, close) * (1 + upperWickPercent);
       const low = Math.min(open, close) * (1 - lowerWickPercent);
+=======
+          changePercent = (Math.random() - 0.5) * 0.015;
+        } else {
+          changePercent = (Math.random() - 0.5) * 0.006;
+        }
+      }
+
+      let close = open * (1 + changePercent);
+
+      // Clamp close price to stay within range (970-1030)
+      close = Math.max(970, Math.min(1030, close));
+
+      // Random wick length: 0% to 0.3% (更短的影线)
+      const upperWickPercent = Math.random() * 0.003;
+      const lowerWickPercent = Math.random() * 0.003;
+
+      let high = Math.max(open, close) * (1 + upperWickPercent);
+      let low = Math.min(open, close) * (1 - lowerWickPercent);
+
+      // Clamp high and low to stay within range
+      high = Math.min(1040, high);
+      low = Math.max(960, low);
+>>>>>>> fx-killer/main
 
       // Generate volume (random between 5000 and 50000, larger for big candles)
       const baseVolume = isLargeCandle ? 30000 : 15000;
@@ -159,6 +224,7 @@ export default function CandlestickChart() {
     };
 
     // Get candle color based on CCI (NS Indicator logic)
+<<<<<<< HEAD
     const getCandleColor = (cci1: number, cci2: number, isBullish: boolean): { body: string; wick: string; hollow: boolean } => {
       // Sensitivity = 1 (default): CCI1 period = 7, CCI2 period = 49
 
@@ -174,6 +240,41 @@ export default function CandlestickChart() {
       } else { // cci1 > 0 && cci2 < 0
         // Bounce/weak - Light gray, bullish candles hollow
         return { body: 'rgba(180, 180, 180, 1)', wick: 'rgba(180, 180, 180, 1)', hollow: isBullish };
+=======
+    const getCandleColor = (cci1: number, cci2: number, isBullish: boolean, isDarkMode: boolean): { body: string; wick: string; hollow: boolean } => {
+      // Sensitivity = 1 (default): CCI1 period = 7, CCI2 period = 49
+
+      if (isDarkMode) {
+        // Dark mode: use red/green colors
+        if (cci1 >= 0 && cci2 >= 0) {
+          // Strong uptrend - Green border, hollow
+          return { body: 'rgba(34, 197, 94, 1)', wick: 'rgba(34, 197, 94, 1)', hollow: true };
+        } else if (cci1 < 0 && cci2 >= 0) {
+          // Weak/warning - Light gray, bullish candles hollow
+          return { body: 'rgba(180, 180, 180, 1)', wick: 'rgba(180, 180, 180, 1)', hollow: isBullish };
+        } else if (cci1 < 0 && cci2 < 0) {
+          // Strong downtrend - Red, filled
+          return { body: 'rgba(239, 68, 68, 1)', wick: 'rgba(239, 68, 68, 1)', hollow: false };
+        } else { // cci1 > 0 && cci2 < 0
+          // Bounce/weak - Light gray, bullish candles hollow
+          return { body: 'rgba(180, 180, 180, 1)', wick: 'rgba(180, 180, 180, 1)', hollow: isBullish };
+        }
+      } else {
+        // Light mode: use black/gray colors
+        if (cci1 >= 0 && cci2 >= 0) {
+          // Strong uptrend - Black border, hollow
+          return { body: 'rgba(0, 0, 0, 1)', wick: 'rgba(0, 0, 0, 1)', hollow: true };
+        } else if (cci1 < 0 && cci2 >= 0) {
+          // Weak/warning - Light gray, bullish candles hollow
+          return { body: 'rgba(180, 180, 180, 1)', wick: 'rgba(180, 180, 180, 1)', hollow: isBullish };
+        } else if (cci1 < 0 && cci2 < 0) {
+          // Strong downtrend - Black, filled
+          return { body: 'rgba(0, 0, 0, 1)', wick: 'rgba(0, 0, 0, 1)', hollow: false };
+        } else { // cci1 > 0 && cci2 < 0
+          // Bounce/weak - Light gray, bullish candles hollow
+          return { body: 'rgba(180, 180, 180, 1)', wick: 'rgba(180, 180, 180, 1)', hollow: isBullish };
+        }
+>>>>>>> fx-killer/main
       }
     };
 
@@ -274,24 +375,53 @@ export default function CandlestickChart() {
       return zigzagPoints;
     };
 
+<<<<<<< HEAD
     // Initialize
     let candles: Candle[] = [];
     let lastPrice = 1000;
+=======
+    // Initialize - 生成676根K线用于维加斯通道
+    let candles: Candle[] = [];
+    let lastPrice = 1000;
+
+    // 预生成676根K线
+    for (let i = 0; i < 676; i++) {
+      const newCandle = generateCandle(lastPrice);
+      candles.push(newCandle);
+      lastPrice = newCandle.close;
+    }
+
+    // Fixed price range for stable display (不自动缩放)
+    const fixedMinPrice = 950;  // 固定最低价
+    const fixedMaxPrice = 1050; // 固定最高价
+    const fixedPriceRange = fixedMaxPrice - fixedMinPrice;
+
+>>>>>>> fx-killer/main
     let currentBidPrice = lastPrice - 0.3; // Bid price (买价) = lower
     let currentAskPrice = lastPrice + 0.3; // Ask price (卖价) = higher
     const candleWidth = 10;
     const candleSpacing = 14;
 
+<<<<<<< HEAD
     // Trend state management
     let currentTrend: 'up' | 'down' | 'sideways' = 'up';
     let trendDuration = 0;
     const minTrendDuration = 8; // Minimum candles before trend can change
     const maxTrendDuration = 25; // Maximum candles before trend must change
 
+=======
+>>>>>>> fx-killer/main
     let animationId: number;
     let lastCandleTime = Date.now();
     const candleInterval = 150;
 
+<<<<<<< HEAD
+=======
+    // Smooth scrolling animation
+    let scrollOffset = 0; // 0 to 1, represents how far we've scrolled
+    let isScrolling = false;
+
+>>>>>>> fx-killer/main
     const draw = () => {
       const rect = canvas.getBoundingClientRect();
 
@@ -307,11 +437,36 @@ export default function CandlestickChart() {
         currentBidPrice = lastPrice - spread / 2; // Bid = lower than mid price
         currentAskPrice = lastPrice + spread / 2; // Ask = higher than mid price
         lastCandleTime = now;
+<<<<<<< HEAD
       }
 
       // Reserve space on the right to see new candles appearing (subtract 5 candles worth of space)
       const maxCandles = Math.floor(rect.width / candleSpacing) - 5;
       if (candles.length > maxCandles) {
+=======
+
+        // Start scrolling animation
+        scrollOffset = 0;
+        isScrolling = true;
+      }
+
+      // Update scroll animation
+      if (isScrolling) {
+        scrollOffset += 0.08; // Adjust this value to control scroll speed (0.08 = ~12 frames for full scroll at 60fps)
+        if (scrollOffset >= 1) {
+          scrollOffset = 0;
+          isScrolling = false;
+        }
+      }
+
+      // Reserve space on the right to see new candles appearing (subtract 5 candles worth of space)
+      // Keep at least 676 candles in memory for Vegas Channel 2 calculation
+      const visibleCandles = Math.floor(rect.width / candleSpacing) - 5;
+      const maxCandlesInMemory = 676;
+
+      // Only keep maxCandlesInMemory candles in memory
+      if (candles.length > maxCandlesInMemory) {
+>>>>>>> fx-killer/main
         candles.shift();
       }
 
@@ -320,6 +475,7 @@ export default function CandlestickChart() {
         return;
       }
 
+<<<<<<< HEAD
       // Calculate price range
       let minPrice = Infinity;
       let maxPrice = -Infinity;
@@ -338,11 +494,29 @@ export default function CandlestickChart() {
       const mainChartHeight = (rect.height * 3) / 4;
       const subChartHeight = rect.height / 4;
       const subChartTop = mainChartHeight;
+=======
+      // Calculate which candles to display (only the last visibleCandles)
+      const displayStartIndex = Math.max(0, candles.length - visibleCandles);
+      const displayCandles = candles.slice(displayStartIndex);
+
+      // Apply smooth scroll offset
+      const pixelOffset = scrollOffset * candleSpacing;
+
+      // Use fixed price range (no auto-scaling)
+      const minPrice = fixedMinPrice;
+      const maxPrice = fixedMaxPrice;
+      const priceRange = fixedPriceRange;
+      const padding = { top: 0, bottom: 0, left: 0, right: 0 };
+
+      // Use full canvas height for main chart (no sub chart)
+      const mainChartHeight = rect.height;
+>>>>>>> fx-killer/main
 
       // Calculate CCI for NS indicator (Sensitivity = 1)
       const cci1 = candles.length >= 7 ? calculateCCI(candles, 7) : [];
       const cci2 = candles.length >= 49 ? calculateCCI(candles, 49) : [];
 
+<<<<<<< HEAD
       // Calculate EMA for sub chart (Golden/Death Cross)
       const closes = candles.map(c => c.close);
       const ema12 = candles.length >= 12 ? calculateEMA(closes, 12) : [];
@@ -364,12 +538,20 @@ export default function CandlestickChart() {
       }
 
       // ===== MAIN CHART (2/3 top) =====
+=======
+      // ===== MAIN CHART (full height) =====
+>>>>>>> fx-killer/main
 
       // Draw vertical grid lines (main chart)
       ctx.strokeStyle = 'rgba(200, 200, 200, 0.3)';
       ctx.lineWidth = 1;
+<<<<<<< HEAD
       for (let i = 0; i < candles.length; i += 10) {
         const x = i * candleSpacing + candleWidth / 2;
+=======
+      for (let i = 0; i < displayCandles.length; i += 10) {
+        const x = i * candleSpacing + candleWidth / 2 - pixelOffset;
+>>>>>>> fx-killer/main
         ctx.beginPath();
         ctx.moveTo(x, 0);
         ctx.lineTo(x, mainChartHeight);
@@ -385,9 +567,143 @@ export default function CandlestickChart() {
         ctx.stroke();
       }
 
+<<<<<<< HEAD
       // Draw candles with NS indicator colors
       candles.forEach((candle, index) => {
         const x = index * candleSpacing + candleWidth / 2;
+=======
+      // Draw Vegas Channel 1 (EMA144-169) - 在K线之前绘制
+      if (candles.length >= 169) {
+        const closes = candles.map(c => c.close);
+        const ema144 = calculateEMA(closes, 144);
+        const ema169 = calculateEMA(closes, 169);
+
+        // Only draw the visible portion
+        const ema144Display = ema144.slice(displayStartIndex);
+        const ema169Display = ema169.slice(displayStartIndex);
+
+        // Fill the channel area (淡紫色填充)
+        ctx.fillStyle = 'rgba(167, 139, 250, 0.08)';
+        ctx.beginPath();
+        // Draw upper line
+        ema144Display.forEach((value, index) => {
+          const x = index * candleSpacing + candleWidth / 2 - pixelOffset;
+          const y = padding.top + ((maxPrice - value) / priceRange) * mainChartHeight;
+          if (index === 0) {
+            ctx.moveTo(x, y);
+          } else {
+            ctx.lineTo(x, y);
+          }
+        });
+        // Draw lower line in reverse
+        for (let index = ema169Display.length - 1; index >= 0; index--) {
+          const value = ema169Display[index];
+          const x = index * candleSpacing + candleWidth / 2 - pixelOffset;
+          const y = padding.top + ((maxPrice - value) / priceRange) * mainChartHeight;
+          ctx.lineTo(x, y);
+        }
+        ctx.closePath();
+        ctx.fill();
+
+        // Draw upper band (EMA144)
+        ctx.strokeStyle = 'rgba(167, 139, 250, 0.6)'; // 淡紫色
+        ctx.lineWidth = 1.5;
+        ctx.beginPath();
+        ema144Display.forEach((value, index) => {
+          const x = index * candleSpacing + candleWidth / 2 - pixelOffset;
+          const y = padding.top + ((maxPrice - value) / priceRange) * mainChartHeight;
+          if (index === 0) {
+            ctx.moveTo(x, y);
+          } else {
+            ctx.lineTo(x, y);
+          }
+        });
+        ctx.stroke();
+
+        // Draw lower band (EMA169)
+        ctx.strokeStyle = 'rgba(167, 139, 250, 0.6)'; // 淡紫色
+        ctx.lineWidth = 1.5;
+        ctx.beginPath();
+        ema169Display.forEach((value, index) => {
+          const x = index * candleSpacing + candleWidth / 2 - pixelOffset;
+          const y = padding.top + ((maxPrice - value) / priceRange) * mainChartHeight;
+          if (index === 0) {
+            ctx.moveTo(x, y);
+          } else {
+            ctx.lineTo(x, y);
+          }
+        });
+        ctx.stroke();
+      }
+
+      // Draw Vegas Channel 2 (EMA576-676) - 在K线之前绘制
+      if (candles.length >= 676) {
+        const closes = candles.map(c => c.close);
+        const ema576 = calculateEMA(closes, 576);
+        const ema676 = calculateEMA(closes, 676);
+
+        // Only draw the visible portion
+        const ema576Display = ema576.slice(displayStartIndex);
+        const ema676Display = ema676.slice(displayStartIndex);
+
+        // Fill the channel area (淡蓝紫色填充)
+        ctx.fillStyle = 'rgba(139, 167, 250, 0.08)';
+        ctx.beginPath();
+        // Draw upper line
+        ema576Display.forEach((value, index) => {
+          const x = index * candleSpacing + candleWidth / 2 - pixelOffset;
+          const y = padding.top + ((maxPrice - value) / priceRange) * mainChartHeight;
+          if (index === 0) {
+            ctx.moveTo(x, y);
+          } else {
+            ctx.lineTo(x, y);
+          }
+        });
+        // Draw lower line in reverse
+        for (let index = ema676Display.length - 1; index >= 0; index--) {
+          const value = ema676Display[index];
+          const x = index * candleSpacing + candleWidth / 2 - pixelOffset;
+          const y = padding.top + ((maxPrice - value) / priceRange) * mainChartHeight;
+          ctx.lineTo(x, y);
+        }
+        ctx.closePath();
+        ctx.fill();
+
+        // Draw upper band (EMA576)
+        ctx.strokeStyle = 'rgba(139, 167, 250, 0.6)'; // 淡蓝紫色
+        ctx.lineWidth = 1.5;
+        ctx.beginPath();
+        ema576Display.forEach((value, index) => {
+          const x = index * candleSpacing + candleWidth / 2 - pixelOffset;
+          const y = padding.top + ((maxPrice - value) / priceRange) * mainChartHeight;
+          if (index === 0) {
+            ctx.moveTo(x, y);
+          } else {
+            ctx.lineTo(x, y);
+          }
+        });
+        ctx.stroke();
+
+        // Draw lower band (EMA676)
+        ctx.strokeStyle = 'rgba(139, 167, 250, 0.6)'; // 淡蓝紫色
+        ctx.lineWidth = 1.5;
+        ctx.beginPath();
+        ema676Display.forEach((value, index) => {
+          const x = index * candleSpacing + candleWidth / 2 - pixelOffset;
+          const y = padding.top + ((maxPrice - value) / priceRange) * mainChartHeight;
+          if (index === 0) {
+            ctx.moveTo(x, y);
+          } else {
+            ctx.lineTo(x, y);
+          }
+        });
+        ctx.stroke();
+      }
+
+      // Draw candles with NS indicator colors
+      displayCandles.forEach((candle, index) => {
+        const x = index * candleSpacing + candleWidth / 2 - pixelOffset;
+>>>>>>> fx-killer/main
 
         const highY = padding.top + ((maxPrice - candle.high) / priceRange) * mainChartHeight;
         const lowY = padding.top + ((maxPrice - candle.low) / priceRange) * mainChartHeight;
@@ -400,10 +716,18 @@ export default function CandlestickChart() {
         // Determine if bullish (阳线) or bearish (阴线)
         const isBullish = candle.close > candle.open;
 
+<<<<<<< HEAD
         // Get CCI-based color for this candle
         const currentCCI1 = cci1[index] || 0;
         const currentCCI2 = cci2[index] || 0;
         const candleColor = getCandleColor(currentCCI1, currentCCI2, isBullish);
+=======
+        // Get CCI-based color for this candle (use global index)
+        const globalIndex = displayStartIndex + index;
+        const currentCCI1 = cci1[globalIndex] || 0;
+        const currentCCI2 = cci2[globalIndex] || 0;
+        const candleColor = getCandleColor(currentCCI1, currentCCI2, isBullish, isDark);
+>>>>>>> fx-killer/main
 
         // Draw wick with CCI color
         ctx.strokeStyle = candleColor.wick;
@@ -417,7 +741,11 @@ export default function CandlestickChart() {
         if (candleColor.hollow) {
           // Hollow candle (空心)
           // First fill with background color to hide the wick
+<<<<<<< HEAD
           ctx.fillStyle = 'rgba(255, 255, 255, 1)'; // White background
+=======
+          ctx.fillStyle = isDark ? 'rgba(0, 0, 0, 1)' : 'rgba(255, 255, 255, 1)';
+>>>>>>> fx-killer/main
           ctx.fillRect(x - candleWidth / 2, bodyTop, candleWidth, bodyHeight);
           // Then draw the border
           ctx.strokeStyle = candleColor.body;
@@ -456,12 +784,21 @@ export default function CandlestickChart() {
       if (candles.length >= 20) {
         const closes = candles.map(c => c.close);
         const ema20 = calculateEMA(closes, 20);
+<<<<<<< HEAD
+=======
+        const ema20Display = ema20.slice(displayStartIndex);
+>>>>>>> fx-killer/main
 
         ctx.strokeStyle = 'rgba(180, 180, 180, 1)'; // Light gray
         ctx.lineWidth = 4;
         ctx.beginPath();
+<<<<<<< HEAD
         ema20.forEach((value, index) => {
           const x = index * candleSpacing + candleWidth / 2;
+=======
+        ema20Display.forEach((value, index) => {
+          const x = index * candleSpacing + candleWidth / 2 - pixelOffset;
+>>>>>>> fx-killer/main
           const y = padding.top + ((maxPrice - value) / priceRange) * mainChartHeight;
           if (index === 0) {
             ctx.moveTo(x, y);
@@ -472,6 +809,7 @@ export default function CandlestickChart() {
         ctx.stroke();
       }
 
+<<<<<<< HEAD
       // Keltner Channel removed per user request
 
       // ===== SUB CHART (1/3 bottom) - Golden/Death Cross =====
@@ -611,6 +949,8 @@ export default function CandlestickChart() {
 
       // ZigZag indicator removed per user request
 
+=======
+>>>>>>> fx-killer/main
       animationId = requestAnimationFrame(draw);
     };
 
@@ -620,7 +960,11 @@ export default function CandlestickChart() {
       cancelAnimationFrame(animationId);
       window.removeEventListener('resize', updateCanvasSize);
     };
+<<<<<<< HEAD
   }, []);
+=======
+  }, [isDark]);
+>>>>>>> fx-killer/main
 
   return (
     <div className="w-full h-full">

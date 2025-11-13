@@ -2,9 +2,15 @@ import { EducationPageContent } from './forex-basics.content';
 
 export const breakoutTradingContent = {
   zh: {
+<<<<<<< HEAD
     title: '突破交易完整指南 - Breakout Trading策略与假突破识别 | BiKiller',
     description: '深入讲解突破交易（Breakout Trading）：支撑阻力突破、成交量确认、假突破识别技巧、突破入场时机。掌握专业突破交易的完整系统。',
     keywords: '突破交易, Breakout Trading, 支撑阻力, 假突破, 成交量确认, 突破策略, 区间突破, 趋势突破',
+=======
+    title: '突破交易策略完整指南丨汇刃丨职业交易员培训、外汇交易员培训',
+    description: '深入讲解突破交易（Breakout Trading）：支撑阻力突破、成交量确认、假突破识别。职业交易员和外汇交易员培训核心课程，掌握爆发性行情捕捉技巧。',
+    keywords: '职业交易员培训, 外汇交易员培训, 突破交易, Breakout Trading, 支撑阻力, 假突破',
+>>>>>>> fx-killer/main
 
     heroTitle: '突破交易完整指南',
     heroDescription: '掌握突破交易精髓，捕捉爆发性行情',
@@ -70,7 +76,11 @@ export const breakoutTradingContent = {
     ],
 
     ctaTitle: '想要系统学习突破交易？',
+<<<<<<< HEAD
     ctaDescription: '加入 BiKiller 培训计划，获取专业突破交易策略和实时信号',
+=======
+    ctaDescription: '加入 FX Killer 培训计划，获取专业突破交易策略和实时信号',
+>>>>>>> fx-killer/main
     ctaPrimaryButton: '了解培训计划',
     ctaSecondaryButton: '免费心理测评',
 
@@ -81,9 +91,15 @@ export const breakoutTradingContent = {
   } as EducationPageContent,
 
   en: {
+<<<<<<< HEAD
     title: 'Complete Breakout Trading Guide - Strategies and False Breakout Identification | BiKiller',
     description: 'In-depth explanation of Breakout Trading: support/resistance breaks, volume confirmation, false breakout identification, breakout entry timing. Master professional breakout trading complete system.',
     keywords: 'breakout trading, support resistance, false breakout, volume confirmation, breakout strategy, range breakout, trend breakout',
+=======
+    title: 'Complete Breakout Trading Strategy Guide丨FX Killer丨Professional Trader Training, Forex Trader Training',
+    description: 'In-depth explanation of Breakout Trading: support/resistance breaks, volume confirmation, false breakout identification. Professional trader training and forex trader training core curriculum for mastering explosive market moves.',
+    keywords: 'Professional Trader Training, Forex Trader Training, breakout trading, support resistance, false breakout, breakout strategy',
+>>>>>>> fx-killer/main
 
     heroTitle: 'Complete Breakout Trading Guide',
     heroDescription: 'Master breakout trading essentials to catch explosive moves',
@@ -110,7 +126,11 @@ export const breakoutTradingContent = {
       },
       {
         question: 'Q2: Where is the best stop-loss for breakout trading?',
+<<<<<<< HEAD
         answer: 'Stop-loss principle: set at "breakout invalidation" position. Common methods: 1) Below/above breakout point: upward breakout stop 20-30 points below resistance; 2) Opposite range boundary: breaking range top, stop at range bottom; 3) Breakout candle low: conservative approach, more room; 4) ATR dynamic stop: breakout point - 1.5x ATR. Stop size depends on timeframe and breakout magnitude, but single trade risk should stay within 2% of account.'
+=======
+        answer: 'Stop-loss principle: set at "breakout invalidation" position. Common methods: 1) Below/above breakout point: upward breakout stop 20-30 pips below resistance; 2) Opposite range boundary: breaking range top, stop at range bottom; 3) Breakout candle low: conservative approach, more room; 4) ATR dynamic stop: breakout point - 1.5x ATR. Stop size depends on timeframe and breakout magnitude, but single trade risk should stay within 2% of account.'
+>>>>>>> fx-killer/main
       },
       {
         question: 'Q3: Should I chase breakout or wait for retest?',
@@ -118,11 +138,19 @@ export const breakoutTradingContent = {
       },
       {
         question: 'Q4: How to set profit targets for breakout trading?',
+<<<<<<< HEAD
         answer: 'Three common methods: 1) Range height projection: 1-2x breakout range height. E.g., range 1.2700-1.2800 (100 points), upward breakout target 1.2900-1.3000; 2) Previous high/low: run to next important resistance/support after breakout; 3) Risk-reward ratio: fixed 2:1 or 3:1 risk-reward. Recommend using trailing stop, because after strong breakout trend may continue for days, fixed target may exit too early missing big move. Partial profit strategy: close 50% at first target, hold remaining 50% with trailing stop.'
       },
       {
         question: 'Q5: When should I avoid breakout trading?',
         answer: 'Avoid these situations: 1) Low liquidity sessions (Asian afternoon, Friday evening); 2) 30 minutes around major news releases (high false breakout probability); 3) Market open/close periods (gap risk); 4) Breakouts after over-extension (price far from MA, overbought/oversold); 5) Small breakouts after narrow range (range height <50 points); 6) Breakout after multiple false breakouts (market may be testing). Best breakout opportunities: after sufficient consolidation (at least 3 hours or 1+ day), clear range, important breakout level, occurs during high liquidity session.'
+=======
+        answer: 'Three common methods: 1) Range height projection: 1-2x breakout range height. E.g., range 1.2700-1.2800 (100 pips), upward breakout target 1.2900-1.3000; 2) Previous high/low: run to next important resistance/support after breakout; 3) Risk-reward ratio: fixed 2:1 or 3:1 risk-reward. Recommend using trailing stop, because after strong breakout trend may continue for days, fixed target may exit too early missing big move. Partial profit strategy: close 50% at first target, hold remaining 50% with trailing stop.'
+      },
+      {
+        question: 'Q5: When should I avoid breakout trading?',
+        answer: 'Avoid these situations: 1) Low liquidity sessions (Asian afternoon, Friday evening); 2) 30 minutes around major news releases (high false breakout probability); 3) Market open/close periods (gap risk); 4) Breakouts after over-extension (price far from MA, overbought/oversold); 5) Small breakouts after narrow range (range height <50 pips); 6) Breakout after multiple false breakouts (market may be testing). Best breakout opportunities: after sufficient consolidation (at least 3 hours or 1+ day), clear range, important breakout level, occurs during high liquidity session.'
+>>>>>>> fx-killer/main
       }
     ],
 
@@ -149,7 +177,11 @@ export const breakoutTradingContent = {
     ],
 
     ctaTitle: 'Want to Systematically Learn Breakout Trading?',
+<<<<<<< HEAD
     ctaDescription: 'Join BiKiller training for professional breakout strategies and real-time signals',
+=======
+    ctaDescription: 'Join FX Killer training for professional breakout strategies and real-time signals',
+>>>>>>> fx-killer/main
     ctaPrimaryButton: 'Learn About Training',
     ctaSecondaryButton: 'Free Psychology Test',
 

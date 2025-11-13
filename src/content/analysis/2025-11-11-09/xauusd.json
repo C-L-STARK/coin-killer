@@ -1,0 +1,30 @@
+{
+  "symbol": "XAU/USD",
+  "name": "Gold vs US Dollar",
+  "nameCn": "黄金/美元",
+  "timestamp": "2025-11-11T09:44:42.219Z",
+  "price": {
+    "close": "4134.37",
+    "high": "4137.46",
+    "low": "4127.97",
+    "open": "4128.36",
+    "change": "0.15",
+    "datetime": "2025-11-11 20:00:00"
+  },
+  "indicators": {
+    "rsi": 70.78937,
+    "macd": 18.50493,
+    "macd_signal": 20.43484,
+    "sma20": 4112.2115
+  },
+  "analysis": {
+    "zh": {
+      "title": "黄金/美元技术分析：[震荡整理，短期关注支撑位]",
+      "content": "当前黄金/美元(XAU/USD)的价格为4134.37，24小时内小幅上涨0.15%。从近期走势来看，价格在高点4137.46和低点4127.97之间震荡整理，显示出市场短期内缺乏明确方向。若价格突破4137.46，可能会引发进一步上涨，而跌破4127.97则可能引发更大的下行压力。\n\n在技术指标方面，虽然RSI(14)数据缺失，但MACD显示出18.50493的正值，表明短期内买方力量仍占优。结合SMA(20)的支撑位4112.2115，当前价格已接近该均线，若回调至此水平将提供良好的买入机会。此外，若价格持续在此均线之上运行，短期内仍有上行潜力。\n\n支撑位方面，4127.97是关键支撑线，一旦被有效跌破，市场情绪可能迅速转向悲观。反之，若能保持在该支撑之上，投资者应关注潜在的反弹机会。对于阻力位，4137.46是近期的重要关口，突破此位可能引发上涨至4150及更高水平。\n\n建议投资者采取谨慎态度，关注市场动态。短期内可考虑在支撑位附近进行买入，若价格反弹至阻力位时则可考虑获利了结或设定止损，以管理风险。同时，密切关注全球经济数据和地缘政治因素对金价的影响，以调整交易策略。"
+    },
+    "en": {
+      "title": "Gold vs US Dollar Technical Analysis",
+      "content": "Gold has recently shown a modest upward trend, currently trading at 4134.37, reflecting a slight increase of 0.15% over the past 24 hours. The price has fluctuated between a high of 4137.46 and a low of 4127.97, indicating a consolidation phase. This range suggests that market participants are carefully assessing the next directional move. A sustained break above the recent high could signal further bullish momentum, while a fall below the low may indicate bearish sentiment.\n\nThe 20-period Simple Moving Average (SMA) is positioned at 4112.21, providing a critical support level. If the price continues to hold above this SMA, it may encourage buyers to step in, bolstering the bullish outlook for XAU/USD. Conversely, if the price dips below this level, it could trigger selling pressure, pushing gold towards lower support levels. Traders should watch for price action around the SMA as it could serve as a pivotal point for potential reversals.\n\nThe MACD indicator, currently at 18.50493, suggests a bullish momentum, though the absence of a signal line makes interpretation more challenging. Without the signal line, it is crucial to observe the price action closely for potential divergence, which may indicate a weakening trend. Incorporating momentum analysis with price action can provide additional confirmation for trades, enabling a more comprehensive trading strategy.\n\nIn light of the current technical landscape, traders might consider entering long positions if the price breaks above 4137.46, targeting subsequent resistance levels. Alternatively, if the price falls below 4127.97, short positions could be warranted, with an eye on the SMA for potential support. As always, risk management strategies should be employed to safeguard capital amid the inherent volatility in the gold market."
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "symbol": "USD/CHF",
+  "name": "US Dollar vs Swiss Franc",
+  "nameCn": "美元/瑞郎",
+  "timestamp": "2025-11-13T04:22:38.469Z",
+  "price": {
+    "close": "0.79846001",
+    "high": "0.79851002",
+    "low": "0.79819000",
+    "open": "0.79851002",
+    "change": "-0.01",
+    "datetime": "2025-11-13 15:00:00"
+  },
+  "indicators": {
+    "rsi": 45.80248,
+    "macd": -0.00051695589,
+    "macd_signal": -0.0007543288,
+    "sma20": 0.7981165
+  },
+  "analysis": {
+    "zh": {
+      "title": "美元/瑞郎技术分析：[短期震荡，谨慎关注]",
+      "content": "当前美元/瑞郎（USD/CHF）价格在0.7984附近震荡，显示出短期内市场缺乏明确方向。结合24小时变化仅为-0.01%，可见市场情绪相对平稳。此时，投资者需关注即将发布的经济数据，以评估美元和瑞郎的相对强弱。\n\n技术指标方面，20日简单移动平均线（SMA）在0.7981附近，提供了短期支撑。同时，MACD指标略微负值，表明卖压存在，但尚未形成明确的趋势信号。由于RSI未提供，需谨慎判断超买或超卖情况。\n\n支撑位方面，0.7982是一个重要的支撑位，一旦下破可能会引发进一步下行。而阻力位则在0.7985附近，若突破则可能带动价格上升。投资者可在支撑位附近寻找买入机会，在阻力位附近考虑获利了结或做空。\n\n总体而言，当前市场环境建议投资者保持谨慎，关注价格在关键支撑和阻力位的表现，灵活调整交易策略。在没有明显趋势的情况下，控制风险是保持盈利的关键。"
+    },
+    "en": {
+      "title": "US Dollar vs Swiss Franc Technical Analysis",
+      "content": "The USD/CHF pair is currently trading at 0.79846001, reflecting a slight decline of 0.01% over the last 24 hours. The price action has remained relatively stable, oscillating between a high of 0.79851002 and a low of 0.79819000. This tight range suggests a phase of consolidation, potentially indicating indecision among traders. In the absence of significant volatility, the trend appears neutral, warranting close attention to any forthcoming economic data that could catalyze a breakout.\n\nIn terms of technical indicators, the MACD shows a slight bearish signal at -0.00051695589, indicating that the momentum may be shifting downwards. The absence of an available RSI reading limits our ability to gauge overbought or oversold conditions. However, the Simple Moving Average (SMA) of 20 periods at 0.79811650 provides a useful reference point. If the price remains above this level, it could suggest underlying bullish sentiment, while a drop below may signal increased selling pressure.\n\nKey support and resistance levels for this pair are essential for traders. The recent low of 0.79819000 serves as immediate support, while the high of 0.79851002 acts as resistance. A break below support could open the door to further declines, potentially targeting the next support level around 0.79750000. Conversely, if the price manages to surpass the resistance, it may attract buying interest, pushing towards the next resistance around 0.79900000.\n\nTraders should consider a cautious approach in the current market environment. A wait-and-see strategy may be prudent, with potential buy orders placed above 0.79851002 and sell orders positioned below the support level of 0.79819000. Keeping an eye on broader economic indicators and geopolitical developments will also be crucial for making informed trading decisions in this relatively stable but pivotal currency pair."
+    }
+  }
+}

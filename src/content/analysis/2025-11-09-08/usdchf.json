@@ -1,0 +1,30 @@
+{
+  "symbol": "USD/CHF",
+  "name": "US Dollar vs Swiss Franc",
+  "nameCn": "美元/瑞郎",
+  "timestamp": "2025-11-09T08:34:35.250Z",
+  "price": {
+    "close": "0.80453998",
+    "high": "0.80549997",
+    "low": "0.80438000",
+    "open": "0.80505002",
+    "change": "-0.06",
+    "datetime": "2025-11-08 08:00:00"
+  },
+  "indicators": {
+    "rsi": 38.20705,
+    "macd": -0.0008166448,
+    "macd_signal": -0.00075951785,
+    "sma20": 0.806099
+  },
+  "analysis": {
+    "zh": {
+      "title": "美元/瑞郎技术分析：[短期震荡，趋势待明]",
+      "content": "当前美元/瑞郎（USD/CHF）在0.8045附近震荡整理，短期内缺乏明显的趋势动能。价格在高点0.8055与低点0.8044之间波动，显示出市场参与者的谨慎情绪，等待进一步的市场指引。\n\n技术指标方面，虽然RSI和MACD的具体值尚未提供，但从当前的价格走势来看，市场情绪偏向中性。20日简单移动平均线（SMA）在0.8061附近，为当前价格提供了一定的阻力，若价格突破该水平，可能会引发进一步的上行动能。\n\n支撑位方面，0.8044是近期关键支撑，若出现有效跌破，可能会引发更多的卖压，目标指向0.8030。然而，如果价格能维持在此支撑之上，且突破0.8061的阻力，可能会重新点燃多头情绪，目标指向0.8075。\n\n综合来看，建议交易者在当前震荡区间内保持观望，耐心等待关键支撑与阻力的突破信号，避免在市场不确定性较高时进行冒险交易。若突破0.8061，可以考虑轻仓做多，反之则在支撑位附近寻找做空机会。"
+    },
+    "en": {
+      "title": "US Dollar vs Swiss Franc Technical Analysis",
+      "content": "The USD/CHF pair is currently trading at 0.8045, reflecting a minor decline of 0.06% over the last 24 hours. This slight downturn suggests a consolidation phase as the currency pair navigates the upper boundary of its recent range. The high and low for the day, at 0.8055 and 0.8044 respectively, indicate a narrowing trading range, which may lead to increased volatility in the near term as traders assess future direction.\n\nTechnical indicators offer mixed signals for traders. The current MACD value of -0.0008 suggests bearish momentum, yet without the signal line data, the interpretation remains limited. The absence of an RSI reading complicates momentum analysis, but the SMA(20) at 0.8061 serves as a potential resistance level. Should the price break above this level, it could indicate a reversal and attract bullish sentiment, while sustained trading below may reinforce bearish trends.\n\nKey support levels can be identified around the recent low of 0.8044, which may act as a psychological barrier for traders. A break below this level could expose further downside potential, testing lower levels. Conversely, if the price holds above this support, it may retest the nearby resistance at 0.8061. Traders should watch these price points closely, as they will dictate short-term trading strategies.\n\nGiven this analysis, a cautious approach is advisable. Traders might consider entering short positions if the price convincingly breaks below 0.8044, with targets set towards the next support level. Alternatively, a break above 0.8061 could signal a bullish reversal, presenting opportunities for long positions. As always, risk management through appropriate stop-loss orders is essential in this uncertain environment."
+    }
+  }
+}

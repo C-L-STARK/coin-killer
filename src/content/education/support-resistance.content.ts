@@ -2,9 +2,15 @@ import { EducationPageContent } from './forex-basics.content';
 
 export const supportResistanceContent = {
   zh: {
+<<<<<<< HEAD
     title: '支撑阻力与趋势线完整指南 - 水平位、动态位与突破交易策略 | BiKiller',
     description: '深入讲解支撑阻力位：水平支撑阻力、动态支撑阻力（MA）、趋势线画法、通道交易、突破与假突破识别。掌握关键位置交易技巧。',
     keywords: '支撑阻力, 趋势线, 水平支撑, 动态支撑, 突破交易, 假突破, 通道交易',
+=======
+    title: '支撑阻力与趋势线丨汇刃丨职业交易员培训、外汇交易员培训',
+    description: '深入讲解支撑阻力位：水平支撑阻力、动态支撑阻力、趋势线画法、通道交易。职业交易员和外汇交易员培训必备的关键位置交易技巧。',
+    keywords: '职业交易员培训, 外汇交易员培训, 支撑阻力, 趋势线, 水平支撑, 突破交易, 假突破, 通道交易',
+>>>>>>> fx-killer/main
 
     heroTitle: '支撑阻力与趋势线',
     heroDescription: '掌握关键价格位置，找到最佳入场和出场点',
@@ -31,7 +37,11 @@ export const supportResistanceContent = {
       },
       {
         question: 'Q2: 支撑阻力位应该画成线还是区域？',
+<<<<<<< HEAD
         answer: '应该画成区域（Support/Resistance Zone）而非精确的线。原因：1) 价格很少完美触及某个点位；2) 不同交易者看到的位置略有差异；3) 手续费和滑点导致实际触及位置有偏差。建议：将支撑阻力画成15-30点的区域。例如，前高1.1050，支撑区域设为1.1030-1.1050。在区域内出现反转信号即可入场，无需等待精确触及。'
+=======
+        answer: '应该画成区域（Support/Resistance Zone）而非精确的线。原因：1) 价格很少完美触及某个点位；2) 不同交易者看到的位置略有差异；3) 点差和滑点导致实际触及位置有偏差。建议：将支撑阻力画成15-30点的区域。例如，前高1.1050，支撑区域设为1.1030-1.1050。在区域内出现反转信号即可入场，无需等待精确触及。'
+>>>>>>> fx-killer/main
       },
       {
         question: 'Q3: 如何区分突破和假突破？',
@@ -70,7 +80,11 @@ export const supportResistanceContent = {
     ],
 
     ctaTitle: '想要精通支撑阻力交易？',
+<<<<<<< HEAD
     ctaDescription: '加入BiKiller培训，学习专业支撑阻力识别与突破交易策略',
+=======
+    ctaDescription: '加入FX Killer培训，学习专业支撑阻力识别与突破交易策略',
+>>>>>>> fx-killer/main
     ctaPrimaryButton: '了解培训计划',
     ctaSecondaryButton: '免费技术分析工具',
 
@@ -81,9 +95,15 @@ export const supportResistanceContent = {
   } as EducationPageContent,
 
   en: {
+<<<<<<< HEAD
     title: 'Support Resistance & Trendlines Guide - Horizontal, Dynamic Levels & Breakout Strategies | BiKiller',
     description: 'In-depth explanation of support and resistance: horizontal S/R, dynamic S/R (MA), trendline drawing, channel trading, breakout and false breakout identification. Master key level trading techniques.',
     keywords: 'support resistance, trendlines, horizontal support, dynamic support, breakout trading, false breakout, channel trading',
+=======
+    title: 'Support Resistance & Trend Lines丨FX Killer丨Professional Trader Training, Forex Trader Training',
+    description: 'In-depth explanation of support and resistance: horizontal S/R, dynamic S/R (MA), trendline drawing, channel trading, breakout and false breakout identification. Professional trader training and forex trader training essential knowledge for key level trading techniques.',
+    keywords: 'Professional Trader Training, Forex Trader Training, support resistance, trendlines, horizontal support, breakout trading',
+>>>>>>> fx-killer/main
 
     heroTitle: 'Support Resistance & Trendlines',
     heroDescription: 'Master key price levels to find optimal entry and exit points',
@@ -110,7 +130,11 @@ export const supportResistanceContent = {
       },
       {
         question: 'Q2: Should S/R be drawn as lines or zones?',
+<<<<<<< HEAD
         answer: 'Should be drawn as zones not exact lines. Reasons: 1) Price rarely touches exact point perfectly; 2) Different traders see slightly different levels; 3) Fee and slippage cause actual touch to deviate. Recommendation: Draw S/R as 15-30 point zones. E.g., previous high 1.1050, support zone set as 1.1030-1.1050. When reversal signal appears within zone, enter - no need to wait for exact touch.'
+=======
+        answer: 'Should be drawn as zones not exact lines. Reasons: 1) Price rarely touches exact point perfectly; 2) Different traders see slightly different levels; 3) Spread and slippage cause actual touch to deviate. Recommendation: Draw S/R as 15-30 pip zones. E.g., previous high 1.1050, support zone set as 1.1030-1.1050. When reversal signal appears within zone, enter - no need to wait for exact touch.'
+>>>>>>> fx-killer/main
       },
       {
         question: 'Q3: How to distinguish breakout from false breakout?',
@@ -149,7 +173,11 @@ export const supportResistanceContent = {
     ],
 
     ctaTitle: 'Want to Master Support Resistance Trading?',
+<<<<<<< HEAD
     ctaDescription: 'Join BiKiller training to learn professional S/R identification and breakout strategies',
+=======
+    ctaDescription: 'Join FX Killer training to learn professional S/R identification and breakout strategies',
+>>>>>>> fx-killer/main
     ctaPrimaryButton: 'Learn About Training',
     ctaSecondaryButton: 'Free Technical Analysis Tools',
 

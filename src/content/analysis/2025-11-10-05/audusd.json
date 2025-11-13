@@ -1,0 +1,30 @@
+{
+  "symbol": "AUD/USD",
+  "name": "Australian Dollar vs US Dollar",
+  "nameCn": "澳元/美元",
+  "timestamp": "2025-11-10T05:30:36.479Z",
+  "price": {
+    "close": "0.65291196",
+    "high": "0.65303993",
+    "low": "0.65265632",
+    "open": "0.65265632",
+    "change": "0.04",
+    "datetime": "2025-11-10 16:00:00"
+  },
+  "indicators": {
+    "rsi": 70.55358,
+    "macd": 0.00095893473,
+    "macd_signal": 0.00050464028,
+    "sma20": 0.64974309
+  },
+  "analysis": {
+    "zh": {
+      "title": "澳元/美元技术分析：[震荡整理趋势]",
+      "content": "当前澳元/美元（AUD/USD）价格在0.6529附近，整体呈现震荡整理的趋势。尽管24小时变化仅为0.04%，市场似乎在高点0.6530和低点0.6526之间徘徊。此种走势表明市场情绪较为谨慎，投资者正在等待进一步的市场信号以确认价格的突破方向。\n\n从技术指标来看，MACD略微呈现出积极的信号，当前值为0.00096，表明短期内可能存在上行动能。然而，由于RSI未提供，因此无法判断市场是否处于超买或超卖状态，这使得买卖决策面临一定的不确定性。短期内，需密切关注价格是否突破或回调至关键支撑位。\n\n在支撑和阻力方面，当前支撑位在0.6497附近（20日简单移动平均线），若跌破该水平，可能引发进一步的卖压，目标可能指向更低的支撑位0.6480。而阻力位则在0.6530，若突破该水平，将可能打开进一步上涨的空间。\n\n综合考虑，建议投资者在当前震荡区间内采取谨慎态度。可以考虑在接近支撑位时进行逢低买入，而在接近阻力位时进行逢高卖出。同时，建议密切关注经济数据及市场新闻，以及时调整交易策略。"
+    },
+    "en": {
+      "title": "Australian Dollar vs US Dollar Technical Analysis",
+      "content": "The AUD/USD pair is currently trading at 0.6529, reflecting a slight 24-hour change of 0.04%. This stability suggests a consolidation phase, potentially indicating indecision among traders. The recent high of 0.6530 and low of 0.6527 point to a narrow trading range, which may lead to a breakout in either direction. Monitoring price action around these levels will be crucial for identifying potential trend continuations or reversals.\n\nFrom a trend analysis perspective, the pair appears to be in a bearish trend, as it is trading below the 20-day simple moving average (SMA) of 0.6497. A sustained move above this SMA could signal a potential shift in momentum, while failure to break above might reinforce the bearish sentiment. Traders should keep an eye on volume and price action to gauge the strength of any breakout attempt.\n\nTechnical indicators provide further context for trading decisions. The MACD shows a positive value, suggesting the possibility of upward momentum; however, without a confirmed signal line, caution is warranted. The lack of an RSI reading limits the immediate analysis of overbought or oversold conditions, but traders should consider watching for divergence patterns that could signal a reversal.\n\nSupport levels can be identified around the recent low of 0.6527, while resistance is evident at the high of 0.6530. A break below support could lead to further declines, targeting the next psychological level around 0.6500. Conversely, a breakout above 0.6530 could open the door to a rally towards 0.6550. Traders might consider placing buy orders above resistance and sell orders below support to capitalize on potential volatility."
+    }
+  }
+}

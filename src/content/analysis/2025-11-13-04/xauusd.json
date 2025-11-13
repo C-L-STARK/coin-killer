@@ -1,0 +1,30 @@
+{
+  "symbol": "XAU/USD",
+  "name": "Gold vs US Dollar",
+  "nameCn": "黄金/美元",
+  "timestamp": "2025-11-13T04:23:26.617Z",
+  "price": {
+    "close": "4212.48854",
+    "high": "4218.86881",
+    "low": "4210.26353",
+    "open": "4211.11508",
+    "change": "0.03",
+    "datetime": "2025-11-13 15:00:00"
+  },
+  "indicators": {
+    "rsi": 68.32506,
+    "macd": 20.31513,
+    "macd_signal": 19.36039,
+    "sma20": 4177.19742
+  },
+  "analysis": {
+    "zh": {
+      "title": "黄金/美元技术分析：[震荡整理中]",
+      "content": "当前黄金/美元(XAU/USD)价格在4212.49附近，24小时变化不大，显示出市场的观望情绪。价格在4210.26至4218.87的区间内波动，反映出短期内缺乏明确的方向性趋势。整体来看，黄金在此区域内震荡整理，投资者需关注后续突破情况。\n\n从技术指标角度分析，MACD显示出20.31的值，表明市场可能存在一定的买入动能，但由于RSI数据缺失，无法全面判断超买或超卖情况。SMA(20)在4177.20附近，为价格提供了一定的支撑，若价格向下回调，可能会在此位置获得买入机会。\n\n支撑位方面，4177.20将是关键支撑，若突破该位，可能引发进一步回调。而阻力位在4218.87，突破后可能会引发更强的上涨势头。投资者应密切关注这些关键价位的表现，以把握交易机会。\n\n建议投资者在当前震荡区间内采取谨慎的交易策略，优先考虑短线交易。在价格接近支撑位时，可以寻找买入机会，而在接近阻力位时则应考虑获利了结或设定止损。保持灵活应变的交易策略，将有助于在波动市场中获得较好的收益。"
+    },
+    "en": {
+      "title": "Gold vs US Dollar Technical Analysis",
+      "content": "The current price of Gold against the US Dollar (XAU/USD) stands at 4212.49, reflecting a modest 0.03% increase over the past 24 hours. The price action has shown a range between 4218.87 and 4210.26, indicating some consolidation in this area. This range suggests that the market is experiencing indecision, with buyers and sellers contesting control. A breakout above the recent high could signal a continuation of the bullish trend, while a drop below the recent low might indicate a bearish reversal.\n\nTechnical indicators provide further insights into market sentiment. The MACD value of 20.32 suggests bullish momentum, but the absence of a signal line reading limits the interpretation. Meanwhile, the 20-period Simple Moving Average (SMA) at 4177.20 acts as a dynamic support level. If the price approaches this SMA without breaking it, it could present a buying opportunity for traders looking to capitalize on potential upward movements.\n\nKey support and resistance levels can help frame potential trading strategies. Immediate support is seen at 4210.26, while resistance is encountered at 4218.87. A sustained move above resistance may attract additional buying interest, pushing the price toward the next psychological level around 4225. Conversely, if the price breaks below support, it could accelerate selling pressure and target the next support level near the SMA.\n\nFor traders, monitoring these key levels and indicators is essential. A breakout above 4218.87 could be a strong buy signal, while a breach of 4210.26 might be a cue to consider short positions. Employing a stop-loss strategy near these levels can help manage risk effectively. As the market evolves, staying attuned to both fundamental and technical developments will be crucial for making informed trading decisions."
+    }
+  }
+}

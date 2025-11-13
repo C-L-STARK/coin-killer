@@ -1,0 +1,30 @@
+{
+  "symbol": "EUR/USD",
+  "name": "Euro vs US Dollar",
+  "nameCn": "欧元/美元",
+  "timestamp": "2025-11-12T14:53:05.964Z",
+  "price": {
+    "close": "1.15746",
+    "high": "1.15752",
+    "low": "1.15634",
+    "open": "1.15724",
+    "change": "0.02",
+    "datetime": "2025-11-13 01:00:00"
+  },
+  "indicators": {
+    "rsi": 48.073741,
+    "macd": -0.000030382039,
+    "macd_signal": 0.00010346809,
+    "sma20": 1.15785
+  },
+  "analysis": {
+    "zh": {
+      "title": "欧元/美元技术分析：[当前趋于震荡整理]",
+      "content": "当前欧元/美元的价格为1.15746，整体走势显示出震荡整理的特征。最近24小时的变化幅度仅为0.02%，表明市场缺乏明显的方向性。高点1.15752与低点1.15634的接近，进一步印证了短期内价格波动的有限性。\n\n从技术指标来看，RSI尚未提供数据，但MACD显示出微弱的负值，表明短期内卖方力量略显强势。SMA(20)为1.15785，当前价格略低于该均线，这可能暗示短期内存在一定的下行压力。整体来看，市场情绪偏向谨慎，投资者需密切关注即将发布的经济数据和消息面因素。\n\n在支撑和阻力方面，1.15630附近可视为重要支撑位，而1.15800则是关键的阻力位。如果价格突破1.15800，有可能重新点燃多头情绪；反之，若跌破1.15630，则可能引发更多的卖盘。因此，建议交易者在此区间内进行区间交易，关注价格突破后的方向，灵活调整仓位。"
+    },
+    "en": {
+      "title": "Euro vs US Dollar Technical Analysis",
+      "content": "The EUR/USD currency pair is currently trading at 1.15746, showing a modest 24-hour change of 0.02%. This stability suggests that the market is in a consolidation phase. The high and low of the day, at 1.15752 and 1.15634 respectively, indicate a tight trading range, which may reflect indecision among traders. The lack of significant movement could be due to market participants awaiting new economic data or news that might influence the euro or the dollar.\n\nFrom a trend analysis perspective, the recent price action indicates a short-term bearish sentiment, with the price below the 20-period Simple Moving Average (SMA) at 1.15785. This positioning suggests that sellers are currently in control, and a breach below the lower range of 1.15634 could signal further downside potential. However, if the price can regain the SMA and break above the recent high of 1.15752, it may indicate a shift toward bullish momentum.\n\nIn terms of indicators, the RSI(14) is currently unavailable, limiting our ability to assess overbought or oversold conditions. The MACD reading of -0.00003038 indicates a slight bearish divergence, which suggests that the downward momentum is weakening. Traders should monitor the MACD closely for any signs of a crossover that could indicate a potential reversal. Without a clear signal from these indicators, caution is advised in executing trades.\n\nKey support levels to watch include the recent low of 1.15634, which, if broken, could lead to a test of lower support around 1.15500. On the upside, resistance is anticipated near the SMA at 1.15785 and the psychological level of 1.16000. Traders might consider a cautious approach, looking for confirmation of a breakout or breakdown before entering new positions, focusing on risk management to navigate current market uncertainty."
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "symbol": "USD/JPY",
+  "name": "US Dollar vs Japanese Yen",
+  "nameCn": "美元/日元",
+  "timestamp": "2025-11-10T17:26:39.262Z",
+  "price": {
+    "close": "153.98300",
+    "high": "154.042999",
+    "low": "153.94400",
+    "open": "153.99300",
+    "change": "-0.01",
+    "datetime": "2025-11-11 04:00:00"
+  },
+  "indicators": {
+    "rsi": 58.024481,
+    "macd": 0.15200989,
+    "macd_signal": 0.17548824,
+    "sma20": 153.95095
+  },
+  "analysis": {
+    "zh": {
+      "title": "美元/日元技术分析：[震荡走势中的支撑与阻力]",
+      "content": "当前美元/日元的价格为153.983，整体呈现出震荡走势。尽管最近的24小时变化不大，但价格在154.042和153.944之间波动，显示出市场参与者对这一价位的关注。短期趋势判断上，价格在当前区间内徘徊，缺乏明确的方向。\n\n从技术指标来看，SMA(20)位于153.95095，表明短期均线的支撑在此水平附近。MACD值为0.152，显示出当前动能偏强，虽然信号线仍未确定，但这可能预示着短期内的反弹潜力。尚未得到RSI的支持，但整体动能保持在一个相对中性的区域。\n\n在支撑与阻力位方面，153.944附近的支撑位可能会吸引买盘，而154.042的位置则是重要的阻力位，突破后可能引发上涨。建议交易者在接近支撑位时考虑逢低买入，而在接近阻力位时则可考虑卖出，或等待更明确的趋势信号再行决策。保持警惕，关注市场情绪变化，以便做出灵活的交易策略调整。"
+    },
+    "en": {
+      "title": "US Dollar vs Japanese Yen Technical Analysis",
+      "content": "The USD/JPY pair is currently experiencing a modest decline, trading at 153.983 after a slight 24-hour change of -0.01%. The recent price action indicates a consolidation phase, with the high at 154.042999 and low at 153.94400 suggesting that the market is testing the boundaries of this range. A break above the recent high could indicate a continuation of bullish momentum, while a drop below the low may lead to further bearish pressure.\n\nTechnical indicators provide mixed signals at this point. The absence of the RSI makes it challenging to assess potential overbought or oversold conditions. However, the MACD reading of 0.15200989 suggests that bullish momentum is present, albeit weak. The current SMA(20) at 153.95095 serves as a dynamic support level, indicating that if the price holds above this level, it may attract buyers, while a drop below could signal a shift in sentiment.\n\nKey support levels for USD/JPY are found around 153.950, aligning closely with the SMA(20), and further down at 153.94400, which has shown to be instrumental in recent price action. Resistance is evident at 154.042999, and a breach of this level could pave the way for a move toward 154.200. Traders should watch these levels closely for breakout opportunities or reversals.\n\nFor trade strategies, consider buying on a confirmed breakout above 154.042999 with a stop-loss just below 153.950. Conversely, a short position could be considered if the price drops below 153.94400, aiming for a target near 153.800. It's essential to manage risk effectively, as the current market sentiment appears uncertain, warranting a cautious approach."
+    }
+  }
+}

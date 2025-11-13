@@ -2,7 +2,11 @@ import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
 const locales = ['zh', 'en'];
+<<<<<<< HEAD
 const defaultLocale = 'en';
+=======
+const defaultLocale = 'zh';
+>>>>>>> fx-killer/main
 
 // Paths that should not be processed by the middleware
 const excludedPaths = [

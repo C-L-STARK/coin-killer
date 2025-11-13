@@ -1,0 +1,30 @@
+{
+  "symbol": "USD/CHF",
+  "name": "US Dollar vs Swiss Franc",
+  "nameCn": "美元/瑞郎",
+  "timestamp": "2025-11-11T09:43:50.329Z",
+  "price": {
+    "close": "0.80282998",
+    "high": "0.80403000",
+    "low": "0.80250001",
+    "open": "0.80394000",
+    "change": "-0.13",
+    "datetime": "2025-11-11 20:00:00"
+  },
+  "indicators": {
+    "rsi": 35.84351,
+    "macd": -0.00054256341,
+    "macd_signal": -0.00037276408,
+    "sma20": 0.804809
+  },
+  "analysis": {
+    "zh": {
+      "title": "美元/瑞郎技术分析：[短期看跌，关注支撑位]",
+      "content": "当前美元/瑞郎的价格为0.8028，近期表现出一定的弱势，24小时变化为-0.13%。从高点0.8040和低点0.8025来看，市场在这些区间内波动，显示出短期内的震荡行情。整体趋势偏向看跌，投资者需谨慎对待。\n\n技术指标方面，虽然RSI（相对强弱指数）数据缺失，但MACD显示出微弱的负值，这意味着空头可能占据主导地位。SMA（简单移动平均）为0.8048，当前价格低于该水平，进一步确认了短期内的下行压力。\n\n在支撑和阻力位上，0.8025是短期支撑位，跌破该水平可能引发更大的下行空间。上方阻力位在0.8040，若价格反弹至此，可能会吸引卖盘。投资者应密切关注这两个关键水平，以便把握市场动向。\n\n建议交易者在当前价格附近采取观望态度，若价格接近0.8025支撑位时可考虑小幅买入，而在接近0.8040阻力位时则可考虑卖出，以捕捉短期波动机会。同时，需保持警惕，避免因市场情绪波动而导致的损失。"
+    },
+    "en": {
+      "title": "US Dollar vs Swiss Franc Technical Analysis",
+      "content": "The USD/CHF pair is currently trading at 0.80282998, showing a slight decline of 0.13% over the past 24 hours. The recent price action suggests a bearish trend, especially as the price hovers near the lower boundary of its recent range. The high of 0.80403000 and the low of 0.80250001 indicate a consolidation phase, where buyers and sellers are struggling for control. A sustained break below the 0.8025 level could trigger further selling pressure, potentially leading to a test of lower support levels.\n\nIn terms of technical indicators, the absence of a current RSI value limits our momentum analysis; however, the MACD shows a negative value of -0.00054256341, indicating a potential bearish momentum. This suggests that sellers may have the upper hand in the short term. The SMA(20) at 0.80480900 further reinforces this perspective, as the price is currently trading below this moving average, which acts as a dynamic resistance level. Traders should monitor the convergence of these indicators for clearer signals.\n\nKey support levels to watch include the 0.8025 mark, which has held recently and could serve as a critical pivot point. Should this level fail, the next support may lie around 0.8000, a psychologically significant figure that could attract additional buying interest. On the resistance side, the SMA(20) at 0.80480900 remains pivotal, and a breakout above this level could signal a shift back to bullish sentiment, potentially targeting the recent high.\n\nFor trading strategies, short positions may be considered if the price breaks below 0.8025, with a target at 0.8000. Alternatively, if the price rebounds and surpasses the SMA(20), traders might look to enter long positions, targeting levels around 0.8050. Risk management is vital, given the current volatility, and traders should set stop-loss orders appropriately to safeguard against unexpected market movements."
+    }
+  }
+}

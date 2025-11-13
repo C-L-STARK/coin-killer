@@ -1,0 +1,30 @@
+{
+  "symbol": "AUD/USD",
+  "name": "Australian Dollar vs US Dollar",
+  "nameCn": "澳元/美元",
+  "timestamp": "2025-11-10T17:27:19.687Z",
+  "price": {
+    "close": "0.65274155",
+    "high": "0.65278411",
+    "low": "0.65244341",
+    "open": "0.65248597",
+    "change": "0.07",
+    "datetime": "2025-11-11 04:00:00"
+  },
+  "indicators": {
+    "rsi": 58.34126,
+    "macd": 0.00080271269,
+    "macd_signal": 0.00097365201,
+    "sma20": 0.65242186
+  },
+  "analysis": {
+    "zh": {
+      "title": "澳元/美元技术分析：[震荡整理中]",
+      "content": "当前AUD/USD在0.65274155附近震荡整理，24小时变化幅度仅为0.07%。当前价格接近短期均线SMA(20)的支撑位0.65242186，表明市场在此区域可能面临买盘的支撑。若能有效站稳该支撑位，后市有望向上反弹。\n\n在技术指标方面，MACD显示出微弱的上涨动能，但RSI尚未提供足够的超买或超卖信号，短期内市场情绪较为平静且缺乏方向性。投资者需关注后续的价格波动，以便及时调整策略。\n\n支撑位方面，0.65244341是关键支撑，若价格跌破该位置，则可能进一步下探0.6500的心理关口。阻力位则在0.65278411附近，若突破该水平，可能吸引更多多头入场，推动价格进一步上涨。\n\n交易建议方面，建议投资者保持观望，待价格确认突破或有效回调后再考虑进场。若价格突破阻力位，可以考虑做多，反之则可在支撑位附近寻找做空机会。风险管理措施必不可少，确保在波动市场中保护账户资金。"
+    },
+    "en": {
+      "title": "Australian Dollar vs US Dollar Technical Analysis",
+      "content": "The AUD/USD pair is currently trading at 0.65274155, showing a slight increase of 0.07% over the past 24 hours. In the context of recent price action, the pair has demonstrated a range-bound behavior, oscillating between a high of 0.65278411 and a low of 0.65244341. This suggests a consolidation phase, where buyers and sellers are in a temporary equilibrium. Traders should be cautious of potential breakouts, as a clear movement above or below these levels could signal the next significant trend.\n\nFrom an indicator perspective, the MACD is currently at 0.00080271269, indicating a slight bullish momentum, though the absence of a signal line makes it difficult to draw definitive conclusions. The SMA(20) at 0.65242186 serves as a dynamic support level, and its proximity to the current price indicates potential for continued upward movement if tested. However, without the RSI value, assessing overbought or oversold conditions is challenging, limiting the clarity of momentum analysis.\n\nIdentifying key support and resistance levels is crucial for trading decisions. The immediate support level can be observed around 0.65244341, while resistance is evident near the recent high of 0.65278411. A breach below the support level could lead to further declines, while a breakout above resistance may attract bullish sentiment and push the price higher. Traders should monitor these levels closely for potential trading opportunities.\n\nGiven the current market conditions, a cautious approach is advisable. A buy position could be considered if the price convincingly breaks above 0.65278411, with a target set around 0.6550. Conversely, a sell position might be viable if the price dips below the support level of 0.65244341, aiming for a target near 0.6500. Maintaining strict risk management strategies in this uncertain environment will be essential to safeguarding capital."
+    }
+  }
+}

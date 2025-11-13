@@ -1,0 +1,30 @@
+{
+  "symbol": "GBP/USD",
+  "name": "British Pound vs US Dollar",
+  "nameCn": "英镑/美元",
+  "timestamp": "2025-11-10T17:25:53.625Z",
+  "price": {
+    "close": "1.31636",
+    "high": "1.31643",
+    "low": "1.31565",
+    "open": "1.31569",
+    "change": "0.06",
+    "datetime": "2025-11-11 04:00:00"
+  },
+  "indicators": {
+    "rsi": 53.57297,
+    "macd": 0.00066433156,
+    "macd_signal": 0.00088760418,
+    "sma20": 1.31591
+  },
+  "analysis": {
+    "zh": {
+      "title": "英镑/美元技术分析：[震荡整理，谨慎观望]",
+      "content": "当前英镑/美元（GBP/USD）价格在1.31636附近震荡整理，显示出市场在这一水平附近缺乏明确的方向性。短期内，汇价在1.31565至1.31643之间窄幅波动，反映出市场参与者对未来走势的谨慎态度。若价格持续维持在此区间内，交易者可能会选择观望。\n\n技术指标方面，虽然当前缺乏RSI和信号线的具体数据，但MACD显示出微弱的正值，表明短期内买方略占优势。结合20日简单移动平均线（SMA）1.31591，汇价若能站稳该均线之上，有望进一步上探。然而，若跌破该均线，可能会引发更大的卖压。\n\n从支撑和阻力位来看，1.31565是重要的支撑位，而1.31643则构成短期阻力。若汇价突破1.31643，可能会吸引更多买盘，进一步测试1.31800的心理关口。相反，若跌破1.31565，可能会导致进一步下行，测试1.31400。\n\n综合考虑，当前市场环境下，建议交易者保持谨慎观望，待价格突破关键支撑或阻力位后再考虑进场交易。切勿盲目追涨杀跌，以免在震荡行情中遭受损失。"
+    },
+    "en": {
+      "title": "British Pound vs US Dollar Technical Analysis",
+      "content": "The GBP/USD pair is currently trading at 1.31636, reflecting a marginal increase of 0.06% over the past 24 hours. The price has been oscillating within a tight range, hitting a high of 1.31643 and a low of 1.31565. This suggests a period of consolidation, where traders are likely waiting for a catalyst to drive a breakout in either direction. The overall trend appears neutral, but the possibility of a bullish or bearish shift remains contingent upon upcoming economic data releases or geopolitical developments.\n\nIn terms of technical indicators, the recent MACD reading of 0.00066433156 indicates that momentum is currently weak, as it hovers close to the zero line. The absence of a definitive signal line reading suggests a lack of strong directional bias. Meanwhile, the 20-period Simple Moving Average (SMA) at 1.31591 serves as a potential support level. If prices remain above this SMA, it may indicate a short-term bullish sentiment; conversely, a break below could signal a bearish trend.\n\nSupport and resistance levels are crucial for identifying potential entry and exit points. The immediate support level is found at 1.31565, which corresponds with the low of the day, while resistance is noted at 1.31643. A breakout above this resistance could lead to a test of higher levels, possibly targeting the 1.3200 mark. Conversely, a failure to maintain levels above the support may trigger further downside, with targets potentially revisiting the 1.3100 area.\n\nTraders may consider adopting a range trading strategy in the absence of strong directional signals. Buying near the support level of 1.31565 with a stop-loss just below could present a favorable risk-reward ratio, while selling near resistance at 1.31643 may also be viable. As always, monitoring economic indicators and geopolitical news will be essential for making informed decisions in this fluctuating market environment."
+    }
+  }
+}

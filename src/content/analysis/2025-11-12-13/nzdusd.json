@@ -1,0 +1,30 @@
+{
+  "symbol": "NZD/USD",
+  "name": "New Zealand Dollar vs US Dollar",
+  "nameCn": "纽元/美元",
+  "timestamp": "2025-11-12T13:52:00.264Z",
+  "price": {
+    "close": "0.56612319",
+    "high": "0.56679702",
+    "low": "0.56599498",
+    "open": "0.56679702",
+    "change": "-0.09",
+    "datetime": "2025-11-13 00:00:00"
+  },
+  "indicators": {
+    "rsi": 56.37365,
+    "macd": 0.00027645672,
+    "macd_signal": 0.00024998426,
+    "sma20": 0.56572306
+  },
+  "analysis": {
+    "zh": {
+      "title": "纽元/美元技术分析：[震荡整理趋势]",
+      "content": "当前纽元/美元(NZD/USD)价格在0.5661附近波动，显示出震荡整理的趋势。最近的24小时变化为-0.09%，表明市场情绪较为平淡。价格在高点0.5668和低点0.5660之间波动，显示出短期内缺乏明显的方向性。投资者需关注即将到来的经济数据，以判断市场的进一步走势。\n\n从技术指标来看，当前未提供RSI和信号线的相关数据，但MACD显示为正值0.000276，表明短期内仍有一定的买盘动能。20日简单移动平均线(SMA)在0.5657附近，作为短期支撑位，有助于判断价格是否能够维持在此水平之上，若跌破则可能引发进一步回调。\n\n在支撑和阻力方面，支撑位在0.5657附近，若价格下破此位，可能会进一步下探至0.5650。而阻力位则在0.5668，突破此位将有机会测试0.5700的心理关口。投资者可以在支撑位附近寻找买入机会，而在接近阻力位时考虑获利了结。\n\n交易建议方面，建议投资者密切关注价格在支撑位和阻力位的表现，结合市场情绪和经济数据，灵活调整策略。此外，适度控制仓位和止损策略，有助于降低风险。"
+    },
+    "en": {
+      "title": "New Zealand Dollar vs US Dollar Technical Analysis",
+      "content": "The current price of NZD/USD at 0.5661 indicates a slight bearish sentiment, given the minor decline of 0.09% over the past 24 hours. The recent high and low range from 0.5668 to 0.5660 suggests a consolidation phase. Traders should monitor this range closely, as a breakout above 0.5668 could signal a potential rally, while a drop below 0.5659 may confirm further bearish pressure, indicating a possible shift in the market's sentiment.\n\nIn terms of indicators, the MACD shows a positive value of 0.0003, indicating a bullish momentum. However, without a complete RSI reading, it’s challenging to assess overbought or oversold conditions. The absence of a signal line further complicates the interpretation. Traders might want to wait for additional confirmation from these indicators before making significant positions, as the market appears to be in a delicate balancing act.\n\nThe 20-period simple moving average (SMA) at 0.5657 acts as a dynamic support level. Should the price test this level and bounce back, it could reinforce a bullish outlook. Conversely, a sustained move below this SMA might suggest a shift towards a more bearish trend, with potential targets near 0.5640. Resistance remains at the recent high of 0.5668, and a break above this level could open the door for a move towards 0.5680.\n\nIn summary, traders should remain cautious and observe price action around the key levels of 0.5668 and 0.5657. A breakout above resistance or a failure to maintain support could provide trading opportunities. Utilizing stop-loss orders around these levels may help manage risk effectively, while confirming indicators can guide entry and exit strategies as the market evolves."
+    }
+  }
+}

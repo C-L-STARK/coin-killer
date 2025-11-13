@@ -1,0 +1,30 @@
+{
+  "symbol": "EUR/USD",
+  "name": "Euro vs US Dollar",
+  "nameCn": "欧元/美元",
+  "timestamp": "2025-11-10T17:25:11.093Z",
+  "price": {
+    "close": "1.15459",
+    "high": "1.15481",
+    "low": "1.15409",
+    "open": "1.15451",
+    "change": "0.00",
+    "datetime": "2025-11-11 04:00:00"
+  },
+  "indicators": {
+    "rsi": 41.75082,
+    "macd": -0.000021960023,
+    "macd_signal": 0.00027796047,
+    "sma20": 1.1559
+  },
+  "analysis": {
+    "zh": {
+      "title": "欧元/美元技术分析：[震荡整理，谨慎观望]",
+      "content": "当前欧元/美元在1.15459附近震荡整理，价格波动幅度较小。近期的高点1.15481与低点1.15409形成了一个紧密的区间，表明市场情绪犹豫不决，投资者对未来走势保持观望态度。从趋势来看，短期内缺乏明确的方向，建议关注突破情况。\n\n在技术指标方面，MACD信号为负值，表明下行压力仍在，但RSI数据缺失使得我们无法全面评估超买或超卖情况。SMA(20)为1.15590，价格低于该均线，可能暗示短期内的看跌趋势。因此，投资者需密切关注价格与移动平均线的关系，以判断潜在的反转机会。\n\n支撑位方面，1.15409是近期低点，若跌破可能会引发更大的下行空间。阻力位在1.15590附近，如果价格能够突破该水平，则可能重新测试更高的价位。总体而言，建议投资者在当前区间内谨慎操作，等待明确的突破信号再做决策，以减少风险。"
+    },
+    "en": {
+      "title": "Euro vs US Dollar Technical Analysis",
+      "content": "The EUR/USD pair is currently trading at 1.15459, showing a stable position with negligible 24-hour change. The price has remained within a narrow range, having reached a high of 1.15481 and a low of 1.15409. This tight trading range suggests a period of consolidation, indicating that traders are waiting for significant market catalysts to drive the next move. Given the lack of volatility, short-term traders may find limited opportunities unless a breakout occurs.\n\nAnalyzing the technical indicators, the absence of a clear RSI reading means we cannot assess the momentum accurately at this moment. The MACD is marginally negative, suggesting a slight bearish bias, but the lack of a clear signal line inhibits a decisive interpretation. Meanwhile, the SMA(20) at 1.15590 remains above the current price, offering a resistance level that could cap any upward movements. A sustained break above this moving average could indicate a potential bullish reversal, attracting more buyers.\n\nIn terms of support and resistance levels, the immediate support can be identified around the low of 1.15409, while the resistance is seen at 1.15590, aligning with the SMA. If the price approaches the support level, traders may look for buying opportunities, particularly if bullish reversal patterns emerge. Conversely, if the pair breaks below the support level, it could trigger a more significant downward movement, prompting sellers to take control.\n\nFor trading strategies, a cautious approach is advisable. Traders might consider entering a long position if the price decisively breaks above the SMA at 1.15590, potentially targeting higher resistance levels. Conversely, if the price breaches the established support at 1.15409, a short position could be warranted, with targets set towards lower support levels. Monitoring macroeconomic data releases and geopolitical developments will be essential to gauge potential volatility and market direction."
+    }
+  }
+}

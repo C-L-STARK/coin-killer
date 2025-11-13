@@ -2,9 +2,15 @@ import { EducationPageContent } from './forex-basics.content';
 
 export const emaMovingAveragesContent = {
   zh: {
+<<<<<<< HEAD
     title: 'EMA指数移动平均线完整指南 - EMA交易策略与实战技巧 | BiKiller',
     description: '深入讲解EMA指数移动平均线：计算公式、与SMA的区别、常用周期(8, 21, 55, 200)。掌握EMA均线交叉策略、动态支撑阻力和多周期共振分析。',
     keywords: 'EMA均线, 指数移动平均线, EMA策略, 均线交叉, SMA vs EMA, 技术分析指标, 趋势指标',
+=======
+    title: 'EMA指数移动平均线完整指南丨汇刃丨外汇交易员培训、全职交易员培训',
+    description: '深入讲解EMA指数移动平均线：计算公式、与SMA的区别、常用周期。外汇交易员和全职交易员培训必学的EMA均线交叉策略和多周期分析。',
+    keywords: '外汇交易员培训, 全职交易员培训, EMA均线, 指数移动平均线, EMA策略, 均线交叉, 趋势指标',
+>>>>>>> fx-killer/main
 
     heroTitle: 'EMA指数移动平均线完整指南',
     heroDescription: '掌握最敏感的趋势跟踪指标，精准识别市场方向',
@@ -27,7 +33,11 @@ export const emaMovingAveragesContent = {
     faqs: [
       {
         question: 'Q1: EMA和SMA到底应该选哪个？',
+<<<<<<< HEAD
         answer: 'EMA和SMA各有优势，选择取决于交易风格。EMA优势：对最新价格更敏感，信号更快，适合短线和趋势跟踪；SMA优势：更平滑，噪音更少，适合长线和判断整体趋势。实战建议：短线交易（日内、波段）使用EMA；长线交易（周线、月线）使用SMA；或同时使用两者对比，如EMA(20)和SMA(50)配合。多数职业数字货币交易员偏好EMA，因为数字货币市场波动快。'
+=======
+        answer: 'EMA和SMA各有优势，选择取决于交易风格。EMA优势：对最新价格更敏感，信号更快，适合短线和趋势跟踪；SMA优势：更平滑，噪音更少，适合长线和判断整体趋势。实战建议：短线交易（日内、波段）使用EMA；长线交易（周线、月线）使用SMA；或同时使用两者对比，如EMA(20)和SMA(50)配合。多数职业外汇交易员偏好EMA，因为外汇市场波动快。'
+>>>>>>> fx-killer/main
       },
       {
         question: 'Q2: 哪些EMA周期最实用？',
@@ -70,7 +80,11 @@ export const emaMovingAveragesContent = {
     ],
 
     ctaTitle: '想要系统学习技术分析？',
+<<<<<<< HEAD
     ctaDescription: '加入 BiKiller 培训计划，掌握更多实战技术指标应用',
+=======
+    ctaDescription: '加入 FX Killer 培训计划，掌握更多实战技术指标应用',
+>>>>>>> fx-killer/main
     ctaPrimaryButton: '了解培训计划',
     ctaSecondaryButton: '免费心理测评',
 
@@ -81,9 +95,15 @@ export const emaMovingAveragesContent = {
   } as EducationPageContent,
 
   en: {
+<<<<<<< HEAD
     title: 'Complete EMA Guide - Exponential Moving Average Strategies and Techniques | BiKiller',
     description: 'In-depth explanation of Exponential Moving Average: calculation formulas, differences from SMA, common periods (8, 21, 55, 200). Master EMA crossover strategies, dynamic support/resistance, and multi-timeframe analysis.',
     keywords: 'EMA, exponential moving average, EMA strategy, moving average crossover, SMA vs EMA, technical analysis, trend indicator',
+=======
+    title: 'Complete EMA Moving Averages Guide丨FX Killer丨Forex Trader Training, Full-Time Trader Training',
+    description: 'In-depth explanation of Exponential Moving Average: calculation formulas, differences from SMA, common periods (8, 21, 55, 200). Forex trader training and full-time trader training essential curriculum for mastering EMA crossover strategies and multi-timeframe analysis.',
+    keywords: 'Forex Trader Training, Full-Time Trader Training, EMA, moving averages, EMA strategy, trend indicator',
+>>>>>>> fx-killer/main
 
     heroTitle: 'Complete EMA Guide',
     heroDescription: 'Master the most responsive trend-following indicator for precise market direction',
@@ -106,7 +126,11 @@ export const emaMovingAveragesContent = {
     faqs: [
       {
         question: 'Q1: Should I choose EMA or SMA?',
+<<<<<<< HEAD
         answer: 'Both have advantages, choice depends on trading style. EMA advantages: more sensitive to recent prices, faster signals, suitable for short-term and trend following; SMA advantages: smoother, less noise, suitable for long-term and overall trend judgment. Practical advice: short-term trading (intraday, swing) use EMA; long-term trading (weekly, monthly) use SMA; or use both for comparison, like EMA(20) with SMA(50). Most professional cryptocurrency traders prefer EMA due to fast market volatility.'
+=======
+        answer: 'Both have advantages, choice depends on trading style. EMA advantages: more sensitive to recent prices, faster signals, suitable for short-term and trend following; SMA advantages: smoother, less noise, suitable for long-term and overall trend judgment. Practical advice: short-term trading (intraday, swing) use EMA; long-term trading (weekly, monthly) use SMA; or use both for comparison, like EMA(20) with SMA(50). Most professional forex traders prefer EMA due to fast market volatility.'
+>>>>>>> fx-killer/main
       },
       {
         question: 'Q2: Which EMA periods are most practical?',
@@ -118,7 +142,11 @@ export const emaMovingAveragesContent = {
       },
       {
         question: 'Q4: How to use EMA for dynamic stop loss?',
+<<<<<<< HEAD
         answer: 'EMA dynamic stop loss strategies: 1) Fast line method - for longs, stop 10-20 points below 21EMA, moves up with EMA; 2) Slow line method - use 55EMA or 200EMA, more room, suitable for swing trading; 3) Dual line method - close 50% below fast line, close all below slow line; 4) Closing price rule - only execute stop if closing price breaks EMA, avoid short-term volatility. Advantages: stop adjusts automatically with trend, locks in profits; Disadvantages: sudden reversals may give back significant profits.'
+=======
+        answer: 'EMA dynamic stop loss strategies: 1) Fast line method - for longs, stop 10-20 pips below 21EMA, moves up with EMA; 2) Slow line method - use 55EMA or 200EMA, more room, suitable for swing trading; 3) Dual line method - close 50% below fast line, close all below slow line; 4) Closing price rule - only execute stop if closing price breaks EMA, avoid short-term volatility. Advantages: stop adjusts automatically with trend, locks in profits; Disadvantages: sudden reversals may give back significant profits.'
+>>>>>>> fx-killer/main
       },
       {
         question: 'Q5: What is special about 200EMA?',
@@ -149,7 +177,11 @@ export const emaMovingAveragesContent = {
     ],
 
     ctaTitle: 'Want to Systematically Learn Technical Analysis?',
+<<<<<<< HEAD
     ctaDescription: 'Join BiKiller training to master more practical technical indicator applications',
+=======
+    ctaDescription: 'Join FX Killer training to master more practical technical indicator applications',
+>>>>>>> fx-killer/main
     ctaPrimaryButton: 'Learn About Training',
     ctaSecondaryButton: 'Free Psychology Test',
 

@@ -1,0 +1,30 @@
+{
+  "symbol": "NZD/USD",
+  "name": "New Zealand Dollar vs US Dollar",
+  "nameCn": "纽元/美元",
+  "timestamp": "2025-11-10T05:32:04.118Z",
+  "price": {
+    "close": "0.56366611",
+    "high": "0.56388861",
+    "low": "0.56357080",
+    "open": "0.56369781",
+    "change": "-0.02",
+    "datetime": "2025-11-10 16:00:00"
+  },
+  "indicators": {
+    "rsi": 56.097112,
+    "macd": 0.000064728507,
+    "macd_signal": -0.00016528271,
+    "sma20": 0.56257651
+  },
+  "analysis": {
+    "zh": {
+      "title": "纽元/美元技术分析：[弱势整理，谨慎观望]",
+      "content": "当前纽元/美元(NZD/USD)的价格在0.5636附近波动，整体表现出一定的弱势整理状态。尽管24小时内价格变化不大，但高点和低点的窄幅震荡显示出市场参与者信心不足，短期内可能难以形成明确的上行突破。\n\n从技术指标来看，虽然当前RSI和MACD数据未提供，但SMA(20)为0.5626，表明短期内价格仍在其均线之上，可能形成一定的支撑位。若价格持续维持在此均线之上，有望恢复一定的上涨动能。然而，缺乏强劲的买入信号，投资者需保持警惕。\n\n在支撑和阻力位方面，近期的低点0.5635将成为关键支撑位，如果跌破该水平，可能引发进一步的下行压力。而上方的阻力位则可关注0.5640，若能有效突破该水平，可能会引发一波反弹行情。\n\n综合来看，当前市场环境下建议投资者采取谨慎观望的策略，待价格确认突破信号后再考虑入场。此时，保持灵活的交易策略，避免盲目跟风将是明智之举。"
+    },
+    "en": {
+      "title": "New Zealand Dollar vs US Dollar Technical Analysis",
+      "content": "The NZD/USD currency pair is currently showing a relatively stable trend, trading at 0.56366611 with a slight 24-hour change of -0.02%. The price has remained within a narrow range, with a high of 0.56388861 and a low of 0.56357080. This consolidation suggests a period of indecision among traders, indicating that a breakout could be imminent. A close watch on the upcoming price movements is essential to identify potential trading opportunities.\n\nFrom a technical perspective, the absence of the Relative Strength Index (RSI) data limits our ability to assess overbought or oversold conditions accurately. However, the MACD value of 0.000064728507 indicates a bullish bias, albeit weak. The Simple Moving Average (SMA) of 20 periods, positioned at 0.56257651, serves as a dynamic support level. Should the price dip below this level, it could signal further bearish momentum, aligning with the recent market sentiment.\n\nKey support and resistance levels are critical for determining future price action. The immediate support level is established around 0.56357080, while resistance can be seen at 0.56388861. A breakout above the resistance may attract bullish momentum, potentially leading to a test of higher levels. Conversely, a failure to hold above the support could lead to a more significant decline, possibly targeting the next support level below.\n\nTraders might consider a wait-and-see approach while observing the market's response to the established levels. A confirmed breakout above 0.56388861 could present a buying opportunity, while a sustained move below 0.56257651 might prompt short positions. Employing stop-loss orders around these levels can help manage risk effectively as the market navigates this crucial phase."
+    }
+  }
+}

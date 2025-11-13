@@ -1,0 +1,30 @@
+{
+  "symbol": "USD/CHF",
+  "name": "US Dollar vs Swiss Franc",
+  "nameCn": "美元/瑞郎",
+  "timestamp": "2025-11-12T04:19:49.441Z",
+  "price": {
+    "close": "0.80080003",
+    "high": "0.80084997",
+    "low": "0.80056000",
+    "open": "0.80061001",
+    "change": "0.03",
+    "datetime": "2025-11-12 15:00:00"
+  },
+  "indicators": {
+    "rsi": 41.53354,
+    "macd": -0.00079742428,
+    "macd_signal": -0.0010313574,
+    "sma20": 0.8006225
+  },
+  "analysis": {
+    "zh": {
+      "title": "美元/瑞郎技术分析：[震荡走势]",
+      "content": "当前美元/瑞郎的价格为0.80080003，市场呈现出震荡整理的趋势。24小时内价格变动仅为0.03%，说明市场在当前价位附近缺乏方向性。高点和低点分别为0.80084997和0.80056000，显示出短期内的波动幅度较小，投资者需关注突破的可能性。\n\n从技术指标来看，当前没有RSI数据可供参考，MACD指标呈现出负值，表明短期内卖压较重。虽然SMA(20)为0.80062250，显示出短期均线略微向上，但整体趋势仍需进一步确认。交易者应关注MACD的变化，以评估市场动能的转变。\n\n支撑位方面，0.80056000将是关键支撑，若价格跌破该水平，可能会引发进一步的下行压力。而0.80084997则构成短期阻力，若突破该位置，可能会迎来新的买盘。投资者需密切关注这两个关键价位的突破情况。\n\n建议投资者在当前震荡区间内采取短线操作策略，适时进场和出场。若价格向上突破阻力位，可以考虑做多；反之，若跌破支撑位，则应考虑做空。同时，设置止损位以控制风险，将是明智之举。"
+    },
+    "en": {
+      "title": "US Dollar vs Swiss Franc Technical Analysis",
+      "content": "The USD/CHF pair is currently trading at 0.8008, reflecting a modest 24-hour change of 0.03%. This stability suggests a consolidation phase, with the price hovering between the recent high of 0.80085 and a low of 0.80056. Given this range, traders may be cautious, as the lack of significant movement indicates indecision within the market. A breakout above the recent high could signal bullish momentum, while a drop below the low may trigger bearish sentiment.\n\nAnalyzing the technical indicators, the MACD is slightly negative at -0.000797, indicating a potential bearish trend, although the absence of a signal line complicates this interpretation. The SMA(20) at 0.80062250 suggests that the price is currently trading above this moving average, which could act as a short-term support level. As the RSI(14) is not available, traders should remain vigilant for overbought or oversold conditions in the near future, which could provide additional context for potential price movements.\n\nSupport levels are identified around the recent low of 0.80056, while resistance is seen near the high of 0.80085. A confirmed break below support could lead to a decline toward the next psychological level around 0.8000. Conversely, if the price breaks above resistance, it may rally towards the next target at 0.8015. Traders should watch these levels closely and consider employing stop-loss orders to manage risk effectively.\n\nIn terms of trading strategy, it may be prudent to adopt a wait-and-see approach until a clearer trend emerges. If the price approaches the resistance level, consider shorting with a target near the support, while a breakout above the high could warrant a long position with a stop-loss set below the breakout point. Given the current market conditions, maintaining flexibility and monitoring key levels will be essential for successful trading in the USD/CHF pair."
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "symbol": "AUD/USD",
+  "name": "Australian Dollar vs US Dollar",
+  "nameCn": "澳元/美元",
+  "timestamp": "2025-11-12T14:55:48.135Z",
+  "price": {
+    "close": "0.65361",
+    "high": "0.65374",
+    "low": "0.65313",
+    "open": "0.65371",
+    "change": "-0.02",
+    "datetime": "2025-11-13 01:00:00"
+  },
+  "indicators": {
+    "rsi": 54.27201,
+    "macd": 0.00028258836,
+    "macd_signal": 0.00020499039,
+    "sma20": 0.653089
+  },
+  "analysis": {
+    "zh": {
+      "title": "澳元/美元技术分析：[震荡整理趋势]",
+      "content": "当前AUD/USD处于震荡整理的趋势中，最新价格为0.65361。虽然24小时内变化仅为-0.02%，但市场依然保持相对活跃。近期高点0.65374和低点0.65313的区间表明，市场似乎在寻求明确的方向。投资者需要密切关注即将发布的经济数据，以便捕捉潜在的突破信号。\n\n从技术指标来看，当前RSI和MACD的缺失使得我们无法进行全面的超买或超卖分析。但SMA(20)的值为0.653089，表明短期内价格仍在其均线附近波动，暗示出市场的观望情绪。若AUD/USD能够持续站稳在SMA之上，可能会吸引买盘入场。\n\n在支撑与阻力位方面，0.65313为近期的支撑位，而0.65374则是重要的阻力位。如果价格突破0.65374，可能会引发进一步上涨，反之若跌破0.65313，则需警惕下行风险。投资者应关注这两个关键价位，以制定相应的交易策略。\n\n基于当前市场状况，建议投资者采取观望策略，待价格突破关键支撑或阻力位后再决定入场。同时，设置合理的止损位，以控制潜在风险。保持灵活和敏锐的市场触觉，将有助于在震荡行情中把握交易机会。"
+    },
+    "en": {
+      "title": "Australian Dollar vs US Dollar Technical Analysis",
+      "content": "The AUD/USD pair is currently trading at 0.65361, showing a slight decrease of 0.02% over the past 24 hours. This indicates a period of consolidation after a brief rally, with the price oscillating between a high of 0.65374 and a low of 0.65313. The market appears to be in a tight range, suggesting indecision among traders. A sustained break above the recent high could signal a bullish trend, while a drop below the low might indicate further bearish pressure.\n\nThe absence of the RSI(14) data limits our ability to evaluate overbought or oversold conditions effectively. However, the MACD value of 0.00028258836 indicates a very mild bullish momentum, which may provide a slight edge to buyers if market sentiment remains favorable. The SMA(20) at 0.65308900 has been acting as a dynamic support level in recent trading. If the price can maintain above this average, it could encourage further upward movement.\n\nKey support can be identified around the recent low of 0.65313, while resistance is established at 0.65374. A decisive move above resistance could open the door to higher targets, potentially leading to a retest of previous highs. Conversely, if the support level fails, expect increased volatility as traders react to the break, which could lead to a further decline toward lower support levels.\n\nTraders should consider a cautious approach in this environment, watching for potential breakout opportunities. A buy signal may emerge if the price confidently breaks above 0.65374, with targets set at 0.65500. Conversely, a break below 0.65313 could prompt a short position, targeting 0.65000. Employing stop-loss orders will be crucial to manage risk effectively in this uncertain market."
+    }
+  }
+}

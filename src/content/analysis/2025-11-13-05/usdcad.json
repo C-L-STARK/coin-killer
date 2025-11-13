@@ -1,0 +1,30 @@
+{
+  "symbol": "USD/CAD",
+  "name": "US Dollar vs Canadian Dollar",
+  "nameCn": "美元/加元",
+  "timestamp": "2025-11-13T05:42:54.615Z",
+  "price": {
+    "close": "1.40069",
+    "high": "1.40082",
+    "low": "1.40010",
+    "open": "1.40074",
+    "change": "0.02",
+    "datetime": "2025-11-13 16:00:00"
+  },
+  "indicators": {
+    "rsi": 48.86661,
+    "macd": -0.00018746485,
+    "macd_signal": -0.00026417554,
+    "sma20": 1.4006
+  },
+  "analysis": {
+    "zh": {
+      "title": "美元/加元技术分析：[震荡整理趋势]",
+      "content": "当前美元/加元的市场表现显示出震荡整理的趋势。最新价格1.40069在高点1.40082和低点1.40010之间波动，表明市场尚未形成明确的方向。投资者应关注这一区间的突破情况，以判断后市的走势。\n\n技术指标方面，RSI虽然未提供，但MACD当前为负值，显示出短期内卖方压力较大。此外，20日简单移动平均线（SMA）在1.40060附近，进一步支持了当前价格的震荡区域。若价格持续在该线附近波动，可能暗示短期内缺乏趋势性动能。\n\n支撑位方面，1.40010将是关键支撑，若价格跌破该水平，可能会引发进一步下跌，测试更低的支撑位。而1.40082则是主要阻力位，突破该点位可能会引发多头反弹，吸引更多买盘进入市场。\n\n综合来看，建议投资者在此区间内采取观望策略，待价格突破支撑或阻力位时再决定交易方向。同时，注意全球经济数据及地缘政治因素对加元的影响，保持灵活应变的交易策略。"
+    },
+    "en": {
+      "title": "US Dollar vs Canadian Dollar Technical Analysis",
+      "content": "The current market data for USD/CAD indicates a range-bound structure, with the price trading slightly above the 20-period Simple Moving Average (SMA) at 1.40060. The recent high at 1.40082 suggests a potential resistance level, while the low at 1.40010 serves as immediate support. The narrow trading range reflects a lack of strong directional momentum, which may indicate indecision in the market. Traders should observe price action around these key levels for potential breakout opportunities.\n\nThe Relative Strength Index (RSI) is not available, but the MACD indicates a slight bearish momentum with a value of -0.00019. This suggests that while there is some selling pressure, the absence of a significant trend reinforces the idea of a consolidation phase. Traders might consider waiting for the RSI to be calculated to better gauge overbought or oversold conditions, which could inform future trading decisions. \n\nIn terms of support and resistance, the 1.40010 level is crucial for maintaining a bullish outlook; a break below this could lead to further declines. Conversely, if the price can exceed the resistance at 1.40082, it may signal a potential rally towards higher resistance levels. Keeping an eye on these areas will be essential for managing risk and capitalizing on potential price movements.\n\nFor traders, a cautious approach is advisable under current market conditions. Entering long positions near the support level of 1.40010 could provide opportunities for a rebound, while a confirmed break above 1.40082 may present a more aggressive entry point. Conversely, traders should be prepared to exit positions if the price moves decisively below 1.40010, as this could indicate a shift in market sentiment and further downside potential."
+    }
+  }
+}

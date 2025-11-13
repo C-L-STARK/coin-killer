@@ -1,0 +1,30 @@
+{
+  "symbol": "AUD/USD",
+  "name": "Australian Dollar vs US Dollar",
+  "nameCn": "澳元/美元",
+  "timestamp": "2025-11-11T09:41:26.390Z",
+  "price": {
+    "close": "0.65218806",
+    "high": "0.65240085",
+    "low": "0.65206051",
+    "open": "0.65206051",
+    "change": "0.01",
+    "datetime": "2025-11-11 20:00:00"
+  },
+  "indicators": {
+    "rsi": 45.58589,
+    "macd": 0.000040820324,
+    "macd_signal": 0.00031713219,
+    "sma20": 0.65302377
+  },
+  "analysis": {
+    "zh": {
+      "title": "澳元/美元技术分析：[震荡整理，谨慎观望]",
+      "content": "当前澳元/美元交易在0.6521附近，价格波动较小，显示出震荡整理的趋势。短期内，市场似乎缺乏明确的方向，投资者应密切关注即将发布的经济数据和市场情绪，以判断未来走势。\n\n从技术指标来看，当前的MACD显示出微弱的多头信号，但由于RSI数据缺失，无法全面评估超买或超卖情况。20日简单移动平均线(SMA)在0.6530附近为当前价格提供了一个潜在的阻力位，若价格突破该水平，可能会引发短期的上涨行情。\n\n在支撑方面，0.6521是关键支撑位，若价格持续跌破该水平，可能会导致进一步的回调。反之，若价格重新回升并突破0.6530，可能会吸引多头入场，推动价格向上测试更高的阻力位。\n\n综合来看，建议投资者在此震荡区间内保持谨慎观望，切勿盲目追高或杀跌。建议在关键支撑和阻力位附近设置止损，等待市场明确的趋势信号后再进行交易。"
+    },
+    "en": {
+      "title": "Australian Dollar vs US Dollar Technical Analysis",
+      "content": "The AUD/USD pair currently trades at 0.65218806, reflecting a slight increase of 0.01% over the past 24 hours. The price has shown relatively tight trading ranges, with a high of 0.65240085 and a low of 0.65206051, indicating a consolidation phase. This sideways movement suggests indecision among traders, potentially setting the stage for a breakout. The overall trend remains bearish, as the price is below the 20-period simple moving average (SMA) at 0.65302377, signaling that downward pressure could persist unless a significant shift occurs.\n\nThe technical indicators available offer limited insights due to missing data on the RSI(14) and the MACD signal line. However, the current MACD value of 0.000040820324 suggests that momentum is weak, aligning with the consolidation observed in the price action. A divergence between the price and MACD could provide clues for future movements, particularly if the MACD turns negative, reinforcing the bearish sentiment. Traders should monitor these indicators closely for signs of a potential reversal or continuation of the trend.\n\nKey support levels can be identified around the recent low of 0.65206051, with further support at 0.6500, which has psychological significance. Resistance is evident at the SMA of 0.65302377 and the previous high of 0.65340000. A break above this resistance area could trigger a more bullish outlook, while a failure to hold above the support level may lead to further declines. \n\nFor traders, a cautious approach is advisable. Short positions could be considered if the price breaks below the support level, targeting the psychological level of 0.6500. Conversely, if the price manages to reclaim the SMA, a long position could be initiated, with a view to capture potential gains towards resistance levels near 0.6540. Keeping an eye on broader market trends and economic indicators will also be crucial for informed trading decisions."
+    }
+  }
+}

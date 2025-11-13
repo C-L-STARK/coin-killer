@@ -1,0 +1,30 @@
+{
+  "symbol": "XAU/USD",
+  "name": "Gold vs US Dollar",
+  "nameCn": "黄金/美元",
+  "timestamp": "2025-11-12T18:58:18.494Z",
+  "price": {
+    "close": "4208.86534",
+    "high": "4213.30684",
+    "low": "4189.02733",
+    "open": "4201.13209",
+    "change": "0.18",
+    "datetime": "2025-11-13 05:00:00"
+  },
+  "indicators": {
+    "rsi": 77.67512,
+    "macd": 18.98732,
+    "macd_signal": 9.95092,
+    "sma20": 4139.16416
+  },
+  "analysis": {
+    "zh": {
+      "title": "黄金/美元技术分析：[震荡整理，谨慎看多]",
+      "content": "当前黄金/美元(XAU/USD)价格为4208.86534，整体趋势呈现震荡整理的态势。虽然价格在过去24小时内小幅上涨0.18%，但未能突破关键阻力位4213.30684，显示市场多头力量仍显不足。投资者需关注市场情绪的变化，以便及时调整策略。\n\n从技术指标来看，MACD值为18.98732，显示出一定的上涨动能，但由于缺乏其他指标如RSI的配合，仍需谨慎对待。SMA(20)位于4139.16416，提供了一定的支撑，若价格回调至该水平附近，可能会吸引买盘入场。若能站稳在该均线之上，将为后续上涨提供更加有力的支撑。\n\n在支撑位方面，4189.02733是一个关键的支撑区域，若价格突破此位，可能暗示进一步下跌风险。而在阻力位方面，4213.30684是近期的高点，若突破该区域，可能引发一波强势上涨。因此，建议投资者在当前价格附近谨慎布局，关注突破信号。\n\n综合来看，黄金/美元短期内呈现震荡整理的格局，建议投资者保持观望，等待更明确的技术信号再做决策。同时，设置合理的止损和止盈位，以控制风险。"
+    },
+    "en": {
+      "title": "Gold vs US Dollar Technical Analysis",
+      "content": "The current price of Gold against the US Dollar (XAU/USD) at 4208.86534 indicates a slight upward trajectory, with a 24-hour change of 0.18%. This moderate increase suggests that the market is currently exhibiting bullish tendencies. The recent high at 4213.30684 serves as a potential resistance level, while the low of 4189.02733 acts as a key support zone. Traders should monitor these levels closely, as a break above resistance could signal further bullish momentum, while a drop below support might suggest a reversal.\n\nThe lack of an RSI reading means we cannot gauge overbought or oversold conditions; however, the MACD value at 18.98732 indicates positive momentum, reinforcing the bullish sentiment in the market. Traders should look for a potential cross of the MACD line above the signal line, which could confirm upward price action. The 20-day Simple Moving Average (SMA) at 4139.16416 supports this bullish outlook, as the current price is well above this trend indicator, suggesting a healthy bullish trend in the short term.\n\nIn terms of trading strategies, a conservative approach may involve waiting for a confirmed breakout above 4213.30684 before entering long positions, as this would provide a clearer signal of upward momentum. Conversely, a breach below 4189.02733 could trigger a short position, especially if accompanied by increased volume. Risk management is crucial, so placing stop-loss orders just below these critical levels can help protect against unexpected reversals.\n\nOverall, the XAU/USD market appears to be in a bullish phase, driven by underlying technical indicators and recent price action. Traders should remain vigilant for breakout opportunities while keeping an eye on the key support and resistance levels to navigate their positions effectively."
+    }
+  }
+}

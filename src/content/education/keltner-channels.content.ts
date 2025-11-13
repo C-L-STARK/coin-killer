@@ -2,9 +2,15 @@ import { EducationPageContent } from './forex-basics.content';
 
 export const keltnerChannelsContent = {
   zh: {
+<<<<<<< HEAD
     title: '肯特纳通道指标完整指南 - Keltner Channels交易策略与实战技巧 | BiKiller',
     description: '深入讲解肯特纳通道（Keltner Channels）指标：计算公式、参数设置、与布林带的区别。结合实战案例，掌握KC指标在数字货币交易中的突破策略和趋势跟踪应用。',
     keywords: '肯特纳通道, Keltner Channels, KC指标, 肯特纳通道策略, ATR通道, 技术分析指标, 波动性指标',
+=======
+    title: '肯特纳通道指标完整指南丨汇刃丨职业交易员培训、全职交易员培训',
+    description: '深入讲解肯特纳通道（Keltner Channels）指标：计算公式、参数设置、与布林带的区别。职业交易员和全职交易员培训必学的KC指标突破策略和趋势跟踪应用。',
+    keywords: '职业交易员培训, 全职交易员培训, 肯特纳通道, Keltner Channels, KC指标, ATR通道',
+>>>>>>> fx-killer/main
 
     heroTitle: '肯特纳通道指标完整指南',
     heroDescription: '掌握基于ATR的波动性指标，提升趋势交易精准度',
@@ -35,7 +41,11 @@ export const keltnerChannelsContent = {
       },
       {
         question: 'Q3: 价格突破KC通道后一定会形成趋势吗？',
+<<<<<<< HEAD
         answer: '不一定。假突破在数字货币市场很常见。有效突破需要满足：1) 收盘价突破，而非影线；2) 伴随成交量放大；3) 突破后价格在通道外持续至少2-3根K线；4) 配合其他指标确认（如MACD金叉、RSI走强）。建议等待突破回踩确认后再入场，虽然错过部分利润，但大幅降低假突破风险。'
+=======
+        answer: '不一定。假突破在外汇市场很常见。有效突破需要满足：1) 收盘价突破，而非影线；2) 伴随成交量放大；3) 突破后价格在通道外持续至少2-3根K线；4) 配合其他指标确认（如MACD金叉、RSI走强）。建议等待突破回踩确认后再入场，虽然错过部分利润，但大幅降低假突破风险。'
+>>>>>>> fx-killer/main
       },
       {
         question: 'Q4: 如何使用KC设置止损和止盈？',
@@ -70,7 +80,11 @@ export const keltnerChannelsContent = {
     ],
 
     ctaTitle: '想要系统学习技术分析？',
+<<<<<<< HEAD
     ctaDescription: '加入 BiKiller 培训计划，掌握更多实战技术指标应用',
+=======
+    ctaDescription: '加入 FX Killer 培训计划，掌握更多实战技术指标应用',
+>>>>>>> fx-killer/main
     ctaPrimaryButton: '了解培训计划',
     ctaSecondaryButton: '免费心理测评',
 
@@ -81,9 +95,15 @@ export const keltnerChannelsContent = {
   } as EducationPageContent,
 
   en: {
+<<<<<<< HEAD
     title: 'Complete Keltner Channels Guide - KC Trading Strategies and Practical Techniques | BiKiller',
     description: 'In-depth explanation of Keltner Channels indicator: calculation formulas, parameter settings, differences from Bollinger Bands. Master KC breakout strategies and trend following in cryptocurrency trading.',
     keywords: 'Keltner Channels, KC indicator, KC strategy, ATR channels, technical analysis, volatility indicator',
+=======
+    title: 'Complete Keltner Channels Guide丨FX Killer丨Professional Trader Training, Full-Time Trader Training',
+    description: 'In-depth explanation of Keltner Channels indicator: calculation formulas, parameter settings, differences from Bollinger Bands. Professional trader training and full-time trader training essential curriculum for mastering KC breakout strategies and trend following.',
+    keywords: 'Professional Trader Training, Full-Time Trader Training, Keltner Channels, KC indicator, ATR channels',
+>>>>>>> fx-killer/main
 
     heroTitle: 'Complete Keltner Channels Guide',
     heroDescription: 'Master ATR-based volatility indicator to improve trend trading precision',
@@ -114,11 +134,19 @@ export const keltnerChannelsContent = {
       },
       {
         question: 'Q3: Does KC breakout always form a trend?',
+<<<<<<< HEAD
         answer: 'Not always. False breakouts are common in cryptocurrency. Valid breakouts require: 1) Close beyond channel, not just wicks; 2) Accompanied by volume increase; 3) Price stays outside channel for at least 2-3 candles; 4) Confirmation from other indicators (MACD cross, RSI strength). Recommend waiting for pullback confirmation, sacrificing some profit but greatly reducing false breakout risk.'
       },
       {
         question: 'Q4: How to set stop loss and take profit with KC?',
         answer: 'Stop loss: For long breakouts, place stop 10-20 points below lower band; for short breakouts, place stop 10-20 points above upper band. Take profit: Use multiples of channel width, e.g., 100-point channel width, target 200-300 points (2-3x channel width). Or dynamic TP: reduce 50% at middle line, close all at opposite channel.'
+=======
+        answer: 'Not always. False breakouts are common in forex. Valid breakouts require: 1) Close beyond channel, not just wicks; 2) Accompanied by volume increase; 3) Price stays outside channel for at least 2-3 candles; 4) Confirmation from other indicators (MACD cross, RSI strength). Recommend waiting for pullback confirmation, sacrificing some profit but greatly reducing false breakout risk.'
+      },
+      {
+        question: 'Q4: How to set stop loss and take profit with KC?',
+        answer: 'Stop loss: For long breakouts, place stop 10-20 pips below lower band; for short breakouts, place stop 10-20 pips above upper band. Take profit: Use multiples of channel width, e.g., 100-pip channel width, target 200-300 pips (2-3x channel width). Or dynamic TP: reduce 50% at middle line, close all at opposite channel.'
+>>>>>>> fx-killer/main
       },
       {
         question: 'Q5: How to trade when KC channels narrow?',
@@ -149,7 +177,11 @@ export const keltnerChannelsContent = {
     ],
 
     ctaTitle: 'Want to Systematically Learn Technical Analysis?',
+<<<<<<< HEAD
     ctaDescription: 'Join BiKiller training to master more practical technical indicator applications',
+=======
+    ctaDescription: 'Join FX Killer training to master more practical technical indicator applications',
+>>>>>>> fx-killer/main
     ctaPrimaryButton: 'Learn About Training',
     ctaSecondaryButton: 'Free Psychology Test',
 

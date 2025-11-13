@@ -37,6 +37,11 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     setTheme(newTheme);
     localStorage.setItem('theme', newTheme);
     document.documentElement.classList.toggle('dark', newTheme === 'dark');
+<<<<<<< HEAD
+=======
+    // 切换主题后刷新页面，确保 Neural Background 正确显示
+    window.location.reload();
+>>>>>>> fx-killer/main
   };
 
   return (

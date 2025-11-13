@@ -1,0 +1,30 @@
+{
+  "symbol": "USD/CAD",
+  "name": "US Dollar vs Canadian Dollar",
+  "nameCn": "美元/加元",
+  "timestamp": "2025-11-11T17:41:47.633Z",
+  "price": {
+    "close": "1.40062",
+    "high": "1.40106",
+    "low": "1.39990",
+    "open": "1.40088",
+    "change": "-0.02",
+    "datetime": "2025-11-12 04:00:00"
+  },
+  "indicators": {
+    "rsi": 34.97919,
+    "macd": -0.00062471731,
+    "macd_signal": -0.00041800753,
+    "sma20": 1.40246
+  },
+  "analysis": {
+    "zh": {
+      "title": "美元/加元技术分析：[当前震荡走势]",
+      "content": "当前美元/加元（USD/CAD）在1.40062附近震荡整理，24小时变化为-0.02%。从趋势判断来看，汇价在短期内维持横盘整理状态，未能突破1.40246的20日简单移动平均线（SMA），这表明市场情绪较为谨慎，投资者需关注后续走势。\n\n在技术指标方面，MACD指标显示出微弱的看跌信号，当前值为-0.000624，表明短期内卖压较重。而相对强弱指数（RSI）尚未提供具体数据，但若后续出现回落，可能会增加超卖的风险，从而为多头提供入场机会。\n\n支撑位方面，1.39990是近期的关键支撑，若跌破该位可能引发进一步下行。而阻力位则集中在1.40106及上方的1.40246，若突破将可能引发多头的回补行情。整体来看，市场仍需关注经济数据及地缘政治因素的影响。\n\n基于当前的市场情况，建议投资者在1.39990附近寻找买入机会，同时在触及1.40246附近时考虑卖出，以把握短期内的震荡行情。保持灵活应对，控制风险是交易的关键。"
+    },
+    "en": {
+      "title": "US Dollar vs Canadian Dollar Technical Analysis",
+      "content": "The USD/CAD currency pair is currently trading at 1.40062, reflecting a slight decline of 0.02% over the last 24 hours. The price action has been relatively tight, oscillating between a high of 1.40106 and a low of 1.39990. This narrow range suggests a period of consolidation, which may indicate indecision in the market. Traders should monitor this range closely, as a breakout above 1.40106 could signify a bullish shift, while a move below 1.39990 might prompt further bearish momentum.\n\nIn terms of technical indicators, the recent MACD value of -0.00062471731 indicates a potential bearish sentiment, although the absence of a clear signal line complicates the interpretation. The SMA(20) at 1.40246 serves as a critical moving average that traders should consider. A move above this average could signal a buying opportunity, while a failure to reclaim this level may reinforce bearish sentiment. The RSI is not available for analysis, but it is crucial to incorporate it into future evaluations to gauge momentum and potential overbought or oversold conditions.\n\nSupport and resistance levels are key to understanding potential price movements. Immediate support can be identified at the recent low of 1.39990, while resistance is likely to be encountered at the SMA(20) level of 1.40246. A break below the support level could lead to further downside, targeting the next support level around 1.39800. Conversely, if the price manages to break above the resistance, traders may look for a retest of the 1.40500 level, which could provide a more substantial upside.\n\nFor short-term trading strategies, it may be prudent to adopt a wait-and-see approach. Those looking for short positions could consider entering near the resistance level of 1.40246, with a stop-loss just above this level. On the other hand, bullish traders might wait for confirmation of a breakout above this resistance before entering long positions, aiming for profit targets around 1.40500. Given the current market conditions, a cautious approach is advisable to avoid false breakouts and ensure effective risk management."
+    }
+  }
+}

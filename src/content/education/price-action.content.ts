@@ -2,9 +2,15 @@ import { EducationPageContent } from './forex-basics.content';
 
 export const priceActionContent = {
   zh: {
+<<<<<<< HEAD
     title: '价格行为交易策略 - Pin Bar、Inside Bar、供需区域完整指南 | BiKiller',
     description: '深入讲解价格行为交易：Pin Bar、Inside Bar、Rejection Candle、供需区域（Supply/Demand）、裸K交易策略。掌握纯价格分析，无需指标。',
     keywords: '价格行为, Pin Bar, Inside Bar, 供需区域, 裸K交易, 价格拒绝, 纯价格分析',
+=======
+    title: '价格行为交易策略丨汇刃丨外汇交易员培训、全职交易员培训',
+    description: '深入讲解价格行为交易：Pin Bar、Inside Bar、Rejection Candle、供需区域。外汇交易员和全职交易员培训课程分享裸K交易策略，无需指标的纯价格分析。',
+    keywords: '外汇交易员培训, 全职交易员培训, 价格行为, Pin Bar, Inside Bar, 供需区域, 裸K交易',
+>>>>>>> fx-killer/main
 
     heroTitle: '价格行为交易策略',
     heroDescription: '摒弃指标噪音，回归价格本质，用最简单的方法交易',
@@ -70,7 +76,11 @@ export const priceActionContent = {
     ],
 
     ctaTitle: '想要掌握价格行为交易的精髓？',
+<<<<<<< HEAD
     ctaDescription: '加入BiKiller专业培训，学习裸K交易和供需区域策略',
+=======
+    ctaDescription: '加入FX Killer专业培训，学习裸K交易和供需区域策略',
+>>>>>>> fx-killer/main
     ctaPrimaryButton: '了解培训计划',
     ctaSecondaryButton: '免费心理测评',
 
@@ -81,9 +91,15 @@ export const priceActionContent = {
   } as EducationPageContent,
 
   en: {
+<<<<<<< HEAD
     title: 'Price Action Trading Strategy - Pin Bar, Inside Bar, Supply/Demand Zones Guide | BiKiller',
     description: 'In-depth explanation of price action trading: Pin Bar, Inside Bar, Rejection Candle, Supply/Demand zones, naked chart trading strategies. Master pure price analysis without indicators.',
     keywords: 'price action, Pin Bar, Inside Bar, supply demand zones, naked trading, price rejection, pure price analysis',
+=======
+    title: 'Price Action Trading Strategy丨FX Killer丨Forex Trader Training, Full-Time Trader Training',
+    description: 'In-depth explanation of price action trading: Pin Bar, Inside Bar, Rejection Candle, Supply/Demand zones, naked chart trading strategies. Forex trader training and full-time trader training curriculum for mastering pure price analysis without indicators.',
+    keywords: 'Forex Trader Training, Full-Time Trader Training, price action, Pin Bar, Inside Bar, supply demand zones',
+>>>>>>> fx-killer/main
 
     heroTitle: 'Price Action Trading Strategy',
     heroDescription: 'Eliminate indicator noise, return to price essence, trade with the simplest method',
@@ -114,11 +130,19 @@ export const priceActionContent = {
       },
       {
         question: 'Q3: How to draw supply/demand zones? Are more better?',
+<<<<<<< HEAD
         answer: 'Supply/demand zones should be streamlined not cluttered. Identification method: 1) Find area where price quickly left (large bullish/bearish candle); 2) Before that area, price consolidated or small movement (institutional accumulation); 3) After leaving, price moves at least 50-100 points; 4) Zone thickness 15-30 points. Not more is better: Only mark H4/D1 core zones (5-8 enough), too many causes confusion. Supply/demand zones have "freshness" (Fresh), first retest most effective (70% win rate), loses effectiveness after multiple touches.'
       },
       {
         question: 'Q4: What market environment suits Inside Bar?',
         answer: 'Inside Bar (mother-child line) is trend continuation pattern, best suits two environments: 1) Mid-trend consolidation (e.g., after 100 point uptrend, Inside Bar appears, indicates consolidation then continues up); 2) Decision moment at key support/resistance (breakout direction is trading direction). Not suitable: Sideways ranging market (many false breakouts), trend end (may reverse not continue). Trading strategy: Mother Candle high/low points are boundaries, break whichever side trade that direction, stop on other side.'
+=======
+        answer: 'Supply/demand zones should be streamlined not cluttered. Identification method: 1) Find area where price quickly left (large bullish/bearish candle); 2) Before that area, price consolidated or small movement (institutional accumulation); 3) After leaving, price moves at least 50-100 pips; 4) Zone thickness 15-30 pips. Not more is better: Only mark H4/D1 core zones (5-8 enough), too many causes confusion. Supply/demand zones have "freshness" (Fresh), first retest most effective (70% win rate), loses effectiveness after multiple touches.'
+      },
+      {
+        question: 'Q4: What market environment suits Inside Bar?',
+        answer: 'Inside Bar (mother-child line) is trend continuation pattern, best suits two environments: 1) Mid-trend consolidation (e.g., after 100 pip uptrend, Inside Bar appears, indicates consolidation then continues up); 2) Decision moment at key support/resistance (breakout direction is trading direction). Not suitable: Sideways ranging market (many false breakouts), trend end (may reverse not continue). Trading strategy: Mother Candle high/low points are boundaries, break whichever side trade that direction, stop on other side.'
+>>>>>>> fx-killer/main
       },
       {
         question: 'Q5: Which timeframes suit price action trading?',
@@ -149,7 +173,11 @@ export const priceActionContent = {
     ],
 
     ctaTitle: 'Want to Master the Essence of Price Action Trading?',
+<<<<<<< HEAD
     ctaDescription: 'Join BiKiller professional training to learn naked trading and supply/demand strategies',
+=======
+    ctaDescription: 'Join FX Killer professional training to learn naked trading and supply/demand strategies',
+>>>>>>> fx-killer/main
     ctaPrimaryButton: 'Learn About Training',
     ctaSecondaryButton: 'Free Psychology Test',
 

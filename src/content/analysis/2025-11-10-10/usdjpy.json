@@ -1,0 +1,30 @@
+{
+  "symbol": "USD/JPY",
+  "name": "US Dollar vs Japanese Yen",
+  "nameCn": "美元/日元",
+  "timestamp": "2025-11-10T10:33:41.964Z",
+  "price": {
+    "close": "154.12601",
+    "high": "154.17500",
+    "low": "154.056000",
+    "open": "154.15401",
+    "change": "-0.02",
+    "datetime": "2025-11-10 21:00:00"
+  },
+  "indicators": {
+    "rsi": 67.11937,
+    "macd": 0.21388859,
+    "macd_signal": 0.16020853,
+    "sma20": 153.66915
+  },
+  "analysis": {
+    "zh": {
+      "title": "美元/日元技术分析：[震荡整理，略显疲态]",
+      "content": "当前美元/日元汇率在154.12601附近波动，显示出短期内震荡整理的趋势。价格在154.17500和154.056000之间震荡，反映出市场的观望情绪。整体而言，尽管短期内出现小幅回调，但整体趋势依然偏向于强势，需要关注价格能否突破当前区间。\n\n技术指标方面，虽然RSI数据缺失，但MACD指标显示0.21388859的正值，表明多头力量仍在。20日简单移动平均线(SMA)在153.66915，形成了一定的支撑位，若价格回落至此水平，可能吸引买盘入场。投资者需密切关注MACD的变化，以判断趋势的进一步发展。\n\n从支撑与阻力来看，154.17500是近期的强阻力位，而154.056000则是关键支撑位。若价格突破154.17500，可能会吸引更多买盘，推动价格进一步上涨。反之，若跌破154.056000，可能会引发更深层次的调整，投资者需谨慎操作。\n\n综合来看，建议投资者在当前区间内采取观望策略，等待价格突破关键阻力或支撑位后再进行交易。同时，可以考虑在接近支撑位时逐步布局多单，以捕捉可能的反弹机会。保持灵活应变的策略，将有助于在波动中把握交易机会。"
+    },
+    "en": {
+      "title": "US Dollar vs Japanese Yen Technical Analysis",
+      "content": "The USD/JPY pair is currently trading at 154.12601, showing a slight decline of 0.02% over the past 24 hours. This minor pullback comes after the price reached a high of 154.17500, indicating a potential resistance level. The overall trend appears to be bullish, as the price remains significantly above the 20-day Simple Moving Average (SMA) of 153.66915. Traders should monitor the price action closely around these levels to determine if the bullish trend can sustain itself or if a reversal might occur.\n\nIn terms of momentum indicators, the MACD reading of 0.21388859 suggests a bullish momentum, although the lack of a signal line makes it challenging to derive a clear trading signal. A rising MACD indicates that the upward trend might have further room to run, but traders should be cautious of potential overbought conditions, especially if the RSI were available. The absence of a comprehensive momentum indicator can also lead to uncertainty in making informed trading decisions.\n\nSupport levels can be identified around the recent low of 154.056000, which could provide a cushion for price action should it test this area. If the price breaks below this level, the next significant support might be found at the SMA of 153.66915. Conversely, if the pair can break above the recent high of 154.17500, it could indicate a continuation of the bullish trend, opening the door for further gains. \n\nGiven the current market data, a cautious bullish strategy could be employed, with buy positions considered near support levels and potential sell orders placed just below resistance. Traders should maintain a close watch on market sentiment and external economic factors that could impact the USD/JPY pair, as these elements will ultimately influence the price direction in the near term."
+    }
+  }
+}

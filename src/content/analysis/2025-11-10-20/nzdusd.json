@@ -1,0 +1,30 @@
+{
+  "symbol": "NZD/USD",
+  "name": "New Zealand Dollar vs US Dollar",
+  "nameCn": "纽元/美元",
+  "timestamp": "2025-11-10T20:35:52.352Z",
+  "price": {
+    "close": "0.56474841",
+    "high": "0.56487602",
+    "low": "0.56468463",
+    "open": "0.56468463",
+    "change": "0.01",
+    "datetime": "2025-11-11 07:00:00"
+  },
+  "indicators": {
+    "rsi": 58.26148,
+    "macd": 0.00037957577,
+    "macd_signal": 0.00032137265,
+    "sma20": 0.56401982
+  },
+  "analysis": {
+    "zh": {
+      "title": "纽元/美元技术分析：[震荡整理中]",
+      "content": "当前纽元/美元(NZD/USD)的价格为0.56474841，整体表现出震荡整理的趋势。价格在过去24小时内变化不大，仅上涨了0.01%。短期内，市场情绪偏向谨慎，交易者可能在等待更明确的市场信号或宏观经济数据的发布，以决定下一步操作。\n\n从技术指标来看，MACD显示出轻微的正值，这表明短期内可能存在买盘动能，但由于缺乏信号线和RSI数据，难以形成明确的交易信号。20日简单移动平均线(SMA)为0.56401982，当前价格在其上方，暗示短期内可能偏向多头，但需注意价格回调的风险。\n\n支撑位方面，0.56468463为重要的支撑区间，若价格下破该位可能引发进一步下行。另一方面，0.56487602则是一个关键的阻力位，突破后可能会引发买盘加速。交易者可以考虑在支撑位附近寻找买入机会，同时在接近阻力位时设置止盈。\n\n建议交易者密切关注市场动态，保持灵活的交易策略。短期内可采取区间交易的方式，在支撑位附近分批建仓，同时留意价格的突破情况，以便及时调整仓位。"
+    },
+    "en": {
+      "title": "New Zealand Dollar vs US Dollar Technical Analysis",
+      "content": "The NZD/USD pair currently trades at 0.56474841, showing a slight increase of 0.01% over the past 24 hours. This modest price movement suggests that the market is experiencing a period of consolidation after recent fluctuations. The high of 0.56487602 and low of 0.56468463 indicate a tight range, highlighting the need for further directional clarity. If the price breaks above the recent high, it could signal a bullish reversal, while a drop below the low may confirm bearish sentiment.\n\nIn terms of technical indicators, the absence of RSI data limits our ability to assess the momentum accurately. However, the MACD shows a positive divergence with a value of 0.00037957577, indicating that upward momentum may be building, albeit weakly. Meanwhile, the 20-period simple moving average (SMA) sits at 0.56401982, acting as a potential support level. A sustained move above the SMA could reinforce bullish prospects, while a retreat could trigger selling pressure.\n\nKey support is identified at the recent low of 0.56468463, where buyers may emerge to prevent further declines. Conversely, resistance is noted at the high of 0.56487602, which could pose a challenge for bulls aiming to push prices higher. Traders should closely monitor these levels, as a breach above resistance could lead to a test of further upside targets, while a failure to hold support may open the door for a deeper retracement.\n\nGiven the current market conditions, traders are advised to adopt a cautious approach. A breakout above 0.56487602 could present a buying opportunity, particularly if accompanied by increased volume. Alternatively, if the price fails to maintain its position above the SMA and breaks below 0.56468463, short positions may become more favorable. Maintaining a disciplined risk management strategy will be essential as the market navigates through these potential turning points."
+    }
+  }
+}

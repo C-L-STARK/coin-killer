@@ -1,0 +1,30 @@
+{
+  "symbol": "NZD/USD",
+  "name": "New Zealand Dollar vs US Dollar",
+  "nameCn": "纽元/美元",
+  "timestamp": "2025-11-12T21:38:13.122Z",
+  "price": {
+    "close": "0.56666851",
+    "high": "0.56670064",
+    "low": "0.56654012",
+    "open": "0.56670064",
+    "change": "0.01",
+    "datetime": "2025-11-13 08:00:00"
+  },
+  "indicators": {
+    "rsi": 58.93287,
+    "macd": 0.00037242284,
+    "macd_signal": 0.00033059999,
+    "sma20": 0.56604038
+  },
+  "analysis": {
+    "zh": {
+      "title": "纽元/美元技术分析：[短期震荡整理]",
+      "content": "当前纽元/美元(NZD/USD)的价格为0.56666851，近期走势显示出一定的震荡整理特征。在24小时内，价格波动幅度较小，仅为0.01%。从高点0.56670064与低点0.56654012来看，市场似乎缺乏明确的方向，短期内可能会继续在这个区间内波动。\n\n技术指标方面，20日简单移动平均线(SMA)为0.56604038，表明短期内价格依然高于这一均线，显示出一定的支撑作用。但由于RSI和MACD的相关数据缺失，难以全面评估市场的超买或超卖状态。因此，建议投资者关注接下来的价格走势及相关技术指标的变化。\n\n支撑位方面，0.56654012是短期内的关键支撑，如果价格跌破该水平，可能会引发进一步的下行压力。而阻力位则在0.56670064附近，若能有效突破此水平，可能会吸引更多买盘进场，推动价格上涨。\n\n建议投资者在当前市场环境下保持谨慎，选择在支撑位附近寻找买入机会，同时关注阻力位的突破情况。适当的止损设置可以帮助控制风险，确保在市场变动时能够及时调整策略。"
+    },
+    "en": {
+      "title": "New Zealand Dollar vs US Dollar Technical Analysis",
+      "content": "The NZD/USD pair is currently trading at 0.56666851, showing a minor 24-hour change of 0.01%. The price has oscillated between a high of 0.56670064 and a low of 0.56654012, indicating a tight trading range. This consolidation phase suggests a lack of strong momentum in either direction. Traders should monitor the price action closely, as a breakout beyond these levels could signal a potential trend continuation or reversal.\n\nAnalyzing the indicators, the absence of a reliable RSI reading limits the assessment of momentum. However, the MACD value of 0.00037242284 suggests a slight bullish divergence, indicating the potential for upward movement if buying pressure increases. The 20-period Simple Moving Average (SMA) at 0.56604038 serves as a dynamic support level. A sustained move above this SMA could provide bullish confirmation, while a drop below it may indicate a bearish outlook.\n\nKey support is identified at the recent low of 0.56654012, which could act as a critical barrier against further declines. Conversely, resistance is noted near the recent high of 0.56670064. If the price breaks through this resistance, it may pave the way for an upward move towards the next psychological level of 0.5700. Conversely, if it fails to hold above the SMA, traders should be prepared for a potential test of lower support levels.\n\nFor traders looking to position themselves, a cautious approach is advised. A buy signal could be considered on a confirmed break above 0.56670064, coupled with increasing volume. Conversely, a sell position might be warranted if the price declines below 0.56654012, particularly if accompanied by bearish momentum indicators. Staying attuned to macroeconomic developments affecting both currencies will also be crucial in making informed trading decisions."
+    }
+  }
+}

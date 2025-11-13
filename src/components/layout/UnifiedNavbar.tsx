@@ -19,10 +19,13 @@ export default function UnifiedNavbar() {
 
   const navItems = [
     {
+<<<<<<< HEAD
       name: t('nav.home'),
       link: "/",
     },
     {
+=======
+>>>>>>> fx-killer/main
       name: t('nav.training'),
       link: "/splan/join-us",
     },
@@ -38,6 +41,21 @@ export default function UnifiedNavbar() {
       ]
     },
     {
+<<<<<<< HEAD
+=======
+      name: language === 'zh' ? '新闻' : 'News',
+      link: "/news",
+    },
+    {
+      name: language === 'zh' ? '行情' : 'Market',
+      link: "/market-analysis",
+    },
+    {
+      name: t('nav.liveTrading'),
+      link: "/live-trading",
+    },
+    {
+>>>>>>> fx-killer/main
       name: t('nav.blog'),
       link: "/splan/blog",
     },
@@ -50,12 +68,27 @@ export default function UnifiedNavbar() {
       link: "/dashboard",
     },
     {
+<<<<<<< HEAD
+=======
+      name: language === 'zh' ? '日历' : 'Calendar',
+      link: "/economic-calendar",
+    },
+    {
+      name: language === 'zh' ? '天梯' : 'Leaderboard',
+      link: "/top-traders",
+    },
+    {
+>>>>>>> fx-killer/main
       name: t('nav.tradingTools'),
       link: "/tools/position-calculator",
       hasDropdown: true,
       dropdownItems: [
         { name: language === 'zh' ? '仓位计算器' : 'Position Calculator', link: '/tools/position-calculator' },
         { name: language === 'zh' ? '风险回报计算器' : 'Risk/Reward Calculator', link: '/tools/risk-reward-calculator' },
+<<<<<<< HEAD
+=======
+        { name: language === 'zh' ? '点值计算器' : 'Pip Calculator', link: '/tools/pip-calculator' },
+>>>>>>> fx-killer/main
       ]
     },
     {
@@ -70,13 +103,28 @@ export default function UnifiedNavbar() {
 
   useEffect(() => {
     const handleScroll = () => {
+<<<<<<< HEAD
       setScrolled(window.scrollY > 10);
+=======
+      const scrollPosition = window.scrollY;
+      setScrolled(scrollPosition > 50); // 滚动超过50px时显示导航栏
+>>>>>>> fx-killer/main
     };
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+<<<<<<< HEAD
+=======
+  // 判断是否在首页
+  const isHomePage = () => {
+    const pathSegments = pathname.split('/').filter(Boolean);
+    // 如果只有语言代码或者没有路径，说明是首页
+    return pathSegments.length === 0 || (pathSegments.length === 1 && (pathSegments[0] === 'zh' || pathSegments[0] === 'en'));
+  };
+
+>>>>>>> fx-killer/main
   // Close mobile menu when route changes
   useEffect(() => {
     setIsMobileMenuOpen(false);
@@ -97,13 +145,19 @@ export default function UnifiedNavbar() {
   return (
     <motion.nav
       initial={{ y: -100 }}
+<<<<<<< HEAD
       animate={{ y: 0 }}
+=======
+      animate={{ y: isHomePage() ? (scrolled ? 0 : -100) : 0 }}
+      transition={{ duration: 0.3, ease: 'easeInOut' }}
+>>>>>>> fx-killer/main
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
           ? 'bg-white/95 dark:bg-gray-900/95 backdrop-blur-md shadow-lg'
           : 'bg-white dark:bg-gray-900'
       } border-b border-gray-200 dark:border-gray-800`}
     >
+<<<<<<< HEAD
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -114,6 +168,19 @@ export default function UnifiedNavbar() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-1">
             {navItems.map((item, index) => (
+=======
+      <div className="max-w-7xl mx-auto px-4">
+        <div className="flex items-center justify-between h-16">
+          {/* Logo - 靠左 */}
+          <div className="flex items-center space-x-6">
+            <LocaleLink href="/" className="flex items-center group">
+              <span className="text-2xl"><BrandName inNavbar={true} /></span>
+            </LocaleLink>
+
+            {/* Desktop Navigation - 紧跟 Logo */}
+            <div className="hidden md:flex items-center">
+              {navItems.map((item, index) => (
+>>>>>>> fx-killer/main
               <div
                 key={index}
                 className="relative"
@@ -122,7 +189,11 @@ export default function UnifiedNavbar() {
               >
                 <LocaleLink
                   href={item.link}
+<<<<<<< HEAD
                   className="relative px-4 py-2 text-sm font-medium transition-colors group flex items-center gap-1"
+=======
+                  className="relative px-3 py-2 text-sm font-medium transition-colors group flex items-center gap-1"
+>>>>>>> fx-killer/main
                 >
                   <span
                     className={`relative z-10 ${
@@ -184,9 +255,16 @@ export default function UnifiedNavbar() {
                 )}
               </div>
             ))}
+<<<<<<< HEAD
           </div>
 
           {/* Right Side Actions (Desktop) */}
+=======
+            </div>
+          </div>
+
+          {/* Right Side Actions (Desktop) - 靠右 */}
+>>>>>>> fx-killer/main
           <div className="hidden md:flex items-center gap-3">
             {/* Theme Toggle */}
             <button
@@ -216,6 +294,7 @@ export default function UnifiedNavbar() {
             >
               {language === 'zh' ? 'EN' : '中文'}
             </button>
+<<<<<<< HEAD
 
             {/* Join Us Button */}
             <LocaleLink
@@ -224,6 +303,8 @@ export default function UnifiedNavbar() {
             >
               {t('nav.join')}
             </LocaleLink>
+=======
+>>>>>>> fx-killer/main
           </div>
 
           {/* Mobile Menu Button */}
@@ -355,6 +436,7 @@ export default function UnifiedNavbar() {
                   {language === 'zh' ? 'EN' : '中文'}
                 </button>
               </div>
+<<<<<<< HEAD
 
               <LocaleLink
                 href="/splan/join-us"
@@ -362,6 +444,8 @@ export default function UnifiedNavbar() {
               >
                 {t('nav.join')}
               </LocaleLink>
+=======
+>>>>>>> fx-killer/main
             </div>
           </motion.div>
         )}

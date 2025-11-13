@@ -1,0 +1,30 @@
+{
+  "symbol": "XAU/USD",
+  "name": "Gold vs US Dollar",
+  "nameCn": "黄金/美元",
+  "timestamp": "2025-11-11T22:51:36.067Z",
+  "price": {
+    "close": "4126.87967",
+    "high": "4127.04181",
+    "low": "4126.61658",
+    "open": "4126.83948",
+    "change": "0.00",
+    "datetime": "2025-11-12 09:00:00"
+  },
+  "indicators": {
+    "rsi": 57.41322,
+    "macd": 7.50571,
+    "macd_signal": 10.12233,
+    "sma20": 4125.69798
+  },
+  "analysis": {
+    "zh": {
+      "title": "黄金/美元技术分析：[震荡整理中]",
+      "content": "当前黄金/美元(XAU/USD)价格在4126.87967附近徘徊，显示出短期内的震荡整理趋势。从高点4127.04181和低点4126.61658来看，市场波动幅度有限，投资者情绪较为谨慎，缺乏明确的方向性。若价格突破上方阻力位4127.04，可能会引发进一步上行；反之，跌破4126.61则可能加剧下行压力。\n\n在技术指标方面，虽然RSI(14)数据缺失，但MACD指标显示为7.50571，表明短期内有一定的买入动能。移动平均线(SMA 20)位于4125.69798，形成了一个支撑位，若价格回调至此水平，可能会吸引买盘介入。整体来看，市场尚未形成明显的趋势，投资者应保持观望。\n\n支撑位方面，4125.70和4126.61是关键水平，若价格维持在这些支撑之上，则有望实现反弹；而在阻力位4127.04的压力下，若无法突破，则可能面临回调风险。关注市场消息和经济数据，以便更好地把握交易机会。\n\n建议投资者在当前震荡区间内采取谨慎的态度，建议在支撑位附近考虑建立多头头寸，而在接近阻力位时则考虑部分获利了结。同时，保持对市场动态的敏感，以便及时调整策略。"
+    },
+    "en": {
+      "title": "Gold vs US Dollar Technical Analysis",
+      "content": "The current price of Gold against the US Dollar (XAU/USD) stands at 4126.87967, showing a neutral stance with a 24-hour change of 0.00%. The recent high and low levels indicate a tight trading range, suggesting indecision in the market. The overall trend appears to be sideways, as price movements are contained within a narrow band. Traders should remain cautious, as this consolidation phase may precede a breakout or breakdown, depending on upcoming economic data or geopolitical developments.\n\nThe absence of a calculated RSI(14) limits the ability to assess potential overbought or oversold conditions effectively. However, the MACD value of 7.50571 suggests a bullish momentum, although the lack of a signal line makes interpretation less reliable. The SMA(20) at 4125.69798 aligns closely with the current price, reinforcing the notion of a consolidation phase. Should the price break above the SMA, it may confirm a bullish sentiment, while a drop below could signal increased selling pressure.\n\nIn terms of support and resistance levels, the recent low of 4126.61658 serves as a crucial support point. If prices dip below this level, it may trigger a further decline, with subsequent support found around 4125. Conversely, the recent high of 4127.04181 marks an immediate resistance. A successful breach above this level could open the door for upward movement, possibly targeting higher resistance zones. \n\nFor traders, maintaining a watchful eye on breakout points is essential. A breakout above 4127.04181 could present a buying opportunity with potential gains, while a drop below 4126.61658 may invite short positions. Using stop-loss orders strategically will help manage risk in this volatile environment. Overall, traders should remain adaptable to prevailing market sentiments and act accordingly."
+    }
+  }
+}

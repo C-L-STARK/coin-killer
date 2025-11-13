@@ -2,23 +2,40 @@ import { EducationPageContent } from './forex-basics.content';
 
 export const currencyPairsGuideContent = {
   zh: {
+<<<<<<< HEAD
     title: '交易对完整解析 - 主要、次要与异国交易对交易指南 | BiKiller',
     description: '深入讲解数字货币交易对：BTC/USDT、ETH/USDT、BNB/USDT等主要交易对特性，交易对相关性分析，价格波动计算方法，最佳交易时段选择。掌握交易对选择与交易技巧。',
     keywords: '交易对, 主要交易对, BTC/USDT, ETH/USDT, BNB/USDT, 交易对相关性, 价格波动计算, 数字货币交易对',
 
     heroTitle: '交易对完整解析',
     heroDescription: '理解交易对特性，选择最适合你的交易品种',
+=======
+    title: '货币对完整解析丨汇刃丨外汇交易员培训、全职交易员培训',
+    description: '深入讲解外汇货币对：EUR/USD、GBP/USD、USD/JPY等主要货币对特性、相关性分析、点值计算。外汇交易员和全职交易员培训必备的货币对选择与交易技巧。',
+    keywords: '外汇交易员培训, 全职交易员培训, 货币对, 主要货币对, EUR/USD, GBP/USD, 货币对相关性',
+
+    heroTitle: '货币对完整解析',
+    heroDescription: '理解货币对特性，选择最适合你的交易品种',
+>>>>>>> fx-killer/main
     readingTime: '30分钟',
     difficulty: '初级',
     lastUpdated: '2024-01-20',
 
     tocTitle: '本文目录',
     tableOfContents: [
+<<<<<<< HEAD
       { id: 'what-are-currency-pairs', title: '什么是交易对？' },
       { id: 'major-pairs', title: '主要交易对深度分析' },
       { id: 'minor-exotic-pairs', title: '次要与异国交易对' },
       { id: 'correlation', title: '交易对相关性与选择' },
       { id: 'point-value', title: '价格波动计算与风险管理' },
+=======
+      { id: 'what-are-currency-pairs', title: '什么是货币对？' },
+      { id: 'major-pairs', title: '主要货币对深度分析' },
+      { id: 'minor-exotic-pairs', title: '次要与异国货币对' },
+      { id: 'correlation', title: '货币对相关性与选择' },
+      { id: 'pip-value', title: '点值计算与风险管理' },
+>>>>>>> fx-killer/main
       { id: 'trading-times', title: '交易时段优化策略' },
       { id: 'faq', title: '常见问题解答' },
     ],
@@ -26,6 +43,7 @@ export const currencyPairsGuideContent = {
     faqTitle: '常见问题解答',
     faqs: [
       {
+<<<<<<< HEAD
         question: 'Q1: 新手应该从哪个交易对开始交易？',
         answer: '强烈建议从BTC/USDT开始。BTC/USDT是全球流动性最高、手续费最小（0.5-1点）、走势最稳定的交易对，技术分析效果最好，适合新手学习和积累经验。其次可以考虑ETH/USDT和BNB/USDT。避免交易异国交易对（如USD/TRY），它们手续费大、波动剧烈、难以预测。'
       },
@@ -44,6 +62,26 @@ export const currencyPairsGuideContent = {
       {
         question: 'Q5: 每个交易对的最佳交易时段是什么时候？',
         answer: 'BTC/USDT最佳时段：欧洲开盘（15:00-18:00北京时间）和欧美重叠（20:00-24:00），日均波动80-100点。ETH/USDT：伦敦开盘（15:00-19:00），波动最剧烈，日均120-150点。BNB/USDT：东京开盘（8:00-10:00）和纽约开盘（20:00-24:00），日均70-90点。SOL/USDT：悉尼/东京开盘（6:00-12:00）。在货币所属国家的交易时段交易，流动性最好。'
+=======
+        question: 'Q1: 新手应该从哪个货币对开始交易？',
+        answer: '强烈建议从EUR/USD开始。EUR/USD是全球流动性最高、点差最小（0.5-1点）、走势最稳定的货币对，技术分析效果最好，适合新手学习和积累经验。其次可以考虑GBP/USD和USD/JPY。避免交易异国货币对（如USD/TRY），它们点差大、波动剧烈、难以预测。'
+      },
+      {
+        question: 'Q2: 为什么EUR/USD的点差比GBP/JPY小那么多？',
+        answer: '点差取决于流动性和交易量。EUR/USD日交易量占全球外汇市场30%，买卖双方极多，供需匹配快，点差自然小（0.5-1点）。GBP/JPY是交叉货币对，需要通过GBP/USD和USD/JPY合成计算，流动性较低，点差通常2-4点。流动性越高，点差越小，交易成本越低。'
+      },
+      {
+        question: 'Q3: 如何计算不同货币对的点值？',
+        answer: '公式：点值 = (0.0001 / 当前汇率) × 手数 × 合约单位。EUR/USD交易1标准手（100,000单位），当前价格1.1000，点值 = (0.0001 / 1.1000) × 1 × 100,000 = $9.09。USD/JPY以日元报价，1标准手点值固定约$9.09（汇率145时）。使用FX Killer仓位计算器可自动计算点值和仓位。'
+      },
+      {
+        question: 'Q4: 什么是货币对相关性？为什么要关注？',
+        answer: '相关性指两个货币对价格走势的关联度。正相关（如EUR/USD和GBP/USD，相关系数+0.8）意味着同向运动；负相关（如EUR/USD和USD/CHF，相关系数-0.9）意味着反向运动。同时做多两个高度正相关的货币对（如EUR/USD和GBP/USD）实际上是双倍风险，一旦错误会双倍亏损。应分散到低相关或负相关的货币对以降低风险。'
+      },
+      {
+        question: 'Q5: 每个货币对的最佳交易时段是什么时候？',
+        answer: 'EUR/USD最佳时段：欧洲开盘（15:00-18:00北京时间）和欧美重叠（20:00-24:00），日均波动80-100点。GBP/USD：伦敦开盘（15:00-19:00），波动最剧烈，日均120-150点。USD/JPY：东京开盘（8:00-10:00）和纽约开盘（20:00-24:00），日均70-90点。AUD/USD：悉尼/东京开盘（6:00-12:00）。在货币所属国家的交易时段交易，流动性最好。'
+>>>>>>> fx-killer/main
       }
     ],
 
@@ -52,13 +90,19 @@ export const currencyPairsGuideContent = {
       {
         href: '/education/forex-basics',
         icon: '📚',
+<<<<<<< HEAD
         title: '数字货币基础知识',
         description: '了解数字货币市场的基本概念'
+=======
+        title: '外汇基础知识',
+        description: '了解外汇市场的基本概念'
+>>>>>>> fx-killer/main
       },
       {
         href: '/education/trading-sessions-guide',
         icon: '🕐',
         title: '交易时段指南',
+<<<<<<< HEAD
         description: '掌握全球数字货币交易时间'
       },
       {
@@ -75,29 +119,64 @@ export const currencyPairsGuideContent = {
     ctaSecondaryButton: '免费模拟账户',
 
     footerPrevText: '← 数字货币基础',
+=======
+        description: '掌握全球外汇交易时间'
+      },
+      {
+        href: '/partners/brokers',
+        icon: '🏦',
+        title: '经纪商对比',
+        description: '找到点差最低的交易平台'
+      }
+    ],
+
+    ctaTitle: '想要找到最适合你的货币对？',
+    ctaDescription: '对比顶级外汇经纪商，找到点差最低、执行最快的交易平台',
+    ctaPrimaryButton: '对比经纪商',
+    ctaSecondaryButton: '免费模拟账户',
+
+    footerPrevText: '← 外汇基础',
+>>>>>>> fx-killer/main
     footerNextText: '市场参与者 →',
     footerPrevHref: '/education/forex-basics',
     footerNextHref: '/education/market-participants',
   } as EducationPageContent,
 
   en: {
+<<<<<<< HEAD
     title: 'Complete Trading Pairs Guide - Major, Minor & Exotic Pairs Trading | BiKiller',
     description: 'In-depth explanation of cryptocurrency trading pairs: BTC/USDT, ETH/USDT, BNB/USDT characteristics, correlation analysis, point value calculation, optimal trading sessions. Master trading pair selection and trading techniques.',
     keywords: 'trading pairs, major pairs, BTC/USDT, ETH/USDT, BNB/USDT, currency correlation, point value, cryptotrading pairs',
 
     heroTitle: 'Complete Trading Pairs Guide',
     heroDescription: 'Understand trading pair characteristics and choose the best pairs for your trading',
+=======
+    title: 'Complete Currency Pairs Analysis丨FX Killer丨Forex Trader Training, Full-Time Trader Training',
+    description: 'In-depth explanation of forex currency pairs: EUR/USD, GBP/USD, USD/JPY characteristics, correlation analysis, pip value calculation. Forex trader training and full-time trader training essential knowledge for currency pair selection and trading.',
+    keywords: 'Forex Trader Training, Full-Time Trader Training, currency pairs, major pairs, EUR/USD, GBP/USD',
+
+    heroTitle: 'Complete Currency Pairs Guide',
+    heroDescription: 'Understand currency pair characteristics and choose the best pairs for your trading',
+>>>>>>> fx-killer/main
     readingTime: '30 min',
     difficulty: 'Beginner',
     lastUpdated: 'Jan 20, 2024',
 
     tocTitle: 'Table of Contents',
     tableOfContents: [
+<<<<<<< HEAD
       { id: 'what-are-currency-pairs', title: 'What are Trading Pairs?' },
       { id: 'major-pairs', title: 'Major Trading Pairs Analysis' },
       { id: 'minor-exotic-pairs', title: 'Minor & Exotic Pairs' },
       { id: 'correlation', title: 'Currency Correlation & Selection' },
       { id: 'point-value', title: 'Point Value Calculation & Risk' },
+=======
+      { id: 'what-are-currency-pairs', title: 'What are Currency Pairs?' },
+      { id: 'major-pairs', title: 'Major Currency Pairs Analysis' },
+      { id: 'minor-exotic-pairs', title: 'Minor & Exotic Pairs' },
+      { id: 'correlation', title: 'Currency Correlation & Selection' },
+      { id: 'pip-value', title: 'Pip Value Calculation & Risk' },
+>>>>>>> fx-killer/main
       { id: 'trading-times', title: 'Trading Session Optimization' },
       { id: 'faq', title: 'Frequently Asked Questions' },
     ],
@@ -105,6 +184,7 @@ export const currencyPairsGuideContent = {
     faqTitle: 'Frequently Asked Questions',
     faqs: [
       {
+<<<<<<< HEAD
         question: 'Q1: Which trading pair should beginners start with?',
         answer: 'Strongly recommend starting with BTC/USDT. BTC/USDT has the highest global liquidity, smallest fee (0.5-1 point), most stable movement, best technical analysis effectiveness, ideal for beginners to learn and gain experience. Next consider ETH/USDT and BNB/USDT. Avoid exotic pairs (like USD/TRY) - they have large fees, extreme volatility, difficult to predict.'
       },
@@ -123,6 +203,26 @@ export const currencyPairsGuideContent = {
       {
         question: 'Q5: What are the best trading sessions for each trading pair?',
         answer: 'BTC/USDT best sessions: European open (15:00-18:00 Beijing) and EU-US overlap (20:00-24:00), daily range 80-100 points. ETH/USDT: London open (15:00-19:00), most volatile, daily range 120-150 points. BNB/USDT: Tokyo open (08:00-10:00) and New York open (20:00-24:00), daily range 70-90 points. SOL/USDT: Sydney/Tokyo open (06:00-12:00). Trade during the currency\'s home country session for best liquidity.'
+=======
+        question: 'Q1: Which currency pair should beginners start with?',
+        answer: 'Strongly recommend starting with EUR/USD. EUR/USD has the highest global liquidity, smallest spread (0.5-1 pip), most stable movement, best technical analysis effectiveness, ideal for beginners to learn and gain experience. Next consider GBP/USD and USD/JPY. Avoid exotic pairs (like USD/TRY) - they have large spreads, extreme volatility, difficult to predict.'
+      },
+      {
+        question: 'Q2: Why is EUR/USD spread so much smaller than GBP/JPY?',
+        answer: 'Spread depends on liquidity and trading volume. EUR/USD accounts for 30% of global forex daily volume, extremely many buyers and sellers, fast supply-demand matching, naturally small spread (0.5-1 pip). GBP/JPY is a cross pair, needs synthetic calculation through GBP/USD and USD/JPY, lower liquidity, typically 2-4 pips spread. Higher liquidity = smaller spread = lower trading costs.'
+      },
+      {
+        question: 'Q3: How to calculate pip value for different currency pairs?',
+        answer: 'Formula: Pip Value = (0.0001 / Current Rate) × Lot Size × Contract Size. EUR/USD trading 1 standard lot (100,000 units), current price 1.1000, pip value = (0.0001 / 1.1000) × 1 × 100,000 = $9.09. USD/JPY quoted in yen, 1 standard lot pip value fixed ~$9.09 (at 145 rate). Use FX Killer position calculator to automatically calculate pip values and positions.'
+      },
+      {
+        question: 'Q4: What is currency correlation and why should I care?',
+        answer: 'Correlation indicates the relationship between two currency pairs\' price movements. Positive correlation (e.g., EUR/USD and GBP/USD, coefficient +0.8) means they move together; negative correlation (e.g., EUR/USD and USD/CHF, coefficient -0.9) means opposite movements. Longing two highly positive correlated pairs (EUR/USD and GBP/USD) is actually double risk - if wrong, double loss. Should diversify to low or negative correlated pairs to reduce risk.'
+      },
+      {
+        question: 'Q5: What are the best trading sessions for each currency pair?',
+        answer: 'EUR/USD best sessions: European open (15:00-18:00 Beijing) and EU-US overlap (20:00-24:00), daily range 80-100 pips. GBP/USD: London open (15:00-19:00), most volatile, daily range 120-150 pips. USD/JPY: Tokyo open (08:00-10:00) and New York open (20:00-24:00), daily range 70-90 pips. AUD/USD: Sydney/Tokyo open (06:00-12:00). Trade during the currency\'s home country session for best liquidity.'
+>>>>>>> fx-killer/main
       }
     ],
 
@@ -131,13 +231,19 @@ export const currencyPairsGuideContent = {
       {
         href: '/education/forex-basics',
         icon: '📚',
+<<<<<<< HEAD
         title: 'Cryptocurrency Basics',
         description: 'Understand fundamental cryptocurrency concepts'
+=======
+        title: 'Forex Basics',
+        description: 'Understand fundamental forex concepts'
+>>>>>>> fx-killer/main
       },
       {
         href: '/education/trading-sessions-guide',
         icon: '🕐',
         title: 'Trading Sessions Guide',
+<<<<<<< HEAD
         description: 'Master global cryptocurrency trading hours'
       },
       {
@@ -154,6 +260,24 @@ export const currencyPairsGuideContent = {
     ctaSecondaryButton: 'Free Demo Account',
 
     footerPrevText: '← Cryptocurrency Basics',
+=======
+        description: 'Master global forex trading hours'
+      },
+      {
+        href: '/partners/brokers',
+        icon: '🏦',
+        title: 'Broker Comparison',
+        description: 'Find platforms with lowest spreads'
+      }
+    ],
+
+    ctaTitle: 'Want to Find the Best Currency Pairs for You?',
+    ctaDescription: 'Compare top forex brokers to find platforms with lowest spreads and fastest execution',
+    ctaPrimaryButton: 'Compare Brokers',
+    ctaSecondaryButton: 'Free Demo Account',
+
+    footerPrevText: '← Forex Basics',
+>>>>>>> fx-killer/main
     footerNextText: 'Market Participants →',
     footerPrevHref: '/education/forex-basics',
     footerNextHref: '/education/market-participants',

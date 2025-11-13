@@ -1,0 +1,30 @@
+{
+  "symbol": "XAU/USD",
+  "name": "Gold vs US Dollar",
+  "nameCn": "黄金/美元",
+  "timestamp": "2025-11-09T21:26:49.213Z",
+  "price": {
+    "close": "3992.44",
+    "high": "3992.72",
+    "low": "3987.9",
+    "open": "3990.91",
+    "change": "0.04",
+    "datetime": "2025-11-08 23:00:00"
+  },
+  "indicators": {
+    "rsi": 49.4964,
+    "macd": -0.75801438,
+    "macd_signal": -0.16287453,
+    "sma20": 3994.802
+  },
+  "analysis": {
+    "zh": {
+      "title": "黄金/美元技术分析：[横盘整理，谨慎观望]",
+      "content": "当前黄金/美元(XAU/USD)的价格保持在3992.44附近，整体趋势呈现横盘整理的格局。尽管24小时变化仅为0.04%，但市场情绪依然较为谨慎。重要价格区间3987.9至3992.72的波动显示出市场买卖力量的平衡，短期内可能难以突破。\n\n技术指标方面，MACD目前为负值（-0.758），表明短期内卖方占据主导地位，然而尚无明确的卖出信号。SMA(20)为3994.80，作为短期的移动平均线，显示出当前价格略低于此均线，可能暗示短期内的承压状态。RSI数据缺失，但需关注其未来变化，以判断超买或超卖状态。\n\n支撑位方面，3987.9为短期关键支撑位，若跌破该水平，可能会引发进一步下行压力。相对的，3994.80为重要阻力位，若突破此价位，可能会引发多头力量的回归。建议交易者在这些关键价位附近设置止损，并保持观望态度，等待更清晰的市场信号再做决策。"
+    },
+    "en": {
+      "title": "Gold vs US Dollar Technical Analysis",
+      "content": "The current market price of XAU/USD at 3992.44 reflects a relatively stable environment, with only a slight 24-hour change of 0.04%. This indicates a consolidation phase, where buyers and sellers are in equilibrium. Observing the recent high at 3992.72 and low at 3987.9, the price is currently testing the upper boundary of this range. If gold can break above 3992.72, it may signal a bullish trend, while a drop below 3987.9 could suggest a bearish reversal.\n\nIndicator analysis shows the MACD at -0.758, indicating a bearish trend in the short term. While the absence of the RSI value limits our momentum assessment, the SMA(20) at 3994.802 provides a critical reference point. A price below this moving average could reinforce bearish sentiment, while a move above it could generate renewed buying interest. Traders should watch for any divergence in these indicators to gauge potential market shifts.\n\nIn terms of support and resistance levels, immediate support is seen at the recent low of 3987.9, which, if breached, may lead to further declines toward the next significant support around 3975. Conversely, resistance is present at the recent high of 3992.72, followed by a more substantial resistance level at 4000. A breakout beyond this psychological level could attract more buyers and push prices higher.\n\nFor trading strategies, a cautious approach is advisable. Traders might consider waiting for confirmation of a breakout above 3992.72 before entering long positions, while short positions could be explored if the price breaks below 3987.9. Utilizing stop-loss orders around these levels can help manage risk effectively. Overall, monitoring price action closely around these key levels will be essential for informed trading decisions."
+    }
+  }
+}

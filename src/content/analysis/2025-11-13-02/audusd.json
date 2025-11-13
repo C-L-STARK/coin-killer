@@ -1,0 +1,30 @@
+{
+  "symbol": "AUD/USD",
+  "name": "Australian Dollar vs US Dollar",
+  "nameCn": "澳元/美元",
+  "timestamp": "2025-11-13T02:56:34.434Z",
+  "price": {
+    "close": "0.65637",
+    "high": "0.65648",
+    "low": "0.65567",
+    "open": "0.65568",
+    "change": "0.11",
+    "datetime": "2025-11-13 13:00:00"
+  },
+  "indicators": {
+    "rsi": 68.43182,
+    "macd": 0.00061221753,
+    "macd_signal": 0.00042653577,
+    "sma20": 0.654207
+  },
+  "analysis": {
+    "zh": {
+      "title": "澳元/美元技术分析：[震荡整理中]",
+      "content": "当前澳元/美元（AUD/USD）在0.65637附近震荡整理，24小时内小幅上涨0.11%。价格在0.65648的高点和0.65567的低点之间波动，显示出市场尚未形成明确的趋势。短期内，价格可能会面临一定的上行压力，但总体走势较为平稳。\n\n从技术指标来看，MACD显示出微弱的上行动能，当前值为0.00061221753，表明短期内可能存在小幅回升的机会。然而，由于RSI数据缺失，无法全面评估超买或超卖状态，建议关注后续的技术指标变化以判断市场情绪。\n\n支撑位方面，0.654207的20日简单移动平均线（SMA）提供了重要的支撑，若价格回落至此，可以观察买入机会。阻力位在近期高点0.65648附近，一旦突破，可能会引发进一步上涨。投资者应密切关注这些关键价位，以制定适当的交易策略。\n\n综合来看，建议投资者在当前震荡阶段保持观望，待价格接近支撑位时，可以考虑建立多头仓位，风险管理应放在首位。同时，关注宏观经济数据和其他影响因素，以便及时调整交易策略。"
+    },
+    "en": {
+      "title": "Australian Dollar vs US Dollar Technical Analysis",
+      "content": "The AUD/USD pair currently trades at 0.65637, showing a slight upward movement of 0.11% over the past 24 hours. This indicates a period of consolidation around the recent high of 0.65648. The market sentiment remains cautiously optimistic, suggesting potential bullish momentum if the price can hold above this level. A break above the resistance at 0.6570 may strengthen this trend, while a failure to maintain above 0.6550 could signal a bearish reversal.\n\nTechnical indicators provide mixed signals for traders. The absence of a recent RSI reading limits our assessment of overbought or oversold conditions. However, the MACD value of 0.00061221753 suggests a weak bullish momentum, indicating that any upward movement might lack strength. Meanwhile, the simple moving average (SMA) of 20 periods at 0.654207 serves as a key support level. If the price dips below this SMA, it could trigger further selling pressure.\n\nIn terms of support and resistance levels, the immediate support is at 0.6550, followed closely by the SMA. Should the price break this support, the next target could be as low as 0.6530. Conversely, if the price manages to break above resistance at 0.6570, this could pave the way for a retest of the next level around 0.6600. Traders should monitor these levels closely for potential entry or exit points.\n\nFor trading strategies, a cautious approach is warranted. Buyers may consider entering long positions above 0.6570 with a tight stop-loss just below 0.6550. Conversely, sellers could look for short opportunities if the price breaks below 0.6540, which would signal a potential bearish trend. It is essential to manage risk effectively in this uncertain market environment while remaining vigilant for any changes in momentum or market sentiment."
+    }
+  }
+}
