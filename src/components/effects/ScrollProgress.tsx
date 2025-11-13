@@ -53,12 +53,20 @@ export function BackToTop() {
       }}
       transition={{ duration: 0.3 }}
       onClick={scrollToTop}
+<<<<<<< HEAD
       className={`fixed bottom-8 right-8 z-50 p-4 bg-black dark:bg-white text-white dark:text-black border-2 border-black dark:border-white hover:bg-white hover:text-black dark:hover:bg-black dark:hover:text-white transition-colors ${
+=======
+      className={`fixed bottom-6 right-6 z-50 p-3 bg-black dark:bg-white text-white dark:text-black border-2 border-black dark:border-white hover:bg-white hover:text-black dark:hover:bg-black dark:hover:text-white transition-colors ${
+>>>>>>> fx-killer/main
         isVisible ? 'pointer-events-auto' : 'pointer-events-none'
       }`}
       aria-label="Back to top"
     >
+<<<<<<< HEAD
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+=======
+      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+>>>>>>> fx-killer/main
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10l7-7m0 0l7 7m-7-7v18" />
       </svg>
     </motion.button>

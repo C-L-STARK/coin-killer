@@ -2,9 +2,15 @@ import { EducationPageContent } from './forex-basics.content';
 
 export const stopLossStrategiesContent = {
   zh: {
+<<<<<<< HEAD
     title: '止损策略大全 - 固定止损、ATR止损、技术止损与追踪止损完整指南 | BiKiller',
     description: '深入讲解数字货币交易止损策略核心方法：固定点数止损、百分比止损、ATR动态止损、技术位止损、时间止损、追踪止损。职业交易员分享实战止损设置技巧，助你保护资金并优化盈利。',
     keywords: '止损策略, 止损设置, ATR止损, 技术止损, 追踪止损, 移动止损, 止损执行, 数字货币止损',
+=======
+    title: '止损策略大全丨汇刃丨外汇交易员培训、日内交易员培训',
+    description: '深入讲解外汇交易止损策略：固定点数止损、ATR动态止损、技术位止损、追踪止损。外汇交易员和日内交易员培训必备的实战止损设置技巧，保护资金优化盈利。',
+    keywords: '外汇交易员培训, 日内交易员培训, 止损策略, 止损设置, ATR止损, 技术止损, 追踪止损',
+>>>>>>> fx-killer/main
 
     heroTitle: '止损策略大全',
     heroDescription: '掌握各类止损技巧，保护资金实现风险可控盈利',
@@ -34,7 +40,11 @@ export const stopLossStrategiesContent = {
       },
       {
         question: 'Q2: 止损距离多大合适？太近容易被打，太远亏损太大',
+<<<<<<< HEAD
         answer: '止损距离应基于市场结构和波动性，而非主观判断。推荐方法：1) ATR倍数法：使用1-2倍ATR值。BTC/USDT的14期ATR如果是15点，止损设置15-30点；GBP/JPY的ATR如果是50点，止损设置50-100点；2) 技术位法：止损设在关键支撑/阻力外侧。如果入场价1.1050，前低点1.1030，止损设1.1020（低于前低10点）；3) 风险倒推法：基于账户风险反推。如$10,000账户、2%风险=$200、开1手BTC/USDT（每点$10），止损=200÷10=20点。不同时间框架：M5为15-25点、M15为25-40点、H1为40-60点、H4为60-100点、D1为100-200点。关键是一致性，而非完美。'
+=======
+        answer: '止损距离应基于市场结构和波动性，而非主观判断。推荐方法：1) ATR倍数法：使用1-2倍ATR值。EUR/USD的14期ATR如果是15点，止损设置15-30点；GBP/JPY的ATR如果是50点，止损设置50-100点；2) 技术位法：止损设在关键支撑/阻力外侧。如果入场价1.1050，前低点1.1030，止损设1.1020（低于前低10点）；3) 风险倒推法：基于账户风险反推。如$10,000账户、2%风险=$200、开1手EUR/USD（每点$10），止损=200÷10=20点。不同时间框架：M5为15-25点、M15为25-40点、H1为40-60点、H4为60-100点、D1为100-200点。关键是一致性，而非完美。'
+>>>>>>> fx-killer/main
       },
       {
         question: 'Q3: 追踪止损应该何时启动？移动多快？',
@@ -73,7 +83,11 @@ export const stopLossStrategiesContent = {
     ],
 
     ctaTitle: '想要优化你的止损策略？',
+<<<<<<< HEAD
     ctaDescription: '使用 BiKiller 专业止损工具，实现自动化止损管理',
+=======
+    ctaDescription: '使用 FX Killer 专业止损工具，实现自动化止损管理',
+>>>>>>> fx-killer/main
     ctaPrimaryButton: '免费使用工具',
     ctaSecondaryButton: '了解培训计划',
 
@@ -84,9 +98,15 @@ export const stopLossStrategiesContent = {
   } as EducationPageContent,
 
   en: {
+<<<<<<< HEAD
     title: 'Complete Stop Loss Strategies - Fixed, ATR, Technical & Trailing Stops Guide | BiKiller',
     description: 'Comprehensive guide to cryptocurrency stop-loss strategies: fixed point stops, percentage stops, ATR dynamic stops, technical stops, time stops, trailing stops. Professional trader shares practical stop-loss setting techniques to protect capital and optimize profits.',
     keywords: 'stop loss strategies, stop loss setting, ATR stop loss, technical stop loss, trailing stop, moving stop, stop loss discipline, cryptocurrency stop loss',
+=======
+    title: 'Complete Stop Loss Strategies丨FX Killer丨Forex Trader Training, Day Trader Training',
+    description: 'Comprehensive guide to forex stop-loss strategies: fixed pip stops, percentage stops, ATR dynamic stops, technical stops, time stops, trailing stops. Professional trader shares practical stop-loss setting techniques to protect capital and optimize profits.',
+    keywords: 'Forex Trader Training, Day Trader Training, stop loss strategies, ATR stop loss, trailing stop',
+>>>>>>> fx-killer/main
 
     heroTitle: 'Complete Stop Loss Strategies',
     heroDescription: 'Master all stop-loss techniques to protect capital and achieve risk-controlled profitability',
@@ -112,6 +132,7 @@ export const stopLossStrategiesContent = {
     faqs: [
       {
         question: 'Q1: My stops always get hit then price reverses - am I being hunted?',
+<<<<<<< HEAD
         answer: 'This is the most common misconception. Most cases are not "stop hunting" but improper stop placement. Truth: 1) Stops placed at round numbers (like 1.1000) or exactly at previous lows/highs are easily hit; 2) Stop distance too tight, normal market volatility triggers it; 3) Confirmation bias: you only remember trades that reversed after stop, forget trades where stop saved you. Solutions: 1) Place stops 10-20 points outside key technical levels, not exactly at them; 2) Use ATR stops to adapt to market volatility; 3) Track your stop data, true "hunting" is typically <5%. Remember: even if 10% are hunted, setting stops is still safer than not setting them.'
       },
       {
@@ -125,6 +146,21 @@ export const stopLossStrategiesContent = {
       {
         question: 'Q4: Can I use mental stop-loss (no stop order, manual close)?',
         answer: 'Absolutely not! Mental stops are a primary reason 95% of traders lose. Why mental stops fail: 1) Network failure, platform freeze prevents manual close, small loss becomes account blowup; 2) Emotional interference: seeing loss expand, psychological illusion "maybe it will reverse", delayed closing; 3) Reaction delay: from noticing price to clicking close takes 5-30 seconds, price may worsen during this time; 4) Weekend gaps: if holding over weekend, Monday opening gaps 100-300 points, mental stop completely ineffective. Professional traders 100% use stop orders, never rely on mental stops. Only exception: scalpers (positions <5 minutes) may use mental stops, but must have strict discipline and fast execution ability. For intraday and longer timeframes, must set stop orders.'
+=======
+        answer: 'This is the most common misconception. Most cases are not "stop hunting" but improper stop placement. Truth: 1) Stops placed at round numbers (like 1.1000) or exactly at previous lows/highs are easily hit; 2) Stop distance too tight, normal market volatility triggers it; 3) Confirmation bias: you only remember trades that reversed after stop, forget trades where stop saved you. Solutions: 1) Place stops 10-20 pips outside key technical levels, not exactly at them; 2) Use ATR stops to adapt to market volatility; 3) Track your stop data, true "hunting" is typically <5%. Remember: even if 10% are hunted, setting stops is still safer than not setting them.'
+      },
+      {
+        question: 'Q2: How wide should stop-loss be? Too tight gets hit, too wide loses too much',
+        answer: 'Stop distance should be based on market structure and volatility, not subjective judgment. Recommended methods: 1) ATR multiple: use 1-2x ATR value. If EUR/USD 14-period ATR is 15 pips, set stop 15-30 pips; if GBP/JPY ATR is 50 pips, set stop 50-100 pips; 2) Technical level method: stop outside key support/resistance. If entry 1.1050, previous low 1.1030, set stop 1.1020 (10 pips below previous low); 3) Risk reverse calculation: based on account risk. E.g., $10,000 account, 2% risk=$200, open 1 lot EUR/USD ($10/pip), stop=200÷10=20 pips. Different timeframes: M5 is 15-25 pips, M15 is 25-40 pips, H1 is 40-60 pips, H4 is 60-100 pips, D1 is 100-200 pips. Key is consistency, not perfection.'
+      },
+      {
+        question: 'Q3: When should trailing stop start? How fast should it move?',
+        answer: 'Trailing stop best practices: Start timing: 1) When price reaches 1R (1x risk-reward), move stop to breakeven (entry price); 2) When price reaches 1.5R, start trailing stop, every 10-20 pip move follow with 10-15 pip stop adjustment; 3) When price reaches 2R, lock in at least 1R profit, can tighten trailing distance. Movement speed: 1) Scalping (M5-M15): fast trailing, 10-20 pip stop distance, follow 10 pips for every 15 pip move; 2) Day trading (H1): medium trailing, 20-40 pip stop distance, follow 20 pips for every 30 pip move; 3) Swing trading (H4-D1): slow trailing, 50-100 pip stop distance, follow 50 pips for every 100 pip move. Tip: Use Parabolic SAR or moving averages as trailing stop reference.'
+      },
+      {
+        question: 'Q4: Can I use mental stop-loss (no stop order, manual close)?',
+        answer: 'Absolutely not! Mental stops are a primary reason 95% of traders lose. Why mental stops fail: 1) Network failure, platform freeze prevents manual close, small loss becomes account blowup; 2) Emotional interference: seeing loss expand, psychological illusion "maybe it will reverse", delayed closing; 3) Reaction delay: from noticing price to clicking close takes 5-30 seconds, price may worsen during this time; 4) Weekend gaps: if holding over weekend, Monday opening gaps 100-300 pips, mental stop completely ineffective. Professional traders 100% use stop orders, never rely on mental stops. Only exception: scalpers (positions <5 minutes) may use mental stops, but must have strict discipline and fast execution ability. For intraday and longer timeframes, must set stop orders.'
+>>>>>>> fx-killer/main
       },
       {
         question: 'Q5: Should I immediately reverse position after stop is hit?',
@@ -155,7 +191,11 @@ export const stopLossStrategiesContent = {
     ],
 
     ctaTitle: 'Want to Optimize Your Stop-Loss Strategy?',
+<<<<<<< HEAD
     ctaDescription: 'Use BiKiller professional stop-loss tools for automated stop management',
+=======
+    ctaDescription: 'Use FX Killer professional stop-loss tools for automated stop management',
+>>>>>>> fx-killer/main
     ctaPrimaryButton: 'Use Tools Free',
     ctaSecondaryButton: 'Learn About Training',
 

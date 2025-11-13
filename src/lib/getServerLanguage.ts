@@ -28,11 +28,25 @@ export function generateBilingualMetadata(
   enDescription: string,
   zhKeywords: string,
   enKeywords: string,
+<<<<<<< HEAD
   language: Language
+=======
+  language: Language,
+  options?: {
+    url?: string;
+    image?: string;
+    type?: 'website' | 'article';
+    publishedTime?: string;
+    modifiedTime?: string;
+    author?: string;
+    section?: string;
+  }
+>>>>>>> fx-killer/main
 ) {
   const title = language === 'zh' ? zhTitle : enTitle;
   const description = language === 'zh' ? zhDescription : enDescription;
   const keywords = language === 'zh' ? zhKeywords : enKeywords;
+<<<<<<< HEAD
 =======
   const baseUrl = 'https://fxkiller.com';
   const locale = language === 'zh' ? 'zh' : 'en';
@@ -54,6 +68,53 @@ export function generateBilingualMetadata(
       card: 'summary_large_image' as const,
       title,
       description,
+=======
+    keywords: keywords.split(',').map(k => k.trim()),
+    authors: options?.author ? [{ name: options.author }] : [{ name: 'FX Killer Team' }],
+    creator: 'FX Killer',
+    publisher: 'FX Killer',
+    category: options?.section || 'education',
+    alternates: url ? {
+      canonical: `${baseUrl}/${locale}${url}`,
+      languages: {
+        'zh-CN': `${baseUrl}/zh${url}`,
+        'en-US': `${baseUrl}/en${url}`,
+      },
+    } : undefined,
+    openGraph: {
+      title,
+      description,
+      type: (options?.type || 'website') as 'website' | 'article',
+      locale: language === 'zh' ? 'zh_CN' : 'en_US',
+      alternateLocale: language === 'zh' ? ['en_US'] : ['zh_CN'],
+      url: url ? `${baseUrl}/${locale}${url}` : undefined,
+      siteName: 'FX Killer | 汇刃',
+      images: options?.image ? [{
+        url: options.image,
+        width: 1200,
+        height: 630,
+        alt: title,
+      }] : [{
+        url: '/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'FX Killer - Professional FX Trader Training Platform',
+      }],
+      ...(options?.type === 'article' && {
+        publishedTime: options.publishedTime,
+        modifiedTime: options.modifiedTime,
+        section: options.section,
+        authors: options?.author ? [options.author] : ['FX Killer Team'],
+      }),
+    },
+    twitter: {
+      card: 'summary_large_image' as const,
+      site: '@RealFXkiller',
+      creator: '@RealFXkiller',
+      title,
+      description,
+      images: options?.image ? [options.image] : ['/og-image.jpg'],
+>>>>>>> fx-killer/main
     },
   };
 }

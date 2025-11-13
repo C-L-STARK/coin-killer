@@ -2,9 +2,15 @@ import { EducationPageContent } from './forex-basics.content';
 
 export const bollingerBandsContent = {
   zh: {
+<<<<<<< HEAD
     title: '布林带指标完整指南 - Bollinger Bands交易策略与实战技巧 | BiKiller',
     description: '深入讲解布林带（Bollinger Bands）指标：计算公式、参数设置、经典交易策略（布林带突破、挤压、回归）。结合实战案例，掌握布林带在数字货币交易中的应用。',
     keywords: '布林带, Bollinger Bands, BB指标, 布林带策略, 布林带突破, 布林带挤压, 技术分析指标, 波动性指标',
+=======
+    title: '布林带指标完整指南丨汇刃丨日内交易员培训、全职交易员培训',
+    description: '深入讲解布林带（Bollinger Bands）指标：计算公式、参数设置、经典交易策略。日内交易员培训和全职交易员培训必学的波动性指标应用技巧。',
+    keywords: '日内交易员培训, 全职交易员培训, 日内交易员, 布林带, Bollinger Bands, BB指标, 布林带策略, 波动性指标',
+>>>>>>> fx-killer/main
 
     heroTitle: '布林带指标完整指南',
     heroDescription: '掌握最实用的波动性指标，提升交易精准度',
@@ -27,7 +33,11 @@ export const bollingerBandsContent = {
     faqs: [
       {
         question: 'Q1: 布林带参数(20, 2)是最佳设置吗？',
+<<<<<<< HEAD
         answer: '(20, 2)是默认参数，适合大多数情况。但最佳参数取决于交易品种和时间框架。波动性大的交易对可以使用(20, 2.5)或(20, 3)以减少假信号；日内交易可以尝试(10, 2)或(15, 2)。建议在历史数据上回测验证。'
+=======
+        answer: '(20, 2)是默认参数，适合大多数情况。但最佳参数取决于交易品种和时间框架。波动性大的货币对可以使用(20, 2.5)或(20, 3)以减少假信号；日内交易可以尝试(10, 2)或(15, 2)。建议在历史数据上回测验证。'
+>>>>>>> fx-killer/main
       },
       {
         question: 'Q2: 价格触及布林带上轨就应该做空吗？',
@@ -70,7 +80,11 @@ export const bollingerBandsContent = {
     ],
 
     ctaTitle: '想要系统学习技术分析？',
+<<<<<<< HEAD
     ctaDescription: '加入 BiKiller 培训计划，掌握更多实战技术指标应用',
+=======
+    ctaDescription: '加入 FX Killer 培训计划，掌握更多实战技术指标应用',
+>>>>>>> fx-killer/main
     ctaPrimaryButton: '了解培训计划',
     ctaSecondaryButton: '免费心理测评',
 
@@ -81,9 +95,15 @@ export const bollingerBandsContent = {
   } as EducationPageContent,
 
   en: {
+<<<<<<< HEAD
     title: 'Complete Bollinger Bands Guide - Trading Strategies and Practical Techniques | BiKiller',
     description: 'In-depth explanation of Bollinger Bands indicator: calculation formulas, parameter settings, classic trading strategies (BB breakout, squeeze, reversion). Master Bollinger Bands application in cryptocurrency trading with real cases.',
     keywords: 'Bollinger Bands, BB indicator, BB strategy, BB breakout, BB squeeze, technical analysis, volatility indicator',
+=======
+    title: 'Bollinger Bands Complete Guide丨FX Killer丨Day Trader Training, Full-Time Trader Training',
+    description: 'In-depth guide to Bollinger Bands indicator: calculation formula, parameter settings, classic trading strategies. Essential volatility indicator application for day trader training and full-time trader training.',
+    keywords: 'day trader training, full-time trader training, day trader, Bollinger Bands, BB indicator, volatility indicator, trading strategy',
+>>>>>>> fx-killer/main
 
     heroTitle: 'Complete Bollinger Bands Guide',
     heroDescription: 'Master the most practical volatility indicator to improve trading precision',
@@ -149,7 +169,11 @@ export const bollingerBandsContent = {
     ],
 
     ctaTitle: 'Want to Systematically Learn Technical Analysis?',
+<<<<<<< HEAD
     ctaDescription: 'Join BiKiller training to master more practical technical indicator applications',
+=======
+    ctaDescription: 'Join FX Killer training to master more practical technical indicator applications',
+>>>>>>> fx-killer/main
     ctaPrimaryButton: 'Learn About Training',
     ctaSecondaryButton: 'Free Psychology Test',
 

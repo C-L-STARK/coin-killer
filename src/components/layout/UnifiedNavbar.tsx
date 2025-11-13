@@ -19,10 +19,43 @@ export default function UnifiedNavbar() {
 
   const navItems = [
     {
+<<<<<<< HEAD
       name: t('nav.home'),
       link: "/",
     },
     {
+=======
+>>>>>>> fx-killer/main
+      name: t('nav.training'),
+      link: "/splan/join-us",
+    },
+    {
+      name: language === 'zh' ? '教育' : 'Education',
+      link: "/education",
+      hasDropdown: true,
+      dropdownItems: [
+        { name: language === 'zh' ? '基础知识' : 'Basics', link: '/education#basics' },
+        { name: language === 'zh' ? '技术分析' : 'Technical Analysis', link: '/education#technical' },
+        { name: language === 'zh' ? '交易策略' : 'Trading Strategies', link: '/education#strategies' },
+        { name: language === 'zh' ? '风险管理' : 'Risk Management', link: '/education#risk' },
+      ]
+    },
+    {
+<<<<<<< HEAD
+=======
+      name: language === 'zh' ? '新闻' : 'News',
+      link: "/news",
+    },
+    {
+      name: language === 'zh' ? '行情' : 'Market',
+      link: "/market-analysis",
+    },
+    {
+      name: t('nav.liveTrading'),
+      link: "/live-trading",
+    },
+    {
+>>>>>>> fx-killer/main
       name: t('nav.blog'),
       link: "/splan/blog",
     },
@@ -35,6 +68,7 @@ export default function UnifiedNavbar() {
       link: "/dashboard",
     },
     {
+<<<<<<< HEAD
 =======
       name: language === 'zh' ? '日历' : 'Calendar',
       link: "/economic-calendar",
@@ -52,6 +86,9 @@ export default function UnifiedNavbar() {
         { name: language === 'zh' ? '仓位计算器' : 'Position Calculator', link: '/tools/position-calculator' },
         { name: language === 'zh' ? '风险回报计算器' : 'Risk/Reward Calculator', link: '/tools/risk-reward-calculator' },
 <<<<<<< HEAD
+=======
+        { name: language === 'zh' ? '点值计算器' : 'Pip Calculator', link: '/tools/pip-calculator' },
+>>>>>>> fx-killer/main
       ]
     },
     {
@@ -66,13 +103,19 @@ export default function UnifiedNavbar() {
 
   useEffect(() => {
     const handleScroll = () => {
+<<<<<<< HEAD
       setScrolled(window.scrollY > 10);
+=======
+      const scrollPosition = window.scrollY;
+      setScrolled(scrollPosition > 50); // 滚动超过50px时显示导航栏
+>>>>>>> fx-killer/main
     };
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+<<<<<<< HEAD
 =======
   // 判断是否在首页
   const isHomePage = () => {
@@ -104,12 +147,17 @@ export default function UnifiedNavbar() {
       initial={{ y: -100 }}
 <<<<<<< HEAD
       animate={{ y: 0 }}
+=======
+      animate={{ y: isHomePage() ? (scrolled ? 0 : -100) : 0 }}
+      transition={{ duration: 0.3, ease: 'easeInOut' }}
+>>>>>>> fx-killer/main
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
           ? 'bg-white/95 dark:bg-gray-900/95 backdrop-blur-md shadow-lg'
           : 'bg-white dark:bg-gray-900'
       } border-b border-gray-200 dark:border-gray-800`}
     >
+<<<<<<< HEAD
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -120,6 +168,19 @@ export default function UnifiedNavbar() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-1">
             {navItems.map((item, index) => (
+=======
+      <div className="max-w-7xl mx-auto px-4">
+        <div className="flex items-center justify-between h-16">
+          {/* Logo - 靠左 */}
+          <div className="flex items-center space-x-6">
+            <LocaleLink href="/" className="flex items-center group">
+              <span className="text-2xl"><BrandName inNavbar={true} /></span>
+            </LocaleLink>
+
+            {/* Desktop Navigation - 紧跟 Logo */}
+            <div className="hidden md:flex items-center">
+              {navItems.map((item, index) => (
+>>>>>>> fx-killer/main
               <div
                 key={index}
                 className="relative"
@@ -128,7 +189,11 @@ export default function UnifiedNavbar() {
               >
                 <LocaleLink
                   href={item.link}
+<<<<<<< HEAD
                   className="relative px-4 py-2 text-sm font-medium transition-colors group flex items-center gap-1"
+=======
+                  className="relative px-3 py-2 text-sm font-medium transition-colors group flex items-center gap-1"
+>>>>>>> fx-killer/main
                 >
                   <span
                     className={`relative z-10 ${
@@ -190,9 +255,16 @@ export default function UnifiedNavbar() {
                 )}
               </div>
             ))}
+<<<<<<< HEAD
           </div>
 
           {/* Right Side Actions (Desktop) */}
+=======
+            </div>
+          </div>
+
+          {/* Right Side Actions (Desktop) - 靠右 */}
+>>>>>>> fx-killer/main
           <div className="hidden md:flex items-center gap-3">
             {/* Theme Toggle */}
             <button
@@ -222,6 +294,7 @@ export default function UnifiedNavbar() {
             >
               {language === 'zh' ? 'EN' : '中文'}
             </button>
+<<<<<<< HEAD
 
             {/* Join Us Button */}
             <LocaleLink
@@ -230,6 +303,149 @@ export default function UnifiedNavbar() {
             >
               {t('nav.join')}
             </LocaleLink>
+=======
+>>>>>>> fx-killer/main
+          </div>
+
+          {/* Mobile Menu Button */}
+          <button
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            className="md:hidden p-2 border border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+            aria-label="Toggle menu"
+          >
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              {isMobileMenuOpen ? (
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              ) : (
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              )}
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      {/* Mobile Menu */}
+      <AnimatePresence>
+        {isMobileMenuOpen && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: 'auto' }}
+            exit={{ opacity: 0, height: 0 }}
+            transition={{ duration: 0.2 }}
+            className="md:hidden border-t border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900"
+          >
+            <div className="px-4 py-4 space-y-2">
+              {navItems.map((item, index) => (
+                <div key={index}>
+                  {item.hasDropdown ? (
+                    <div>
+                      <button
+                        onClick={() => setOpenDropdown(openDropdown === item.name ? null : item.name)}
+                        className={`w-full flex items-center justify-between px-4 py-3 text-sm font-medium transition-colors ${
+                          isActive(item.link)
+                            ? 'bg-gray-100 dark:bg-gray-800 text-black dark:text-white font-bold'
+                            : 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800'
+                        }`}
+                      >
+                        <span>{item.name}</span>
+                        <svg
+                          className={`w-4 h-4 transition-transform ${
+                            openDropdown === item.name ? 'rotate-180' : ''
+                          }`}
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                        </svg>
+                      </button>
+                      {openDropdown === item.name && item.dropdownItems && (
+                        <div className="pl-4 mt-1 space-y-1">
+                          {item.dropdownItems.map((dropdownItem, dropdownIndex) => (
+                            <LocaleLink
+                              key={dropdownIndex}
+                              href={dropdownItem.link}
+                              className="block px-4 py-2 text-sm text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-black dark:hover:text-white transition-colors"
+                            >
+                              {dropdownItem.name}
+                            </LocaleLink>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  ) : (
+                    <LocaleLink
+                      href={item.link}
+                      className={`block px-4 py-3 text-sm font-medium transition-colors ${
+                        isActive(item.link)
+                          ? 'bg-gray-100 dark:bg-gray-800 text-black dark:text-white font-bold'
+                          : 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800'
+                      }`}
+                    >
+                      {item.name}
+                    </LocaleLink>
+                  )}
+                </div>
+              ))}
+
+              {/* Mobile Theme and Language Toggle */}
+              <div className="px-4 pt-2 space-y-2">
+                {/* Theme Toggle */}
+                <button
+                  onClick={toggleTheme}
+                  className="w-full px-4 py-3 border border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors text-sm font-medium flex items-center justify-center gap-2"
+                  aria-label={theme === 'light' ? 'Dark mode' : 'Light mode'}
+                >
+                  {theme === 'light' ? (
+                    <>
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                      </svg>
+                      <span>{language === 'zh' ? '深色模式' : 'Dark Mode'}</span>
+                    </>
+                  ) : (
+                    <>
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                      </svg>
+                      <span>{language === 'zh' ? '浅色模式' : 'Light Mode'}</span>
+                    </>
+                  )}
+                </button>
+
+                {/* Language Toggle */}
+                <button
+                  onClick={toggleLanguage}
+                  className="w-full px-4 py-3 border border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors text-sm font-medium"
+                >
+                  {language === 'zh' ? 'EN' : '中文'}
+                </button>
+              </div>
+<<<<<<< HEAD
+
+              <LocaleLink
+                href="/splan/join-us"
+                className="block px-4 py-3 bg-black dark:bg-white text-white dark:text-black text-sm font-semibold text-center mt-4 border border-black dark:border-white"
+              >
+                {t('nav.join')}
+              </LocaleLink>
+=======
+>>>>>>> fx-killer/main
             </div>
           </motion.div>
         )}

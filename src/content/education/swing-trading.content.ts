@@ -2,9 +2,15 @@ import { EducationPageContent } from './forex-basics.content';
 
 export const swingTradingContent = {
   zh: {
+<<<<<<< HEAD
     title: '波段交易完整指南 - Swing Trading策略与多日持仓技巧 | BiKiller',
     description: '深入讲解波段交易（Swing Trading）：H4/D1时间框架分析、趋势识别方法、持仓管理技巧、多日交易策略。掌握波段交易的完整系统和实战案例。',
     keywords: '波段交易, Swing Trading, H4交易, D1交易, 趋势交易, 多日持仓, 波段策略, 数字货币波段交易',
+=======
+    title: '波段交易完整指南丨汇刃丨全职交易员培训、日内交易员培训',
+    description: '深入讲解波段交易（Swing Trading）：H4/D1时间框架分析、趋势识别方法、持仓管理技巧。全职交易员和日内交易员培训课程分享多日交易策略和实战案例。',
+    keywords: '全职交易员培训, 日内交易员培训, 波段交易, Swing Trading, H4交易, D1交易, 趋势交易, 多日持仓',
+>>>>>>> fx-killer/main
 
     heroTitle: '波段交易完整指南',
     heroDescription: '掌握多日交易策略，捕捉中期趋势机会',
@@ -31,7 +37,11 @@ export const swingTradingContent = {
       },
       {
         question: 'Q2: 波段交易止损应该设置多少点？',
+<<<<<<< HEAD
         answer: '取决于时间框架和交易对波动性。H4图表：50-100点；D1图表：100-200点。建议使用ATR指标动态设置，通常为2-3倍ATR值。止损应设置在关键支撑阻力位下方/上方，如前高低、趋势线、重要移动平均线（50/200EMA）。波段交易止损较大，但单笔风险仍应控制在账户2%以内。'
+=======
+        answer: '取决于时间框架和货币对波动性。H4图表：50-100点；D1图表：100-200点。建议使用ATR指标动态设置，通常为2-3倍ATR值。止损应设置在关键支撑阻力位下方/上方，如前高低、趋势线、重要移动平均线（50/200EMA）。波段交易止损较大，但单笔风险仍应控制在账户2%以内。'
+>>>>>>> fx-killer/main
       },
       {
         question: 'Q3: 波段交易需要盯盘吗？',
@@ -39,7 +49,11 @@ export const swingTradingContent = {
       },
       {
         question: 'Q4: 波段交易如何处理隔夜跳空？',
+<<<<<<< HEAD
         answer: '隔夜跳空是波段交易的主要风险之一。应对方法：1) 设置止损单（不依赖手动平仓）；2) 避免在周末和重大事件前持仓；3) 使用较小仓位（1-1.5%风险）分散风险；4) 跳空后不要慌张，评估新的价格位置和趋势是否改变；5) 考虑使用保证止损（GSL）功能的交易所，虽然成本更高但可完全避免跳空滑点。'
+=======
+        answer: '隔夜跳空是波段交易的主要风险之一。应对方法：1) 设置止损单（不依赖手动平仓）；2) 避免在周末和重大事件前持仓；3) 使用较小仓位（1-1.5%风险）分散风险；4) 跳空后不要慌张，评估新的价格位置和趋势是否改变；5) 考虑使用保证止损（GSL）功能的经纪商，虽然成本更高但可完全避免跳空滑点。'
+>>>>>>> fx-killer/main
       },
       {
         question: 'Q5: 波段交易适合新手吗？',
@@ -70,7 +84,11 @@ export const swingTradingContent = {
     ],
 
     ctaTitle: '想要系统学习波段交易？',
+<<<<<<< HEAD
     ctaDescription: '加入 BiKiller 培训计划，获取专业波段交易策略和中长期趋势分析',
+=======
+    ctaDescription: '加入 FX Killer 培训计划，获取专业波段交易策略和中长期趋势分析',
+>>>>>>> fx-killer/main
     ctaPrimaryButton: '了解培训计划',
     ctaSecondaryButton: '免费心理测评',
 
@@ -81,12 +99,21 @@ export const swingTradingContent = {
   } as EducationPageContent,
 
   en: {
+<<<<<<< HEAD
     title: 'Complete Swing Trading Guide - Strategies and Multi-Day Position Techniques | BiKiller',
     description: 'In-depth explanation of Swing Trading: H4/D1 timeframe analysis, trend identification methods, position management techniques, multi-day trading strategies. Master complete swing trading system with real cases.',
     keywords: 'swing trading, H4 trading, D1 trading, trend trading, multi-day positions, swing strategy, cryptocurrency swing trading',
 
     heroTitle: 'Complete Swing Trading Guide',
     heroDescription: 'Master multi-day trading strategies to capture medium-term trend opportunities',
+=======
+    title: 'Complete Swing Trading Guide丨FX Killer丨Full-Time Trader Training, Day Trader Training',
+    description: 'In-depth explanation of Swing Trading: H4/D1 timeframe analysis, trend identification methods, position management techniques, multi-day trading strategies. Master complete swing trading system with real cases.',
+    keywords: 'Full-Time Trader Training, Day Trader Training, swing trading, H4 trading, D1 trading, trend trading',
+
+    heroTitle: 'Complete Swing Trading Guide',
+    heroDescription: 'Full-time trader training and day trader training curriculum sharing multi-day trading strategies to capture medium-term trend opportunities',
+>>>>>>> fx-killer/main
     readingTime: '26 min',
     difficulty: 'Intermediate',
     lastUpdated: 'Jan 15, 2024',
@@ -106,11 +133,19 @@ export const swingTradingContent = {
     faqs: [
       {
         question: 'Q1: What are the main differences between swing trading and day trading?',
+<<<<<<< HEAD
         answer: 'Holding period and timeframes differ. Swing trading holds 2-10 days, mainly uses H4/D1 charts, targets 100-500 points; day trading closes same day, uses M5-H1 charts, targets 20-80 points. Swing trading bears overnight risk and swap charges, but has less psychological pressure, no constant monitoring, more reliable signals, suitable for part-time traders.'
       },
       {
         question: 'Q2: How many points should swing trading stop-loss be?',
         answer: 'Depends on timeframe and pair volatility. H4 chart: 50-100 points; D1 chart: 100-200 points. Recommend using ATR indicator for dynamic setting, typically 2-3x ATR value. Stops should be set below/above key support/resistance, such as previous highs/lows, trendlines, important moving averages (50/200EMA). Swing trading stops are larger, but per-trade risk should still be within 2% of account.'
+=======
+        answer: 'Holding period and timeframes differ. Swing trading holds 2-10 days, mainly uses H4/D1 charts, targets 100-500 pips; day trading closes same day, uses M5-H1 charts, targets 20-80 pips. Swing trading bears overnight risk and swap charges, but has less psychological pressure, no constant monitoring, more reliable signals, suitable for part-time traders.'
+      },
+      {
+        question: 'Q2: How many pips should swing trading stop-loss be?',
+        answer: 'Depends on timeframe and pair volatility. H4 chart: 50-100 pips; D1 chart: 100-200 pips. Recommend using ATR indicator for dynamic setting, typically 2-3x ATR value. Stops should be set below/above key support/resistance, such as previous highs/lows, trendlines, important moving averages (50/200EMA). Swing trading stops are larger, but per-trade risk should still be within 2% of account.'
+>>>>>>> fx-killer/main
       },
       {
         question: 'Q3: Does swing trading require constant monitoring?',
@@ -118,11 +153,19 @@ export const swingTradingContent = {
       },
       {
         question: 'Q4: How to handle overnight gaps in swing trading?',
+<<<<<<< HEAD
         answer: 'Overnight gaps are a main swing trading risk. Solutions: 1) Set stop orders (don\'t rely on manual close); 2) Avoid positions before weekends and major events; 3) Use smaller positions (1-1.5% risk) to diversify; 4) Don\'t panic after gap, assess new price level and whether trend changed; 5) Consider exchanges with Guaranteed Stop Loss (GSL), though higher cost but completely avoid gap slippage.'
       },
       {
         question: 'Q5: Is swing trading suitable for beginners?',
         answer: 'More suitable for beginners than day trading. Swing trading slower pace, provides ample time for analysis and decisions, less market noise, more reliable signals, less psychological pressure. But requires better patience (holding days), larger stops (100-200 points), and stronger trend judgment ability. Recommend beginners first learn trend identification and multiple timeframe analysis, practice 3-6 months on demo, then start live trading with small positions.'
+=======
+        answer: 'Overnight gaps are a main swing trading risk. Solutions: 1) Set stop orders (don\'t rely on manual close); 2) Avoid positions before weekends and major events; 3) Use smaller positions (1-1.5% risk) to diversify; 4) Don\'t panic after gap, assess new price level and whether trend changed; 5) Consider brokers with Guaranteed Stop Loss (GSL), though higher cost but completely avoid gap slippage.'
+      },
+      {
+        question: 'Q5: Is swing trading suitable for beginners?',
+        answer: 'More suitable for beginners than day trading. Swing trading slower pace, provides ample time for analysis and decisions, less market noise, more reliable signals, less psychological pressure. But requires better patience (holding days), larger stops (100-200 pips), and stronger trend judgment ability. Recommend beginners first learn trend identification and multiple timeframe analysis, practice 3-6 months on demo, then start live trading with small positions.'
+>>>>>>> fx-killer/main
       }
     ],
 
@@ -149,7 +192,11 @@ export const swingTradingContent = {
     ],
 
     ctaTitle: 'Want to Systematically Learn Swing Trading?',
+<<<<<<< HEAD
     ctaDescription: 'Join BiKiller training for professional swing trading strategies and medium-term trend analysis',
+=======
+    ctaDescription: 'Join FX Killer training for professional swing trading strategies and medium-term trend analysis',
+>>>>>>> fx-killer/main
     ctaPrimaryButton: 'Learn About Training',
     ctaSecondaryButton: 'Free Psychology Test',
 

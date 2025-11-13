@@ -2,9 +2,15 @@ import { EducationPageContent } from './forex-basics.content';
 
 export const macdIndicatorContent = {
   zh: {
+<<<<<<< HEAD
     title: 'MACD指标完整指南 - MACD交易策略与实战技巧 | BiKiller',
     description: '深入讲解MACD指标：DIF、DEA、MACD柱状图的计算公式，金叉死叉信号，背离形态识别。掌握MACD在数字货币交易中的趋势确认和动能分析应用。',
     keywords: 'MACD指标, MACD策略, 金叉死叉, MACD背离, DIF DEA, 技术分析指标, 趋势指标',
+=======
+    title: 'MACD指标完整指南丨汇刃丨外汇交易员培训、全职交易员培训',
+    description: '深入讲解MACD指标：DIF、DEA、MACD柱状图计算公式，金叉死叉信号，背离形态。外汇交易员和全职交易员培训必备的趋势确认和动能分析工具。',
+    keywords: '外汇交易员培训, 全职交易员培训, MACD指标, MACD策略, 金叉死叉, MACD背离, 趋势指标',
+>>>>>>> fx-killer/main
 
     heroTitle: 'MACD指标完整指南',
     heroDescription: '掌握最经典的趋势动能指标，精准把握市场节奏',
@@ -70,7 +76,11 @@ export const macdIndicatorContent = {
     ],
 
     ctaTitle: '想要系统学习技术分析？',
+<<<<<<< HEAD
     ctaDescription: '加入 BiKiller 培训计划，掌握更多实战技术指标应用',
+=======
+    ctaDescription: '加入 FX Killer 培训计划，掌握更多实战技术指标应用',
+>>>>>>> fx-killer/main
     ctaPrimaryButton: '了解培训计划',
     ctaSecondaryButton: '免费心理测评',
 
@@ -81,9 +91,15 @@ export const macdIndicatorContent = {
   } as EducationPageContent,
 
   en: {
+<<<<<<< HEAD
     title: 'Complete MACD Guide - MACD Trading Strategies and Practical Techniques | BiKiller',
     description: 'In-depth explanation of MACD indicator: DIF, DEA, histogram calculations, golden/death cross signals, divergence pattern recognition. Master MACD trend confirmation and momentum analysis in cryptocurrency.',
     keywords: 'MACD indicator, MACD strategy, golden cross, MACD divergence, DIF DEA, technical analysis, trend indicator',
+=======
+    title: 'Complete MACD Indicator Guide丨FX Killer丨Forex Trader Training, Full-Time Trader Training',
+    description: 'In-depth explanation of MACD indicator: DIF, DEA, histogram calculations, golden/death cross signals, divergence pattern recognition. Forex trader training and full-time trader training essential curriculum for mastering MACD trend confirmation and momentum analysis.',
+    keywords: 'Forex Trader Training, Full-Time Trader Training, MACD indicator, MACD strategy, golden cross, MACD divergence',
+>>>>>>> fx-killer/main
 
     heroTitle: 'Complete MACD Indicator Guide',
     heroDescription: 'Master the most classic trend momentum indicator for precise market timing',
@@ -149,7 +165,11 @@ export const macdIndicatorContent = {
     ],
 
     ctaTitle: 'Want to Systematically Learn Technical Analysis?',
+<<<<<<< HEAD
     ctaDescription: 'Join BiKiller training to master more practical technical indicator applications',
+=======
+    ctaDescription: 'Join FX Killer training to master more practical technical indicator applications',
+>>>>>>> fx-killer/main
     ctaPrimaryButton: 'Learn About Training',
     ctaSecondaryButton: 'Free Psychology Test',
 

@@ -2,9 +2,15 @@ import { EducationPageContent } from './forex-basics.content';
 
 export const dayTradingContent = {
   zh: {
+<<<<<<< HEAD
     title: '日内交易完整指南 - Day Trading策略与风险管理实战技巧 | BiKiller',
     description: '深入讲解日内交易（Day Trading）：时间框架选择、入场出场策略、仓位控制、止损设置、交易时段分析。结合实战案例，掌握M5、M15、H1图表的短线交易技巧。',
     keywords: '日内交易, Day Trading, 短线交易, M5交易, M15交易, H1交易, 日内策略, 数字货币日内交易',
+=======
+    title: '日内交易完整指南丨汇刃丨职业交易员培训、日内交易员培训',
+    description: '深入讲解日内交易（Day Trading）：时间框架选择、入场出场策略、仓位控制、止损设置。职业交易员和日内交易员培训课程，分享M5、M15、H1图表的短线交易技巧。',
+    keywords: '职业交易员培训, 日内交易员培训, 日内交易, Day Trading, 短线交易, M5交易, M15交易, 日内策略',
+>>>>>>> fx-killer/main
 
     heroTitle: '日内交易完整指南',
     heroDescription: '掌握短线交易精髓，实现日内稳定盈利',
@@ -35,7 +41,11 @@ export const dayTradingContent = {
       },
       {
         question: 'Q3: 日内交易止损应该设置多少点？',
+<<<<<<< HEAD
         answer: '止损大小取决于时间框架和交易对波动性。M5图表：10-20点；M15图表：20-30点；H1图表：30-50点。止损应设置在关键支撑阻力位下方/上方，而非固定点数。建议使用ATR指标动态调整止损，通常设置为1-1.5倍ATR值。'
+=======
+        answer: '止损大小取决于时间框架和货币对波动性。M5图表：10-20点；M15图表：20-30点；H1图表：30-50点。止损应设置在关键支撑阻力位下方/上方，而非固定点数。建议使用ATR指标动态调整止损，通常设置为1-1.5倍ATR值。'
+>>>>>>> fx-killer/main
       },
       {
         question: 'Q4: 日内交易适合新手吗？',
@@ -70,20 +80,34 @@ export const dayTradingContent = {
     ],
 
     ctaTitle: '想要系统学习日内交易？',
+<<<<<<< HEAD
     ctaDescription: '加入 BiKiller 培训计划，获取专业日内交易策略和实时交易指导',
     ctaPrimaryButton: '了解培训计划',
     ctaSecondaryButton: '免费心理测评',
 
     footerPrevText: '← 数字货币基础',
+=======
+    ctaDescription: '加入 FX Killer 培训计划，获取专业日内交易策略和实时交易指导',
+    ctaPrimaryButton: '了解培训计划',
+    ctaSecondaryButton: '免费心理测评',
+
+    footerPrevText: '← 外汇基础',
+>>>>>>> fx-killer/main
     footerNextText: '波段交易 →',
     footerPrevHref: '/education/forex-basics',
     footerNextHref: '/education/swing-trading',
   } as EducationPageContent,
 
   en: {
+<<<<<<< HEAD
     title: 'Complete Day Trading Guide - Strategies and Risk Management Techniques | BiKiller',
     description: 'In-depth explanation of Day Trading: timeframe selection, entry/exit strategies, position sizing, stop-loss setting, trading session analysis. Master intraday trading on M5, M15, H1 charts with real cases.',
     keywords: 'day trading, intraday trading, M5 trading, M15 trading, H1 trading, day trading strategy, cryptocurrency day trading',
+=======
+    title: 'Complete Day Trading Guide丨FX Killer丨Professional Trader Training, Day Trader Training',
+    description: 'In-depth day trading guide: timeframe selection, entry/exit strategies, position sizing, stop-loss. Professional trader training and day trader training curriculum sharing intraday trading techniques on M5, M15, H1 charts.',
+    keywords: 'Professional Trader Training, Day Trader Training, day trading, intraday trading, M5 trading, M15 trading',
+>>>>>>> fx-killer/main
 
     heroTitle: 'Complete Day Trading Guide',
     heroDescription: 'Master intraday trading essentials for consistent daily profits',
@@ -113,8 +137,13 @@ export const dayTradingContent = {
         answer: 'European session (15:00-24:00 Beijing time) and American session (20:00-04:00 Beijing time) overlap (20:00-24:00) has highest volatility and best liquidity - the golden period for day trading. Asian session (08:00-16:00 Beijing time) has lower volatility, suitable for range strategies. Avoid trading 30 minutes before/after major news releases.'
       },
       {
+<<<<<<< HEAD
         question: 'Q3: How many points should I set for stop-loss in day trading?',
         answer: 'Stop size depends on timeframe and pair volatility. M5 chart: 10-20 points; M15 chart: 20-30 points; H1 chart: 30-50 points. Stops should be set below/above key support/resistance, not fixed point amounts. Recommend using ATR indicator for dynamic stops, typically 1-1.5x ATR value.'
+=======
+        question: 'Q3: How many pips should I set for stop-loss in day trading?',
+        answer: 'Stop size depends on timeframe and pair volatility. M5 chart: 10-20 pips; M15 chart: 20-30 pips; H1 chart: 30-50 pips. Stops should be set below/above key support/resistance, not fixed pip amounts. Recommend using ATR indicator for dynamic stops, typically 1-1.5x ATR value.'
+>>>>>>> fx-killer/main
       },
       {
         question: 'Q4: Is day trading suitable for beginners?',
@@ -149,11 +178,19 @@ export const dayTradingContent = {
     ],
 
     ctaTitle: 'Want to Systematically Learn Day Trading?',
+<<<<<<< HEAD
     ctaDescription: 'Join BiKiller training for professional day trading strategies and live trading guidance',
     ctaPrimaryButton: 'Learn About Training',
     ctaSecondaryButton: 'Free Psychology Test',
 
     footerPrevText: '← Cryptocurrency Basics',
+=======
+    ctaDescription: 'Join FX Killer training for professional day trading strategies and live trading guidance',
+    ctaPrimaryButton: 'Learn About Training',
+    ctaSecondaryButton: 'Free Psychology Test',
+
+    footerPrevText: '← Forex Basics',
+>>>>>>> fx-killer/main
     footerNextText: 'Swing Trading →',
     footerPrevHref: '/education/forex-basics',
     footerNextHref: '/education/swing-trading',

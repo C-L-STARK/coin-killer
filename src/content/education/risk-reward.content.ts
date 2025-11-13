@@ -2,9 +2,15 @@ import { EducationPageContent } from './forex-basics.content';
 
 export const riskRewardContent = {
   zh: {
+<<<<<<< HEAD
     title: '风险回报比详解 - R:R计算、最优比例与期望值优化完整指南 | BiKiller',
     description: '深入讲解数字货币交易风险回报比核心知识：R:R计算公式、盈亏比与胜率关系、期望值计算、目标设定策略、最优比例选择。职业交易员分享实战盈亏比优化技巧，助你实现长期稳定盈利。',
     keywords: '风险回报比, 盈亏比, R:R比例, 期望值, 胜率平衡, 目标设定, 风险收益比, 交易数学',
+=======
+    title: '风险回报比详解丨汇刃丨外汇交易员培训、职业交易员培训',
+    description: '深入讲解外汇交易风险回报比：R:R计算公式、盈亏比与胜率关系、期望值计算、目标设定。外汇交易员和职业交易员培训必备的盈亏比优化技巧，实现长期稳定盈利。',
+    keywords: '外汇交易员培训, 职业交易员培训, 风险回报比, 盈亏比, R:R比例, 期望值, 胜率平衡',
+>>>>>>> fx-killer/main
 
     heroTitle: '风险回报比详解',
     heroDescription: '掌握盈亏比优化方法，实现胜率与回报的最佳平衡',
@@ -30,7 +36,11 @@ export const riskRewardContent = {
     faqs: [
       {
         question: 'Q1: 风险回报比1:3和胜率60%哪个更重要？',
+<<<<<<< HEAD
         answer: '两者都重要，但必须平衡。单独强调任何一个都是误区。真相：1) 高胜率低回报（如胜率70%但R:R只有1:0.5）反而亏损，因为7笔赢0.5R、3笔亏1R，净利3.5R-3R=0.5R，扣除手续费后可能亏损；2) 高回报低胜率（如R:R为1:5但胜率只有10%）也难盈利，因为心理压力巨大，连续9笔止损很难坚持；3) 最佳平衡：胜率40-50%配R:R 1:2-1:3，或胜率55-65%配R:R 1:1.5-1:2。公式：期望值=胜率×平均盈利-败率×平均亏损。例如：50%胜率×2R-50%×1R=0.5R期望，长期盈利。建议：先测试你的策略真实胜率，再设定相应的R:R目标。不要追求不现实的"高胜率+高回报"，那是圣杯幻想。'
+=======
+        answer: '两者都重要，但必须平衡。单独强调任何一个都是误区。真相：1) 高胜率低回报（如胜率70%但R:R只有1:0.5）反而亏损，因为7笔赢0.5R、3笔亏1R，净利3.5R-3R=0.5R，扣除点差后可能亏损；2) 高回报低胜率（如R:R为1:5但胜率只有10%）也难盈利，因为心理压力巨大，连续9笔止损很难坚持；3) 最佳平衡：胜率40-50%配R:R 1:2-1:3，或胜率55-65%配R:R 1:1.5-1:2。公式：期望值=胜率×平均盈利-败率×平均亏损。例如：50%胜率×2R-50%×1R=0.5R期望，长期盈利。建议：先测试你的策略真实胜率，再设定相应的R:R目标。不要追求不现实的"高胜率+高回报"，那是圣杯幻想。'
+>>>>>>> fx-killer/main
       },
       {
         question: 'Q2: 如何计算我的交易期望值？期望值多少算合格？',
@@ -46,7 +56,11 @@ export const riskRewardContent = {
       },
       {
         question: 'Q5: 不同交易风格（剥头皮/日内/波段）应该用什么R:R？',
+<<<<<<< HEAD
         answer: '不同风格对应不同最优R:R，不能一概而论。推荐设置：剥头皮（M1-M5，持仓<30分钟）：R:R 1:0.8-1:1.5，胜率需≥60%。原因：快进快出、手续费成本高、市场噪音大，难以达成大目标。策略：高频交易、薄利多销。日内短线（M15-H1，持仓<4小时）：R:R 1:1.5-1:2.5，胜率≥45%。原因：有足够时间达成2-3倍目标，但不持仓过夜，避免跳空风险。策略：抓取日内波段，结合欧美盘波动。日内波段（H1-H4，持仓<24小时）：R:R 1:2-1:3，胜率≥40%。原因：顺应趋势，止盈空间大，可以追求更高回报。策略：趋势跟踪+关键位突破。多日波段（H4-D1，持仓数天）：R:R 1:3-1:5，胜率≥35%。原因：抓取大级别趋势，单笔盈利可观，可承受较低胜率。策略：趋势跟踪+追踪止损。关键：根据你的持仓时间和交易频率选择R:R，不要在M5图表追求1:5目标，也不要在D1图表只追求1:1。'
+=======
+        answer: '不同风格对应不同最优R:R，不能一概而论。推荐设置：剥头皮（M1-M5，持仓<30分钟）：R:R 1:0.8-1:1.5，胜率需≥60%。原因：快进快出、点差成本高、市场噪音大，难以达成大目标。策略：高频交易、薄利多销。日内短线（M15-H1，持仓<4小时）：R:R 1:1.5-1:2.5，胜率≥45%。原因：有足够时间达成2-3倍目标，但不持仓过夜，避免跳空风险。策略：抓取日内波段，结合欧美盘波动。日内波段（H1-H4，持仓<24小时）：R:R 1:2-1:3，胜率≥40%。原因：顺应趋势，止盈空间大，可以追求更高回报。策略：趋势跟踪+关键位突破。多日波段（H4-D1，持仓数天）：R:R 1:3-1:5，胜率≥35%。原因：抓取大级别趋势，单笔盈利可观，可承受较低胜率。策略：趋势跟踪+追踪止损。关键：根据你的持仓时间和交易频率选择R:R，不要在M5图表追求1:5目标，也不要在D1图表只追求1:1。'
+>>>>>>> fx-killer/main
       }
     ],
 
@@ -84,9 +98,15 @@ export const riskRewardContent = {
   } as EducationPageContent,
 
   en: {
+<<<<<<< HEAD
     title: 'Risk-Reward Ratio Guide - R:R Calculation, Optimal Ratios & Expectancy Optimization | BiKiller',
     description: 'Comprehensive guide to cryptocurrency risk-reward ratio: R:R calculation formula, profit/loss ratio and win rate relationship, expectancy calculation, target setting strategies, optimal ratio selection. Professional trader shares practical R:R optimization techniques for long-term stable profitability.',
     keywords: 'risk reward ratio, profit loss ratio, R:R ratio, expectancy, win rate balance, target setting, risk return ratio, trading mathematics',
+=======
+    title: 'Risk-Reward Ratio Guide丨FX Killer丨Forex Trader Training, Professional Trader Training',
+    description: 'Comprehensive guide to forex risk-reward ratio: R:R calculation formula, profit/loss ratio and win rate relationship, expectancy calculation, target setting strategies. Forex trader training and professional trader training essential curriculum for practical R:R optimization techniques.',
+    keywords: 'Forex Trader Training, Professional Trader Training, risk reward ratio, R:R ratio, expectancy, win rate balance',
+>>>>>>> fx-killer/main
 
     heroTitle: 'Risk-Reward Ratio Guide',
     heroDescription: 'Master profit/loss ratio optimization for optimal balance between win rate and reward',
@@ -112,7 +132,11 @@ export const riskRewardContent = {
     faqs: [
       {
         question: 'Q1: Which is more important - 1:3 risk-reward or 60% win rate?',
+<<<<<<< HEAD
         answer: 'Both important, but must be balanced. Emphasizing either alone is a misconception. Truth: 1) High win rate low reward (like 70% win rate but R:R only 1:0.5) actually loses, because 7 wins at 0.5R, 3 losses at 1R, net 3.5R-3R=0.5R, after fee may lose; 2) High reward low win rate (like R:R 1:5 but only 10% win rate) also hard to profit, because psychological pressure enormous, hard to persist through 9 consecutive losses; 3) Optimal balance: 40-50% win rate with R:R 1:2-1:3, or 55-65% win rate with R:R 1:1.5-1:2. Formula: Expectancy = Win Rate × Avg Profit - Loss Rate × Avg Loss. Example: 50% win rate × 2R - 50% × 1R = 0.5R expectancy, long-term profitable. Recommendation: first test your strategy\'s true win rate, then set corresponding R:R target. Don\'t pursue unrealistic "high win rate + high reward", that\'s holy grail fantasy.'
+=======
+        answer: 'Both important, but must be balanced. Emphasizing either alone is a misconception. Truth: 1) High win rate low reward (like 70% win rate but R:R only 1:0.5) actually loses, because 7 wins at 0.5R, 3 losses at 1R, net 3.5R-3R=0.5R, after spread may lose; 2) High reward low win rate (like R:R 1:5 but only 10% win rate) also hard to profit, because psychological pressure enormous, hard to persist through 9 consecutive losses; 3) Optimal balance: 40-50% win rate with R:R 1:2-1:3, or 55-65% win rate with R:R 1:1.5-1:2. Formula: Expectancy = Win Rate × Avg Profit - Loss Rate × Avg Loss. Example: 50% win rate × 2R - 50% × 1R = 0.5R expectancy, long-term profitable. Recommendation: first test your strategy\'s true win rate, then set corresponding R:R target. Don\'t pursue unrealistic "high win rate + high reward", that\'s holy grail fantasy.'
+>>>>>>> fx-killer/main
       },
       {
         question: 'Q2: How to calculate my trading expectancy? What expectancy is acceptable?',
@@ -124,11 +148,19 @@ export const riskRewardContent = {
       },
       {
         question: 'Q4: How to improve my risk-reward ratio? Increase target or tighten stop?',
+<<<<<<< HEAD
         answer: 'Prioritize optimizing entry position, not simply increasing target or tightening stop. Common wrong approaches: 1) Tighten stop: from 40 points to 20 points, improve R:R, but stop too tight easily hit by normal volatility, win rate plummets; 2) Increase target: from 60 points to 120 points, improve R:R, but target too large hard to achieve, actual profit actually decreases. Correct optimization methods: 1) Improve entry timing: wait for better entry (like breakout then retest confirmation), can use smaller stop to reach same target, naturally improve R:R; 2) Choose high volatility periods: trade during European-US overlap, trending moves easier to achieve large targets; 3) Trade with trend: only trade trend direction, profit target easier to achieve; 4) Use trailing stops: initial R:R may be 1:2, but through trailing stop ultimately achieve 1:3 or even 1:5; 5) Avoid low-quality trades: raise entry standards, only take high-probability trades, naturally improve win rate and R:R. Example: rather than enter in ranging area (30 point stop, 60 point target, R:R 1:2, 30% win rate), better wait for breakout confirmation (20 point stop, 60 point target, R:R 1:3, 50% win rate).'
       },
       {
         question: 'Q5: What R:R should different trading styles (scalping/day/swing) use?',
         answer: 'Different styles correspond to different optimal R:R, cannot generalize. Recommended settings: Scalping (M1-M5, hold <30 min): R:R 1:0.8-1:1.5, win rate need ≥60%. Reason: quick in-out, high fee cost, market noise large, hard to achieve large targets. Strategy: high frequency trading, small profits quick turnover. Intraday short-term (M15-H1, hold <4 hours): R:R 1:1.5-1:2.5, win rate ≥45%. Reason: sufficient time to achieve 2-3x targets, but no overnight holding, avoid gap risk. Strategy: capture intraday swings, combine European-US volatility. Intraday swing (H1-H4, hold <24 hours): R:R 1:2-1:3, win rate ≥40%. Reason: follow trends, large profit space, can pursue higher rewards. Strategy: trend following + key level breakouts. Multi-day swing (H4-D1, hold days): R:R 1:3-1:5, win rate ≥35%. Reason: capture large timeframe trends, single trade profit substantial, can tolerate lower win rate. Strategy: trend following + trailing stops. Key: choose R:R based on your holding time and trade frequency, don\'t pursue 1:5 targets on M5 chart, also don\'t only pursue 1:1 on D1 chart.'
+=======
+        answer: 'Prioritize optimizing entry position, not simply increasing target or tightening stop. Common wrong approaches: 1) Tighten stop: from 40 pips to 20 pips, improve R:R, but stop too tight easily hit by normal volatility, win rate plummets; 2) Increase target: from 60 pips to 120 pips, improve R:R, but target too large hard to achieve, actual profit actually decreases. Correct optimization methods: 1) Improve entry timing: wait for better entry (like breakout then retest confirmation), can use smaller stop to reach same target, naturally improve R:R; 2) Choose high volatility periods: trade during European-US overlap, trending moves easier to achieve large targets; 3) Trade with trend: only trade trend direction, profit target easier to achieve; 4) Use trailing stops: initial R:R may be 1:2, but through trailing stop ultimately achieve 1:3 or even 1:5; 5) Avoid low-quality trades: raise entry standards, only take high-probability trades, naturally improve win rate and R:R. Example: rather than enter in ranging area (30 pip stop, 60 pip target, R:R 1:2, 30% win rate), better wait for breakout confirmation (20 pip stop, 60 pip target, R:R 1:3, 50% win rate).'
+      },
+      {
+        question: 'Q5: What R:R should different trading styles (scalping/day/swing) use?',
+        answer: 'Different styles correspond to different optimal R:R, cannot generalize. Recommended settings: Scalping (M1-M5, hold <30 min): R:R 1:0.8-1:1.5, win rate need ≥60%. Reason: quick in-out, high spread cost, market noise large, hard to achieve large targets. Strategy: high frequency trading, small profits quick turnover. Intraday short-term (M15-H1, hold <4 hours): R:R 1:1.5-1:2.5, win rate ≥45%. Reason: sufficient time to achieve 2-3x targets, but no overnight holding, avoid gap risk. Strategy: capture intraday swings, combine European-US volatility. Intraday swing (H1-H4, hold <24 hours): R:R 1:2-1:3, win rate ≥40%. Reason: follow trends, large profit space, can pursue higher rewards. Strategy: trend following + key level breakouts. Multi-day swing (H4-D1, hold days): R:R 1:3-1:5, win rate ≥35%. Reason: capture large timeframe trends, single trade profit substantial, can tolerate lower win rate. Strategy: trend following + trailing stops. Key: choose R:R based on your holding time and trade frequency, don\'t pursue 1:5 targets on M5 chart, also don\'t only pursue 1:1 on D1 chart.'
+>>>>>>> fx-killer/main
       }
     ],
 

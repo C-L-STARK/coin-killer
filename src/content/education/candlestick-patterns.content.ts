@@ -2,9 +2,15 @@ import { EducationPageContent } from './forex-basics.content';
 
 export const candlestickPatternsContent = {
   zh: {
+<<<<<<< HEAD
     title: 'K线形态识别指南 - Doji、Hammer、Engulfing等反转与持续形态详解 | BiKiller',
     description: '深入讲解数字货币K线形态：Doji十字星、Hammer锤子线、Engulfing吞没形态、Morning/Evening Star等。掌握反转形态、持续形态识别技巧，提高交易胜率。',
     keywords: 'K线形态, 蜡烛图, Doji, Hammer, Engulfing, Morning Star, K线识别, 反转形态',
+=======
+    title: 'K线形态识别指南丨汇刃丨职业交易员培训、日内交易员培训',
+    description: '深入讲解外汇K线形态：Doji十字星、Hammer锤子线、Engulfing吞没、Morning Star等。职业交易员和日内交易员培训必学的反转与持续形态识别技巧。',
+    keywords: '职业交易员培训, 日内交易员培训, K线形态, 蜡烛图, Doji, Hammer, Engulfing, K线识别',
+>>>>>>> fx-killer/main
 
     heroTitle: 'K线形态识别指南',
     heroDescription: '掌握K线语言，读懂市场情绪与多空博弈',
@@ -70,7 +76,11 @@ export const candlestickPatternsContent = {
     ],
 
     ctaTitle: '想要系统学习K线形态交易？',
+<<<<<<< HEAD
     ctaDescription: '加入BiKiller培训计划，获取专业K线分析工具和实战指导',
+=======
+    ctaDescription: '加入FX Killer培训计划，获取专业K线分析工具和实战指导',
+>>>>>>> fx-killer/main
     ctaPrimaryButton: '了解培训计划',
     ctaSecondaryButton: '免费技术分析工具',
 
@@ -81,9 +91,15 @@ export const candlestickPatternsContent = {
   } as EducationPageContent,
 
   en: {
+<<<<<<< HEAD
     title: 'Candlestick Patterns Guide - Doji, Hammer, Engulfing Reversal & Continuation Patterns | BiKiller',
     description: 'In-depth explanation of cryptocurrency candlestick patterns: Doji, Hammer, Engulfing, Morning/Evening Star, etc. Master reversal and continuation pattern recognition to improve trading win rate.',
     keywords: 'candlestick patterns, Doji, Hammer, Engulfing, Morning Star, candle recognition, reversal patterns',
+=======
+    title: 'Candlestick Patterns Recognition Guide丨FX Killer丨Professional Trader Training, Day Trader Training',
+    description: 'In-depth explanation of forex candlestick patterns: Doji, Hammer, Engulfing, Morning/Evening Star. Professional trader training and day trader training essential curriculum for mastering reversal and continuation pattern recognition.',
+    keywords: 'Professional Trader Training, Day Trader Training, candlestick patterns, Doji, Hammer, Engulfing, candle recognition',
+>>>>>>> fx-killer/main
 
     heroTitle: 'Candlestick Patterns Guide',
     heroDescription: 'Master candlestick language to understand market sentiment and bull-bear dynamics',
@@ -118,7 +134,11 @@ export const candlestickPatternsContent = {
       },
       {
         question: 'Q4: How to distinguish true reversal from mere pullback?',
+<<<<<<< HEAD
         answer: 'True reversal characteristics: 1) At trend end (e.g., after 300 point uptrend); 2) Multiple reversal signals (Evening Star + MACD bearish cross + RSI overbought); 3) Larger timeframes also reverse (H1 and H4 both show Evening Star); 4) Significant volume increase. Pullback characteristics: 1) At trend middle; 2) Single reversal candle; 3) Only on small timeframe; 4) Normal volume. Recommendation: Reversal patterns in early/mid trend mainly for "pullback entry" not "reversal trading".'
+=======
+        answer: 'True reversal characteristics: 1) At trend end (e.g., after 300 pip uptrend); 2) Multiple reversal signals (Evening Star + MACD bearish cross + RSI overbought); 3) Larger timeframes also reverse (H1 and H4 both show Evening Star); 4) Significant volume increase. Pullback characteristics: 1) At trend middle; 2) Single reversal candle; 3) Only on small timeframe; 4) Normal volume. Recommendation: Reversal patterns in early/mid trend mainly for "pullback entry" not "reversal trading".'
+>>>>>>> fx-killer/main
       },
       {
         question: 'Q5: Which candlestick patterns are most worth focusing on?',
@@ -149,7 +169,11 @@ export const candlestickPatternsContent = {
     ],
 
     ctaTitle: 'Want to Systematically Learn Candlestick Trading?',
+<<<<<<< HEAD
     ctaDescription: 'Join BiKiller training for professional candlestick analysis tools and practical guidance',
+=======
+    ctaDescription: 'Join FX Killer training for professional candlestick analysis tools and practical guidance',
+>>>>>>> fx-killer/main
     ctaPrimaryButton: 'Learn About Training',
     ctaSecondaryButton: 'Free Technical Analysis Tools',
 
